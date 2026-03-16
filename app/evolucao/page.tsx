@@ -105,24 +105,14 @@ export default function EvolucaoPage() {
 
   const nextSteps = [
     {
-      title: "Cobertura total: 497 municípios",
+      title: "Resumo automático das notícias",
       description:
-        "Estamos trabalhando para incluir os municípios restantes, especialmente aqueles cujos sites usam tecnologias que exigem renderização por navegador.",
+        "Cada notícia coletada receberá um resumo curto e objetivo, gerado automaticamente. Em vez de ler dezenas de textos completos, você terá o essencial de cada publicação em duas ou três linhas — ideal para varrer a pauta do dia rapidamente.",
     },
     {
-      title: "Alertas personalizados",
+      title: "IA que analisa e filtra o que importa",
       description:
-        "Jornalistas poderão configurar alertas para receber notificações quando municípios específicos publicarem novidades.",
-    },
-    {
-      title: "Categorização automática",
-      description:
-        "Classificação inteligente das notícias por tema (saúde, educação, obras, segurança) para facilitar o trabalho de pauta.",
-    },
-    {
-      title: "Resumos diários",
-      description:
-        "Relatório automático com o panorama do dia: principais destaques, municípios mais ativos e tendências identificadas.",
+        "Uma camada de inteligência artificial vai analisar todas as notícias do dia, identificar os temas mais relevantes (licitações, obras, saúde, crises) e destacar automaticamente o que merece atenção. Menos ruído, mais informação útil para a redação.",
     },
   ];
 
