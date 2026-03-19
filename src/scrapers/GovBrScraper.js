@@ -74,10 +74,20 @@ const CONTENT_SELECTORS = [
   '.noticia-conteudo',
   '.noticia-texto',
   '.entry-content',
+  '.post-content',
+  '.article-content',
+  '.article-body',
+  '.news-content',
+  '.texto-noticia',
+  '.corpo-noticia',
+  '.materia-texto',
   '.conteudo',
   '.texto',
+  '#conteudo',
   'article .content',
   'article',
+  'main .content',
+  'main',
 ];
 
 /**
@@ -438,16 +448,48 @@ class GovBrScraper extends BaseScraper {
   }
 
   /**
-   * Extract article content.
+   * Extract article content with paragraph formatting preserved.
    */
   _extractContent($) {
     for (const selector of CONTENT_SELECTORS) {
       const el = $(selector).first();
-      if (el.length) {
-        const text = el.text().trim();
-        if (text && text.length > 50) return text;
-      }
+      if (!el.length) continue;
+
+      // Convert block elements to newlines before extracting text
+      el.find('br').replaceWith('\n');
+      el.find('p, div, h1, h2, h3, h4, h5, h6, li, blockquote').each((_, tag) => {
+        const $tag = $(tag);
+        $tag.prepend('\n\n');
+        $tag.append('\n');
+      });
+
+      // Remove script/style/nav inside content
+      el.find('script, style, nav, header, footer, .share, .social, .tags, .related').remove();
+
+      let text = el.text()
+        .replace(/\t/g, ' ')
+        .replace(/ {2,}/g, ' ')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+
+      if (text && text.length > 50) return text;
     }
+
+    // Fallback: try the whole body, extracting main text
+    const body = $('body');
+    if (body.length) {
+      body.find('script, style, nav, header, footer, aside, .menu, .sidebar').remove();
+      body.find('p').each((_, tag) => {
+        $(tag).prepend('\n\n');
+      });
+      const text = body.text()
+        .replace(/\t/g, ' ')
+        .replace(/ {2,}/g, ' ')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+      if (text && text.length > 100) return text.substring(0, 10000);
+    }
+
     return null;
   }
 }
