@@ -1,6 +1,823 @@
 {
-  "date": "2026-03-19",
-  "totalArticles": 0,
-  "totalMunicipalities": 0,
-  "articles": []
+  "date": "2026-03-18",
+  "totalArticles": 102,
+  "totalMunicipalities": 47,
+  "articles": [
+    {
+      "municipality": "TORRES",
+      "title": "Entidades de Torres solicitam espaço no Centro Administrativo para fortalecer integração institucional",
+      "url": "https://torres.rs.gov.br/2026/03/18/entidades-de-torres-solicitam-espaco-no-centro-administrativo-para-fortalecer-integracao-institucional/",
+      "publishedAt": "2026-03-18T21:46:28.000Z",
+      "scrapedAt": "2026-03-19T12:14:06Z",
+      "summary": "Torres oferece curso gratuito de eletricista em parceria com o SENAR/RS. Entidades locais pedem espaço no Centro Administrativo."
+    },
+    {
+      "municipality": "ENTRE RIOS DO SUL",
+      "title": "Entre Rios do Sul garante R$ 869 mil do Estado para obras de pavimentação urbana",
+      "url": "https://entreriosdosul.rs.gov.br/2026/03/18/entre-rios-do-sul-garante-r-869-mil-do-estado-para-obras-de-pavimentacao-urbana/",
+      "publishedAt": "2026-03-18T20:14:55.000Z",
+      "scrapedAt": "2026-03-19T10:58:31Z",
+      "summary": "Entre Rios do Sul recebe R$ 869 mil do estado para pavimentação urbana, totalizando R$ 1,4 milhão com contrapartida municipal."
+    },
+    {
+      "municipality": "TORRES",
+      "title": "Prefeitura de Torres recebe emendas de R$ 450 mil para pavimentação e custeio da APAE",
+      "url": "https://torres.rs.gov.br/2026/03/18/prefeitura-de-torres-recebe-emendas-de-r-450-mil-para-pavimentacao-e-custeio-da-apae/",
+      "publishedAt": "2026-03-18T19:59:36.000Z",
+      "scrapedAt": "2026-03-19T12:14:06Z",
+      "summary": "Torres recebe R$450 mil para pavimentação e APAE. Educação afasta servidor e apura internamente."
+    },
+    {
+      "municipality": "IPIRANGA DO SUL",
+      "title": "Professores da Escola Dom João Becker participam de formação sobre Educação Fiscal",
+      "url": "https://ipirangadosul.rs.gov.br/professores-da-escola-dom-joao-becker-participam-de-formacao-sobre-educacao-fiscal/",
+      "publishedAt": "2026-03-18T19:33:51.000Z",
+      "scrapedAt": "2026-03-19T11:23:51Z",
+      "summary": "Professores da Escola Dom João Becker participam de formação sobre Educação Fiscal."
+    },
+    {
+      "municipality": "ALVORADA",
+      "title": "AVISO DE PAUTA – Alvorada receberá mais de R$ 80 milhões em investimentos no bairro Umbu",
+      "url": "https://www.alvorada.rs.gov.br/aviso-de-pauta-alvorada-recebera-mais-de-r-80-milhoes-em-investimentos-no-bairro-umbu/",
+      "publishedAt": "2026-03-18T18:52:16.000Z",
+      "scrapedAt": "2026-03-19T09:06:40Z",
+      "summary": "Alvorada receberá R$80 milhões para investimentos no bairro Umbu."
+    },
+    {
+      "municipality": "ARROIO DO SAL",
+      "title": "Informe de rendimentos passa a ser emitido fora do portal do servidor",
+      "url": "https://arroiodosal.rs.gov.br/2026/03/18/informe-de-rendimentos-passa-a-ser-emitido-fora-do-portal-do-servidor/",
+      "publishedAt": "2026-03-18T18:24:37.000Z",
+      "scrapedAt": "2026-03-19T09:07:45Z",
+      "summary": "Informe de rendimentos de Arroio do Sal deve ser solicitado diretamente ao RH (WhatsApp, email, etc.) devido a erro no portal do servidor."
+    },
+    {
+      "municipality": "MACHADINHO",
+      "title": "Educação de Machadinho participa de planejamento estratégico da IG da erva-mate com foco em ações para 2026",
+      "url": "https://machadinho.rs.gov.br/2026/03/18/educacao-de-machadinho-participa-de-planejamento-estrategico-da-ig-da-erva-mate-com-foco-em-acoes-para-2026/",
+      "publishedAt": "2026-03-18T17:14:54.000Z",
+      "scrapedAt": "2026-03-19T11:34:50Z",
+      "summary": "Machadinho planeja ações educacionais sobre a erva-mate para 2026, integrando a IG no currículo escolar em parceria com diversas instituições."
+    },
+    {
+      "municipality": "TORRES",
+      "title": "Prefeitura de Torres inicia obras de reforma na EMEI STAN para garantir mais segurança e conforto aos alunos",
+      "url": "https://torres.rs.gov.br/2026/03/18/prefeitura-de-torres-inicia-obras-de-reforma-na-emei-stan-para-garantir-mais-seguranca-e-conforto-aos-alunos/",
+      "publishedAt": "2026-03-18T17:14:31.000Z",
+      "scrapedAt": "2026-03-19T12:14:06Z",
+      "summary": "Torres inicia reforma na EMEI STAN para segurança e conforto dos alunos. Entidades solicitam espaço no Centro Administrativo."
+    },
+    {
+      "municipality": "MACHADINHO",
+      "title": "Machadinho esteve representado no Fórum Estadual da Cultura realizado em Porto Alegre",
+      "url": "https://machadinho.rs.gov.br/2026/03/18/machadinho-esteve-representado-no-forum-estadual-da-cultura-realizado-em-porto-alegre/",
+      "publishedAt": "2026-03-18T17:02:23.000Z",
+      "scrapedAt": "2026-03-19T11:34:50Z",
+      "summary": "Machadinho participou do Fórum Estadual da Cultura em Porto Alegre para discutir a Reforma Tributária da Cultura e o Sistema Nacional de Cultura."
+    },
+    {
+      "municipality": "MAMPITUBA",
+      "title": "Contribuintes já podem retirar carnê do IPTU e garantir desconto",
+      "url": "https://www.mampituba.rs.gov.br/mampituba-contribuintes-ja-podem-retirar-carne-do-iptu-e-garantir-desconto/",
+      "publishedAt": "2026-03-18T16:27:46.000Z",
+      "scrapedAt": "2026-03-19T11:40:20Z",
+      "summary": "Mampituba libera carnês do IPTU com 10% de desconto para pagamento único até 05/05."
+    },
+    {
+      "municipality": "MAMPITUBA",
+      "title": "Mampituba remarca 8º Pedal das Mulheres para o dia 24 de março",
+      "url": "https://www.mampituba.rs.gov.br/mampituba-remarca-8o-pedal-das-mulheres-para-o-dia-24-de-marco/",
+      "publishedAt": "2026-03-18T16:25:14.000Z",
+      "scrapedAt": "2026-03-19T11:40:20Z",
+      "summary": "Mampituba remarca o 8º Pedal das Mulheres para 24 de março, com sorteio de brindes e bicicleta. Inscrições abertas."
+    },
+    {
+      "municipality": "NONOAI",
+      "title": "Município de Nonoai-RS - Com empenho do secretário de Articulação do Estado, Nonoai garante R$ 1,6 milhão para asfaltamento de novas ruas do município",
+      "url": "https://www.nonoai.rs.gov.br/noticias/3650-com-empenho-do-secretario-de-articulacao-do-estado-nonoai-garante-r-1-6-milhao-para-asfaltamento-de-novas-ruas-do-municipio",
+      "publishedAt": "2026-03-18T15:00:34.000Z",
+      "scrapedAt": "2026-03-19T12:08:58Z",
+      "summary": null
+    },
+    {
+      "municipality": "SÃO VICENTE DO SUL",
+      "title": "DECRETO N° 025/2026 – “ESTABELECE CRITÉRIOS E REGULAMENTO PARA REALIZAÇÃO DO 10º TORNEIO DE BOCHAS TAÇA SÃO VICENTE – Edição 2026”",
+      "url": "https://saovicentedosul.rs.gov.br/site/2026/03/18/decreto-n-025-2026-estabelece-criterios-e-regulamento-para-realizacao-do-10o-torneio-de-bochas-taca-sao-vicente-edicao-2026/#respond",
+      "publishedAt": "2026-03-18T14:52:33.000Z",
+      "scrapedAt": "2026-03-19T12:14:17Z",
+      "summary": "Publicado regulamento do 10º Torneio de Bochas Taça São Vicente (Edição 2026)."
+    },
+    {
+      "municipality": "SÃO VICENTE DO SUL",
+      "title": "DECRETO N° 025/2026 – “ESTABELECE CRITÉRIOS E REGULAMENTO PARA REALIZAÇÃO DO 10º TORNEIO DE BOCHAS TAÇA SÃO VICENTE – Edição 2026”",
+      "url": "https://saovicentedosul.rs.gov.br/site/2026/03/18/decreto-n-025-2026-estabelece-criterios-e-regulamento-para-realizacao-do-10o-torneio-de-bochas-taca-sao-vicente-edicao-2026/",
+      "publishedAt": "2026-03-18T14:52:33.000Z",
+      "scrapedAt": "2026-03-19T12:14:17Z",
+      "summary": "Publicado regulamento do 10º Torneio de Bochas Taça São Vicente (Edição 2026)."
+    },
+    {
+      "municipality": "SÃO VICENTE DO SUL",
+      "title": "LICITAÇÃO EXCLUSIVA PARA ME E EPP – PREGÃO ELETRÔNICO Nº 90.026/2026 UASG 988675 – Objeto:",
+      "url": "https://saovicentedosul.rs.gov.br/site/2026/03/18/licitacao-exclusiva-para-me-e-epp-pregao-eletronico-no-90-026-2026-uasg-988675-objeto/",
+      "publishedAt": "2026-03-18T14:13:34.000Z",
+      "scrapedAt": "2026-03-19T12:14:17Z",
+      "summary": "A prefeitura realizará licitação eletrônica exclusiva para ME/EPP em 02/04/2026 às 9h. Edital e anexos disponíveis online."
+    },
+    {
+      "municipality": "ESTAÇÃO",
+      "title": "Edital 004-26 - Auxílio transporte estudantes",
+      "url": "https://pmestacao.rs.gov.br/publicacoes_legais/edital-004-26-auxilio-transporte-estudantes-1o-semestre-2026/",
+      "publishedAt": "2026-03-18T14:12:23.000Z",
+      "scrapedAt": "2026-03-19T11:03:53Z",
+      "summary": null
+    },
+    {
+      "municipality": "DILERMANDO DE AGUIAR",
+      "title": "1º COPA DE FUTSAL – BOLA PRA FRENTE ⚽🏆 Masculino e Feminino",
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/1o-copa-de-futsal-bola-pra-frente-%e2%9a%bd%f0%9f%8f%86-masculino-e-feminino-2/",
+      "publishedAt": "2026-03-18T13:53:27.000Z",
+      "scrapedAt": "2026-03-19T09:47:12Z",
+      "summary": null
+    },
+    {
+      "municipality": "TAPEJARA",
+      "title": "Perfuração de poço artesiano beneficia famílias do interior e fortalece a agricultura familiar",
+      "url": "https://tapejara.rs.gov.br/noticia/perfuracao_de_poco_artesiano_beneficia_familias_do_interior_e_fortalece_a_agricultura_familiar",
+      "publishedAt": "2026-03-18T13:30:00.000Z",
+      "scrapedAt": "2026-03-19T12:13:41Z",
+      "summary": "Poço artesiano perfurado beneficia 16 famílias rurais, impulsionando a agricultura familiar com investimento de R$160 mil (município e estado)."
+    },
+    {
+      "municipality": "DILERMANDO DE AGUIAR",
+      "title": "Estudo Técnico do Solo Marca nova fase do Projeto Habitacional Loteamento Estação das Flores, onde será construída 50 novas moradias habitacionais em Dilermando de Aguiar, engenheiro Anderson Carvalho acompanhou os trabalhos",
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/estudo-tecnico-do-solo-marca-nova-fase-do-projeto-habitacional-loteamento-estacao-das-flores-onde-sera-construida-50-novas-moradias-habitacionais-em-dilermando-de-aguiar-engenheiro-anderson-carvalho/",
+      "publishedAt": "2026-03-18T13:05:58.000Z",
+      "scrapedAt": "2026-03-19T09:47:12Z",
+      "summary": null
+    },
+    {
+      "municipality": "SÃO PEDRO DAS MISSÕES",
+      "title": "HOJE ACONTECE A SEGUNDA RODADA DO CAMPEONATO DO COPO NA CATEGORIA VETERANOS",
+      "url": "https://saopedrodasmissoes.rs.gov.br/2026/03/18/hoje-acontece-a-segunda-rodada-do-campeonato-do-copo-na-categoria-veteranos/",
+      "publishedAt": "2026-03-18T13:00:26.000Z",
+      "scrapedAt": "2026-03-19T12:12:48Z",
+      "summary": "Segunda rodada do campeonato de veteranos, promovido pela prefeitura, ocorre hoje com times da cidade e região. Competição visa fortalecer esporte e integração."
+    },
+    {
+      "municipality": "DILERMANDO DE AGUIAR",
+      "title": "Novo odontólogo (dentista): Fernando Rosa de Azambuja é empossado pela administração municipal de Dilermando de Aguiar",
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/novo-odontologo-dentista-fernando-rosa-de-azambuja-e-empossado-pela-administracao-municipal-de-dilermando-de-aguiar/",
+      "publishedAt": "2026-03-18T12:59:27.000Z",
+      "scrapedAt": "2026-03-19T09:47:12Z",
+      "summary": null
+    },
+    {
+      "municipality": "DILERMANDO DE AGUIAR",
+      "title": "Prefeito de Dilermando de Aguiar Jorginho Saidelles participa de reunião com empresários do transporte coletivo, motoristas e monitores do transporte escolar na EMEF Valentim Bastianello",
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/prefeito-de-dilermando-de-aguiar-jorginho-saidelles-participa-de-reuniao-com-empresarios-do-transporte-coletivo-motoristas-e-monitores-do-transporte-escolar-na-emef-valentim-bastianello/",
+      "publishedAt": "2026-03-18T12:51:19.000Z",
+      "scrapedAt": "2026-03-19T09:47:12Z",
+      "summary": null
+    },
+    {
+      "municipality": "DILERMANDO DE AGUIAR",
+      "title": "Desassorear RS, R$ 1.000.000,00 (Um Milhão) em investimento: Ação Desassorear RS no Rio Ibicuí reforça compromisso com o meio ambiente e produtores, administração municipal recepciona representante da Sedur e equipe de trabalho",
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/desassorear-rs-administracao-municipal-comemora-inicio-de-obra-aguardada-ha-anos-acao-desassorear-rs-no-rio-ibicui-reforca-compromisso-com-o-meio-ambiente-e-produtores-administracao-municipal-recep/",
+      "publishedAt": "2026-03-18T12:47:12.000Z",
+      "scrapedAt": "2026-03-19T09:47:12Z",
+      "summary": null
+    },
+    {
+      "municipality": "DILERMANDO DE AGUIAR",
+      "title": "Administração de Dilermando de Aguiar recebe visita de Emilio Rodrigues da Silva e Clotilde Teixeira da Silva, do Campo da Pedra",
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/administracao-de-dilermando-de-aguiar-recebe-visita-de-emilio-rodrigues-da-silva-e-clotilde-teixeira-da-silva-do-campo-da-pedra/",
+      "publishedAt": "2026-03-18T12:45:06.000Z",
+      "scrapedAt": "2026-03-19T09:47:12Z",
+      "summary": null
+    },
+    {
+      "municipality": "DILERMANDO DE AGUIAR",
+      "title": "Projeto Comunidade em Movimento retornou com as atividades 2026 nesta segunda-feira em Dilermando de Aguiar",
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/projeto-comunidade-em-movimento-retornou-com-as-atividades-2026-nesta-segunda-feira-em-dilermando-de-aguiar/",
+      "publishedAt": "2026-03-18T12:43:36.000Z",
+      "scrapedAt": "2026-03-19T09:47:12Z",
+      "summary": null
+    },
+    {
+      "municipality": "IBIRUBÁ",
+      "title": "GABINETE DA PREFEITA NA RUA ESTREIA COM EDIÇÃO ESPECIAL DO MÊS DAS MULHERES NESTA SEXTA",
+      "url": "https://ibiruba.rs.gov.br/gabinete-da-prefeita-na-rua-estreia-com-edicao-especial-do-mes-das-mulheres-nesta-sexta-feira/",
+      "publishedAt": "2026-03-18T12:24:19.000Z",
+      "scrapedAt": "2026-03-19T12:28:44Z",
+      "summary": null
+    },
+    {
+      "municipality": "IBIRUBÁ",
+      "title": "IBIRUBÁ AMPLIA ATENDIMENTO INFANTIL E PASSA A CONTAR COM TRÊS PEDIATRAS NA REDE MUNICIPAL",
+      "url": "https://ibiruba.rs.gov.br/ibiruba-amplia-atendimento-infantil-e-passa-a-contar-com-tres-pediatras-na-rede-municipal/",
+      "publishedAt": "2026-03-18T12:20:31.000Z",
+      "scrapedAt": "2026-03-19T12:28:44Z",
+      "summary": null
+    },
+    {
+      "municipality": "TUNAS",
+      "title": "INEXIGIBILIDADE DE LICITAÇÃO Nº 03/2026- Contratação da ASSOCIAÇÃO TEATRO LUZ & CENA, para a realização da PÁSCOA NA PRAÇA, do município de Tunas/RS",
+      "url": "https://www.tunas.rs.gov.br/inexigibilidade-de-licitacao-no-03-2026-contratacao-da-associacao-teatro-luz-cena-para-a-realizacao-da-pascoa-na-praca-do-municipio-de-tunas-rs/",
+      "publishedAt": "2026-03-18T12:15:12.000Z",
+      "scrapedAt": "2026-03-19T12:15:25Z",
+      "summary": "Tunas/RS contrata Teatro Luz & Cena (sem licitação) para evento \"Páscoa na Praça\"."
+    },
+    {
+      "municipality": "ITAPUCA",
+      "title": "34º ANIVERSÁRIO DE ITAPUCA – 8º Jantar de Massas",
+      "url": "https://www.itapuca.rs.gov.br/34o-aniversario-de-itapuca-8o-jantar-de-massas/",
+      "publishedAt": "2026-03-18T12:11:40.000Z",
+      "scrapedAt": "2026-03-19T11:24:44Z",
+      "summary": "Itapuca celebra 34 anos com o 8º Jantar de Massas, reunindo comunidade e autoridades em noite de confraternização e gastronomia."
+    },
+    {
+      "municipality": "TUNAS",
+      "title": "INEXIGIBILIDADE DE LICITAÇÃO Nº 03/2026- Contratação da ASSOCIAÇÃO TEATRO LUZ & CENA, para a realização da PÁSCOA NA PRAÇA, do município de Tunas/RS",
+      "url": "https://www.tunas.rs.gov.br/concorrencia-eletronica-no-02-2026-reconstrucao-e-ampliacao-de-dois-pontilhoes-passagem-molhada-na-zona-rural-do-municipio-de-tunas-rs/",
+      "publishedAt": "2026-03-18T12:08:54.000Z",
+      "scrapedAt": "2026-03-19T12:15:25Z",
+      "summary": "Tunas/RS contrata, sem licitação, Associação Teatro Luz & Cena para realizar evento de Páscoa na praça."
+    },
+    {
+      "municipality": "TUNAS",
+      "title": "Concorrência Eletrônica nº 02/2026 – Reconstrução e ampliação de dois pontilhões (passagem molhada) na zona rural do Município de Tunas/RS.",
+      "url": "https://www.tunas.rs.gov.br/um-novo-ciclo-semeado-com-proposito-formacao-pedagogica-2026/",
+      "publishedAt": "2026-03-18T12:00:03.000Z",
+      "scrapedAt": "2026-03-19T12:15:25Z",
+      "summary": "Tunas/RS abre concorrência para reconstrução e ampliação de pontilhões na zona rural."
+    },
+    {
+      "municipality": "SÃO JOSÉ DO NORTE",
+      "title": "Smou realiza nivelamento de solo na Povoação da Barra",
+      "url": "https://www.saojosedonorte.rs.gov.br/noticias/smou-realiza-nivelamento-de-solo-na-povoacao-da-barra",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T13:37:54Z",
+      "summary": null
+    },
+    {
+      "municipality": "SÃO JOSÉ DO NORTE",
+      "title": "São José do Norte sedia reunião da Azonasul para alinhamento das demandas da educação",
+      "url": "https://www.saojosedonorte.rs.gov.br/noticias/sao-jose-do-norte-sedia-reuniao-da-azonasul-para-alinhamento-das-demandas-da-educacao",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T13:37:54Z",
+      "summary": null
+    },
+    {
+      "municipality": "SÃO JOSÉ DO NORTE",
+      "title": "Executivo busca recursos para qualificar saúde em São José do Norte",
+      "url": "https://www.saojosedonorte.rs.gov.br/noticias/executivo-busca-recursos-para-qualificar-saude-em-sao-jose-do-norte",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T13:37:54Z",
+      "summary": null
+    },
+    {
+      "municipality": "SÃO JOSÉ DO NORTE",
+      "title": "São José do Norte é contemplado com equipamentos para fortalecer a Defesa Civil",
+      "url": "https://www.saojosedonorte.rs.gov.br/noticias/sao-jose-do-norte-e-contemplado-com-equipamentos-para-fortalecer-a-defesa-civil",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T13:37:54Z",
+      "summary": null
+    },
+    {
+      "municipality": "NOVA PETRÓPOLIS",
+      "title": "Doce e decorada, Nova Petrópolis se prepara para a Páscoa mais germânica da Serra Gaúcha",
+      "url": "https://www.novapetropolis.rs.gov.br/noticias/doce-e-decorada-nova-petropolis-se-prepara-para-a-pascoa-mais-germanica-da-serra-gaucha",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T13:34:03Z",
+      "summary": "Nova Petrópolis promove Páscoa com decoração germânica na Serra Gaúcha. Evento destaca tradições e atrativos turísticos da cidade."
+    },
+    {
+      "municipality": "GETÚLIO VARGAS",
+      "title": "Convênio com o Governo do Estado garante R$ 1,3 milhão para pavimentação da Rua Max Padaratz, em Getúlio Vargas",
+      "url": "http://www.pmgv.rs.gov.br/site/2026/03/18/",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T13:31:25Z",
+      "summary": "R$ 1,3 milhão do Estado para pavimentar a Rua Max Padaratz em Getúlio Vargas, via convênio."
+    },
+    {
+      "municipality": "UNISTALDA",
+      "title": "ATENÇÃO COMUNICADO IMPORTANTE",
+      "url": "https://unistalda.rs.gov.br/atencao-comunicado-importante/",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:15:12Z",
+      "summary": "Unistalda alerta para comunicado importante em 18/03/2026. Detalhes em breve."
+    },
+    {
+      "municipality": "VICENTE DUTRA",
+      "title": "Prefeito de Vicente Dutra cumpre agenda na capital federal",
+      "url": "https://www.@vicentedutra.rs.gov.br/noticia/213/prefeito-de-vicente-dutra-cumpre-agenda-na-capital-federal",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:15:00Z",
+      "summary": null
+    },
+    {
+      "municipality": "VACARIA",
+      "title": "Notícias - Prefeitura convida comunidade e empresas para o Desfile Temático de Páscoa",
+      "url": "https://www.vacaria.rs.gov.br/noticia/prefeitura-convida-comunidade-e-empresas-para-o-desfile-tematico-de-pascoa",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:14:36Z",
+      "summary": null
+    },
+    {
+      "municipality": "TAQUARI",
+      "title": "InícioInformativosNotíciasFarmácia Básica não terá atendimento nos dias 25 e 26 de março Farmácia Básica não terá atendimento nos dias 25 e 26 de março",
+      "url": "https://www.taquari.rs.gov.br/noticia/visualizar/id/4140/?farmacia-basica-nao-tera-atendimento--nos-dias-25-e-26-de-marco.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:13:54Z",
+      "summary": null
+    },
+    {
+      "municipality": "TABAÍ",
+      "title": "InícioInformativosNotíciasEscritório Municipal da Emater de Tabaí inicia coleta de solo Escritório Municipal da Emater de Tabaí inicia coleta de solo",
+      "url": "https://tabai.rs.gov.br/noticia/visualizar/id/1352/?escritorio-municipal-da-emater-de-tabai-inicia-coleta-de-solo.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:13:45Z",
+      "summary": null
+    },
+    {
+      "municipality": "SAPUCAIA DO SUL",
+      "title": "Prefeitura de Sapucaia do Sul entrega os primeiros lotes do Distrito Industrial",
+      "url": "https://www.sapucaiadosul.rs.gov.br/noticias/prefeitura-de-sapucaia-do-sul-entrega-os-primeiros-lotes-do-distrito-industrial/#respond",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:13:26Z",
+      "summary": "Sapucaia do Sul entregou os 8 primeiros lotes do Distrito Industrial, visando gerar empregos e aumentar a arrecadação. Leilão de mais 36 lotes previsto para abril."
+    },
+    {
+      "municipality": "SAPUCAIA DO SUL",
+      "title": "Prefeitura de Sapucaia do Sul entrega os primeiros lotes do Distrito Industrial",
+      "url": "https://www.sapucaiadosul.rs.gov.br/noticias/prefeitura-de-sapucaia-do-sul-entrega-os-primeiros-lotes-do-distrito-industrial/",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:13:26Z",
+      "summary": "Sapucaia do Sul entregou os 8 primeiros lotes do Distrito Industrial, visando gerar mil empregos e aumentar a arrecadação. Leilão de mais 36 lotes previsto para abril."
+    },
+    {
+      "municipality": "SÃO JOSÉ DO HORTÊNCIO",
+      "title": "São José do Hortêncio forma nova turma do Programa Mais Saúde com Agente",
+      "url": "https://www.saojosedohortencio.rs.gov.br/noticias/sao-jose-do-hortencio-forma-nova-turma-do-programa-mais-saude-com-agente",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:12:06Z",
+      "summary": null
+    },
+    {
+      "municipality": "SÃO JOSÉ DO HORTÊNCIO",
+      "title": "São José do Hortêncio promove 1º Circuito Municipal de Vôlei de Areia",
+      "url": "https://www.saojosedohortencio.rs.gov.br/noticias/sao-jose-do-hortencio-promove-1o-circuito-municipal-de-volei-de-areia",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:12:06Z",
+      "summary": null
+    },
+    {
+      "municipality": "ROCA SALES",
+      "title": "Feira de Páscoa reúne saúde, lazer e valorização local em Roca Sales",
+      "url": "https://rocasales-rs.com.br/2026/03/18/feira-de-pascoa-reune-saude-lazer-e-valorizacao-local-em-roca-sales/#respond",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:54Z",
+      "summary": "Roca Sales terá Feira de Páscoa dia 28/03 com saúde, lazer e produtos locais na Praça Júlio Lengler."
+    },
+    {
+      "municipality": "ROCA SALES",
+      "title": "Feira de Páscoa reúne saúde, lazer e valorização local em Roca Sales",
+      "url": "https://rocasales-rs.com.br/2026/03/18/feira-de-pascoa-reune-saude-lazer-e-valorizacao-local-em-roca-sales/",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:54Z",
+      "summary": "Roca Sales terá Feira de Páscoa dia 28/03 com saúde, lazer e economia local na Praça Júlio Lengler."
+    },
+    {
+      "municipality": "ROCA SALES",
+      "title": "Profissionais de Roca Sales participam do III Seminário de Desenvolvimento Social e recebem reconhecimento estadual",
+      "url": "https://rocasales-rs.com.br/2026/03/18/profissionais-de-roca-sales-participam-do-iii-seminario-de-desenvolvimento-social-e-recebem-reconhecimento-estadual/#respond",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:54Z",
+      "summary": "Roca Sales participa de seminário de desenvolvimento social. Assistente social recebe homenagem estadual pelo trabalho no SUAS."
+    },
+    {
+      "municipality": "ROCA SALES",
+      "title": "Profissionais de Roca Sales participam do III Seminário de Desenvolvimento Social e recebem reconhecimento estadual",
+      "url": "https://rocasales-rs.com.br/2026/03/18/profissionais-de-roca-sales-participam-do-iii-seminario-de-desenvolvimento-social-e-recebem-reconhecimento-estadual/",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:54Z",
+      "summary": "Roca Sales participa de seminário de desenvolvimento social e profissional recebe homenagem estadual por atuação no SUAS."
+    },
+    {
+      "municipality": "SÃO GABRIEL",
+      "title": "Reparo na Ponte do Vacacaí garante mais segurança e durabilidade à estrutura em São Gabriel",
+      "url": "https://www.saogabriel.rs.gov.br/noticias/reparo-na-ponte-do-vacacai-garante-mais-seguranca-e-durabilidade-a-estrutura-em-sao-gabriel",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:53Z",
+      "summary": "Ponte do Vacacaí em São Gabriel é reparada, aumentando segurança e durabilidade."
+    },
+    {
+      "municipality": "SÃO GABRIEL",
+      "title": "Prefeitura de São Gabriel realiza Assembleia Geral do REURB na próxima semana",
+      "url": "https://www.saogabriel.rs.gov.br/noticias/prefeitura-de-sao-gabriel-realiza-assembleia-geral-do-reurb-na-proxima-semana",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:53Z",
+      "summary": "São Gabriel fará assembleia REURB na próxima semana. Objetivo: regularização fundiária urbana."
+    },
+    {
+      "municipality": "SANTA MARIA",
+      "title": "Frentes de trabalho da Prefeitura reforçam melhorias em estradas do Interior de Santa Maria",
+      "url": "https://www.santamaria.rs.gov.br/noticias/30475-frentes-de-trabalho-da-prefeitura-reforcam-melhorias-em-estradas-do-interior-santa-maria",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:24Z",
+      "summary": "Prefeitura melhora estradas rurais em Santa Maria com patrolamento, empedramento e construção de passagem molhada."
+    },
+    {
+      "municipality": "SANTA MARIA",
+      "title": "Biblioteca Pública Municipal promove Recital de Poesia neste sábado (21)",
+      "url": "https://www.santamaria.rs.gov.br/noticias/30476-biblioteca-publica-municipal-promove-recital-de-poesia-neste-sabado--21",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:24Z",
+      "summary": "Santa Maria promove recital de poesia sábado (21) com livros, mudas e erva-mate na Biblioteca Municipal."
+    },
+    {
+      "municipality": "SANTA MARIA",
+      "title": "Prefeitura de Santa Maria é reconhecida por política pública de acolhimento familiar",
+      "url": "https://www.santamaria.rs.gov.br/noticias/30477-prefeitura-de-santa-maria-e-reconhecida-por-politica-publica-acolhimento-familiar",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:24Z",
+      "summary": "Santa Maria recebe selo bronze estadual por destaque em acolhimento familiar, superando outras grandes cidades."
+    },
+    {
+      "municipality": "SANTA MARIA",
+      "title": "Promovendo o direito à cidade, Prefeitura entrega títulos de propriedade para mais de 100 famílias",
+      "url": "https://www.santamaria.rs.gov.br/noticias/30478-promovendo-o-direito-a-cidade--prefeitura-entrega-titulos-de-propriedade-para-mais-100-familias",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:11:24Z",
+      "summary": "Prefeitura entrega títulos de propriedade para 116 famílias de sete bairros, garantindo direito à moradia e segurança jurídica."
+    },
+    {
+      "municipality": "PRESIDENTE LUCENA",
+      "title": "Você sabia? 💡",
+      "url": "https://www.presidentelucena.rs.gov.br/noticias/voce-sabia",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:10:17Z",
+      "summary": null
+    },
+    {
+      "municipality": "POÇO DAS ANTAS",
+      "title": "Içamento de vigas marca avanço na reconstrução da Ponte do Cafundó",
+      "url": "https://www.pocodasantas.rs.gov.br/noticias/icamento-de-vigas-marca-avanco-na-reconstrucao-da-ponte-do-cafundo",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:09:58Z",
+      "summary": "Reconstrução da Ponte do Cafundó avança com içamento de vigas. Próxima fase da obra em andamento."
+    },
+    {
+      "municipality": "NOVA PÁDUA",
+      "title": "Not�cias",
+      "url": "https://www.novapadua.rs.gov.br/noticias_int.php?id=3185",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:09:16Z",
+      "summary": null
+    },
+    {
+      "municipality": "NOVA PÁDUA",
+      "title": "Not�cias",
+      "url": "https://www.novapadua.rs.gov.br/noticias_int.php?id=3186",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:09:16Z",
+      "summary": null
+    },
+    {
+      "municipality": "NOVO HAMBURGO",
+      "title": "R$ 657,4 milhões: a dívida que Novo Hamburgo ainda tem de pagar ao Ipasem",
+      "url": "https://www.novohamburgo.rs.gov.br/noticia/r-6574-milhoes-divida-novo-hamburgo-pagar-ipasem-nh",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T12:09:09Z",
+      "summary": null
+    },
+    {
+      "municipality": "JÓIA",
+      "title": "InícioInformativosNotíciasJóia amplia oportunidades com cursos profissionalizantes e bolsa de R$ 750 para participantes Jóia amplia oportunidades com cursos profissionalizantes e bolsa de R$ 750 para participantes",
+      "url": "https://www.joia.rs.gov.br/noticia/visualizar/id/2471/?joia-amplia-oportunidades-com-cursos-profissionalizantes-e-bolsa-de-r-750-para-participantes.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:27:23Z",
+      "summary": null
+    },
+    {
+      "municipality": "JÓIA",
+      "title": "InícioInformativosNotíciasPrefeitura de Jóia realiza licitação para construção de novo CRAS Prefeitura de Jóia realiza licitação para construção de novo CRAS",
+      "url": "https://www.joia.rs.gov.br/noticia/visualizar/id/2472/?prefeitura-de-joia-realiza-licitacao-para-construcao-de-novo-cras.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:27:23Z",
+      "summary": null
+    },
+    {
+      "municipality": "JÓIA",
+      "title": "InícioInformativosNotíciasSecretaria de Assistência Social de Jóia atende 1.494 famílias do cadastro Único Secretaria de Assistência Social de Jóia atende 1.494 famílias do cadastro Único",
+      "url": "https://www.joia.rs.gov.br/noticia/visualizar/id/2473/?secretaria-de-assistencia-social-de-joia-atende-1494-familias-do-cadastro-unico.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:27:23Z",
+      "summary": null
+    },
+    {
+      "municipality": "JÓIA",
+      "title": "InícioInformativosNotíciasSecretaria de Saúde de Jóia amplia atendimento no Março Lilás e reforça foco na prevenção Secretaria de Saúde de Jóia amplia atendimento no Março Lilás e reforça foco na prevenção",
+      "url": "https://www.joia.rs.gov.br/noticia/visualizar/id/2474/?secretaria-de-saude-de-joia-amplia-atendimento-no-marco-lilas-e-reforca-foco-na-prevencao.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:27:23Z",
+      "summary": null
+    },
+    {
+      "municipality": "JÓIA",
+      "title": "InícioInformativosNotíciasJóia inicia ano letivo 2026 com foco na qualificação da educação Jóia inicia ano letivo 2026 com foco na qualificação da educação",
+      "url": "https://www.joia.rs.gov.br/noticia/visualizar/id/2475/?joia-inicia-ano-letivo-2026-com-foco-na-qualificacao-da-educacao.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:27:23Z",
+      "summary": null
+    },
+    {
+      "municipality": "ITAQUI",
+      "title": "Siga nossas Redes Sociais",
+      "url": "https://www.itaqui.rs.gov.br/noticias/2026/03/prefeito-recebe-representantes-do-samu.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:21:40Z",
+      "summary": "Prefeito reuniu-se com SAMU para discutir melhorias nos serviços de urgência no município. Encontro abordou rotina, organização e alinhamento de informações."
+    },
+    {
+      "municipality": "ITAQUI",
+      "title": "Siga nossas Redes Sociais",
+      "url": "https://www.itaqui.rs.gov.br/noticias/2026/03/delegado-zucco-e-mourao-destinam-r-200-mil-para-itaqui.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:21:40Z",
+      "summary": "Itaqui receberá R$200 mil para saúde básica, via emenda parlamentar articulada por vereador e destinada por deputados."
+    },
+    {
+      "municipality": "ITAQUI",
+      "title": "Siga nossas Redes Sociais",
+      "url": "https://www.itaqui.rs.gov.br/noticias/2026/03/deputado-pompeo-destina-r-100-mil-ao-projeto-das-irmas-teresianas.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:21:40Z",
+      "summary": "Prefeito recebe emenda de R$100 mil para projeto social \"Teresiano Crescendo com a Arte\", via indicação parlamentar. Recurso será destinado à rede de assistência social."
+    },
+    {
+      "municipality": "ITAQUI",
+      "title": "Siga nossas Redes Sociais",
+      "url": "https://www.itaqui.rs.gov.br/noticias/2026/03/rocam-reforca-policiamento-ostensivo-em-itaqui.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:21:40Z",
+      "summary": "Prefeito se reuniu com ROCAM para discutir ações de segurança e reforçar a importância do registro de ocorrências."
+    },
+    {
+      "municipality": "IBIRAPUITÃ",
+      "title": "InícioInformativosNotíciasIbirapuitã se destaca na 2ª Mostra Nacional “Mais Saúde com Agente” Ibirapuitã se destaca na 2ª Mostra Nacional “Mais Saúde com Agente”",
+      "url": "https://ibirapuita.rs.gov.br/noticia/visualizar/id/2747/?ibirapuita-se-destaca-na-2a-mostra-nacional-mais-saude-com-agente.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:17:09Z",
+      "summary": null
+    },
+    {
+      "municipality": "HULHA NEGRA",
+      "title": "InícioInformativosNotíciasLançamento do Projeto Escola de Estrelas integra atividades de aniversário de Hulha Negra Lançamento do Projeto Escola de Estrelas integra atividades de aniversário de Hulha Negra",
+      "url": "https://hulhanegra.rs.gov.br/noticia/visualizar/id/1973/?lancamento-do-projeto-escola-de-estrelas-integra-atividades-de-aniversario-de-hulha-negra.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:15:41Z",
+      "summary": null
+    },
+    {
+      "municipality": "HULHA NEGRA",
+      "title": "InícioInformativosNotíciasSecretaria de Finanças de Hulha Negra recebe doação de computadores do SERPRO Secretaria de Finanças de Hulha Negra recebe doação de computadores do SERPRO",
+      "url": "https://hulhanegra.rs.gov.br/noticia/visualizar/id/1974/?secretaria-de-financas-de-hulha-negra-recebe-doacao-de-computadores-do-serpro.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:15:41Z",
+      "summary": null
+    },
+    {
+      "municipality": "ESTÂNCIA VELHA",
+      "title": "InícioO MunicípioNotíciasEstância Velha segue com ações de valorização das mulheres com programação especial Estância Velha segue com ações de valorização das mulheres com programação especial",
+      "url": "https://estanciavelha.rs.gov.br/noticia/visualizar/id/4084/?estancia-velha-segue-com-acoes-de-valorizacao-das-mulheres-com-programacao-especial.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:00:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "ESTÂNCIA VELHA",
+      "title": "InícioO MunicípioNotíciasVice-prefeito recebe comitiva da 4ª Páscoa em Ivoti Vice-prefeito recebe comitiva da 4ª Páscoa em Ivoti",
+      "url": "https://estanciavelha.rs.gov.br/noticia/visualizar/id/4085/?vice-prefeito-recebe-comitiva-da-4a-pascoa-em-ivoti.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:00:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "ESTÂNCIA VELHA",
+      "title": "InícioO MunicípioNotíciasPrefeitura garante R$ 1,8 milhão para pavimentação Prefeitura garante R$ 1,8 milhão para pavimentação",
+      "url": "https://estanciavelha.rs.gov.br/noticia/visualizar/id/4086/?prefeitura-garante-r-18-milhao-para-pavimentacao.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:00:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "ESTÂNCIA VELHA",
+      "title": "InícioO MunicípioNotíciasFarmácia Básica passa a exigir Cartão SUS para retirada de medicamentos Farmácia Básica passa a exigir Cartão SUS para retirada de medicamentos",
+      "url": "https://estanciavelha.rs.gov.br/noticia/visualizar/id/4087/?farmacia-basica-passa-a-exigir-cartao-sus-para-retirada-de-medicamentos.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:00:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "ESTÂNCIA VELHA",
+      "title": "InícioO MunicípioNotíciasPrefeitura garante R$ 1,8 milhão para pavimentação Prefeitura garante R$ 1,8 milhão para pavimentação",
+      "url": "https://estanciavelha.rs.gov.br/noticia/visualizar/id/4088/?prefeitura-garante-r-18-milhao-para-pavimentacao.html",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T11:00:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "DOIS LAJEADOS",
+      "title": "PROCESSO SELETIVO - EDITAL SIMPLIFICADO Nº 001/2026",
+      "url": "https://www.doislajeados.rs.gov.br/noticias/processo-seletivo-edital-simplificado-no-001-2026",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:51:43Z",
+      "summary": null
+    },
+    {
+      "municipality": "DAVID CANABARRO",
+      "title": "OBRA MELHORA TRAFEGABILIDADE EM ESTRADA DO INTERIOR",
+      "url": "https://www.davidcanabarro.rs.gov.br/noticias/obra-melhora-trafegabilidade-em-estrada-do-interior",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:46:51Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "SEMMAS abre inscrições para o Concurso Calendário Ecológico 2027",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/semmas-abre-inscricoes-para-o-concurso-calendario-ecologico-2027",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Após reestruturação do projeto, edital do Canaliza Caxias será publicado na próxima semana",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/apos-reestruturacao-do-projeto-edital-do-canaliza-caxias-sera-publicado-na-proxima-semana",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Obras de drenagem avançam por etapas na Rua Oliveiros Marcelino Teixeira, no bairro Mariani",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/obras-de-drenagem-avancam-por-etapas-na-rua-oliveiros-marcelino-teixeira-no-bairro-mariani",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Projeto Êxito Empreendedor inicia com foco na qualificação de pequenos negócios",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/projeto-exito-empreendedor-inicia-com-foco-na-qualificacao-de-pequenos-negocios",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Prefeitura entrega certidões de regularização fundiária a moradores do NUI Pedro Bolson",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/prefeitura-entrega-certidoes-de-regularizacao-fundiaria-a-moradores-do-nui-pedro-bolson",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Conselho de Contribuintes toma posse para a gestão 2026/2027",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/conselho-de-contribuintes-toma-posse-para-a-gestao-2026-2027",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Famílias de São Luiz da 3ª Légua comemoram chegada da água canalizada",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/familias-de-sao-luiz-da-3a-legua-comemoram-chegada-da-agua-canalizada",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "ANP e Procon realizam ação de fiscalização em postos de combustíveis",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/anp-e-procon-realizam-acao-de-fiscalizacao-em-postos-de-combustiveis",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Prefeito dá posse para novos integrantes do Conselho Municipal de Política Cultural",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/prefeito-da-posse-para-novos-integrantes-do-conselho-municipal-de-politica-cultural",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Manutenção em redes de drenagem alteram trânsito no Centro de Caxias nesta quarta-feira",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/manutencao-em-redes-de-drenagem-alteram-transito-no-centro-de-caxias-nesta-quarta-feira",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CAXIAS DO SUL",
+      "title": "Leilão de concessão do Castramóvel tem empresa vencedora",
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/leilao-de-concessao-do-castramovel-tem-empresa-vencedora",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:27:38Z",
+      "summary": null
+    },
+    {
+      "municipality": "CARLOS BARBOSA",
+      "title": "Torneio de Vôlei Feminino do Mês da Mulher acontece neste domingo, 22 de março",
+      "url": "https://www.carlosbarbosa.rs.gov.br/noticias/torneio-de-volei-feminino-do-mes-da-mulher-acontece-neste-domingo-22-de-marco",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:26:59Z",
+      "summary": "Torneio de Vôlei Feminino celebra o Mês da Mulher neste domingo, dia 22."
+    },
+    {
+      "municipality": "CARLOS BARBOSA",
+      "title": "Escola Salvador Bordini recebe escritora Catia Dal Molin em atividade cultural",
+      "url": "https://www.carlosbarbosa.rs.gov.br/noticias/escola-salvador-bordini-recebe-escritora-catia-dal-molin-em-atividade-cultural",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:26:59Z",
+      "summary": "Escola recebe escritora Catia Dal Molin para atividade cultural, promovendo interação e aprendizado."
+    },
+    {
+      "municipality": "CARLOS BARBOSA",
+      "title": "Município de Carlos Barbosa firma convênio no programa Pavimenta 3",
+      "url": "https://www.carlosbarbosa.rs.gov.br/noticias/municipio-de-carlos-barbosa-firma-convenio-no-programa-pavimenta-3",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:26:59Z",
+      "summary": "Carlos Barbosa adere ao programa Pavimenta 3 para obras de pavimentação."
+    },
+    {
+      "municipality": "CANOAS",
+      "title": "Caravana de Empregos atrai jovens à procura da primeira oportunidade de trabalho",
+      "url": "https://www.canoas.rs.gov.br/noticias/caravana-de-empregos-atrai-jovens-a-procura-da-primeira-oportunidade-de-trabalho/",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:26:50Z",
+      "summary": "Caravana de Empregos em Guajuviras atraiu jovens com 298 vagas, incluindo oportunidades para quem busca o primeiro emprego."
+    },
+    {
+      "municipality": "CANOAS",
+      "title": "Comitiva chinesa visita empresa no Parque Canoas de Inovação para avançar tratativas de investimento",
+      "url": "https://www.canoas.rs.gov.br/noticias/comitiva-chinesa-visita-empresa-no-parque-canoas-de-inovacao-para-avancar-tratativas-de-investimento/",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:26:50Z",
+      "summary": "Comitiva chinesa visitou empresa em Canoas para avaliar investimento, focando em logística e legislação trabalhista."
+    },
+    {
+      "municipality": "BENJAMIN CONSTANT DO SUL",
+      "title": "Município recebe R$ 500 mil em emendas parlamentares para praça e saúdeMunicípio recebe R$ 500 mil em emendas parlamentares para praça e saúde",
+      "url": "https://www.benjaminconstantdosul.rs.gov.br/noticias_ver.php?id_noticia=370",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:15:01Z",
+      "summary": null
+    },
+    {
+      "municipality": "BENJAMIN CONSTANT DO SUL",
+      "title": "Secretária de Cultura de Benjamin Constant do Sul participa do Fórum Estadual de Cultura em Porto AlegreSecretária de Cultura de Benjamin Constant do Sul participa do Fórum Estadual de Cultura em Porto Alegre",
+      "url": "https://www.benjaminconstantdosul.rs.gov.br/noticias_ver.php?id_noticia=369",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:15:01Z",
+      "summary": null
+    },
+    {
+      "municipality": "BOM RETIRO DO SUL",
+      "title": "Prefeitura de Bom Retiro do Sul",
+      "url": "https://www.bomretirodosul.rs.gov.br/artigos/item/2822",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:13:54Z",
+      "summary": null
+    },
+    {
+      "municipality": "BARRACÃO",
+      "title": "Educação de Barracão articula parceria com FTD para fortalecer ensino em 2026Educação de Barracão articula parceria com FTD para fortalecer ensino em 2026",
+      "url": "https://www.barracao.rs.gov.br/noticias_ver.php?id_noticia=803",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:11:17Z",
+      "summary": null
+    },
+    {
+      "municipality": "BAGÉ",
+      "title": "Pesquisa com jogos digitais é utilizada em práticas de reabilitação física",
+      "url": "https://www.bage.rs.gov.br/noticias/pesquisa-com-jogos-digitais-e-utilizada-em-praticas-de-reabilitacao-fisica",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:08:40Z",
+      "summary": "Bagé usa jogos digitais da Unipampa na reabilitação física de amputados, tornando a fisioterapia mais lúdica e eficaz."
+    },
+    {
+      "municipality": "BAGÉ",
+      "title": "Campanha de doação de sangue acontece no dia 28",
+      "url": "https://www.bage.rs.gov.br/noticias/campanha-de-doacao-de-sangue-acontece-no-dia-28",
+      "publishedAt": "2026-03-18T12:00:00.000Z",
+      "scrapedAt": "2026-03-19T09:08:40Z",
+      "summary": "Bagé promove campanha de doação de sangue dia 28 no Hospital Universitário, com distribuição de fichas pela manhã e tarde. Ação visa atender demanda contínua."
+    }
+  ]
 }

@@ -20,7 +20,14 @@ const db = new Database(DB_PATH, { readonly: true });
 
 // ---------- today.json ----------
 function exportToday() {
-  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  // Use the most recent date that has articles (not necessarily today)
+  const latestDate = db.prepare(`
+    SELECT date(published_at) AS d FROM articles
+    WHERE published_at IS NOT NULL
+    ORDER BY published_at DESC LIMIT 1
+  `).get();
+
+  const targetDate = latestDate ? latestDate.d : new Date().toISOString().slice(0, 10);
 
   const articles = db.prepare(`
     SELECT
@@ -28,22 +35,18 @@ function exportToday() {
       a.title,
       a.url,
       a.published_at AS publishedAt,
-      a.scraped_at AS scrapedAt
+      a.scraped_at AS scrapedAt,
+      a.summary
     FROM articles a
     JOIN municipalities m ON m.id = a.municipality_id
     WHERE a.published_at IS NOT NULL AND date(a.published_at) = ?
     ORDER BY a.published_at DESC
-  `).all(today);
-
-  // Add summary to today's articles
-  for (const a of articles) {
-    if (!a.summary) delete a.summary;
-  }
+  `).all(targetDate);
 
   const municipalities = new Set(articles.map(a => a.municipality));
 
   const data = {
-    date: today,
+    date: targetDate,
     totalArticles: articles.length,
     totalMunicipalities: municipalities.size,
     articles,
