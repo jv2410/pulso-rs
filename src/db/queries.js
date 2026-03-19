@@ -21,10 +21,10 @@ function insertMunicipality(db, data) {
 
 function insertArticle(db, data) {
   const stmt = db.prepare(`
-    INSERT OR IGNORE INTO articles (municipality_id, title, url, published_at, content, summary)
-    VALUES (@municipality_id, @title, @url, @published_at, @content, @summary)
+    INSERT OR IGNORE INTO articles (municipality_id, title, url, published_at, content, summary, category)
+    VALUES (@municipality_id, @title, @url, @published_at, @content, @summary, @category)
   `);
-  return stmt.run({ ...data, summary: data.summary || null });
+  return stmt.run({ ...data, summary: data.summary || null, category: data.category || null });
 }
 
 function createScrapeRun(db) {

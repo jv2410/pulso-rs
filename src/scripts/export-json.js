@@ -36,10 +36,12 @@ function exportToday() {
       a.url,
       a.published_at AS publishedAt,
       a.scraped_at AS scrapedAt,
-      a.summary
+      a.summary,
+      a.category
     FROM articles a
     JOIN municipalities m ON m.id = a.municipality_id
     WHERE a.published_at IS NOT NULL AND date(a.published_at) = ?
+      AND (a.category IS NULL OR a.category != 'Crise')
     ORDER BY a.published_at DESC
   `).all(targetDate);
 
@@ -129,10 +131,12 @@ function exportArticlesByDate() {
       a.url,
       a.published_at AS publishedAt,
       a.scraped_at AS scrapedAt,
-      a.summary
+      a.summary,
+      a.category
     FROM articles a
     JOIN municipalities m ON m.id = a.municipality_id
     WHERE a.published_at IS NOT NULL
+      AND (a.category IS NULL OR a.category != 'Crise')
     ORDER BY date(a.published_at) DESC, a.published_at DESC
   `).all();
 
@@ -150,6 +154,7 @@ function exportArticlesByDate() {
       scrapedAt: row.scrapedAt,
     };
     if (row.summary) article.summary = row.summary;
+    if (row.category) article.category = row.category;
     byDate[d].articles.push(article);
     byDate[d]._muniSet.add(row.municipality);
     byDate[d].totalArticles++;

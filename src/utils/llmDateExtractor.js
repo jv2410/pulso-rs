@@ -111,4 +111,72 @@ async function summarizeWithLLM(title, content) {
   }
 }
 
-module.exports = { extractWithLLM, summarizeWithLLM };
+const CATEGORY_PROMPT = `Classifique esta notícia de prefeitura municipal em UMA única categoria.
+Responda APENAS com a categoria, sem explicação.
+
+Categorias válidas:
+- Cidadania
+- Meio Ambiente
+- Cultura
+- Habitação
+- Infraestrutura
+- Desenvolvimento
+- Mobilidade
+- Turismo
+- Esporte e Lazer
+- Educação
+- Gestão
+- Saúde
+- Segurança
+- Resiliência
+- Eventos
+- Agricultura
+- Assistência Social
+
+Se for sobre crise, desastre, tragédia, escândalo ou polêmica, responda: Crise
+
+Título: `;
+
+/**
+ * Classify article into editorial category + generate summary in one call.
+ * @param {string} title
+ * @param {string} content
+ * @returns {Promise<{summary: string|null, category: string|null}>}
+ */
+async function classifyAndSummarize(title, content) {
+  const geminiUrl = getGeminiUrl();
+  if (!geminiUrl) return { summary: null, category: null };
+
+  const text = (content || '').substring(0, 1000);
+  const prompt = `Analise esta notícia e responda em JSON exato, sem markdown:
+{"category":"<categoria>","summary":"<resumo em 1-2 frases, max 200 chars>"}
+
+Categorias válidas: Cidadania, Meio Ambiente, Cultura, Habitação, Infraestrutura, Desenvolvimento, Mobilidade, Turismo, Esporte e Lazer, Educação, Gestão, Saúde, Segurança, Resiliência, Eventos, Agricultura, Assistência Social.
+Se for sobre crise/desastre/tragédia/escândalo, use: Crise
+
+Regras do resumo: seja direto, não comece com "A prefeitura" ou "O município".
+
+Título: ${title}
+Conteúdo: ${text}`;
+
+  try {
+    const response = await axios.post(geminiUrl, {
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.2, maxOutputTokens: 150 }
+    }, { timeout: 6000, headers: { 'Content-Type': 'application/json' } });
+
+    const raw = (response.data?.candidates?.[0]?.content?.parts?.[0]?.text || '').trim();
+    const jsonMatch = raw.match(/\{[\s\S]*?\}/);
+    if (!jsonMatch) return { summary: null, category: null };
+
+    const parsed = JSON.parse(jsonMatch[0]);
+    return {
+      summary: parsed.summary ? parsed.summary.substring(0, 250) : null,
+      category: parsed.category || null,
+    };
+  } catch {
+    return { summary: null, category: null };
+  }
+}
+
+module.exports = { extractWithLLM, summarizeWithLLM, classifyAndSummarize };
