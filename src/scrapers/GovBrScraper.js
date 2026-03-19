@@ -1,4 +1,5 @@
 const BaseScraper = require('./BaseScraper');
+const { extractWithLLM } = require('../utils/llmDateExtractor');
 
 /**
  * Title selectors in priority order.
@@ -272,13 +273,30 @@ class GovBrScraper extends BaseScraper {
     if (!title) return null;
 
     const dateRaw = this._extractDate($, html);
+    let publishedAt = this.parseBrazilianDate(dateRaw);
     const content = this._extractContent($);
+    const cleanTitle = this.cleanText(title);
+    const cleanContent = this.cleanText(content) || null;
+
+    // If regex failed to find date: use LLM as fallback
+    if (!publishedAt) {
+      const pageText = $('body').text().replace(/\s+/g, ' ').trim();
+      const llmResult = await extractWithLLM(cleanTitle, pageText, url);
+
+      // LLM says it's not a news article → reject
+      if (!llmResult.isNews) return null;
+
+      // LLM found a date when regex didn't
+      if (llmResult.date) {
+        publishedAt = llmResult.date;
+      }
+    }
 
     return {
-      title: this.cleanText(title),
+      title: cleanTitle,
       url: this.ensureProtocol(url),
-      publishedAt: this.parseBrazilianDate(dateRaw),
-      content: this.cleanText(content) || null,
+      publishedAt,
+      content: cleanContent,
       municipalityId: site.id || null,
       scrapedAt: new Date().toISOString()
     };

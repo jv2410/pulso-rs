@@ -22,7 +22,7 @@ const ARTICLE_PATH_PATTERNS = [
   /\/noticia\/\d+\/[^/?#]+/,                 // /noticia/{id}/{slug}
   /\/artigo\/\d+\/[^/?#]+/,                  // /artigo/{id}/{slug}
   /\/artigos\/item\/\d+/,                    // /artigos/item/{id} (Bom Retiro do Sul)
-  /\/site\/conteudos\/\d+-[^/?#]+/,          // /site/conteudos/{id}-{slug}
+  /\/site\/noticias\/\d+-[^/?#]+/,           // /site/noticias/{id}-{slug} (NOT /site/conteudos/ — those are institutional)
   /\/site\/publicacao\/[^/?#]+/,             // /site/publicacao/{slug} (Barão de Cotegipe)
   /\/noticiasView\/\d+_[^/?#]+/,            // /noticiasView/{id}_{slug}.html (Barra do Ribeiro)
   /\/midias\/noticias\/[^/]+\/\d+/,          // /midias/noticias/{slug}/{id} (Jari)
@@ -75,7 +75,8 @@ const EXCLUDED_PATH_PATTERNS = [
   /\.pdf$/i,
   /\.jpg$/i,
   /\.png$/i,
-  /\/site\/conteudos\/\d+-(?:galeria|historia|simbolo|hino|telefone|secretaria|organo|tabela|legisla|relatori|plano-|servidor|vale-alim|pergunt)/i,
+  /\/site\/conteudos\//,                     // /site/conteudos/ — institutional pages, not news
+  /\/site\/noticias\/[a-z]/,                 // /site/noticias/categoria — category pages like /noticias/agricultura
 ];
 
 /**

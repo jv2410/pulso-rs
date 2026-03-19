@@ -11,8 +11,8 @@
   ],
   "byDate": {
     "2026-03-18": {
-      "totalArticles": 113,
-      "totalMunicipalities": 50,
+      "totalArticles": 120,
+      "totalMunicipalities": 53,
       "articles": [
         {
           "municipality": "TORRES",
@@ -804,6 +804,55 @@
           "url": "https://unistalda.rs.gov.br/atencao-comunicado-importante/",
           "publishedAt": "2026-03-18T12:00:00.000Z",
           "scrapedAt": "2026-03-19T12:15:12Z"
+        },
+        {
+          "municipality": "GETÚLIO VARGAS",
+          "title": "Convênio com o Governo do Estado garante R$ 1,3 milhão para pavimentação da Rua Max Padaratz, em Getúlio Vargas",
+          "url": "http://www.pmgv.rs.gov.br/site/2026/03/18/",
+          "publishedAt": "2026-03-18T12:00:00.000Z",
+          "scrapedAt": "2026-03-19T13:31:25Z"
+        },
+        {
+          "municipality": "NOVA PETRÓPOLIS",
+          "title": "Doce e decorada, Nova Petrópolis se prepara para a Páscoa mais germânica da Serra Gaúcha",
+          "url": "https://www.novapetropolis.rs.gov.br/noticias/doce-e-decorada-nova-petropolis-se-prepara-para-a-pascoa-mais-germanica-da-serra-gaucha",
+          "publishedAt": "2026-03-18T12:00:00.000Z",
+          "scrapedAt": "2026-03-19T13:34:03Z"
+        },
+        {
+          "municipality": "SÃO JOSÉ DO NORTE",
+          "title": "São José do Norte é contemplado com equipamentos para fortalecer a Defesa Civil",
+          "url": "https://www.saojosedonorte.rs.gov.br/noticias/sao-jose-do-norte-e-contemplado-com-equipamentos-para-fortalecer-a-defesa-civil",
+          "publishedAt": "2026-03-18T12:00:00.000Z",
+          "scrapedAt": "2026-03-19T13:37:54Z"
+        },
+        {
+          "municipality": "SÃO JOSÉ DO NORTE",
+          "title": "Executivo busca recursos para qualificar saúde em São José do Norte",
+          "url": "https://www.saojosedonorte.rs.gov.br/noticias/executivo-busca-recursos-para-qualificar-saude-em-sao-jose-do-norte",
+          "publishedAt": "2026-03-18T12:00:00.000Z",
+          "scrapedAt": "2026-03-19T13:37:54Z"
+        },
+        {
+          "municipality": "SÃO JOSÉ DO NORTE",
+          "title": "São José do Norte sedia reunião da Azonasul para alinhamento das demandas da educação",
+          "url": "https://www.saojosedonorte.rs.gov.br/noticias/sao-jose-do-norte-sedia-reuniao-da-azonasul-para-alinhamento-das-demandas-da-educacao",
+          "publishedAt": "2026-03-18T12:00:00.000Z",
+          "scrapedAt": "2026-03-19T13:37:54Z"
+        },
+        {
+          "municipality": "SÃO JOSÉ DO NORTE",
+          "title": "Smou realiza nivelamento de solo na Povoação da Barra",
+          "url": "https://www.saojosedonorte.rs.gov.br/noticias/smou-realiza-nivelamento-de-solo-na-povoacao-da-barra",
+          "publishedAt": "2026-03-18T12:00:00.000Z",
+          "scrapedAt": "2026-03-19T13:37:54Z"
+        },
+        {
+          "municipality": "SÃO JOSÉ DO NORTE",
+          "title": "Prefeitura Municipal conquista vaga como finalista em prêmio estadual do Sebrae",
+          "url": "https://www.saojosedonorte.rs.gov.br/noticias/prefeitura-municipal-conquista-vaga-como-finalista-em-premio-estadual-do-sebrae",
+          "publishedAt": "2026-03-18T12:00:00.000Z",
+          "scrapedAt": "2026-03-19T13:37:54Z"
         }
       ]
     },

@@ -37,12 +37,12 @@
     },
     {
       "date": "2026-03-18",
-      "articles": 113,
-      "municipalities": 50
+      "articles": 120,
+      "municipalities": 53
     }
   ],
   "totals": {
-    "totalArticles": 2032,
+    "totalArticles": 2039,
     "totalMunicipalities": 497,
     "totalSites": 497,
     "coveragePercent": 96.6
