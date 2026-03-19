@@ -1,0 +1,5713 @@
+{
+  "www.alecrim.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.alecrim.rs.gov.br/site/noticias",
+    "articleCount": 28,
+    "sampleArticle": {
+      "url": "https://www.alecrim.rs.gov.br/site/conteudos/513-conheca-alecrim",
+      "title": "Município de Alecrim - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ajuricaba.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ajuricaba.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.ajuricaba.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.pmalegria.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmalegria.rs.gov.br/site/noticias",
+    "articleCount": 35,
+    "sampleArticle": {
+      "url": "https://www.pmalegria.rs.gov.br/site/conteudos/3576-cartilha-de-retorno-as-aulas-presenciais",
+      "title": "Alegria - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.agudo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.agudo.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.agudo.rs.gov.br/noticias/agudo-recebe-mais-uma-edicao-da-dinofest-dia-22-evento-tera-inauguracao-do-primeiro-playground-aberto-tematico-de-dinossauros-do-pais",
+      "title": "Agudo recebe mais uma edição da DinoFest, dia 22; evento terá inauguração do primeiro playground aberto temático de dino",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.alegrete.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.alegrete.rs.gov.br/noticias",
+    "articleCount": 31,
+    "sampleArticle": {
+      "url": "https://www.alegrete.rs.gov.br/artigo/32470/demonstrativos-contabeis",
+      "title": "Demonstrativos Contábeis",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.alpestre.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.alpestre.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.alpestre.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.altofeliz.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.altofeliz.rs.gov.br/noticias",
+    "articleCount": 5,
+    "sampleArticle": {
+      "url": "https://www.altofeliz.rs.gov.br/web/noticias/1494/prefeitura-municipal-implementa-nova-ferramenta-digital-portal-do-serv",
+      "title": "Prefeitura Municipal implementa nova Ferramenta Digital: Portal do Servidor.",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.alvorada.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.alvorada.rs.gov.br/noticias",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://www.alvorada.rs.gov.br/tradicao-do-futebol-amador-estao-abertas-as-inscricoes-para-o-67o-torneio-1o-de-maio-em-alvorada/",
+      "title": "Tradição do futebol amador: estão abertas as inscrições para o 67º Torneio 1º de Maio em Alvorada",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.amaralferrador.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.amaralferrador.rs.gov.br/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.amaralferrador.rs.gov.br/noticias/63/inscricoes-abertas-para-o-programa-qualificacao-recomecar-rs-em-amaral-ferrador.html",
+      "title": "Prefeitura de Amaral Ferrador",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ametistadosul.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.ametistadosul.rs.gov.br/noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.ametistadosul.rs.gov.br/noticias/1303/recapeamento-asfaltico",
+      "title": null,
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.aguasantars.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.antagorda.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.antagorda.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.antagorda.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.altoalegre.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.altoalegre.rs.gov.br/noticias.php",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.altoalegre.rs.gov.br/noticia.php?detalhe=2343&titulo=comunicado-aos-estudantes-universitarios-de-alto-alegre",
+      "title": "COMUNICADO AOS ESTUDANTES UNIVERSITÁRIOS DE ALTO ALEGRE",
+      "date": "2026-02-27T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.almirantetamandaredosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.arambare.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arambare.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.arambare.rs.gov.br/noticia/view/768/lual-do-centro-movimenta-a-praia-e-valoriza-a-cultura-local-em-arambare",
+      "title": "Arambaré - RS | Lual do Centro movimenta a praia e valoriza a cultura local em Arambaré",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ararica.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ararica.rs.gov.br/noticia",
+    "articleCount": 29,
+    "sampleArticle": {
+      "url": "https://www.ararica.rs.gov.br/noticia/view/732/portaria-0362026-nomeia-secretario-jordana-secretaria-municipal-de-acao-social",
+      "title": "Araricá/RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.andredarocha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.andredarocha.rs.gov.br/noticias.php",
+    "articleCount": 679,
+    "sampleArticle": {
+      "url": "https://www.andredarocha.rs.gov.br/noticias_ver.php?id_noticia=1000264",
+      "title": "ATENDIMENTOS FONOAUDIOLÓGICOS EM NOSSA UBSATENDIMENTOS FONOAUDIOLÓGICOS EM NOSSA UBS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pmaratiba.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmaratiba.com.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.pmaratiba.com.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.arroiodosal.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arroiodosal.rs.gov.br/noticias",
+    "articleCount": 13,
+    "sampleArticle": {
+      "url": "https://arroiodosal.rs.gov.br/2022/09/01/mapa-municipal-2/",
+      "title": "Prefeitura de Arroio do Sal",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.arroiodotigre.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arroiodotigre.rs.gov.br/site/noticias",
+    "articleCount": 25,
+    "sampleArticle": {
+      "url": "https://www.arroiodotigre.rs.gov.br/site/2024/02/16/profissionais-participam-de-capacitacao-sobre-merenda-escolar/",
+      "title": "PROFISSIONAIS PARTICIPAM DE CAPACITAÇÃO SOBRE MERENDA ESCOLAR",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.arroiodosratos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arroiodosratos.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.arroiodosratos.rs.gov.br/noticia---cmear/carta-aberta-2024/",
+      "title": "Carta Aberta aos (às) candidatos (as) a cargos eletivos em Arroio dos Ratos",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.arroiodomeio.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arroiodomeio.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://arroiodomeio.rs.gov.br/noticia/visualizar/id/1997/?oficina-comunitaria-vai-orientar-moradores-sobre-preparacao-e-resposta-a-emergencias.html",
+      "title": "InícioInformativosNotíciasOficina comunitária vai orientar moradores sobre preparação e resposta a emergências Oficina c",
+      "date": "2026-03-15T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.arroiogrande.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arroiogrande.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.arroiogrande.rs.gov.br/blog/1/assessoria-imprensa/2",
+      "title": "Prefeitura Municipal de Arroio Grande",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.arroiodopadre.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arroiodopadre.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.arroiodopadre.rs.gov.br/portal/noticias/0/3/1952/arroio-do-padre-recebe-quase-r-200-mil-em-emendas-parlamentares-para-fortalecer-a-saude-primaria/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.acegua.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.arvorezinha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.arvorezinha.rs.gov.br/noticia",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://www.arvorezinha.rs.gov.br/noticia/8118/55-pessoas-serao-contempladas-com-o-programa-terra-forte/",
+      "title": "Notícia - 55 pessoas serão contempladas com o Programa Terra Forte",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.augustopestana.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.augustopestana.rs.gov.br/noticia",
+    "articleCount": 35,
+    "sampleArticle": {
+      "url": "https://augustopestana.rs.gov.br/noticia/visualizar/id/2620/?prefeitura-abre-inscricoes-para-doacao-de-casas-populares.html",
+      "title": "InícioInformativosNotíciasPrefeitura abre inscrições para doação de casas populares Prefeitura abre inscrições para doaç",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.antonioprado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.antonioprado.rs.gov.br/noticias.php",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.antonioprado.rs.gov.br/noticias_int.php?id=2967",
+      "title": "Not�cias",
+      "date": "2026-03-11T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.balneariopinhal.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.balneariopinhal.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://balneariopinhal.rs.gov.br/noticia/visualizar/id/2127/?balneario-pinhal-investe-em-qualificacao-profissional-com-cursos-das-carretas-do-saber.html",
+      "title": "InícioInformativosNotíciasBalneário Pinhal investe em qualificação profissional com cursos das Carretas do Saber Balneár",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.bage.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.bage.rs.gov.br/noticias",
+    "articleCount": 29,
+    "sampleArticle": {
+      "url": "https://www.bage.rs.gov.br/noticias/prefeitura-implementa-iniciativa-inedita-com-iluminacao-de-led-na-zona-rural",
+      "title": "Prefeitura implementa iniciativa inédita com iluminação de LED na zona rural",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "plone",
+    "error": null
+  },
+  "www.baraodotriunfo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.baraodotriunfo.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.baraodotriunfo.rs.gov.br/noticias/programa-agrinota-2026-produtor-rural",
+      "title": "🌾🎉 𝗣𝗥𝗢𝗚𝗥𝗔𝗠𝗔 𝗔𝗚𝗥𝗜𝗡𝗢𝗧𝗔 𝟮𝟬𝟮𝟲 – 𝗣𝗥𝗢𝗗𝗨𝗧𝗢𝗥 𝗥𝗨𝗥𝗔𝗟 🎉🌾",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.barao.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.barradoribeiro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.barradoribeiro.rs.gov.br/noticias",
+    "articleCount": 40,
+    "sampleArticle": {
+      "url": "https://www.barradoribeiro.rs.gov.br/noticiasView/621_Atencao-para-o-novo-horario-de-atendimento.html",
+      "title": "Leia Mais",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.barradorioazul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.barradorioazul.rs.gov.br/noticias",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://www.barradorioazul.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.barradoquarai.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.barradoquarai.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://barradoquarai.rs.gov.br/noticia/visualizar/id/1045/?prefeitura-municipal-avanca-na-ampliacao-da-emef-manoel-imas-dos-santos-no-interior-do-municipio.html",
+      "title": "InícioInformativosNotíciasPREFEITURA MUNICIPAL AVANÇA NA AMPLIAÇÃO DA E.M.E.F MANOEL IMAS DOS SANTOS NO INTERIOR DO MUNI",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.barracao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.barracao.rs.gov.br/noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://www.barracao.rs.gov.br/noticias_ver.php?id_noticia=801",
+      "title": "Noite especial marca neste sábado a escolha da nova Realeza da Festa do Pinhão de BarracãoNoite especial marca neste sáb",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.barrafunda.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.barrafunda.rs.gov.br/noticia",
+    "articleCount": 29,
+    "sampleArticle": {
+      "url": "https://www.barrafunda.rs.gov.br/noticia/view/3144/pais-de-integrantes-do-grupo-multiartistico-participam-de-reuniao-no-cras",
+      "title": "Pais de integrantes do grupo multiartístico participam de reunião no CRAS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.aurea.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.aurea.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 3,
+    "sampleArticle": {
+      "url": "https://aurea.rs.gov.br/2026/03/02/nota-de-esclarecimento/",
+      "title": "NOTA DE ESCLARECIMENTO",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.baraodecotegipe.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.baraodecotegipe.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.baraodecotegipe.rs.gov.br/site/publicacao/2025-11-10-14-01-53?code=322/",
+      "title": "GANHADORES DA NOTA FISCAL GAÚCHA",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.barradoguarita.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.boavistadoburica.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.boavistadoburica.rs.gov.br/site/noticias",
+    "articleCount": 46,
+    "sampleArticle": {
+      "url": "https://www.boavistadoburica.rs.gov.br/site/conteudos/2435-bandeira-e-brasao",
+      "title": "Boa Vista do Buricá",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.barroscassal.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.benjaminconstantdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.benjaminconstantdosul.rs.gov.br/noticias.php",
+    "articleCount": 202,
+    "sampleArticle": {
+      "url": "https://www.benjaminconstantdosul.rs.gov.br/noticias_ver.php?id_noticia=366",
+      "title": "Técnicos da SDR visitam escritório da Emater e reforçam parceria com Benjamin Constant do SulTécnicos da SDR visitam esc",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.boavistadocadeado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.boavistadocadeado.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.boavistadocadeado.rs.gov.br/noticia/visualizar/id/2468/?edital-matriculas-e-rematriculas.html",
+      "title": "InícioInformativosNotíciasEDITAL MATRÍCULAS E REMATRÍCULAS EDITAL MATRÍCULAS E REMATRÍCULAS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.boavistadoincra.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.boavistadoincra.rs.gov.br/noticia",
+    "articleCount": 19,
+    "sampleArticle": {
+      "url": "https://www.boavistadoincra.rs.gov.br/noticia/view/1708/na-sexta-feira-dia-06-de-marco-aconteceu-o-21-baile-da-mulher",
+      "title": "Boa Vista do Incra - RS | Na sexta-feira, dia 06 de março, aconteceu o 21º Baile da Mulher",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.bomjesus.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.bomjesus.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.bomjesus.rs.gov.br/noticias/feirao-de-empregos-1",
+      "title": "Feirão de Empregos",
+      "date": "2025-12-09T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.boavistadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.boavistadosul.rs.gov.br/noticia",
+    "articleCount": 29,
+    "sampleArticle": {
+      "url": "https://www.boavistadosul.rs.gov.br/noticia/view/609/prefeitura-garante-transparencia-na-lista-de-espera-da-saude-13",
+      "title": "Prefeitura garante transparência na lista de espera da saúde",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.bomretirodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.bomretirodosul.rs.gov.br/artigos",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.bomretirodosul.rs.gov.br/artigos/item/2821",
+      "title": "Prefeitura de Bom Retiro do Sul",
+      "date": "2026-02-03T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.bomprincipio.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.bomprincipio.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.bomprincipio.rs.gov.br/noticia/view/6353/arte-que-transforma-teatro-ainda-tem-vagas-para-diferentes-idades",
+      "title": "Bom Principio - RS | Arte que transforma: teatro ainda tem vagas para diferentes idades",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.bossoroca.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.bossoroca.rs.gov.br/site/noticias",
+    "articleCount": 42,
+    "sampleArticle": {
+      "url": "https://www.bossoroca.rs.gov.br/site/conteudos/2166-ata-de-instalacao-do-municipio",
+      "title": "Prefeitura de Bossoroca - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.bentogoncalves.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.braga.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.braga.rs.gov.br/site/noticias",
+    "articleCount": 66,
+    "sampleArticle": {
+      "url": "https://www.braga.rs.gov.br/site/conteudos/1319-contatos",
+      "title": "Prefeitura Municipal de Braga - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.boqueirãodoleão.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.boavistadasmissoes.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.bozano.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.brochier.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.brochier.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.brochier.rs.gov.br/noticia/view/1403/a-cooperativa-sicredi-ouro-branco-destinou-r-12-milhoes-a-comunidade-de-brochier-ao-longo-de-2025",
+      "title": "Brochier - RS | A cooperativa Sicredi Ouro Branco destinou R$ 1,2 milhões à comunidade de Brochier ao longo de 2025.",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.butia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.butia.rs.gov.br/noticias",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://butia.rs.gov.br/noticias/prefeitura-de-butia-publica-retificacao-no-edital-de-convocacao-para-o-curso-de-acs-e-ace/",
+      "title": "Prefeitura de Butiá publica retificação no edital de convocação para o curso de ACS e ACE",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.cacapavadosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.cacequi.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.cachoeiradosul.gov.rs.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.caibate.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.caibate.rs.gov.br/site/noticias",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.caibate.rs.gov.br/site/conteudos/689-educacao",
+      "title": "Prefeitura Municipal de Caibaté - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.caciquedoble.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.caciquedoble.rs.gov.br/noticias.php",
+    "articleCount": 1994,
+    "sampleArticle": {
+      "url": "https://www.caciquedoble.rs.gov.br/noticias_ver.php?id_noticia=2121",
+      "title": null,
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pmcamargo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmcamargo.rs.gov.br/noticias",
+    "articleCount": 640,
+    "sampleArticle": {
+      "url": "https://www.pmcamargo.rs.gov.br/noticia/923/reuniao-de-planejamento-das-atividades-de-educacao-fiscal",
+      "title": "Reunião de planejamento das atividades de Educação Fiscal",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.bomprogresso.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.campestredaserra.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.campestredaserra.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.campestredaserra.rs.gov.br/noticias/processo-seletivo-simplificado-n0-003-2026",
+      "title": "PROCESSO SELETIVO SIMPLIFICADO N°. 003/2026",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.campinadasmissoes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.campinadasmissoes.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.campinadasmissoes.rs.gov.br/noticias/atendimento-no-posto-de-saude-paca-norte",
+      "title": "Atendimento no Posto de Saúde | Paca Norte",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.cachoeirinha.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.cambaradosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cambaradosul.rs.gov.br/noticias.php",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://www.cambaradosul.rs.gov.br/noticias_int.php?id=1631",
+      "title": "Not�cias",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.caicara.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.campobom.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.campobom.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 2,
+    "sampleArticle": null,
+    "platform": "wordpress",
+    "error": "Listing OK (2 links) but sample article fetch failed: Request failed with status code 404"
+  },
+  "www.camaqua.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.candidogodoi.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.candidogodoi.rs.gov.br/site/noticias",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.candidogodoi.rs.gov.br/site/conteudos/2961-perguntas-frequentes",
+      "title": "Município de Cândido Godói",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.candelaria.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.camponovo.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.camposborges.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.camposborges.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 14,
+    "sampleArticle": {
+      "url": "https://www.camposborges.rs.gov.br/infraestrutura-e-valorizacao-local-obras-avancam-na-rua-vicente-de-pallotti/",
+      "title": "Infraestrutura e Valorização Local: Obras Avançam na Rua Vicente de Pallotti",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.cangucu.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cangucu.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.cangucu.rs.gov.br/portal/noticias/0/3/7022/atencao-instabilidade-no-numero-192-do-samu/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.canela.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.campinasdosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.canudosdovale.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.capaodocipo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.capaodocipo.rs.gov.br/site/noticias",
+    "articleCount": 41,
+    "sampleArticle": {
+      "url": "https://www.capaodocipo.rs.gov.br/site/conteudos/2928-aberturaoficialda6%C2%AAexpocipo",
+      "title": "Prefeitura Municipal de Capão do Cipó - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.capaodacanoa.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.capaodacanoa.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.capaodacanoa.rs.gov.br/noticia/view/863/capao-da-canoa-recebe-r-450-mil-para-aquisicao-de-playgrounds-em-espacos-comunitarios",
+      "title": "Capão da Canoa | Capão da Canoa recebe R$ 450 mil para aquisição de playgrounds em espaços comunitários",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.capaodoleao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.capaodoleao.rs.gov.br/portal/noticias",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.capaodoleao.rs.gov.br/portal/noticias/0/3/18510/carnaval-de-capao-do-leao-2026-reune-grande-publico-e-reafirma-evento-como-um-dos-maiores-da-regiao/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.capeladesantana.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.capeladesantana.rs.gov.br/noticia",
+    "articleCount": 29,
+    "sampleArticle": {
+      "url": "https://www.capeladesantana.rs.gov.br/noticia/view/3253/edital-de-chamada-publica-n-001smec2026-edital-de-fomento-a-cultura-no-municipio-de-capela-de-santanars",
+      "title": "EDITAL DE CHAMADA PÚBLICA Nº 001/SMEC/2026 EDITAL DE FOMENTO À CULTURA NO MUNICÍPIO DE CAPELA DE SANTANA/RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.capitao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.capitao.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.capitao.rs.gov.br/encantado-e-capitao-primeiro-passo-para-um-projeto-na-suinocultura/",
+      "title": "LOGO",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.canoas.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.canoas.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.canoas.rs.gov.br/noticias/canoas-recebe-etapa-estadual-do-campeonato-indoor-de-tiro-com-arco/",
+      "title": "Canoas recebe etapa estadual do campeonato indoor de tiro com arco",
+      "date": "2026-03-14T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.capaobonitodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.capaobonitodosul.rs.gov.br/noticia/categoria/",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.capaobonitodosul.rs.gov.br/categorias-de-base-estreiam-na-copa-amunor/",
+      "title": "Categorias de Base estreiam na Copa Amunor",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.caraa.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.carlosbarbosa.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.carlosbarbosa.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.carlosbarbosa.rs.gov.br/noticias/prefeitura-orienta-populacao-sobre-prevencao-de-incendios-domesticos-no-periodo-de-frio",
+      "title": "Prefeitura e Bombeiros Voluntários orientam população sobre prevenção de incêndios domésticos",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.carlosgomes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.carlosgomes.rs.gov.br/site/noticias",
+    "articleCount": 26,
+    "sampleArticle": {
+      "url": "https://www.carlosgomes.rs.gov.br/site/publicacao/turno-integral-conta-com-aulas-de-natacao-para-o-desenvolvimento-dos-alunos?code=222/",
+      "title": "Turno integral conta com aulas de natação para o desenvolvimento dos alunos",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.carazinho.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.catuipe.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.catuipe.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.catuipe.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.casca.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.casca.rs.gov.br/portal/noticias",
+    "articleCount": 32,
+    "sampleArticle": {
+      "url": "https://www.casca.rs.gov.br/portal/noticias/0/3/2248/casca-celebra-o-dia-da-mulher-com-palestra-de-cristina-ranzolin/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.caxias.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.caxias.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.caxias.rs.gov.br/noticias/2026/03/parada-de-pascoa-caminho-da-docura-movimentou-o-centro-neste-domingo",
+      "title": "Parada de Páscoa “Caminho da Doçura” movimentou o centro neste domingo",
+      "date": "2026-03-15T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "nuxt",
+    "error": null
+  },
+  "www.candiota.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.caseiros.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.caseiros.rs.gov.br/noticias.php",
+    "articleCount": 50,
+    "sampleArticle": {
+      "url": "https://www.caseiros.rs.gov.br/noticias_ver.php?id_noticia=2068",
+      "title": "EDITAL DE INFORMAÇÃO: IPTUEDITAL DE INFORMAÇÃO: IPTU",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pmcerrobranco.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmcerrobranco.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.pmcerrobranco.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.cerrito.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cerrito.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.cerrito.rs.gov.br/portal/noticias/0/3/2917/prefeitura-abre-processo-seletivo-para-formacao-de-cadastro-reserva-na-funcao-de-operario/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.cerrolargo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cerrolargo.rs.gov.br/site/noticias",
+    "articleCount": 45,
+    "sampleArticle": {
+      "url": "https://www.cerrolargo.rs.gov.br/site/conteudos/2038-o-municipio",
+      "title": "Cerro Largo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.centenario.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.centenario.rs.gov.br/noticias.php",
+    "articleCount": 73,
+    "sampleArticle": {
+      "url": "https://www.centenario.rs.gov.br/noticias_ver.php?id_noticia=1140",
+      "title": "Lista de espera matr�culas EMEI Crian�a FelizLista de espera matr�culas EMEI Crian�a Feliz",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.chapada.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.chapada.rs.gov.br/noticia",
+    "articleCount": 27,
+    "sampleArticle": {
+      "url": "https://www.chapada.rs.gov.br/noticia/view/1732/prefeito-recebe-frente-parlamentar-da-agricultura-pecuaria-e-agroindustria",
+      "title": "Prefeito recebe Frente Parlamentar da Agricultura, Pecuária e Agroindústria",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.charqueadas.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.charqueadas.rs.gov.br/noticias",
+    "articleCount": 24,
+    "sampleArticle": {
+      "url": "https://www.charqueadas.rs.gov.br/artigo/32326/ouvidoria-acesso-a-informacao",
+      "title": "Prefeitura de Charqueadas",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "laravel",
+    "error": null
+  },
+  "www.charrua.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.capivaridosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.cerrogrande.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.cerrograndedosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cerrograndedosul.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.cerrograndedosul.rs.gov.br/aviso-de-manifestacao-de-interesse-de-contratacao-15-2026/",
+      "title": "Aviso de manifestação de interesse de contratação 15/2026",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.ciriaco.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ciriaco.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.ciriaco.rs.gov.br/noticias/informativo-pit-no32",
+      "title": "INFORMATIVO PIT Nº32",
+      "date": "2025-12-29T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.chuvisca.rs.gov.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.colinasrs.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.condor.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.condor.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.condor.rs.gov.br/prefeito-romulo-teixeira-participa-da-expodireto-cotrijal-e-assina-convenio-do-programa-cidade-empreendedora/",
+      "title": "Prefeito Rômulo Teixeira participa da Expodireto Cotrijal e assina convênio do programa Cidade Empreendedora",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.colorado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.colorado.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://colorado.rs.gov.br/pt_BR/noticias/721/1-rustica-cida",
+      "title": "Not�cias",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.cidreira.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.coqueirobaixo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.coqueirobaixo.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.coqueirobaixo.rs.gov.br/noticia/visualizar/id/1316/?-secretaria-de-obras-intensifica-trabalhos-visando-a-volta-as-aulas-em-coqueiro-baixo.html",
+      "title": "InícioInformativosNotícias🚧 Secretaria de Obras intensifica trabalhos visando a volta às aulas em Coqueiro Baixo 🚧 Sec",
+      "date": "2026-03-15T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.coronelbarros.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.coronelbarros.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.coronelbarros.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.coqueirosdosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.coronelpilar.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.coronelbicaco.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.constantina.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.cotipora.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cotipora.rs.gov.br/noticia",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.cotipora.rs.gov.br/noticia/view/2795/imersao-estrategica-para-qualificar-servicos-publicos",
+      "title": "Cotiporã-RS Imersão Estratégica para Qualificar Serviços Públicos",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.cristal.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cristal.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.cristal.rs.gov.br/noticias/seminario-marca-inicio-do-1o-semestre-letivo-na-rede-municipal",
+      "title": "Seminário marca início do 1º semestre letivo na rede municipal",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.crissiumal-rs.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.crissiumal-rs.com.br/noticia",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.crissiumal-rs.com.br/noticia/3404/atencao-crissiumal/",
+      "title": "Notícia - Atenção, Crissiumal!",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pmcoxilha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmcoxilha.rs.gov.br/noticias.php",
+    "articleCount": 3699,
+    "sampleArticle": {
+      "url": "https://www.pmcoxilha.rs.gov.br/noticias_ver.php?id_noticia=4691",
+      "title": "PROCESSO SELETIVO Nº 01/2026PROCESSO SELETIVO Nº 01/2026",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.cruzaltense.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.cruzaltense.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.cruzaltense.rs.gov.br/noticia/categoria",
+      "title": "Governo Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.cruzeirodosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.chui.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.derrubadas-rs.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.dezesseisdenovembro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.dezesseisdenovembro.rs.gov.br/site/noticias",
+    "articleCount": 19,
+    "sampleArticle": {
+      "url": "https://www.dezesseisdenovembro.rs.gov.br/site/conteudos/472-pgabinete-do-prefeitop",
+      "title": "Município de Dezesseis de Novembro - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.dilermandodeaguiar.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.dilermandodeaguiar.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://dilermandodeaguiar.rs.gov.br/noticias/em-reuniao-com-representante-de-empresa-de-transporte-coletivo-administracao-municipal-busca-alternativas-para-restabelecer-transporte-intermunicipal-em-dilermando-de-aguiar/",
+      "title": "Em reunião com representante de empresa de transporte coletivo, administração municipal busca alternativas para restabel",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.cruzalta.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.doisirmaosdasmissoes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.doisirmaosdasmissoes.rs.gov.br/noticias",
+    "articleCount": 5,
+    "sampleArticle": {
+      "url": "https://www.doisirmaosdasmissoes.rs.gov.br/2021/05/25/acesse-o-gabarito-preliminar-do-processo-seletivo-simplificado/",
+      "title": "Acesse o Gabarito Preliminar do Processo Seletivo Simplificado",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.cristaldosul.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.doislajeados.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.doislajeados.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.doislajeados.rs.gov.br/noticias/situacao-de-emergencia-devido-a-estiagem",
+      "title": "SITUAÇÃO DE EMERGÊNCIA DEVIDO À ESTIAGEM",
+      "date": "2026-03-10T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.domfeliciano.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.domfeliciano.rs.gov.br/noticias/todas",
+    "articleCount": 4,
+    "sampleArticle": {
+      "url": "https://domfeliciano.rs.gov.br/edital-de-convocacao-de-processo-seletivo-18-2026-de-12-de-fevereiro-de-2026/",
+      "title": "EDITAL DE CONVOCAÇÃO DE PROCESSO SELETIVO 18/2026, DE 12 DE FEVEREIRO DE 2026",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.dompedrodealcantara.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.dompedrodealcantara.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://dompedrodealcantara.rs.gov.br/noticia/visualizar/id/1744/?dom-pedro-de-alcantara-garante-pavimentacao-de-950-metros-pelo-programa-pavimenta-3.html",
+      "title": "InícioInformativosNotíciasDom Pedro de Alcântara garante pavimentação de 950 metros pelo Programa Pavimenta 3 Dom Pedro ",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.donafrancisca.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pdrmcard.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pdrmcard.com.br/site/noticias",
+    "articleCount": 72,
+    "sampleArticle": {
+      "url": "https://www.pdrmcard.com.br/site/conteudos/4319-ouvidoria",
+      "title": "Prefeitura de Doutor Maurício Cardoso - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.dompedrito.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.davidcanabarro.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.doutorricardo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.doutorricardo.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://doutorricardo.rs.gov.br/noticia/visualizar/id/5279/?grupo-felicita.html",
+      "title": "InícioInformativosNotíciasGrupo Felicità Grupo Felicità",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.encantado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.encantado.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://encantado.rs.gov.br/noticia/visualizar/id/6773/?criterios-para-selecao-de-familias---novas-moradias-sehab.html",
+      "title": "InícioInformativosNotíciasCritérios para seleção de famílias - Novas Moradias SEHAB Critérios para seleção de famílias -",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.eldorado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.eldorado.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.eldorado.rs.gov.br/portal/noticias/0/3/5225/novo-endereco-da-secretaria-de-habitacao/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.doisirmaos.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.entreijuis.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.entreijuis.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.entreijuis.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.entreriosdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.entreriosdosul.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://entreriosdosul.rs.gov.br/2026/03/13/comunidade-de-entre-rios-do-sul-mantem-mobilizacao-e-protesto-pela-pavimentacao-da-ers-483/",
+      "title": "Comunidade de Entre Rios do Sul mantém mobilização e protesto pela pavimentação da ERS-483",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.pmerechim.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmerechim.rs.gov.br/noticias",
+    "articleCount": 36,
+    "sampleArticle": {
+      "url": "https://www.pmerechim.rs.gov.br/noticias/administracao",
+      "title": "Prefeitura Municipal de Erechim",
+      "date": "2026-03-14T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.encruzilhadadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.encruzilhadadosul.rs.gov.br/portal/noticias",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.encruzilhadadosul.rs.gov.br/portal/noticias/0/3/3591/o-imposto-sobre-a-transmissao-de-bens-imoveis-itbi-e-o-tributo-que-deve-ser-pago-pelo-adquirente-na-aquisicao-de-um-imovel-em-encruzilhada-do-sul-o-imposto-deve-ser-pago-antes-da-transmissao-no-ca",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.ernestina.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ernestina.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://ernestina.rs.gov.br/2026/03/13/ernestina-conquista-mais-r-200-mil-para-a-saude-enviados-pelo-deputado-dionilso-marcon/",
+      "title": "Ernestina conquista mais R$ 200 mil para a Saúde enviados pelo deputado Dionilso Marcon",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.ervalgrande.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ervalgrande.rs.gov.br/noticias.php",
+    "articleCount": 98,
+    "sampleArticle": {
+      "url": "https://www.ervalgrande.rs.gov.br/noticias_ver.php?id_noticia=5441",
+      "title": "INFORMATIVO PIT N� 33 � FEVEREIRO/2026",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.engenhovelho.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.esperancadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.esperancadosul.rs.gov.br/site/noticias",
+    "articleCount": 47,
+    "sampleArticle": {
+      "url": "https://www.esperancadosul.rs.gov.br/site/conteudos/4452-gabinete-do-prefeito",
+      "title": "Esperança do Sul",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.esmeralda.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.espumoso.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.espumoso.rs.gov.br/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://espumoso.rs.gov.br/2026/03/12/prefeitura-de-espumoso-abre-chamamento-publico-para-credenciamento-de-prestadores-de-servicos/",
+      "title": "Prefeitura de Espumoso abre chamamento público para credenciamento de prestadores de serviços",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.estanciavelha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.estanciavelha.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://estanciavelha.rs.gov.br/noticia/visualizar/id/4075/?estancia-velha-investindo-no-futuro-com-foco-na-educacao.html",
+      "title": "InícioO MunicípioNotíciasEstância Velha investindo no futuro com foco na Educação Estância Velha investindo no futuro co",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.esteio.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.ervalseco.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.erebango.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.erebango.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://erebango.rs.gov.br/nota-oficial-combate-a-fakenews-desinformacao/",
+      "title": "NOTA OFICIAL - COMBATE A FAKENEWS (DESINFORMAÇÃO)",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.estrelavelha.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.estrela.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pmestacao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmestacao.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://pmestacao.rs.gov.br/ganhadores-nota-fiscal-gaucha-sorteio-de-fevereiro-4/",
+      "title": "GANHADORES NOTA FISCAL GAÚCHA - SORTEIO DE FEVEREIRO",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.faxinaldosoturno.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.faxinaldosoturno.rs.gov.br/midias/noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.faxinaldosoturno.rs.gov.br/midias/noticias/aviso-de-ponto-facultativo-de-carnaval/8313",
+      "title": null,
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.eugeniodecastro.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.fagundesvarela.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.feliz.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.feliz.rs.gov.br/noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://www.feliz.rs.gov.br/noticia/3801/estao-abertas-as-inscricoes-para-a-escolha-das-soberanas-de-feliz",
+      "title": "Destaques da Feliz",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.fazendavilanova.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.fazendavilanova.rs.gov.br/noticia",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.fazendavilanova.rs.gov.br/noticia/view/1843/nota-de-pesar",
+      "title": "NOTA DE PESAR",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.chiapetta.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.chiapetta.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://chiapetta.rs.gov.br/2024/06/25/chiapetta-rs-a-13a-melhor-cidade-para-morar-no-brasil/",
+      "title": "Chiapetta, RS: A 13ª Melhor Cidade para Morar no Brasil",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.faxinalzinho.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.farroupilha.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.formigueiro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.formigueiro.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.formigueiro.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.florianopeixoto.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.floresdacunha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.floresdacunha.rs.gov.br/noticias.php",
+    "articleCount": 40,
+    "sampleArticle": {
+      "url": "https://www.floresdacunha.rs.gov.br/noticias_int.php?id=8059",
+      "title": "Not�cias",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.forquetinha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.forquetinha.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.forquetinha.rs.gov.br/portal/noticias/0/3/2053/-forquetinha-ja-vive-o-clima-da-escolha-das-soberanas/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.garruchos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.garruchos.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.garruchos.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.fontouraxavier.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.gaurama.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.gaurama.rs.gov.br/site/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.gaurama.rs.gov.br/site/publicacao/brigada-militar-de-gaurama-recebe-nova-viatura--a-conquista-contou-com-a-colaboracao-de-empresarios-do-municipio-?code=694/",
+      "title": "Brigada Militar de Gaurama recebe nova viatura. A conquista contou com a colaboração de empresários do município.",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.garibaldi.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.garibaldi.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.garibaldi.rs.gov.br/noticias/garibaldi-vintage-transforma-o-centro-historico-nesta-sexta-feira",
+      "title": "Garibaldi Vintage transforma o Centro Histórico nesta sexta-feira",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.fredericowestphalen.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.fredericowestphalen.rs.gov.br",
+    "articleCount": 4,
+    "sampleArticle": null,
+    "platform": "bootstrap",
+    "error": "Listing OK (4 links) but sample article fetch failed: Request failed with status code 404"
+  },
+  "www.girua.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.girua.rs.gov.br/site/noticias",
+    "articleCount": 43,
+    "sampleArticle": {
+      "url": "https://www.girua.rs.gov.br/site/conteudos/2-gabinete-do-prefeito",
+      "title": "Giruá",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.generalcamara.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pmgentil.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pmfv.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmfv.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://pmfv.rs.gov.br/%e2%9c%a8-uma-noite-de-celebracao-e-cores-%f0%9f%8c%88%f0%9f%8e%b6",
+      "title": "Prefeitura Municipal de Fortaleza dos Valos",
+      "date": "2026-03-09T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.glorinha.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pmgv.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmgv.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "http://www.pmgv.rs.gov.br/site/2024/12/23/",
+      "title": "Aniversário Município",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.gramado.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.guabiju.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.guabiju.rs.gov.br/noticia",
+    "articleCount": 21,
+    "sampleArticle": {
+      "url": "https://www.guabiju.rs.gov.br/noticia/view/574/informativo-pit-n-33-fevereiro2026",
+      "title": "Prefeitura Municipal de Guabiju/RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.guapore.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.guapore.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.guapore.rs.gov.br/noticias/administracao-municipal-reune-se-com-a-diretoria-da-corsan",
+      "title": "​​​​​​​Administração Municipal reúne-se com a diretoria da Corsan",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.guaranidasmissoes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.guaranidasmissoes.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.guaranidasmissoes.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.gravatai.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.harmonia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.harmonia.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.harmonia.rs.gov.br/noticias/3304/so-elas-uma-noite-so-para-mulheres",
+      "title": "Prefeitura Municipal de Harmonia",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.herveiras.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.herveiras.rs.gov.br/noticias",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://www.herveiras.rs.gov.br/noticias_ver.php?id_noticia=92771",
+      "title": "Prefeitura de Herveiras adquire retroescavadeira Prefeitura de Herveiras adquire retroescavadeira",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.herval.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "gramadoxavier.atende.net": {
+    "status": "ok",
+    "newsUrl": "https://gramadoxavier.atende.net",
+    "articleCount": 3,
+    "sampleArticle": {
+      "url": "https://gramadoxavier.atende.net/cidadao/noticia/silvia-kuster-assumira-a-secretaria-de-educacao",
+      "title": "MUNIC�PIO DE GRAMADO XAVIER Portal do Cidad�o",
+      "date": "2026-03-06T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.guaiba.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.ibarama.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ibarama.rs.gov.br/noticias",
+    "articleCount": 5,
+    "sampleArticle": {
+      "url": "https://www.ibarama.rs.gov.br/noticias/elabora-o-do-calend-rio-de-eventos-2026-625",
+      "title": "Notícias",
+      "date": "2026-03-16T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.horizontina.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.humaita.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.humaita.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://humaita.rs.gov.br/arquivos/noticias/inscricoes-abertas-para-o-conselho-tutelar",
+      "title": "INSCRIÇÕES ABERTAS PARA O CONSELHO TUTELAR",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.hulhanegra.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.hulhanegra.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://hulhanegra.rs.gov.br/noticia/visualizar/id/1969/?prefeitura-implanta-desvio-na-santa-elmira-e-reduz-percurso-em-mais-de-50-km.html",
+      "title": "InícioInformativosNotíciasPrefeitura implanta desvio na Santa Elmira e reduz percurso em mais de 50 km Prefeitura implan",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.gramadodosloureiros.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.ibiruba.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ibiruba.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://ibiruba.rs.gov.br/ibiruba-garante-1-milhao-de-reais-do-programa-pavimenta-3-rs-e-reforca-compromisso-com-infraestrutura-e-desenvolvimento/",
+      "title": "IBIRUBÁ GARANTE 1 MILHÃO DE REAIS DO PROGRAMA PAVIMENTA 3 RS E REFORÇA COMPROMISSO COM INFRAESTRUTURA E DESENVOLVIMENTO",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.ibiraiaras.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ibiraiaras.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.ibiraiaras.rs.gov.br/centro-esportivo-leomar-barea-foi-palco-de-grande-final-na-ultima-sexta-feira/",
+      "title": "CENTRO ESPORTIVO LEOMAR BAREA FOI PALCO DE GRANDE FINAL NA ÚLTIMA SEXTA-FEIRA",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.ilopolis.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ilopolis.rs.gov.br/noticias",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://www.ilopolis.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ijui.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ijui.rs.gov.br/noticia",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.ijui.rs.gov.br/noticia/5058/estudantes-do-1-ano-da-emf-joao-goulart-recebem-primeiro-caderno-em-atividade-especial/",
+      "title": "Notícia - Estudantes do 1º ano da EMF João Goulart recebem primeiro caderno em atividade especial",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.imigrante-rs.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.imigrante-rs.com.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.imigrante-rs.com.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ibirapuita.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ibirapuita.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://ibirapuita.rs.gov.br/noticia/visualizar/id/2739/?oficina-de-gestantes-ciclo-do-amor-e-retomada-em-ibirapuita.html",
+      "title": "InícioInformativosNotíciasOficina de gestantes “Ciclo do Amor” é retomada em Ibirapuitã Oficina de gestantes “Ciclo do A",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.independencia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.independencia.rs.gov.br/site/noticias",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.independencia.rs.gov.br/site/conteudos/778-galeria-de-prefeitos",
+      "title": "Prefeitura Municipal de Independência - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ibiaca.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ibiaca.rs.gov.br/noticias.php",
+    "articleCount": 3665,
+    "sampleArticle": {
+      "url": "https://www.ibiaca.rs.gov.br/noticias_ver.php?id_noticia=3745",
+      "title": "4ª RODADA DA 4ª TAÇA MUNICIPAL DE FUTSAL DE IBIAÇÁ ACONTECE NESTA SEXTA-FEIRA (13)4ª RODADA DA 4ª TAÇA MUNICIPAL DE FUTS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pmipe.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmipe.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.pmipe.rs.gov.br/noticias/ipe-realiza-coleta-de-residuos-eletronicos-ate-o-dia-25-de-marco",
+      "title": "Ipê realiza coleta de resíduos eletrônicos até o dia 25 de março",
+      "date": "2026-03-10T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www imbe.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.itaara.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.itaara.rs.gov.br/noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://itaara.rs.gov.br/noticias/aviso-de-interdicao-de-via-publica-3/",
+      "title": "Aviso de Interdição de Via Pública",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.itacurubi.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.itacurubi.rs.gov.br/site/noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://www.itacurubi.rs.gov.br/site/conteudos/688-prefeito-gelso-dos-santos-soares",
+      "title": "Município de Itacurubi - RS | Prefeitura Municipal de Itacurubi - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.igrejinha.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.itaqui.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.itaqui.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.itaqui.rs.gov.br/noticias/2026/03/prefeito-recebe-convite-para-prestigiar-show-de-jonathan-pacheco.html",
+      "title": "Siga nossas Redes Sociais",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.inhacora.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.irai.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.ivora.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ivora.rs.gov.br/midias/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.ivora.rs.gov.br/midias/noticias/ivor-realiza-pagamentos-de-valores-retroativos-a-servidores/4576",
+      "title": "Conheça",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ivoti.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ivoti.rs.gov.br/noticias",
+    "articleCount": 29,
+    "sampleArticle": {
+      "url": "https://www.ivoti.rs.gov.br/categorias/noticias/noticias-de-administracao",
+      "title": "Notícias de Administração",
+      "date": "2025-11-14T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.itati.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.itatibadosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.itapuca.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.itapuca.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 13,
+    "sampleArticle": {
+      "url": "http://www.itapuca.rs.gov.br/boletim-epidemiologico-da-covid-19-atualizado-em-itapuca-rs/",
+      "title": "Boletim Epidemiológico da COVID-19 atualizado em Itapuca-RS",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.jaguarao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.jaguarao.rs.gov.br/noticias",
+    "articleCount": 5,
+    "sampleArticle": {
+      "url": "https://www.jaguarao.rs.gov.br/noticias-da-santa-casa/",
+      "title": "NOTÍCIAS DA SANTA CASA",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.jaguari.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.jaguari.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.jaguari.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.jacutinga.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.jacutinga.rs.gov.br/noticias/todas",
+    "articleCount": 4,
+    "sampleArticle": {
+      "url": "https://jacutinga.rs.gov.br/drive-da-vacinacao-na-proxima-quarta-feira-dia-27-de-julho-para-criancas-de-3-a-5-anos/",
+      "title": "Drive da vacinação na próxima quarta-feira, dia 27 de julho para crianças de 3 a 5 anos",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.jari.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.jari.rs.gov.br/midias/noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.jari.rs.gov.br/midias/noticias/edital-03-2026-da-homologao/6143",
+      "title": "Conheça",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.joia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.joia.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.joia.rs.gov.br/noticia/visualizar/id/2465/?joia-promove-palestra-sobre-empreendedorismo-feminino-no-mes-da-mulher.html",
+      "title": "InícioInformativosNotíciasJóia promove palestra sobre empreendedorismo feminino no Mês da Mulher Jóia promove palestra s",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.ipirangadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ipirangadosul.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://ipirangadosul.rs.gov.br/escola-dom-joao-becker-inicia-turno-integral-para-alunos-do-1o-ano-em-ipiranga-do-sul/",
+      "title": "Escola Dom João Becker inicia turno integral para alunos do 1º Ano em Ipiranga do Sul",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.jaboticaba.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.jaquirana.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.lagoa3cantos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.lagoa3cantos.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://lagoa3cantos.rs.gov.br/2026/03/12/ltc-campanha-incentiva-compras-no-comercio-local-e-oferece-premios-em-dinheiro/",
+      "title": "LTC: Campanha incentiva compras no comércio local e oferece prêmios em dinheiro",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.juliodecastilhos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.juliodecastilhos.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.juliodecastilhos.rs.gov.br/portal/noticias/0/3/3149/politica-nacional-aldir-blanc-de-fomento-a-cultura-pnab/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.lajeado.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.lajeadodobugre.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.lajeadodobugre.rs.gov.br/noticias",
+    "articleCount": 36,
+    "sampleArticle": {
+      "url": "https://lajeadodobugre.rs.gov.br/%f0%9f%8e%89-lajeado-do-bugre-in-fest-esta-chegando-a-hora/",
+      "title": "🎉 LAJEADO DO BUGRE IN FEST: ESTÁ CHEGANDO A HORA!",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.jacuizinho.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.jacuizinho.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 5,
+    "sampleArticle": {
+      "url": "https://www.jacuizinho.rs.gov.br/processo-licitatorio-no-034-2026-pregao-eletronico-no-014-2026-contratacao-de-empresa-para-aquisicao-piso-emborrachado-e-bancos-para-praca-central/",
+      "title": "PROCESSO LICITATÓRIO Nº 034/2026 PREGÃO ELETRÔNICO Nº 014/2026 CONTRATAÇÃO DE EMPRESA PARA AQUISIÇÃO PISO EMBORRACHADO E",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.lavrasdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.lavrasdosul.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.lavrasdosul.rs.gov.br/noticia/visualizar/id/1525/?carnalavras-2026.html",
+      "title": "InícioInformativosNotíciasCarnaLavras 2026 CarnaLavras 2026",
+      "date": "2026-03-15T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.lagoao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.lagoao.rs.gov.br/noticias.php",
+    "articleCount": 173,
+    "sampleArticle": {
+      "url": "https://www.lagoao.rs.gov.br/noticias_ver.php?id_noticia=233",
+      "title": "DECRETA LUTO OFICIAL PELO PERÍODO DE 03 DIAS EM VIRTUDE DO TRÁGICO FALECIMENTO DE MIRIANE LACERDA VIEIRADECRETA LUTO OFI",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.lindolfocollor.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.lindolfocollor.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.lindolfocollor.rs.gov.br/noticias/informativo-pit-programa-de-integracao-tributaria-8",
+      "title": "INFORMATIVO PIT (Programa de Integração Tributária)",
+      "date": "2026-03-12T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.linhanova.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.linhanova.rs.gov.br/web/noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://www.linhanova.rs.gov.br/noticias/1813/homenagem-ao-dia-da-mulher",
+      "title": "P�gina n�o encontrada",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.machadinho.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.machadinho.rs.gov.br/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://machadinho.rs.gov.br/2026/03/05/machadinho-inscricoes-abertas-oficinas-de-teatro-e-danca/",
+      "title": "Machadinho: Inscrições Abertas – Oficinas de Teatro e Dança",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.lagoavermelha.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.lagoabonitadosul.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.liberatosalzano.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.marata.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.marata.rs.gov.br",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://www.marata.rs.gov.br/noticias/1067/encontro-de-gestantes",
+      "title": "P�gina n�o encontrada",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.maquine.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.maquine.rs.gov.br/noticia",
+    "articleCount": 59,
+    "sampleArticle": {
+      "url": "https://www.maquine.rs.gov.br/noticia/view/304/audiencia-publica",
+      "title": "Maquiné",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.macambara.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pmmarau.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmmarau.com.br/index.php?pg=noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.pmmarau.com.br/noticias/1072-guia-de-migracao-para-a-nfs-e-nacional",
+      "title": "Prefeitura de Marau (RS)",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.manoelviana.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.marcelinoramos.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.mata.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.mata.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://mata.rs.gov.br/noticias/convenio-de-poco-tubular/",
+      "title": "Convênio de Poço Tubular",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.marianapimentel.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.marianapimentel.rs.gov.br/noticias.php",
+    "articleCount": 2068,
+    "sampleArticle": {
+      "url": "https://www.marianapimentel.rs.gov.br/noticias_ver.php?id_noticia=2190",
+      "title": "PRAZO PRORROGADOPRAZO PRORROGADO",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.matoleitao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.matoleitao.rs.gov.br/noticias/todas",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://matoleitao.rs.gov.br/todas-as-sementes-de-milho-disponiveis/",
+      "title": "TODAS AS SEMENTES DE MILHO DISPONÍVEIS",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.matoqueimado-rs.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.matoqueimado-rs.com.br/site/noticias",
+    "articleCount": 35,
+    "sampleArticle": {
+      "url": "https://www.matoqueimado-rs.com.br/site/conteudos/1048-conselho-tutelar",
+      "title": "Prefeitura Municipal de Mato Queimado - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.marianomoro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.marianomoro.rs.gov.br/noticias.php",
+    "articleCount": 1044,
+    "sampleArticle": {
+      "url": "https://www.marianomoro.rs.gov.br/noticias_ver.php?id_noticia=1063",
+      "title": "CONVITE - Tarde das MulheresCONVITE - Tarde das Mulheres",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.matocastelhano.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.matocastelhano.rs.gov.br/noticias.php",
+    "articleCount": 993,
+    "sampleArticle": {
+      "url": "https://www.matocastelhano.rs.gov.br/noticias_ver.php?id_noticia=1116",
+      "title": "Reuni�o de elabora��o e planejamento das atividades de Educa��o FiscalReuni�o de elabora��o e planejamento das atividade",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.miraguai.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.miraguai.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.miraguai.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.minasdoleao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.minasdoleao.rs.gov.br/noticia",
+    "articleCount": 19,
+    "sampleArticle": {
+      "url": "https://www.minasdoleao.rs.gov.br/noticia/view/3019/consulta-publica-participe",
+      "title": "Notícias",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.mampituba.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.mampituba.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://www.mampituba.rs.gov.br/prefeitura-de-mampituba-lanca-a-16a-festa-municipal-da-banana/",
+      "title": "Prefeitura de Mampituba lança a 16ª Festa Municipal da Banana",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.montealegredoscampos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.montealegredoscampos.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.montealegredoscampos.rs.gov.br/noticias/evento-para-os-agricultores-de-monte-alegre-dos-campos-e-regiao",
+      "title": "Evento para os agricultores de Monte Alegre dos Campos e região",
+      "date": "2026-03-06T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.marquesdesouza.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.marquesdesouza.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.marquesdesouza.rs.gov.br/lara/public/index.php/noticia/recurso-de-rdollar-200-mil-permitira-compra-de-retroescavadeira",
+      "title": null,
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.maximilianodealmeida.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.maximilianodealmeida.rs.gov.br/noticias.php",
+    "articleCount": 792,
+    "sampleArticle": {
+      "url": "https://www.maximilianodealmeida.rs.gov.br/noticias_ver.php?id_noticia=1040",
+      "title": "Prefeitura de Maximiliano de Almeida inicia obras de amplia��o da Unidade B�sica de Sa�de",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.montebelodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.montebelodosul.rs.gov.br/noticia",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.montebelodosul.rs.gov.br/noticia/view/161/sorteio-nfg-160-janeiro-de-2026",
+      "title": "Sorteio NFG 160 - janeiro de 2026",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.mormaco.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.mormaco.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.mormaco.rs.gov.br/15191/edital-no-002-2026-homologacao-inscricoes-concurso-de-escolha-das-soberanas/",
+      "title": "EDITAL Nº 002/2026 – HOMOLOGAÇÃO INSCRIÇÕES CONCURSO DE ESCOLHA DAS SOBERANAS",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.morrinhosdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.morrinhosdosul.rs.gov.br/noticia",
+    "articleCount": 21,
+    "sampleArticle": {
+      "url": "https://www.morrinhosdosul.rs.gov.br/noticia/view/800/morrinhos-do-sul-reforca-orientacao-sobre-ponto-permanente-de-descarte-de-residuos-2",
+      "title": "Prefeitura Municipal de Morrinhos do Sul/RS | Morrinhos do Sul reforça orientação sobre ponto permanente de descarte de ",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.montauri.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.mostardas.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.mostardas.rs.gov.br/noticia",
+    "articleCount": 18,
+    "sampleArticle": {
+      "url": "https://www.mostardas.rs.gov.br/noticia/view/485/convocacao-para-a-audiencia-publica",
+      "title": "Notícias",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.morroredondo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.morroredondo.rs.gov.br/portal/noticias",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.morroredondo.rs.gov.br/portal/noticias/0/3/1963/12-encontro-da-mulher-de-morro-redondo-e-realizado-no-acoita-cavalo/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.muitoscapoes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.muitoscapoes.rs.gov.br/noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.muitoscapoes.rs.gov.br/noticia/escola-municipal-gina-guagnini-anuncia-nova-equipe-gestora-para-o-biaonio-20262027",
+      "title": "Escola Municipal Gina Guagnini anuncia nova Equipe Gestora para o biênio 2026/2027Data: 25/02/2026Categoria: Secretaria ",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.naometoque.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.naometoque.rs.gov.br/noticias",
+    "articleCount": 17,
+    "sampleArticle": {
+      "url": "https://naometoque.rs.gov.br/2026/03/06/poder-publico-e-oab-realizam-ato-de-instalacao-do-banco-vermelho-em-nao-me-toque/",
+      "title": "Poder Público e OAB realizam ato de instalação do Banco Vermelho em Não-Me-Toque",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.muliterno.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.muliterno.rs.gov.br/noticias",
+    "articleCount": 14,
+    "sampleArticle": {
+      "url": "https://www.muliterno.rs.gov.br/aviso-importante-a-populacao/",
+      "title": "AVISO IMPORTANTE À POPULAÇÃO!",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.nicolauvergueiro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.nicolauvergueiro.rs.gov.br/noticias",
+    "articleCount": 150,
+    "sampleArticle": {
+      "url": "https://www.nicolauvergueiro.rs.gov.br/noticias/1435-oficinas-de-artesanato-e-croche-tem-vagas-preenchidas-no-cras-de-nicolau-vergueiro",
+      "title": "Prefeitura Municipal de Nicolau Vergueiro/RS - Oficinas de artesanato e crochê têm vagas preenchidas no Cras de Nicolau ",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.novaalvorada.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novaalvorada.rs.gov.br/noticias",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.novaalvorada.rs.gov.br/noticia/805/programa-horas-maquina-segue-intensificando-melhorias-nas-estradas-do-interior",
+      "title": "Programa Horas-Máquina segue intensificando melhorias nas estradas do interiorNotícias",
+      "date": "2026-03-15T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.morroreuter.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.nonoai.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.nonoai.rs.gov.br/noticias",
+    "articleCount": 23,
+    "sampleArticle": {
+      "url": "https://www.nonoai.rs.gov.br/noticias/3649-prefeita-adriane-representa-nonoai-na-entrega-do-trofeu-brasil-expodireto",
+      "title": "Município de Nonoai-RS - Prefeita Adriane representa Nonoai na entrega do Troféu Brasil Expodireto",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novaaraca.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novaaraca.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.novaaraca.rs.gov.br/noticias/circuito-de-verao-nova-araca-2026",
+      "title": "CIRCUITO DE VERÃO NOVA ARAÇÁ 2026",
+      "date": "2026-03-04T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.mucum.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.mucum.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 5,
+    "sampleArticle": {
+      "url": "https://www.mucum.rs.gov.br/publico/noticias/vertodas-noticias",
+      "title": "Prefeitura Municipal de Muçum (RS)",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novabassano.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novabassano.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.novabassano.rs.gov.br/noticia/view/3421/a-a-10",
+      "title": "Nova Bassano - RS | 𝐑𝐞𝐮𝐧𝐢ã𝐨 𝐝𝐞 𝐚𝐥𝐢𝐧𝐡𝐚𝐦𝐞𝐧𝐭𝐨 𝐝𝐨𝐬 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐚𝐬 𝐔𝐧𝐢ã𝐨 𝐅𝐚𝐳 𝐚 𝐕𝐢𝐝𝐚 𝐞 ",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novaesperancadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novaesperancadosul.rs.gov.br/site/noticias",
+    "articleCount": 124,
+    "sampleArticle": {
+      "url": "https://www.novaesperancadosul.rs.gov.br/site/conteudos/4982-conecta-nes",
+      "title": "Município de Nova Esperança do Sul",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novahartz.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novahartz.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.novahartz.rs.gov.br/noticias/conheca-cada-uma-das-10-candidatas-a-corte-da-90-dezemberfest",
+      "title": "👑 Conheça cada uma das 10 candidatas à corte da 9° Dezemberfest. 👑",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.novacandelaria.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novacandelaria.rs.gov.br/site/noticias",
+    "articleCount": 28,
+    "sampleArticle": {
+      "url": "https://www.novacandelaria.rs.gov.br/site/conteudos/1214-bandeira",
+      "title": "Município de Nova Candelária - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.montenegro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.montenegro.rs.gov.br",
+    "articleCount": 3,
+    "sampleArticle": {
+      "url": "https://www.montenegro.rs.gov.br/municipio/noticias/montenegro-adere-ao-sistema-nacional-de-emissao-eletronica-de-nota-fiscal-de-servicos",
+      "title": "Montenegro adere ao sistema nacional de emissão eletrônica de Nota Fiscal de Serviços",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "plone",
+    "error": null
+  },
+  "www.novapalma.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novapalma.rs.gov.br/midias/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.novapalma.rs.gov.br/midias/noticias/calendrio-de-eventos-2026/5405",
+      "title": "Conheça",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novabrescia.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.novapetropolis.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novapetropolis.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.novapetropolis.rs.gov.br/noticias/nova-petropolis-recebe-destinacao-de-r-650-mil-em-emendas-para-saude-e-agricultura",
+      "title": "Nova Petrópolis recebe destinação de R$ 650 mil em emendas para Saúde e Agricultura",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.novaboavista.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novaboavista.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://novaboavista.rs.gov.br/pt_BR/noticias/904/governo-do-estado-estabelece-obrigatoriedade-da-nota-fiscal-eletronica-nfe-para-produtores-rurais-a-partir-de-5-de-janeiro",
+      "title": "Not�cias",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novaramada.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.novaprata.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.novapadua.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novapadua.rs.gov.br/noticias.php",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.novapadua.rs.gov.br/noticias_int.php?id=3181",
+      "title": "Not�cias",
+      "date": "2026-02-26T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.novaromadosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.novocabrais.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novocabrais.rs.gov.br/noticias",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://www.novocabrais.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novotiradentesrs.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novotiradentesrs.com.br/site/noticias",
+    "articleCount": 22,
+    "sampleArticle": {
+      "url": "https://www.novotiradentesrs.com.br/site/conteudos/4627-bandeira",
+      "title": "Novo Tiradentes",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novohamburgo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novohamburgo.rs.gov.br/noticia",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.novohamburgo.rs.gov.br/noticia/curso-defesa-pessoal-mulheres-inicia-nova-edicao-68-participantes-novo-hamburgo",
+      "title": "Curso de Defesa Pessoal para Mulheres inicia nova edição com 68 participantes em Novo Hamburgo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novoxingu.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novoxingu.rs.gov.br/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.novoxingu.rs.gov.br/noticias/novo-xingu-avanca-nas-obras-da-nova-creche-proinfancia-tipo-2",
+      "title": "Município de Novo Xingu-RS - Novo Xingu avança nas obras da nova Creche Proinfância Tipo 2",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novasantarita.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.novomachado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.novomachado.rs.gov.br/site/noticias",
+    "articleCount": 73,
+    "sampleArticle": {
+      "url": "https://www.novomachado.rs.gov.br/site/conteudos/1359-ata-de-posse-do-prefeito-e-do-vice-prefeito",
+      "title": "Prefeitura Municipal de Novo Machado - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.novobarreiro.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.paimfilho.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.paimfilho.rs.gov.br/noticias.php",
+    "articleCount": 1203,
+    "sampleArticle": {
+      "url": "https://www.paimfilho.rs.gov.br/noticias_ver.php?id_noticia=1284",
+      "title": "INFORMATIVO PIT Nº 33 – FEVEREIRO/2026 INFORMATIVO PIT Nº 33 – FEVEREIRO/2026",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.palmaresdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.palmaresdosul.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 3,
+    "sampleArticle": {
+      "url": "https://palmaresdosul.rs.gov.br/novosite/%f0%9f%86%93palmares-sem-barreiras%f0%9f%86%93/",
+      "title": "🆓PALMARES SEM BARREIRAS🆓",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.osorio.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pantanogrande.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pantanogrande.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.pantanogrande.rs.gov.br/portal/noticias/0/3/1292/reuniao-debate-implantacao-da-jari-no-municipio/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.parai.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.parai.rs.gov.br/noticias",
+    "articleCount": 40,
+    "sampleArticle": {
+      "url": "https://www.parai.rs.gov.br/noticiasView/1535_Show-de-natal-com-Grupo-Sistema-Antigo.html",
+      "title": "Show de natal com Grupo Sistema Antigo",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.paraisodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.paraisodosul.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.paraisodosul.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.parecinovo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.parecinovo.rs.gov.br/noticias",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://www.parecinovo.rs.gov.br/noticia/1211/6-encontro-de-tratores-de-pareci-novo",
+      "title": "Acesso r�pido",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.palmeiradasmissoes.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.passodosobrado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.passodosobrado.rs.gov.br/noticias/todas",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://passodosobrado.rs.gov.br/assistencia-social-realiza-doacoes-de-50-cestas-basicas-para-agricultores-familiares/",
+      "title": "ASSISTÊNCIA SOCIAL REALIZA DOAÇÕES DE 50 CESTAS BÁSICAS PARA AGRICULTORES FAMILIARES.",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.passasete.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.palmitinho.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.panambi.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.parobe.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pedroosorio.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pedroosorio.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.pedroosorio.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pejucara.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pejucara.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.pejucara.rs.gov.br/noticia/4762/dados-gerais/",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pmpf.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmpf.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 3,
+    "sampleArticle": {
+      "url": "https://www.pmpf.rs.gov.br/esportes/2026/03/12/com-recorde-de-175-projetos-inscritos-nova-edicao-do-funesporte-demonstra-a-forca-do-esporte-em-passo-fundo/",
+      "title": "Com recorde de 175 projetos inscritos, nova edição do Funesporte demonstra a força do esporte em Passo Fundo",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.pelotas.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pelotas.com.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.pelotas.com.br/noticia/prefeitura-vai-disponibilzar-r-36-milhoes-em-11-editais-de-cultura",
+      "title": "Prefeitura vai disponibilzar R$ 3,6 milhões em 11 editais de cultura",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "nuxt",
+    "error": null
+  },
+  "www.paulobento.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.paulobento.rs.gov.br/noticias.php",
+    "articleCount": 50,
+    "sampleArticle": {
+      "url": "https://www.paulobento.rs.gov.br/noticias_ver.php?id_noticia=1958",
+      "title": "Pregão Presencial para contratação de empresa especializada na prestação de serviços de trator de esteira, Escavadeira H",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.paverama.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pinhaldaserra.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pinhaldaserra.rs.gov.br/noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://www.pinhaldaserra.rs.gov.br/noticia/orgulho-que-transforma-em-conquista-",
+      "title": "Orgulho que Transforma em Conquista!",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pinhalgrande.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pinhalgrande.rs.gov.br/noticias",
+    "articleCount": 27,
+    "sampleArticle": {
+      "url": "https://www.pinhalgrande.rs.gov.br/midia/noticias/2-edicao-do-festival-gastronomico-sabores-de-casa-supera-numero-de-inscricoes-da-edicao-anterior/2344",
+      "title": "2ª EDIÇÃO DO FESTIVAL GASTRONÔMICO SABORES DE CASA SUPERA NÚMERO DE INSCRIÇÕES DA EDIÇÃO ANTERIOR",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pinheiromachado.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pinheiromachado.rs.gov.br/noticias",
+    "articleCount": 18,
+    "sampleArticle": {
+      "url": "http://www.pinheiromachado.rs.gov.br/prefeitura-inicia-recuperacao-de-estradas-na-localidade-do-assentamento-vieirina/",
+      "title": "Prefeitura inicia recuperação de estradas na localidade do Assentamento Vieirina",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.pinheirinhodovale.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pinheirinhodovale.rs.gov.br/noticias",
+    "articleCount": 15,
+    "sampleArticle": {
+      "url": "https://pinheirinhodovale.rs.gov.br/conselho-municipal-de-agropecuaria-realiza-reuniao-em-pinheirinho-do-vale/",
+      "title": "Conselho Municipal de Agropecuária realiza reunião em Pinheirinho do Vale",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.pirapo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pirapo.rs.gov.br/site/noticias",
+    "articleCount": 15,
+    "sampleArticle": {
+      "url": "https://www.pirapo.rs.gov.br/site/conteudos/485-pstronggabinete-do-prefeitostrongp",
+      "title": "Prefeitura Municipal de Pirapó - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pedrasaltas.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.picadacafe.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pocodasantas.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pocodasantas.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.pocodasantas.rs.gov.br/noticias/inscricoes-para-a-escolha-das-soberanas-de-poco-das-antas-2026-2028-seguem-abertas",
+      "title": "Inscrições para a Escolha das Soberanas de Poço das Antas 2026/2028 seguem abertas",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.prefeiturapiratini.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.prefeiturapiratini.rs.gov.br/portal/noticias",
+    "articleCount": 32,
+    "sampleArticle": {
+      "url": "https://www.prefeiturapiratini.rs.gov.br/portal/noticias/0/3/1381/5-rustica-e-caminhada-reune-energia-superacao-e-comunidade-pelas-ruas-de-piratini/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pontao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pontao.rs.gov.br/noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://www.pontao.rs.gov.br/noticias/1338-convite-especial-noite-de-natal",
+      "title": "Convite Especial – Noite de Natal",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pontepreta.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pontepreta.rs.gov.br/site/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.pontepreta.rs.gov.br/site/publicacao/informativo-pit-n--33-%E2%80%93-fevereiro-2026%C2%A0?code=504/",
+      "title": "INFORMATIVO PIT Nº 33",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.prefeitura.poa.br": {
+    "status": "ok",
+    "newsUrl": "https://www.prefeitura.poa.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.prefeitura.poa.br/gcs/noticias/previsao-de-pautas-segunda-feira-16-de-marco-0",
+      "title": "Previsão de pautas: segunda",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pinhal.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.portolucena.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.portolucena.rs.gov.br/site/noticias",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.portolucena.rs.gov.br/site/conteudos/2611-pgabinete-do-prefeitop",
+      "title": "Prefeitura Municipal de Porto Lucena",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.portomaua.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.portomaua.rs.gov.br/site/noticias",
+    "articleCount": 55,
+    "sampleArticle": {
+      "url": "https://www.portomaua.rs.gov.br/site/conteudos/1171-phoraacuterios-de-balsap",
+      "title": "Município de Porto Mauá - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.portoxavier.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.portoxavier.rs.gov.br/site/noticias",
+    "articleCount": 42,
+    "sampleArticle": {
+      "url": "https://www.portoxavier.rs.gov.br/site/conteudos/3834-conselhos-municipais",
+      "title": "Prefeitura Municipal de Porto Xavier",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.portoveracruz.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.portoveracruz.rs.gov.br/site/noticias",
+    "articleCount": 19,
+    "sampleArticle": {
+      "url": "https://www.portoveracruz.rs.gov.br/site/conteudos/2496-historia",
+      "title": "História",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.presidentelucena.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.presidentelucena.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.presidentelucena.rs.gov.br/noticias/o-prefeito-luiz-spaniol-segue-cumprindo-agenda-oficial-em-brasilia",
+      "title": "O prefeito Luiz Spaniol segue cumprindo agenda oficial em Brasília",
+      "date": "2026-03-12T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.pintobandeira.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pintobandeira.rs.gov.br/noticias.php",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.pintobandeira.rs.gov.br/noticias_int.php?id=706",
+      "title": "Not�cias",
+      "date": "2026-03-02T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.protasioalves.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.pousonovo.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.quarai.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.quarai.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.quarai.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.progresso.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.progresso.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://progresso.rs.gov.br/noticia/visualizar/id/1327/?lista-de-devedores-inscritos-em-divida-ativa-de-ipva-e-icms-2025.html",
+      "title": "InícioInformativosNotícias LISTA DE DEVEDORES INSCRITOS EM DÍVIDA ATIVA DE IPVA E ICMS 2025 LISTA DE DEVEDORES INSCRITOS",
+      "date": "2026-03-15T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.putinga.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.putinga.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://putinga.rs.gov.br/noticia/visualizar/id/1703/?governo-do-estado-anuncia-recursos-para-a-ligacao-asfaltica-entre-putinga-e-relvado.html",
+      "title": "InícioInformativosNotíciasGoverno do Estado anuncia recursos para a ligação asfáltica entre Putinga e Relvado. Governo d",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.quatroirmaos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.quatroirmaos.rs.gov.br/noticia",
+    "articleCount": 21,
+    "sampleArticle": {
+      "url": "https://www.quatroirmaos.rs.gov.br/noticia/view/154/marco-lilas-mes-de-prevencao-ao-cancer-de-colo-do-utero",
+      "title": "Prefeitura Municipal de Quatro Irmãos/RS | 💜 Março Lilás: mês de prevenção ao câncer de colo do útero.",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.redentora.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.redentora.rs.gov.br/site/noticias",
+    "articleCount": 39,
+    "sampleArticle": {
+      "url": "https://www.redentora.rs.gov.br/site/conteudos/3251-despesas-covid19",
+      "title": "Prefeitura Municipal de Redentora - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.quevedos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.quevedos.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://quevedos.rs.gov.br/noticia/visualizar/id/1046/?inscricoes-para-cursos-profissionalizantes.html",
+      "title": "InícioInformativosNotíciasINSCRIÇÕES PARA CURSOS PROFISSIONALIZANTES INSCRIÇÕES PARA CURSOS PROFISSIONALIZANTES",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.quinzedenovembro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.quinzedenovembro.rs.gov.br/noticia",
+    "articleCount": 60,
+    "sampleArticle": {
+      "url": "https://www.quinzedenovembro.rs.gov.br/noticia/view/1556/escolha-de-soberanas-2026",
+      "title": "Prefeitura Municipal Quinze de Novembro Estado do Rio Grande do Sul",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.restingaseca.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.restingaseca.rs.gov.br/midias/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.restingaseca.rs.gov.br/midias/noticias/carnaval-das-tunas-comeca-neste-final-de-semana/3969",
+      "title": null,
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.riogrande.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.relvado.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.riodosindios.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.riodosindios.rs.gov.br/noticias.php",
+    "articleCount": 50,
+    "sampleArticle": {
+      "url": "https://www.riodosindios.rs.gov.br/noticias_ver.php?id_noticia=3741",
+      "title": "Cuidado, aprendizado e acolhimento às futuras mamães",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pmriozinho.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmriozinho.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.pmriozinho.rs.gov.br/noticia/796/14-08-2024/divulgacao-da-lista-de-projetos-selecionados-lei-paulo-gustavo",
+      "title": "Prefeitura Municipal de Riozinho",
+      "date": "2024-08-14T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.riopardo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.riopardo.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.riopardo.rs.gov.br/portal/noticias/0/3/2926/iptu-2026--rio-pardo/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.rodeiobonito.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.rodeiobonito.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.rodeiobonito.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.portao.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.rondaalta.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.rondaalta.rs.gov.br/site/noticias",
+    "articleCount": 27,
+    "sampleArticle": {
+      "url": "https://www.rondaalta.rs.gov.br/site/conteudos/5178-gabinete-do-prefeito",
+      "title": "Ronda Alta",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.planalto.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.planalto.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 3,
+    "sampleArticle": {
+      "url": "https://planalto.rs.gov.br/novidades/informativo-pit-no-29-junho-2025/",
+      "title": "Informativo PIT Nº 29 – junho/2025",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.roquegonzales.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.roquegonzales.rs.gov.br/site/noticias",
+    "articleCount": 31,
+    "sampleArticle": {
+      "url": "https://www.roquegonzales.rs.gov.br/site/conteudos/720-contatos",
+      "title": "Município de Roque Gonzales",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.rosariodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.rosariodosul.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.rosariodosul.rs.gov.br/noticia/view/626/11-festa-do-pecuarista-acontece-em-abril-no-3-distrito-de-rosario-do-sul",
+      "title": "Rosário do Sul - RS | 11ª Festa do Pecuarista acontece em abril no 3º Distrito de Rosário do Sul",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.sagradafamilia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.sagradafamilia.rs.gov.br/noticias",
+    "articleCount": 13,
+    "sampleArticle": {
+      "url": "http://www.sagradafamilia.rs.gov.br/noticia/165/cytotec-original-online-16997342362-11910599859",
+      "title": "Dra. Amelia – CRM 31178",
+      "date": "2020-03-17T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.rolador.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.rolador.rs.gov.br/site/noticias",
+    "articleCount": 35,
+    "sampleArticle": {
+      "url": "https://www.rolador.rs.gov.br/site/conteudos/4911-horarios-de-atendimento",
+      "title": "Prefeitura Municipal de Rolador",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.rondinha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.rondinha.rs.gov.br/site/noticias",
+    "articleCount": 41,
+    "sampleArticle": {
+      "url": "https://www.rondinha.rs.gov.br/site/conteudos/4164-comunidades",
+      "title": "Rondinha",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.salvadordasmissoes.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.salvadordosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.salvadordosul.rs.gov.br/noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://www.salvadordosul.rs.gov.br/noticias/3186/salvador-do-sul-reforca-demanda-por-trecho-da-transcitrus-em-reuniao-com-parlamentares",
+      "title": "Prefeitura Municipal de Salvador do Sul, RS",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saldanhamarinho.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.santabarbaradosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santabarbaradosul.rs.gov.br/site/noticias",
+    "articleCount": 36,
+    "sampleArticle": {
+      "url": "https://www.santabarbaradosul.rs.gov.br/site/conteudos/3869-legislacao-covid-19",
+      "title": "Prefeitura de Santa Bárbara do Sul - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.rolante.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.rocasales-rs.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.rocasales-rs.com.br/blog",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://rocasales-rs.com.br/2026/03/13/projeto-essas-marias-celebra-a-essencia-da-mulher-do-interior-em-evento-na-comunidade-da-violanda/",
+      "title": "Projeto “Essas Marias” celebra a essência da mulher do interior em evento na Comunidade da Violanda",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.saltodojacui.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saltodojacui.rs.gov.br/blog",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.saltodojacui.rs.gov.br/reuniao-mensal-do-colegiado-de-assistencia-social-do-amcserra/",
+      "title": "Reunião mensal do Colegiado de Assistência Social do AMCSerra",
+      "date": "2026-03-12T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.sananduva.rs.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.santaceciliadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santaceciliadosul.rs.gov.br/noticias.php",
+    "articleCount": 50,
+    "sampleArticle": {
+      "url": "https://www.santaceciliadosul.rs.gov.br/noticias_ver.php?id_noticia=383",
+      "title": "Capacitação aos Profissionais: Diversidade Sexual e de GêneroCapacitação aos Profissionais: Diversidade Sexual e de Gêne",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.santacruz.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santacruz.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://www.santacruz.rs.gov.br/noticias/915/centro-de-promocao-da-saude-da-pessoa-idosa-abre-inscricoes-para-oficinas",
+      "title": "Centro de Promoção da Saúde da Pessoa Idosa abre inscrições para oficinas",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.santamaria.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santamaria.rs.gov.br/noticias/noticias-temporarias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.santamaria.rs.gov.br/noticias/30088-terminal-de-pagamento-online-agiliza-a-quitacao-debitos-municipais-em-santa-maria",
+      "title": "Terminal de pagamento online agiliza a quitação de débitos municipais em Santa Maria",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "laravel",
+    "error": null
+  },
+  "www.santamariadoherval.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santamariadoherval.rs.gov.br/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.santamariadoherval.rs.gov.br/noticias/audiencia-publica-94",
+      "title": "AUDIÊNCIA PÚBLICA",
+      "date": "2026-01-21T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.santavitoriadopalmar.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.santavitoriadopalmar.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.santavitoriadopalmar.rs.gov.br/municipio/noticias/1210/lista-oficial-de-devedores-de-icms-ipva-inscritos-em-divida-ativa",
+      "title": null,
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.santatereza.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santatereza.rs.gov.br/noticia",
+    "articleCount": 60,
+    "sampleArticle": {
+      "url": "https://www.santatereza.rs.gov.br/noticia/view/1048/santa-tereza-e-destaque-estadual-e-recebe-o-premio-caurs-2025-no-setor-publico",
+      "title": "Santa Tereza",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.santanadaboavista.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santanadaboavista.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.santanadaboavista.rs.gov.br/noticia/visualizar/id/1655/?ps-cargo-de-professor-de-educacao-infantil-geografia-e-lingua-inglesa.html",
+      "title": "InícioInformativosNotíciasP.S. CARGO DE PROFESSOR DE EDUCAÇÃO INFANTIL, GEOGRAFIA E LINGUA INGLESA P.S. CARGO DE PROFESS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.santiago.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santiago.rs.gov.br/noticias",
+    "articleCount": 15,
+    "sampleArticle": {
+      "url": "https://www.santiago.rs.gov.br/noticias/prefeito",
+      "title": "Prefeito",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.santaclaradosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.sdolivramento.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.sdolivramento.com.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.sdolivramento.com.br/noticia/view/8933/50-festival-binacional-de-pandorgas",
+      "title": "Sant'Ana do Livramento",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.prefeiturasantarosa.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.santoantoniodasmissoes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santoantoniodasmissoes.rs.gov.br/site/noticias",
+    "articleCount": 31,
+    "sampleArticle": {
+      "url": "https://www.santoantoniodasmissoes.rs.gov.br/site/conteudos/877-contatos-prefeitura",
+      "title": "Prefeitura Municipal de Santo Antônio das Missões - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.santoantoniodapatrulha.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santoantoniodapatrulha.rs.gov.br/noticias",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://www.santoantoniodapatrulha.rs.gov.br/2026/03/13/",
+      "title": "Início",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.santoantoniodoplanalto.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santoantoniodoplanalto.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://santoantoniodoplanalto.rs.gov.br/2026/02/09/prefeito-vilson-receber-o-presidente-do-legislativo/",
+      "title": "Prefeito Vilson receber o Presidente do Legislativo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.santocristo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santocristo.rs.gov.br/site/noticias",
+    "articleCount": 22,
+    "sampleArticle": {
+      "url": "https://www.santocristo.rs.gov.br/site/conteudos/1184-pconselhos-municipaisp",
+      "title": "Santo Cristo - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.santamargaridadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santamargaridadosul.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 6,
+    "sampleArticle": {
+      "url": "https://www.santamargaridadosul.rs.gov.br/index.php/12/03/2026/inscricoes-abertas-para-a-escolha-das-soberanas-da-27a-expofeira/",
+      "title": "Inscrições abertas para a Escolha das Soberanas da 27ª Expofeira!!!",
+      "date": "2026-03-12T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.pmpalma.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.santoexpeditodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.santoexpeditodosul.rs.gov.br/noticias.php",
+    "articleCount": 4172,
+    "sampleArticle": {
+      "url": "https://www.santoexpeditodosul.rs.gov.br/noticias_ver.php?id_noticia=4519",
+      "title": "Aberto o prazo para a Declara��o de RebanhoAberto o prazo para a Declara��o de Rebanho",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saoborja.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saodomingosdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saodomingosdosul.rs.gov.br/noticias.php",
+    "articleCount": 754,
+    "sampleArticle": {
+      "url": "https://www.saodomingosdosul.rs.gov.br/noticias_ver.php?id_noticia=767",
+      "title": "Sistema SERMILMOB está temporariamente indisponívelSistema SERMILMOB está temporariamente indisponível",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.santoangelo.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saofranciscodeassis.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saofranciscodeassis.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.saofranciscodeassis.rs.gov.br/portal/noticias/0/3/2690/vem-ai-a-24-edicao-do-enesphar--a-olimpiada-rural-de-sao-chico/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saofranciscodepaula.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saofranciscodepaula.rs.gov.br/portal/noticias",
+    "articleCount": 28,
+    "sampleArticle": {
+      "url": "https://www.saofranciscodepaula.rs.gov.br/portal/noticias/0/3/2499/comunidade-vai-opinar-sobre-o-futuro-da-casa-amarela-em-sao-francisco-de-paula/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saojoaodopolesine.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.santoaugusto.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saojeronimo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojeronimo.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.saojeronimo.rs.gov.br/noticia/visualizar/id/1377/?nova-adutora-sera-inaugurada-em-sao-jeronimo-e-promete-ampliar-seguranca-no-abastecimento-de-agua.html",
+      "title": "InícioInformativosNotíciasNova adutora será inaugurada em São Jerônimo e promete ampliar segurança no abastecimento de á",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saojorge.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojorge.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.saojorge.rs.gov.br/noticias_ver.php?id_noticia=308",
+      "title": "Reformas no Centro Cultural Clodi Jerônimo Lazzaroto em andamento! Reformas no Centro Cultural Clodi Jerônimo Lazzaroto ",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.saojosedoherval.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojosedoherval.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.saojosedoherval.rs.gov.br/noticias/aviso-alvara-2026/",
+      "title": "AVISO: Alvará 2026",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.saojosedoinhacora.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojosedoinhacora.rs.gov.br/site/noticias",
+    "articleCount": 40,
+    "sampleArticle": {
+      "url": "https://www.saojosedoinhacora.rs.gov.br/site/conteudos/4526-plano-de-contingencia-e-acao-covid-19",
+      "title": "Município de São José do Inhacorá - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saojoaodaurtiga.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojoaodaurtiga.rs.gov.br/noticias.php",
+    "articleCount": 977,
+    "sampleArticle": {
+      "url": "https://www.saojoaodaurtiga.rs.gov.br/noticias_ver.php?id_noticia=1018",
+      "title": "Projeto de Cooperativa Escolar � apresentado na EMEF Luiz Biasi em S�o Jo�o da UrtigaProjeto de Cooperativa Escolar � ap",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saojosedoouro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojosedoouro.rs.gov.br/noticias.php",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.saojosedoouro.rs.gov.br/noticias_ver.php?id_noticia=547",
+      "title": "Processo Seletivo de Estágio - Inscrições abertas!Processo Seletivo de Estágio - Inscrições abertas!",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saojosedosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojosedosul.rs.gov.br/noticias",
+    "articleCount": 4,
+    "sampleArticle": {
+      "url": "https://www.saojosedosul.rs.gov.br/noticias/2160/isencao-de-iptu",
+      "title": "Prefeitura Municipal de S�o Jos� do Sul",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saojosedasmissoes.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saoleopoldo.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saolourencodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saolourencodosul.rs.gov.br/portal/noticias",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.saolourencodosul.rs.gov.br/portal/noticias/0/3/5432/obra-de-asfaltamento-da-avenida-isolina-passos",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saoluizgonzaga.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saoluizgonzaga.rs.gov.br/site/noticias",
+    "articleCount": 67,
+    "sampleArticle": {
+      "url": "https://www.saoluizgonzaga.rs.gov.br/site/conteudos/706-a-cidade",
+      "title": "Prefeitura Municipal de São Luiz Gonzaga - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saomarcos.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saomarcos.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.saomarcos.rs.gov.br/noticias/feira-maos-que-criam-chega-a-quarta-edicao-valorizando-talentos-e-economia-criativa-de-sao-marcos",
+      "title": "Feira “Mãos Que Criam” chega à quarta edição valorizando talentos e economia criativa de São Marcos",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.saomartinho.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saomartinho.rs.gov.br/site/noticias",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.saomartinho.rs.gov.br/site/conteudos/979-contatos",
+      "title": "São Martinho",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saojosedosausentes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojosedosausentes.rs.gov.br/blog",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.saojosedosausentes.rs.gov.br/processo-seletivo-simplificado-no001-2026-edital-de-divulgacao-de-resultado-final/",
+      "title": "Processo Seletivo Simplificado nº001/2026 Edital de divulgação de resultado final",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.saomartinhodaserra.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saomartinhodaserra.rs.gov.br/noticias",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://www.saomartinhodaserra.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saonicolau.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saonicolau.rs.gov.br/site/noticias",
+    "articleCount": 74,
+    "sampleArticle": {
+      "url": "https://www.saonicolau.rs.gov.br/site/conteudos/6269-capital-gauacutecha-do-cafeacute-de-cambona",
+      "title": "Prefeitura Municipal de São Nicolau - RS - Primeira Querência do Rio Grande",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saopaulodasmissoes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saopaulodasmissoes.rs.gov.br/site/noticias",
+    "articleCount": 90,
+    "sampleArticle": {
+      "url": "https://www.saopaulodasmissoes.rs.gov.br/site/conteudos/4003-pcardaacutepios-escolaresp",
+      "title": "PREFEITURA MUNICIPAL DE SÃO PAULO DAS MISSÕES",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saojosedonorte.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojosedonorte.rs.gov.br",
+    "articleCount": 5,
+    "sampleArticle": {
+      "url": "https://www.saojosedonorte.rs.gov.br/noticias/servico-de-nivelamento-de-solo-e-realizado-no-estreito-1",
+      "title": "Serviço de nivelamento de solo é realizado no Estreito",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.saopedrodaserra.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saojosedohortencio.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saojosedohortencio.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://www.saojosedohortencio.rs.gov.br/index.php/noticias/deputado-rodrigo-lorenzoni-anuncia-emenda-de-r-100-mil-para-a-saude-de-sao-jose-do-hortencio",
+      "title": "Deputado Rodrigo Lorenzoni anuncia emenda de R$ 100 mil para a saúde de São José do Hortêncio",
+      "date": "2026-03-14T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.saopedrodobutia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saopedrodobutia.rs.gov.br/site/noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://www.saopedrodobutia.rs.gov.br/site/conteudos/6578-psecretari",
+      "title": "Prefeitura Municipal de São Pedro do Butiá",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saogabriel.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saogabriel.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://www.saogabriel.rs.gov.br/index.php/noticias/quer-vender-mais-na-vespera-da-pascoa",
+      "title": "Quer vender mais na véspera da Páscoa?",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.saopedrodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saopedrodosul.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://saopedrodosul.rs.gov.br/noticias/posse-da-nova-monitora-concursada-5/",
+      "title": "Posse da nova Monitora concursada.",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.saopedrodasmissoes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saopedrodasmissoes.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://saopedrodasmissoes.rs.gov.br/2025/11/27/processo-seletivo-no-002-2025-edital-de-abertura-das-inscricoes/",
+      "title": "PROCESSO SELETIVO Nº 002/2025 – EDITAL DE ABERTURA DAS INSCRIÇÕES",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.saomiguel.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saomiguel.rs.gov.br/site/noticias",
+    "articleCount": 45,
+    "sampleArticle": {
+      "url": "https://www.saomiguel.rs.gov.br/site/conteudos/819-pgabinete-do-prefeitop",
+      "title": "Prefeitura Municipal de São Miguel das Missões - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saovalentimdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saovalentimdosul.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.saovalentimdosul.rs.gov.br/noticias/sao-valentim-do-sul-celebra-34-anos-com-programacao-especial",
+      "title": "São Valentim do Sul celebra 34 anos com programação especial",
+      "date": "2026-03-07T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.saovalentim.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saovalentim.rs.gov.br/site/noticias",
+    "articleCount": 2,
+    "sampleArticle": {
+      "url": "https://www.saovalentim.rs.gov.br/site/publicacao/nformativo-pit-n--33-%E2%80%93-fevereiro-2026-?code=487/",
+      "title": "NFORMATIVO PIT Nº 33",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.saovendelino.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saovendelino.rs.gov.br/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.saovendelino.rs.gov.br/noticias/1910/municipio-e-contemplado-com-r-1-milhao-para-obras-de-asfaltamento",
+      "title": "Prefeitura Municipal de S�o Vendelino, RS",
+      "date": "2026-03-12T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.saosepe.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.sapiranga.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saosebastiaodocai.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.sapucaiadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.sapucaiadosul.rs.gov.br/noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://www.sapucaiadosul.rs.gov.br/noticias/inclusao-sustentabilidade-e-cuidado-com-o-meio-ambiente/",
+      "title": "Inclusão, sustentabilidade e cuidado com o meio ambiente!",
+      "date": "2025-06-13T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.sarandi.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.sarandi.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://sarandi.rs.gov.br/noticias/oitiva-municipal-oitiva-municipal-referente-a-politica-nacional-aldir-blanc-de-fomento-a-cultura-pnab/",
+      "title": "Inserir/editar link",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.segredo.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.seberi.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saovicentedosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saovicentedosul.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 35,
+    "sampleArticle": {
+      "url": "https://saovicentedosul.rs.gov.br/site/2026/03/04/iptu-iss-e-taxas-2026/",
+      "title": "IPTU, ISS E TAXAS 2026",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.sentineladosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.sentineladosul.rs.gov.br/noticias",
+    "articleCount": 11,
+    "sampleArticle": {
+      "url": "https://www.sentineladosul.rs.gov.br/noticias/informacoes-importantes-aos-participantes-do-rodeio",
+      "title": "Informações Importantes aos Participantes do rodeio",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.sedenova.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.serafinacorrea.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.sertao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.sertao.rs.gov.br/noticias",
+    "articleCount": 9,
+    "sampleArticle": {
+      "url": "https://www.sertao.rs.gov.br/noticia/1812/12-03-2026/edital-de-prorrogacao-da-selecao-de-alunos-do-programa-rs-qualificacao",
+      "title": "Prefeitura Municipal de Sertão",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.sertaosantana.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.sertaosantana.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.sertaosantana.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.setedesetembro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.setedesetembro.rs.gov.br/site/noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://www.setedesetembro.rs.gov.br/site/conteudos/2138-pdados-geraisp",
+      "title": "Prefeitura Municipal de Sete de Setembro - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.serio.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.silveiramartins.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.silveiramartins.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.silveiramartins.rs.gov.br/noticia/categoria",
+      "title": "Notícia",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.selbach.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.saovaleriodosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.saovaleriodosul.rs.gov.br",
+    "articleCount": 35,
+    "sampleArticle": {
+      "url": "https://www.saovaleriodosul.rs.gov.br/site/conteudos/2276-hino",
+      "title": "Prefeitura Municipal de São Valério do Sul",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "senadorsalgadofilho.atende.net": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.tabai.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tabai.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://tabai.rs.gov.br/noticia/visualizar/id/1351/?prefeitura-de-tabai-realiza-audiencia-publica-para-apresentacao-das-metas-fiscais-e-relatorio-da-sau.html",
+      "title": "InícioInformativosNotíciasPrefeitura de Tabaí realiza Audiência Pública para apresentação das Metas Fiscais e Relatório ",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.tapejara.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tapejara.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://tapejara.rs.gov.br/noticia/prefeitura_responde",
+      "title": "PREFEITURA RESPONDE",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.sinimbu.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.sobradinho.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.taquara.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.severianodealmeida.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.soledade.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.tapes.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tapes.rs.gov.br/portal/noticias",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.tapes.rs.gov.br/portal/noticias/0/3/24550/palestra-sobre-turismo-rural-acontece-em-tapes/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.taquari.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.taquari.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.taquari.rs.gov.br/noticia/visualizar/id/4137/?municipio-institui-politica-de-busca-ativa-escolar--para-fortalecer-permanencia-dos-estudantes.html",
+      "title": "InícioInformativosNotíciasMunicípio institui Política de Busca Ativa Escolar para fortalecer permanência dos estudantes ",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.tenenteportela.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tenenteportela.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.tenenteportela.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.tapera.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tapera.rs.gov.br/noticias.php",
+    "articleCount": 4031,
+    "sampleArticle": {
+      "url": "https://www.tapera.rs.gov.br/noticias_ver.php?id_noticia=26817",
+      "title": "ESPET�CULO DE P�SCOA - 26 DE MAR�OESPET�CULO DE P�SCOA - 26 DE MAR�O",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.tiohugo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tiohugo.rs.gov.br/noticias",
+    "articleCount": 16,
+    "sampleArticle": {
+      "url": "https://tiohugo.rs.gov.br/2026/02/13/fique-atento-aos-dias-de-atendimento-da-prefeitura-e-demais-reparticoes-publicas-na-proxima-semana/",
+      "title": "Fique atento aos dias de atendimento da prefeitura e demais repartições públicas na próxima semana",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.terradeareia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.terradeareia.rs.gov.br/noticia",
+    "articleCount": 30,
+    "sampleArticle": {
+      "url": "https://www.terradeareia.rs.gov.br/noticia/view/246/obras-culturais-aldir-blanc",
+      "title": "Obras Culturais Aldir Blanc",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.tiradentesdosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tiradentesdosul.rs.gov.br/site/noticias",
+    "articleCount": 28,
+    "sampleArticle": {
+      "url": "https://www.tiradentesdosul.rs.gov.br/site/conteudos/5357-ptermo-de-fomento-cededicap",
+      "title": "Prefeitura Municipal de Tiradentes do Sul - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.teutonia.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.teutonia.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://teutonia.rs.gov.br/noticia/visualizar/id/3307/?processo-seletivo-simplificado-de-estagio-nao-obrigatorio-remunerado.html",
+      "title": "InícioInformativosNotíciasProcesso Seletivo Simplificado de estágio não obrigatório remunerado Processo Seletivo Simplif",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.toropi.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.torres.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.torres.rs.gov.br/noticias/todas",
+    "articleCount": 19,
+    "sampleArticle": {
+      "url": "https://torres.rs.gov.br/2026/03/13/prefeitura-de-torres-regulamenta-acesso-de-veiculos-ao-parque-da-guarita-para-a-2a-maratona-de-torres/",
+      "title": "Prefeitura de Torres regulamenta acesso de veículos ao Parque da Guarita para a 2ª Maratona de Torres",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.taquarucudosul.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.tavares.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.tavares.rs.gov.br/blog",
+    "articleCount": 8,
+    "sampleArticle": null,
+    "platform": "wordpress",
+    "error": "Listing OK (8 links) but sample article fetch failed: Request failed with status code 404"
+  },
+  "www.trescachoeiras.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.trescachoeiras.rs.gov.br/noticias/todas",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://trescachoeiras.rs.gov.br/lista-de-espera-para-educacao-infantil-2025/",
+      "title": "Listas de Espera",
+      "date": "2025-11-21T12:00:00.000Z",
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.tresdemaio.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tresdemaio.rs.gov.br/site/noticias",
+    "articleCount": 43,
+    "sampleArticle": {
+      "url": "https://www.tresdemaio.rs.gov.br/site/conteudos/1034-eleicao-unificada-conselho-tutelar",
+      "title": "Três de Maio",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.trescoroas.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.trescoroas.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.trescoroas.rs.gov.br/noticias/2026/02/grupo-drei-kronentaz-retoma-atividades-apos-o-recesso-em-tres-coroas/",
+      "title": "Grupo Drei Kronentaz retoma atividades após o recesso em Três Coroas",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.travesseiro.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.tresforquilhas.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tresforquilhas.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.tresforquilhas.rs.gov.br/noticia/view/79/tres-forquilhas-esta-completando-seus-34-anos-de-emancipacao-e-preparamos-uma-programacao-de-festividade-especial-para-todos-voces",
+      "title": "Notícias",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.trindadedosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.trindadedosul.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.trindadedosul.rs.gov.br/2026/03/encontro-do-pim-reune-gestantes-para-troca-de-experiencias-orientacoes-e-entrega-de-kits/",
+      "title": "Encontro do PIM reúne gestantes para troca de experiências, orientações e entrega de kits",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.triunfo.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.triunfo.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.triunfo.rs.gov.br/noticia/view/479/9-rodada-do-campeonato-municipal-de-beach-soccer",
+      "title": "Notícias",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.tucunduva.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tucunduva.rs.gov.br/site/noticias",
+    "articleCount": 36,
+    "sampleArticle": {
+      "url": "https://www.tucunduva.rs.gov.br/site/conteudos/2550-cmdca",
+      "title": "TUCUNDUVA",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.trespassos.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.trespalmeiras.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.tupancireta.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tupancireta.rs.gov.br/portal/noticias",
+    "articleCount": 29,
+    "sampleArticle": {
+      "url": "https://www.tupancireta.rs.gov.br/portal/noticias/0/3/5772/municipio-abre-inscricoes-para-edital-de-circulacao-de-bens-e-agentes-culturais/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.tupandi.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tupandi.rs.gov.br/noticias",
+    "articleCount": 8,
+    "sampleArticle": {
+      "url": "https://www.tupandi.rs.gov.br/web/noticias/3575/assinada-a-ordem-de-inicio-das-obras-da-ers-415",
+      "title": "Assinada a ordem de in�cio das obras da ERS-415",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.tuparendi.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tuparendi.rs.gov.br/site/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.tuparendi.rs.gov.br/site/conteudos/423-pa-histoacuteriap",
+      "title": "Tuparendi - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.tupancidosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tupancidosul.rs.gov.br/noticias.php",
+    "articleCount": 348,
+    "sampleArticle": {
+      "url": "https://www.tupancidosul.rs.gov.br/noticias_ver.php?id_noticia=386",
+      "title": "INFORMATIVO PIT Nº 33 – FEVEREIRO/2026INFORMATIVO PIT Nº 33 – FEVEREIRO/2026",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.ubiretama.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.ubiretama.rs.gov.br/site/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.ubiretama.rs.gov.br/site/conteudos/3200-e-mails-uteis",
+      "title": "UBIRETAMA",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.tresarroios.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.uniaodaserra.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.uniaodaserra.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.uniaodaserra.rs.gov.br/noticias/proibido-transitar-caminhoes-e-veiculos-pesados-sobre-a-ponte-comunidade-sao-luis",
+      "title": "PROIBIDO TRANSITAR CAMINHÕES E VEÍCULOS PESADOS SOBRE A PONTE COMUNIDADE SÃO LUIS⚠️⚠️",
+      "date": "2026-02-26T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "cittaweb",
+    "error": null
+  },
+  "www.turucu.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.turucu.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.turucu.rs.gov.br/portal/noticias/0/3/1169/convenios-com-o-estado-possibilitaram-investimentos-na-casa-da-pimenta/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.vacaria.rs.gov.br": {
+    "status": "partial",
+    "newsUrl": "https://www.vacaria.rs.gov.br/noticias",
+    "articleCount": 35,
+    "sampleArticle": {
+      "url": "https://www.vacaria.rs.gov.br/noticias/1/guarda-municipal",
+      "title": null,
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.uruguaiana.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.uruguaiana.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.uruguaiana.rs.gov.br/portal/noticias/0/3/7318/educacao-infantil-da-rede-municipal-de-ensino-fortalece-cuidado-e-aprendizado-para-mais-de-4-mil-criancas-em-uruguaiana/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.tunas.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tunas.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.tunas.rs.gov.br/transmissao-de-cargo-2/",
+      "title": "TRANSMISSÃO DE CARGO.",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.valereal.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.valereal.rs.gov.br/portal/noticias",
+    "articleCount": 32,
+    "sampleArticle": {
+      "url": "https://www.valereal.rs.gov.br/portal/noticias/0/3/1524/municipio-da-inicio-a-construcao-do-novo-plano-municipal-de-educacao/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.valedosol.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.unistalda.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.unistalda.rs.gov.br/blog",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://unistalda.rs.gov.br/smds-e-cras-conviver-unistalda/",
+      "title": "SMDS E CRAS CONVIVER UNISTALDA",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.valeverde.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.prefeituradevanini.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.veracruz.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.veracruz.rs.gov.br/portal/noticias",
+    "articleCount": 33,
+    "sampleArticle": {
+      "url": "https://www.veracruz.rs.gov.br/portal/noticias/0/3/5197/vera-cruz-divulga-classificados-para-os-dois-primeiros-cursos-do-programa-rs-qualificacao-recomecar/",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.veranopolis.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.veranopolis.rs.gov.br/noticia",
+    "articleCount": 20,
+    "sampleArticle": {
+      "url": "https://www.veranopolis.rs.gov.br/noticia/view/9670/prefeito-recebe-representantes-de-deputados-e-debate-demandas",
+      "title": "Veranópolis | Prefeito recebe representantes de deputados e debate demandas",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.venancioaires.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.@vicentedutra.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.@vicentedutra.rs.gov.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.@vicentedutra.rs.gov.br/noticia/211/cras-de-vicente-dutra-promove-segundo-encontro-do-grupo-paif",
+      "title": "CRAS de Vicente Dutra promove segundo encontro do grupo PAIF",
+      "date": "2026-03-11T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.victorgraeff.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.victorgraeff.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://victorgraeff.rs.gov.br/2026/03/05/programa-conexoes-rs-autoriza-duplicacao-de-ponte-entre-victor-graeff-e-mormaco-na-linha-jacui/",
+      "title": "Programa Conexões RS autoriza duplicação de ponte entre Victor Graeff e Mormaço, na Linha Jacuí",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "wordpress",
+    "error": null
+  },
+  "www.vespasianocorrears.com.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.vilaflores.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.vilaflores.rs.gov.br/noticias",
+    "articleCount": 12,
+    "sampleArticle": {
+      "url": "https://www.vilaflores.rs.gov.br/noticias/vila-flores-recebe-convite-para-festival-dos-sonhos",
+      "title": "VILA FLORES RECEBE CONVITE PARA FESTIVAL DOS SONHOS",
+      "date": "2026-03-13T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "webde",
+    "error": null
+  },
+  "www.viamao.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.viamao.rs.gov.br/portal/noticias",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://www.viamao.rs.gov.br/portal/noticias/0/3/9058/consulte-se-o-seu-medicamento-esta-disponivel-em-uma-unidade-de-saude-de-viamao",
+      "title": "Ir para o conteúdo",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.tramandai.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.tramandai.rs.gov.br/index.php?pg=noticias",
+    "articleCount": 7,
+    "sampleArticle": {
+      "url": "https://www.tramandai.rs.gov.br/noticias.php?url=bm90aWNpYXNfaWQ9JzE4MDkxJw==",
+      "title": "ÚLTIMOS DIAS PARA SE INSCREVER!",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.vilanovadosul.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.vilanovadosul.rs.gov.br/noticias",
+    "articleCount": 1,
+    "sampleArticle": {
+      "url": "https://www.vilanovadosul.rs.gov.br/noticia/categoria",
+      "title": "Prefeitura Municipal de",
+      "date": null,
+      "hasContent": true
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.pmvistaalegre.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.pmvistaalegre.com.br/noticias",
+    "articleCount": 10,
+    "sampleArticle": {
+      "url": "https://www.pmvistaalegre.com.br/site/noticia/799/transformando-o-patio-um-projeto-de-educacao-ambiental",
+      "title": "Transformando o Pátio: Um Projeto de Educação Ambiental",
+      "date": "2025-08-27T12:00:00.000Z",
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.viadutos.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.vistalegredoprata.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.vistalegredoprata.rs.gov.br/noticia",
+    "articleCount": 34,
+    "sampleArticle": {
+      "url": "https://vistalegredoprata.rs.gov.br/noticia/visualizar/id/1437/?estao-abertas-as-incricoes-para-a-prova-do-neeja.html",
+      "title": "InícioInformativosNotíciasESTÃO ABERTAS AS INCRIÇÕES PARA A PROVA DO NEEJA ESTÃO ABERTAS AS INCRIÇÕES PARA A PROVA DO NE",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "bootstrap",
+    "error": null
+  },
+  "www.vilalangaro.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.vilalangaro.rs.gov.br/noticias.php",
+    "articleCount": 50,
+    "sampleArticle": {
+      "url": "https://www.vilalangaro.rs.gov.br/noticias_ver.php?id_noticia=4123",
+      "title": "Município realiza posse de novos servidores aprovados em concurso públicoMunicípio realiza posse de novos servidores apr",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.vilamaria.rs.gov.br": {
+    "status": "ok",
+    "newsUrl": "https://www.vilamaria.rs.gov.br/noticias.php",
+    "articleCount": 50,
+    "sampleArticle": {
+      "url": "https://www.vilamaria.rs.gov.br/noticias_ver.php?id_noticia=4056",
+      "title": "ATENÇÃO! Foi registrado o primeiro caso de dengue no município de Vila Maria em 2026. ATENÇÃO! Foi registrado o primeiro",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.vistagaucha-rs.com.br": {
+    "status": "ok",
+    "newsUrl": "https://www.vistagaucha-rs.com.br",
+    "articleCount": 19,
+    "sampleArticle": {
+      "url": "https://www.vistagaucha-rs.com.br/site/inicio1/99-artigosgerais/noticias/1636-vista-gaucha-comemora-o-dia-internacional-da-mulher-com-evento-que-reuniu-800-mulheres",
+      "title": "Vista Gaúcha - RS",
+      "date": null,
+      "hasContent": false
+    },
+    "platform": "unknown",
+    "error": null
+  },
+  "www.pmvm.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.westfalia.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  },
+  "www.xangrila.rs.gov.br": {
+    "status": "failed",
+    "newsUrl": null,
+    "articleCount": 0,
+    "sampleArticle": null,
+    "platform": "unknown",
+    "error": "No news listing page found"
+  }
+}

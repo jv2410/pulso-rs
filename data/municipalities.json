@@ -1,0 +1,3481 @@
+[
+  {
+    "municipality": "ACEGUÁ",
+    "association": "AZONASUL",
+    "site": "www.acegua.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://acegua.atende.net/noticias"
+  },
+  {
+    "municipality": "ÁGUA SANTA",
+    "association": "AMUNOR",
+    "site": "www.aguasantars.com.br",
+    "category": "com.br",
+    "newsUrl": "https://aguasantars.com.br/noticias"
+  },
+  {
+    "municipality": "AGUDO",
+    "association": "AMCENTRO",
+    "site": "www.agudo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://agudo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "AJURICABA",
+    "association": "AMUPLAM",
+    "site": "www.ajuricaba.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ajuricaba.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALECRIM",
+    "association": "AMUFRON",
+    "site": "www.alecrim.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://alecrim.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALEGRETE",
+    "association": "AMFRO",
+    "site": "www.alegrete.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://alegrete.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALEGRIA",
+    "association": "AMUFRON",
+    "site": "www.pmalegria.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmalegria.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALMIRANTE TAMANDARÉ DO SUL",
+    "association": "AMAJA",
+    "site": "www.almirantetamandaredosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://almirantetamandaredosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALPESTRE",
+    "association": "AMZOP",
+    "site": "www.alpestre.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://alpestre.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALTO ALEGRE",
+    "association": "AMASBI",
+    "site": "www.altoalegre.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://altoalegre.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALTO FELIZ",
+    "association": "AMVARC",
+    "site": "www.altofeliz.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://altofeliz.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ALVORADA",
+    "association": "GRANPAL",
+    "site": "www.alvorada.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://alvorada.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "AMARAL FERRADOR",
+    "association": "AZONASUL",
+    "site": "www.amaralferrador.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://amaralferrador.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "AMETISTA DO SUL",
+    "association": "AMNG",
+    "site": "www.ametistadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ametistadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ANDRÉ DA ROCHA",
+    "association": "AMESNE",
+    "site": "www.andredarocha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://andredarocha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ANTA GORDA",
+    "association": "AMAT",
+    "site": "www.antagorda.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://antagorda.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ANTÔNIO PRADO",
+    "association": "AMESNE",
+    "site": "www.antonioprado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://antonioprado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARAMBARÉ",
+    "association": "ACOSTADOCE",
+    "site": "www.arambare.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arambare.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARARICÁ",
+    "association": "AMVAG",
+    "site": "www.ararica.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ararica.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARATIBA",
+    "association": "AMAU",
+    "site": "www.pmaratiba.com.br",
+    "category": "com.br",
+    "newsUrl": "https://pmaratiba.com.br/noticias"
+  },
+  {
+    "municipality": "ARROIO DO MEIO",
+    "association": "AMVAT",
+    "site": "www.arroiodomeio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arroiodomeio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARROIO DO PADRE",
+    "association": "AZONASUL",
+    "site": "www.arroiodopadre.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arroiodopadre.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARROIO DO SAL",
+    "association": "AMLINORTE",
+    "site": "www.arroiodosal.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arroiodosal.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARROIO DO TIGRE",
+    "association": "AMCSERRA",
+    "site": "www.arroiodotigre.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arroiodotigre.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARROIO DOS RATOS",
+    "association": "ASMURC",
+    "site": "www.arroiodosratos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arroiodosratos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARROIO GRANDE",
+    "association": "AZONASUL",
+    "site": "www.arroiogrande.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arroiogrande.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ARVOREZINHA",
+    "association": "AMAT",
+    "site": "www.arvorezinha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://arvorezinha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "AUGUSTO PESTANA",
+    "association": "AMUPLAM",
+    "site": "www.augustopestana.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://augustopestana.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ÁUREA",
+    "association": "AMAU",
+    "site": "www.aurea.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://aurea.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BAGÉ",
+    "association": "ASSUDOESTE",
+    "site": "www.bage.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://bage.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BALNEÁRIO PINHAL",
+    "association": "AMLINORTE",
+    "site": "www.balneariopinhal.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://balneariopinhal.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARÃO",
+    "association": "AMVARC",
+    "site": "www.barao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://barao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARÃO DE COTEGIPE",
+    "association": "AMAU",
+    "site": "www.baraodecotegipe.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://baraodecotegipe.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARÃO DO TRIUNFO",
+    "association": "ASMURC",
+    "site": "www.baraodotriunfo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://baraodotriunfo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARRA DO GUARITA",
+    "association": "AMUCELEIRO",
+    "site": "www.barradoguarita.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://barradoguarita.atende.net/noticias"
+  },
+  {
+    "municipality": "BARRA DO QUARAÍ",
+    "association": "AMFRO",
+    "site": "www.barradoquarai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://barradoquarai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARRA DO RIBEIRO",
+    "association": "ACOSTADOCE",
+    "site": "www.barradoribeiro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://barradoribeiro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARRA DO RIO AZUL",
+    "association": "AMAU",
+    "site": "www.barradorioazul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://barradorioazul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARRA FUNDA",
+    "association": "AMNG",
+    "site": "www.barrafunda.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://barrafunda.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARRACÃO",
+    "association": "AMUNOR",
+    "site": "www.barracao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://barracao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BARROS CASSAL",
+    "association": "AMASBI",
+    "site": "www.barroscassal.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://barroscassal.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BENJAMIN CONSTANT DO SUL",
+    "association": "AMAU",
+    "site": "www.benjaminconstantdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://benjaminconstantdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BENTO GONÇALVES",
+    "association": "AMESNE",
+    "site": "www.bentogoncalves.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://bentogoncalves.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOA VISTA DAS MISSÕES",
+    "association": "AMZOP",
+    "site": "www.boavistadasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://boavistadasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOA VISTA DO BURICÁ",
+    "association": "AMUFRON",
+    "site": "www.boavistadoburica.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://boavistadoburica.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOA VISTA DO CADEADO",
+    "association": "AMAJA",
+    "site": "www.boavistadocadeado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://boavistadocadeado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOA VISTA DO INCRA",
+    "association": "AMAJA",
+    "site": "www.boavistadoincra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://boavistadoincra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOA VISTA DO SUL",
+    "association": "AMESNE",
+    "site": "www.boavistadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://boavistadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOM JESUS",
+    "association": "AMUCSER",
+    "site": "www.bomjesus.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://bomjesus.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOM PRINCÍPIO",
+    "association": "AMVARC",
+    "site": "www.bomprincipio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://bomprincipio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOM PROGRESSO",
+    "association": "AMUCELEIRO",
+    "site": "www.bomprogresso.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://bomprogresso.atende.net/noticias"
+  },
+  {
+    "municipality": "BOM RETIRO DO SUL",
+    "association": "AMVAT",
+    "site": "www.bomretirodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://bomretirodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOQUEIRÃO DO LEÃO",
+    "association": "AMVARP",
+    "site": "www.boqueirãodoleão.gov.br",
+    "category": "other",
+    "newsUrl": "https://boqueirãodoleão.gov.br/noticias"
+  },
+  {
+    "municipality": "BOSSOROCA",
+    "association": "AMM",
+    "site": "www.bossoroca.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://bossoroca.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BOZANO",
+    "association": "AMUPLAM",
+    "site": "www.bozano.gov.br",
+    "category": "other",
+    "newsUrl": "https://bozano.gov.br/noticias"
+  },
+  {
+    "municipality": "BRAGA",
+    "association": "AMUCELEIRO",
+    "site": "www.braga.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://braga.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BROCHIER",
+    "association": "AMVARC",
+    "site": "www.brochier.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://brochier.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "BUTIÁ",
+    "association": "ASMURC",
+    "site": "www.butia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://butia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAÇAPAVA DO SUL",
+    "association": "ASSUDOESTE",
+    "site": "www.cacapavadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cacapavadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CACEQUI",
+    "association": "AMCENTRO",
+    "site": "www.cacequi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cacequi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CACHOEIRA DO SUL",
+    "association": "AMCENTRO",
+    "site": "www.cachoeiradosul.gov.rs.br",
+    "category": "other",
+    "newsUrl": "https://cachoeiradosul.gov.rs.br/noticias"
+  },
+  {
+    "municipality": "CACHOEIRINHA",
+    "association": "GRANPAL",
+    "site": "www.cachoeirinha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cachoeirinha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CACIQUE DOBLE",
+    "association": "AMUNOR",
+    "site": "www.caciquedoble.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://caciquedoble.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAIBATÉ",
+    "association": "AMM",
+    "site": "www.caibate.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://caibate.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAIÇARA",
+    "association": "AMZOP",
+    "site": "www.caicara.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://caicara.atende.net/noticias"
+  },
+  {
+    "municipality": "CAMAQUÃ",
+    "association": "ACOSTADOCE",
+    "site": "www.camaqua.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://camaqua.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMARGO",
+    "association": "AMPLA",
+    "site": "www.pmcamargo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmcamargo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMBARÁ DO SUL",
+    "association": "AMSERRA",
+    "site": "www.cambaradosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cambaradosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMPESTRE DA SERRA",
+    "association": "AMUCSER",
+    "site": "www.campestredaserra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://campestredaserra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMPINA DAS MISSÕES",
+    "association": "AMUFRON",
+    "site": "www.campinadasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://campinadasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMPINAS DO SUL",
+    "association": "AMAU",
+    "site": "www.campinasdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://campinasdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMPO BOM",
+    "association": "AMVAG",
+    "site": "www.campobom.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://campobom.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMPO NOVO",
+    "association": "AMUCELEIRO",
+    "site": "www.camponovo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://camponovo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAMPOS BORGES",
+    "association": "AMASBI",
+    "site": "www.camposborges.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://camposborges.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CANDELÁRIA",
+    "association": "AMVARP",
+    "site": "www.candelaria.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://candelaria.atende.net/noticias"
+  },
+  {
+    "municipality": "CÂNDIDO GODÓI",
+    "association": "AMUFRON",
+    "site": "www.candidogodoi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://candidogodoi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CANDIOTA",
+    "association": "AZONASUL",
+    "site": "www.candiota.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://candiota.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CANELA",
+    "association": "AMSERRA",
+    "site": "www.canela.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://canela.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CANGUÇU",
+    "association": "AZONASUL",
+    "site": "www.cangucu.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cangucu.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CANOAS",
+    "association": "GRANPAL",
+    "site": "www.canoas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://canoas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CANUDOS DO VALE",
+    "association": "AMVAT",
+    "site": "www.canudosdovale.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://canudosdovale.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAPÃO BONITO DO SUL",
+    "association": "AMUNOR",
+    "site": "www.capaobonitodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://capaobonitodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAPÃO DA CANOA",
+    "association": "AMLINORTE",
+    "site": "www.capaodacanoa.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://capaodacanoa.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAPÃO DO CIPÓ",
+    "association": "AMCENTRO",
+    "site": "www.capaodocipo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://capaodocipo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAPÃO DO LEÃO",
+    "association": "AZONASUL",
+    "site": "www.capaodoleao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://capaodoleao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAPELA DE SANTANA",
+    "association": "AMVARC",
+    "site": "www.capeladesantana.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://capeladesantana.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAPITÃO",
+    "association": "AMVAT",
+    "site": "www.capitao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://capitao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAPIVARI DO SUL",
+    "association": "AMLINORTE",
+    "site": "www.capivaridosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://capivaridosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CARAÁ",
+    "association": "AMLINORTE",
+    "site": "www.caraa.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://caraa.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CARAZINHO",
+    "association": "AMAJA",
+    "site": "www.carazinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://carazinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CARLOS BARBOSA",
+    "association": "AMESNE",
+    "site": "www.carlosbarbosa.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://carlosbarbosa.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CARLOS GOMES",
+    "association": "AMAU",
+    "site": "www.carlosgomes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://carlosgomes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CASCA",
+    "association": "AMPLA",
+    "site": "www.casca.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://casca.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CASEIROS",
+    "association": "AMUNOR",
+    "site": "www.caseiros.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://caseiros.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CATUÍPE",
+    "association": "AMUPLAM",
+    "site": "www.catuipe.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://catuipe.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CAXIAS DO SUL",
+    "association": "AMESNE",
+    "site": "www.caxias.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://caxias.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CENTENÁRIO",
+    "association": "AMAU",
+    "site": "www.centenario.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://centenario.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CERRITO",
+    "association": "AZONASUL",
+    "site": "www.cerrito.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cerrito.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CERRO BRANCO",
+    "association": "AMCSERRA",
+    "site": "www.pmcerrobranco.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmcerrobranco.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CERRO GRANDE",
+    "association": "AMZOP",
+    "site": "www.cerrogrande.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cerrogrande.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CERRO GRANDE DO SUL",
+    "association": "ACOSTADOCE",
+    "site": "www.cerrograndedosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cerrograndedosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CERRO LARGO",
+    "association": "AMM",
+    "site": "www.cerrolargo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cerrolargo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CHAPADA",
+    "association": "AMZOP",
+    "site": "www.chapada.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://chapada.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CHARQUEADAS",
+    "association": "ASMURC",
+    "site": "www.charqueadas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://charqueadas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CHARRUA",
+    "association": "AMAU",
+    "site": "www.charrua.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://charrua.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CHIAPETTA",
+    "association": "AMUCELEIRO",
+    "site": "www.chiapetta.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://chiapetta.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CHUÍ",
+    "association": "AZONASUL",
+    "site": "www.chui.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://chui.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CHUVISCA",
+    "association": "ACOSTADOCE",
+    "site": "www.chuvisca.rs.gov.com.br",
+    "category": "com.br",
+    "newsUrl": "https://chuvisca.rs.gov.com.br/noticias"
+  },
+  {
+    "municipality": "CIDREIRA",
+    "association": "AMLINORTE",
+    "site": "www.cidreira.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cidreira.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CIRÍACO",
+    "association": "AMPLA",
+    "site": "www.ciriaco.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ciriaco.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "COLINAS",
+    "association": "AMVAT",
+    "site": "www.colinasrs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://colinasrs.com.br/noticias"
+  },
+  {
+    "municipality": "COLORADO",
+    "association": "AMAJA",
+    "site": "www.colorado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://colorado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CONDOR",
+    "association": "AMUPLAM",
+    "site": "www.condor.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://condor.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CONSTANTINA",
+    "association": "AMNG",
+    "site": "www.constantina.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://constantina.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "COQUEIRO BAIXO",
+    "association": "AMAT",
+    "site": "www.coqueirobaixo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://coqueirobaixo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "COQUEIROS DO SUL",
+    "association": "AMAJA",
+    "site": "www.coqueirosdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://coqueirosdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CORONEL BARROS",
+    "association": "AMUPLAM",
+    "site": "www.coronelbarros.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://coronelbarros.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CORONEL BICACO",
+    "association": "AMUCELEIRO",
+    "site": "www.coronelbicaco.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://coronelbicaco.atende.net/noticias"
+  },
+  {
+    "municipality": "CORONEL PILAR",
+    "association": "AMESNE",
+    "site": "www.coronelpilar.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://coronelpilar.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "COTIPORÃ",
+    "association": "AMESNE",
+    "site": "www.cotipora.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cotipora.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "COXILHA",
+    "association": "AMPLA",
+    "site": "www.pmcoxilha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmcoxilha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CRISSIUMAL",
+    "association": "AMUCELEIRO",
+    "site": "www.crissiumal-rs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://crissiumal-rs.com.br/noticias"
+  },
+  {
+    "municipality": "CRISTAL",
+    "association": "ACOSTADOCE",
+    "site": "www.cristal.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cristal.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CRISTAL DO SUL",
+    "association": "AMZOP",
+    "site": "www.cristaldosul.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://cristaldosul.atende.net/noticias"
+  },
+  {
+    "municipality": "CRUZ ALTA",
+    "association": "AMAJA",
+    "site": "www.cruzalta.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://cruzalta.atende.net/noticias"
+  },
+  {
+    "municipality": "CRUZALTENSE",
+    "association": "AMAU",
+    "site": "www.cruzaltense.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cruzaltense.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "CRUZEIRO DO SUL",
+    "association": "AMVAT",
+    "site": "www.cruzeirodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://cruzeirodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DAVID CANABARRO",
+    "association": "AMPLA",
+    "site": "www.davidcanabarro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://davidcanabarro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DERRUBADAS",
+    "association": "AMUCELEIRO",
+    "site": "www.derrubadas-rs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://derrubadas-rs.com.br/noticias"
+  },
+  {
+    "municipality": "DEZESSEIS DE NOVEMBRO",
+    "association": "AMM",
+    "site": "www.dezesseisdenovembro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://dezesseisdenovembro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DILERMANDO DE AGUIAR",
+    "association": "AMCENTRO",
+    "site": "www.dilermandodeaguiar.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://dilermandodeaguiar.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DOIS IRMÃOS",
+    "association": "AMVAG",
+    "site": "www.doisirmaos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://doisirmaos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DOIS IRMÃOS DAS MISSÕES",
+    "association": "AMZOP",
+    "site": "www.doisirmaosdasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://doisirmaosdasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DOIS LAJEADOS",
+    "association": "AMESNE",
+    "site": "www.doislajeados.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://doislajeados.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DOM FELICIANO",
+    "association": "ACOSTADOCE",
+    "site": "www.domfeliciano.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://domfeliciano.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DOM PEDRITO",
+    "association": "ASSUDOESTE",
+    "site": "www.dompedrito.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://dompedrito.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DOM PEDRO DE ALCÂNTARA",
+    "association": "AMLINORTE",
+    "site": "www.dompedrodealcantara.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://dompedrodealcantara.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DONA FRANCISCA",
+    "association": "AMCENTRO",
+    "site": "www.donafrancisca.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://donafrancisca.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "DOUTOR MAURÍCIO CARDOSO",
+    "association": "AMUFRON",
+    "site": "www.pdrmcard.com.br",
+    "category": "com.br",
+    "newsUrl": "https://pdrmcard.com.br/noticias"
+  },
+  {
+    "municipality": "DOUTOR RICARDO",
+    "association": "AMAT",
+    "site": "www.doutorricardo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://doutorricardo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ELDORADO DO SUL",
+    "association": "GRANPAL",
+    "site": "www.eldorado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://eldorado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ENCANTADO",
+    "association": "AMAT",
+    "site": "www.encantado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://encantado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ENCRUZILHADA DO SUL",
+    "association": "AMVARP",
+    "site": "www.encruzilhadadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://encruzilhadadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ENGENHO VELHO",
+    "association": "AMNG",
+    "site": "www.engenhovelho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://engenhovelho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ENTRE RIOS DO SUL",
+    "association": "AMAU",
+    "site": "www.entreriosdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://entreriosdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ENTRE-IJUÍS",
+    "association": "AMM",
+    "site": "www.entreijuis.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://entreijuis.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "EREBANGO",
+    "association": "AMAU",
+    "site": "www.erebango.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://erebango.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ERECHIM",
+    "association": "AMAU",
+    "site": "www.pmerechim.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmerechim.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ERNESTINA",
+    "association": "AMPLA",
+    "site": "www.ernestina.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ernestina.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ERVAL GRANDE",
+    "association": "AMAU",
+    "site": "www.ervalgrande.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ervalgrande.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ERVAL SECO",
+    "association": "AMZOP",
+    "site": "www.ervalseco.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ervalseco.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESMERALDA",
+    "association": "AMUCSER",
+    "site": "www.esmeralda.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://esmeralda.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESPERANÇA DO SUL",
+    "association": "AMUCELEIRO",
+    "site": "www.esperancadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://esperancadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESPUMOSO",
+    "association": "AMASBI",
+    "site": "www.espumoso.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://espumoso.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESTAÇÃO",
+    "association": "AMAU",
+    "site": "www.pmestacao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmestacao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESTÂNCIA VELHA",
+    "association": "AMVAG",
+    "site": "www.estanciavelha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://estanciavelha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESTEIO",
+    "association": "GRANPAL",
+    "site": "www.esteio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://esteio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESTRELA",
+    "association": "AMVAT",
+    "site": "www.estrela.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://estrela.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ESTRELA VELHA",
+    "association": "AMCSERRA",
+    "site": "www.estrelavelha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://estrelavelha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "EUGÊNIO DE CASTRO",
+    "association": "AMM",
+    "site": "www.eugeniodecastro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://eugeniodecastro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FAGUNDES VARELA",
+    "association": "AMESNE",
+    "site": "www.fagundesvarela.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://fagundesvarela.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FARROUPILHA",
+    "association": "AMESNE",
+    "site": "www.farroupilha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://farroupilha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FAXINAL DO SOTURNO",
+    "association": "AMCENTRO",
+    "site": "www.faxinaldosoturno.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://faxinaldosoturno.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FAXINALZINHO",
+    "association": "AMAU",
+    "site": "www.faxinalzinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://faxinalzinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FAZENDA VILANOVA",
+    "association": "AMVAT",
+    "site": "www.fazendavilanova.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://fazendavilanova.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FELIZ",
+    "association": "AMVARC",
+    "site": "www.feliz.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://feliz.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FLORES DA CUNHA",
+    "association": "AMESNE",
+    "site": "www.floresdacunha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://floresdacunha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FLORIANO PEIXOTO",
+    "association": "AMAU",
+    "site": "www.florianopeixoto.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://florianopeixoto.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FONTOURA XAVIER",
+    "association": "AMASBI",
+    "site": "www.fontouraxavier.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://fontouraxavier.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FORMIGUEIRO",
+    "association": "AMCENTRO",
+    "site": "www.formigueiro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://formigueiro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FORQUETINHA",
+    "association": "AMVAT",
+    "site": "www.forquetinha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://forquetinha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FORTALEZA DOS VALOS",
+    "association": "AMAJA",
+    "site": "www.pmfv.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmfv.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "FREDERICO WESTPHALEN",
+    "association": "AMZOP",
+    "site": "www.fredericowestphalen.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://fredericowestphalen.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GARIBALDI",
+    "association": "AMESNE",
+    "site": "www.garibaldi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://garibaldi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GARRUCHOS",
+    "association": "AMM",
+    "site": "www.garruchos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://garruchos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GAURAMA",
+    "association": "AMAU",
+    "site": "www.gaurama.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://gaurama.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GENERAL CÂMARA",
+    "association": "ASMURC",
+    "site": "www.generalcamara.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://generalcamara.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GENTIL",
+    "association": "AMPLA",
+    "site": "www.pmgentil.com.br",
+    "category": "com.br",
+    "newsUrl": "https://pmgentil.com.br/noticias"
+  },
+  {
+    "municipality": "GETÚLIO VARGAS",
+    "association": "AMAU",
+    "site": "www.pmgv.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmgv.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GIRUÁ",
+    "association": "AMM",
+    "site": "www.girua.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://girua.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GLORINHA",
+    "association": "GRANPAL",
+    "site": "www.glorinha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://glorinha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GRAMADO",
+    "association": "AMSERRA",
+    "site": "www.gramado.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://gramado.atende.net/noticias"
+  },
+  {
+    "municipality": "GRAMADO DOS LOUREIROS",
+    "association": "AMNG",
+    "site": "www.gramadodosloureiros.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://gramadodosloureiros.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GRAMADO XAVIER",
+    "association": "AMVARP",
+    "site": "gramadoxavier.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://gramadoxavier.atende.net/noticias"
+  },
+  {
+    "municipality": "GRAVATAÍ",
+    "association": "GRANPAL",
+    "site": "www.gravatai.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://gravatai.atende.net/noticias"
+  },
+  {
+    "municipality": "GUABIJU",
+    "association": "AMESNE",
+    "site": "www.guabiju.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://guabiju.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GUAÍBA",
+    "association": "GRANPAL",
+    "site": "www.guaiba.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://guaiba.atende.net/noticias"
+  },
+  {
+    "municipality": "GUAPORÉ",
+    "association": "AMESNE",
+    "site": "www.guapore.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://guapore.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "GUARANI DAS MISSÕES",
+    "association": "AMM",
+    "site": "www.guaranidasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://guaranidasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "HARMONIA",
+    "association": "AMVARC",
+    "site": "www.harmonia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://harmonia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "HERVAL",
+    "association": "AZONASUL",
+    "site": "www.herval.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://herval.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "HERVEIRAS",
+    "association": "AMVARP",
+    "site": "www.herveiras.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://herveiras.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "HORIZONTINA",
+    "association": "AMUFRON",
+    "site": "www.horizontina.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://horizontina.atende.net/noticias"
+  },
+  {
+    "municipality": "HULHA NEGRA",
+    "association": "AZONASUL",
+    "site": "www.hulhanegra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://hulhanegra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "HUMAITÁ",
+    "association": "AMUCELEIRO",
+    "site": "www.humaita.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://humaita.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IBARAMA",
+    "association": "AMCSERRA",
+    "site": "www.ibarama.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ibarama.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IBIAÇÁ",
+    "association": "AMUNOR",
+    "site": "www.ibiaca.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ibiaca.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IBIRAIARAS",
+    "association": "AMUNOR",
+    "site": "www.ibiraiaras.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ibiraiaras.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IBIRAPUITÃ",
+    "association": "AMASBI",
+    "site": "www.ibirapuita.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ibirapuita.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IBIRUBÁ",
+    "association": "AMAJA",
+    "site": "www.ibiruba.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ibiruba.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IGREJINHA",
+    "association": "AMPARA",
+    "site": "www.igrejinha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://igrejinha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IJUÍ",
+    "association": "AMUPLAM",
+    "site": "www.ijui.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ijui.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ILÓPOLIS",
+    "association": "AMVAT",
+    "site": "www.ilopolis.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ilopolis.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IMBÉ",
+    "association": "AMLINORTE",
+    "site": "www imbe.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://www imbe.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IMIGRANTE",
+    "association": "AMVAT",
+    "site": "www.imigrante-rs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://imigrante-rs.com.br/noticias"
+  },
+  {
+    "municipality": "INDEPENDÊNCIA",
+    "association": "AMUFRON",
+    "site": "www.independencia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://independencia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "INHACORÁ",
+    "association": "AMUCELEIRO",
+    "site": "www.inhacora.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://inhacora.atende.net/noticias"
+  },
+  {
+    "municipality": "IPÊ",
+    "association": "AMUCSER",
+    "site": "www.pmipe.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmipe.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IPIRANGA DO SUL",
+    "association": "AMAU",
+    "site": "www.ipirangadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ipirangadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IRAÍ",
+    "association": "AMZOP",
+    "site": "www.irai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://irai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ITAARA",
+    "association": "AMCENTRO",
+    "site": "www.itaara.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://itaara.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ITACURUBI",
+    "association": "AMM",
+    "site": "www.itacurubi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://itacurubi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ITAPUCA",
+    "association": "AMAT",
+    "site": "www.itapuca.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://itapuca.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ITAQUI",
+    "association": "AMFRO",
+    "site": "www.itaqui.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://itaqui.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ITATI",
+    "association": "AMLINORTE",
+    "site": "www.itati.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://itati.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ITATIBA DO SUL",
+    "association": "AMAU",
+    "site": "www.itatibadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://itatibadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IVORÁ",
+    "association": "AMCENTRO",
+    "site": "www.ivora.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ivora.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "IVOTI",
+    "association": "AMVAG",
+    "site": "www.ivoti.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ivoti.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JABOTICABA",
+    "association": "AMZOP",
+    "site": "www.jaboticaba.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://jaboticaba.atende.net/noticias"
+  },
+  {
+    "municipality": "JACUIZINHO",
+    "association": "AMCSERRA",
+    "site": "www.jacuizinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://jacuizinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JACUTINGA",
+    "association": "AMAU",
+    "site": "www.jacutinga.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://jacutinga.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JAGUARÃO",
+    "association": "AZONASUL",
+    "site": "www.jaguarao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://jaguarao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JAGUARI",
+    "association": "AMCENTRO",
+    "site": "www.jaguari.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://jaguari.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JAQUIRANA",
+    "association": "AMUCSER",
+    "site": "www.jaquirana.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://jaquirana.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JARI",
+    "association": "AMCENTRO",
+    "site": "www.jari.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://jari.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JÓIA",
+    "association": "AMUPLAM",
+    "site": "www.joia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://joia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "JÚLIO DE CASTILHOS",
+    "association": "AMCENTRO",
+    "site": "www.juliodecastilhos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://juliodecastilhos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LAGOA BONITA DO SUL",
+    "association": "AMCSERRA",
+    "site": "www.lagoabonitadosul.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://lagoabonitadosul.atende.net/noticias"
+  },
+  {
+    "municipality": "LAGOA DOS TRÊS CANTOS",
+    "association": "AMAJA",
+    "site": "www.lagoa3cantos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://lagoa3cantos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LAGOA VERMELHA",
+    "association": "AMUNOR",
+    "site": "www.lagoavermelha.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://lagoavermelha.atende.net/noticias"
+  },
+  {
+    "municipality": "LAGOÃO",
+    "association": "AMCSERRA",
+    "site": "www.lagoao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://lagoao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LAJEADO",
+    "association": "AMVAT",
+    "site": "www.lajeado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://lajeado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LAJEADO DO BUGRE",
+    "association": "AMZOP",
+    "site": "www.lajeadodobugre.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://lajeadodobugre.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LAVRAS DO SUL",
+    "association": "ASSUDOESTE",
+    "site": "www.lavrasdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://lavrasdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LIBERATO SALZANO",
+    "association": "AMZOP",
+    "site": "www.liberatosalzano.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://liberatosalzano.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LINDOLFO COLLOR",
+    "association": "AMVAG",
+    "site": "www.lindolfocollor.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://lindolfocollor.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "LINHA NOVA",
+    "association": "AMVARC",
+    "site": "www.linhanova.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://linhanova.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MAÇAMBARÁ",
+    "association": "AMFRO",
+    "site": "www.macambara.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://macambara.atende.net/noticias"
+  },
+  {
+    "municipality": "MACHADINHO",
+    "association": "AMUNOR",
+    "site": "www.machadinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://machadinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MAMPITUBA",
+    "association": "AMLINORTE",
+    "site": "www.mampituba.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://mampituba.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MANOEL VIANA",
+    "association": "AMFRO",
+    "site": "www.manoelviana.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://manoelviana.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MAQUINÉ",
+    "association": "AMLINORTE",
+    "site": "www.maquine.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://maquine.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MARATÁ",
+    "association": "AMVARC",
+    "site": "www.marata.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://marata.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MARAU",
+    "association": "AMPLA",
+    "site": "www.pmmarau.com.br",
+    "category": "com.br",
+    "newsUrl": "https://pmmarau.com.br/noticias"
+  },
+  {
+    "municipality": "MARCELINO RAMOS",
+    "association": "AMAU",
+    "site": "www.marcelinoramos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://marcelinoramos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MARIANA PIMENTEL",
+    "association": "ACOSTADOCE",
+    "site": "www.marianapimentel.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://marianapimentel.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MARIANO MORO",
+    "association": "AMAU",
+    "site": "www.marianomoro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://marianomoro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MARQUES DE SOUZA",
+    "association": "AMVAT",
+    "site": "www.marquesdesouza.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://marquesdesouza.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MATA",
+    "association": "AMCENTRO",
+    "site": "www.mata.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://mata.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MATO CASTELHANO",
+    "association": "AMPLA",
+    "site": "www.matocastelhano.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://matocastelhano.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MATO LEITÃO",
+    "association": "AMVARP",
+    "site": "www.matoleitao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://matoleitao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MATO QUEIMADO",
+    "association": "AMM",
+    "site": "www.matoqueimado-rs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://matoqueimado-rs.com.br/noticias"
+  },
+  {
+    "municipality": "MAXIMILIANO DE ALMEIDA",
+    "association": "AMUNOR",
+    "site": "www.maximilianodealmeida.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://maximilianodealmeida.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MINAS DO LEÃO",
+    "association": "ASMURC",
+    "site": "www.minasdoleao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://minasdoleao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MIRAGUAI",
+    "association": "AMUCELEIRO",
+    "site": "www.miraguai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://miraguai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MONTAURI",
+    "association": "AMESNE",
+    "site": "www.montauri.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://montauri.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MONTE ALEGRE DOS CAMPOS",
+    "association": "AMUCSER",
+    "site": "www.montealegredoscampos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://montealegredoscampos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MONTE BELO DO SUL",
+    "association": "AMESNE",
+    "site": "www.montebelodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://montebelodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MONTENEGRO",
+    "association": "AMVARC",
+    "site": "www.montenegro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://montenegro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MORMAÇO",
+    "association": "AMASBI",
+    "site": "www.mormaco.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://mormaco.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MORRINHOS DO SUL",
+    "association": "AMLINORTE",
+    "site": "www.morrinhosdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://morrinhosdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MORRO REDONDO",
+    "association": "AZONASUL",
+    "site": "www.morroredondo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://morroredondo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MORRO REUTER",
+    "association": "AMVAG",
+    "site": "www.morroreuter.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://morroreuter.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MOSTARDAS",
+    "association": "AMLINORTE",
+    "site": "www.mostardas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://mostardas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MUÇUM",
+    "association": "AMAT",
+    "site": "www.mucum.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://mucum.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MUITOS CAPÕES",
+    "association": "AMUCSER",
+    "site": "www.muitoscapoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://muitoscapoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "MULITERNO",
+    "association": "AMPLA",
+    "site": "www.muliterno.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://muliterno.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NÃO-ME-TOQUE",
+    "association": "AMAJA",
+    "site": "www.naometoque.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://naometoque.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NICOLAU VERGUEIRO",
+    "association": "AMPLA",
+    "site": "www.nicolauvergueiro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://nicolauvergueiro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NONOAI",
+    "association": "AMNG",
+    "site": "www.nonoai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://nonoai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA ALVORADA",
+    "association": "AMPLA",
+    "site": "www.novaalvorada.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novaalvorada.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA ARAÇÁ",
+    "association": "AMESNE",
+    "site": "www.novaaraca.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novaaraca.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA BASSANO",
+    "association": "AMESNE",
+    "site": "www.novabassano.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novabassano.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA BOA VISTA",
+    "association": "AMNG",
+    "site": "www.novaboavista.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novaboavista.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA BRÉSCIA",
+    "association": "AMAT",
+    "site": "www.novabrescia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novabrescia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA CANDELÁRIA",
+    "association": "AMUFRON",
+    "site": "www.novacandelaria.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novacandelaria.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA ESPERANÇA DO SUL",
+    "association": "AMCENTRO",
+    "site": "www.novaesperancadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novaesperancadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA HARTZ",
+    "association": "AMVAG",
+    "site": "www.novahartz.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novahartz.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA PÁDUA",
+    "association": "AMESNE",
+    "site": "www.novapadua.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novapadua.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA PALMA",
+    "association": "AMCENTRO",
+    "site": "www.novapalma.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novapalma.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA PETRÓPOLIS",
+    "association": "AMSERRA",
+    "site": "www.novapetropolis.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novapetropolis.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA PRATA",
+    "association": "AMESNE",
+    "site": "www.novaprata.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novaprata.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA RAMADA",
+    "association": "AMUPLAM",
+    "site": "www.novaramada.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novaramada.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA ROMA DO SUL",
+    "association": "AMESNE",
+    "site": "www.novaromadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novaromadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVA SANTA RITA",
+    "association": "GRANPAL",
+    "site": "www.novasantarita.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://novasantarita.atende.net/noticias"
+  },
+  {
+    "municipality": "NOVO BARREIRO",
+    "association": "AMZOP",
+    "site": "www.novobarreiro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novobarreiro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVO CABRAIS",
+    "association": "AMCSERRA",
+    "site": "www.novocabrais.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novocabrais.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVO HAMBURGO",
+    "association": "GRANPAL",
+    "site": "www.novohamburgo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novohamburgo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVO MACHADO",
+    "association": "AMUFRON",
+    "site": "www.novomachado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novomachado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "NOVO TIRADENTES",
+    "association": "AMZOP",
+    "site": "www.novotiradentesrs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://novotiradentesrs.com.br/noticias"
+  },
+  {
+    "municipality": "NOVO XINGU",
+    "association": "AMZOP",
+    "site": "www.novoxingu.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://novoxingu.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "OSÓRIO",
+    "association": "AMLINORTE",
+    "site": "www.osorio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://osorio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PAIM FILHO",
+    "association": "AMUNOR",
+    "site": "www.paimfilho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://paimfilho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PALMARES DO SUL",
+    "association": "AMLINORTE",
+    "site": "www.palmaresdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://palmaresdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PALMEIRA DAS MISSÕES",
+    "association": "AMZOP",
+    "site": "www.palmeiradasmissoes.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://palmeiradasmissoes.atende.net/noticias"
+  },
+  {
+    "municipality": "PALMITINHO",
+    "association": "AMZOP",
+    "site": "www.palmitinho.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://palmitinho.atende.net/noticias"
+  },
+  {
+    "municipality": "PANAMBI",
+    "association": "AMUPLAM",
+    "site": "www.panambi.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://panambi.atende.net/noticias"
+  },
+  {
+    "municipality": "PANTANO GRANDE",
+    "association": "AMVARP",
+    "site": "www.pantanogrande.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pantanogrande.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PARAÍ",
+    "association": "AMESNE",
+    "site": "www.parai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://parai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PARAÍSO DO SUL",
+    "association": "AMCENTRO",
+    "site": "www.paraisodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://paraisodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PARECI NOVO",
+    "association": "AMVARC",
+    "site": "www.parecinovo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://parecinovo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PAROBÉ",
+    "association": "AMPARA",
+    "site": "www.parobe.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://parobe.atende.net/noticias"
+  },
+  {
+    "municipality": "PASSA SETE",
+    "association": "AMCSERRA",
+    "site": "www.passasete.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://passasete.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PASSO DO SOBRADO",
+    "association": "AMVARP",
+    "site": "www.passodosobrado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://passodosobrado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PASSO FUNDO",
+    "association": "AMPLA",
+    "site": "www.pmpf.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmpf.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PAULO BENTO",
+    "association": "AMAU",
+    "site": "www.paulobento.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://paulobento.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PAVERAMA",
+    "association": "AMVAT",
+    "site": "www.paverama.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://paverama.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PEDRAS ALTAS",
+    "association": "AZONASUL",
+    "site": "www.pedrasaltas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pedrasaltas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PEDRO OSÓRIO",
+    "association": "ACOSTADOCE",
+    "site": "www.pedroosorio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pedroosorio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PEJUÇARA",
+    "association": "AMUPLAM",
+    "site": "www.pejucara.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pejucara.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PELOTAS",
+    "association": "AZONASUL",
+    "site": "www.pelotas.com.br",
+    "category": "com.br",
+    "newsUrl": "https://pelotas.com.br/noticias"
+  },
+  {
+    "municipality": "PICADA CAFÉ",
+    "association": "AMSERRA",
+    "site": "www.picadacafe.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://picadacafe.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PINHAL",
+    "association": "AMZOP",
+    "site": "www.pinhal.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://pinhal.atende.net/noticias"
+  },
+  {
+    "municipality": "PINHAL DA SERRA",
+    "association": "AMUCSER",
+    "site": "www.pinhaldaserra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pinhaldaserra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PINHAL GRANDE",
+    "association": "AMCENTRO",
+    "site": "www.pinhalgrande.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pinhalgrande.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PINHEIRINHO DO VALE",
+    "association": "AMZOP",
+    "site": "www.pinheirinhodovale.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pinheirinhodovale.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PINHEIRO MACHADO",
+    "association": "AZONASUL",
+    "site": "www.pinheiromachado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pinheiromachado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PINTO BANDEIRA",
+    "association": "AMESNE",
+    "site": "www.pintobandeira.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pintobandeira.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PIRAPÓ",
+    "association": "AMM",
+    "site": "www.pirapo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pirapo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PIRATINI",
+    "association": "AZONASUL",
+    "site": "www.prefeiturapiratini.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://prefeiturapiratini.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PLANALTO",
+    "association": "AMNG",
+    "site": "www.planalto.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://planalto.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "POÇO DAS ANTAS",
+    "association": "AMVAT",
+    "site": "www.pocodasantas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pocodasantas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PONTÃO",
+    "association": "AMNG",
+    "site": "www.pontao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pontao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PONTE PRETA",
+    "association": "AMAU",
+    "site": "www.pontepreta.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pontepreta.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PORTÃO",
+    "association": "AMVARC",
+    "site": "www.portao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://portao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PORTO ALEGRE",
+    "association": "GRANPAL",
+    "site": "www.prefeitura.poa.br",
+    "category": "other",
+    "newsUrl": "https://prefeitura.poa.br/noticias"
+  },
+  {
+    "municipality": "PORTO LUCENA",
+    "association": "AMUFRON",
+    "site": "www.portolucena.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://portolucena.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PORTO MAUÁ",
+    "association": "AMUFRON",
+    "site": "www.portomaua.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://portomaua.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PORTO VERA CRUZ",
+    "association": "AMUFRON",
+    "site": "www.portoveracruz.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://portoveracruz.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PORTO XAVIER",
+    "association": "AMM",
+    "site": "www.portoxavier.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://portoxavier.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "POUSO NOVO",
+    "association": "AMVAT",
+    "site": "www.pousonovo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pousonovo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PRESIDENTE LUCENA",
+    "association": "AMVAG",
+    "site": "www.presidentelucena.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://presidentelucena.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PROGRESSO",
+    "association": "AMVAT",
+    "site": "www.progresso.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://progresso.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PROTÁSIO ALVES",
+    "association": "AMESNE",
+    "site": "www.protasioalves.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://protasioalves.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "PUTINGA",
+    "association": "AMVAT",
+    "site": "www.putinga.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://putinga.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "QUARAÍ",
+    "association": "AMFRO",
+    "site": "www.quarai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://quarai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "QUATRO IRMÃOS",
+    "association": "AMAU",
+    "site": "www.quatroirmaos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://quatroirmaos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "QUEVEDOS",
+    "association": "AMCENTRO",
+    "site": "www.quevedos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://quevedos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "QUINZE DE NOVEMBRO",
+    "association": "AMAJA",
+    "site": "www.quinzedenovembro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://quinzedenovembro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "REDENTORA",
+    "association": "AMUCELEIRO",
+    "site": "www.redentora.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://redentora.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "RELVADO",
+    "association": "AMAT",
+    "site": "www.relvado.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://relvado.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "RESTINGA SÊCA",
+    "association": "AMCENTRO",
+    "site": "www.restingaseca.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://restingaseca.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "RIO DOS ÍNDIOS",
+    "association": "AMNG",
+    "site": "www.riodosindios.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://riodosindios.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "RIO GRANDE",
+    "association": "AZONASUL",
+    "site": "www.riogrande.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://riogrande.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "RIO PARDO",
+    "association": "AMVARP",
+    "site": "www.riopardo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://riopardo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "RIOZINHO",
+    "association": "AMPARA",
+    "site": "www.pmriozinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmriozinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ROCA SALES",
+    "association": "AMAT",
+    "site": "www.rocasales-rs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://rocasales-rs.com.br/noticias"
+  },
+  {
+    "municipality": "RODEIO BONITO",
+    "association": "AMZOP",
+    "site": "www.rodeiobonito.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://rodeiobonito.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ROLADOR",
+    "association": "AMM",
+    "site": "www.rolador.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://rolador.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ROLANTE",
+    "association": "AMPARA",
+    "site": "www.rolante.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://rolante.atende.net/noticias"
+  },
+  {
+    "municipality": "RONDA ALTA",
+    "association": "AMNG",
+    "site": "www.rondaalta.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://rondaalta.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "RONDINHA",
+    "association": "AMNG",
+    "site": "www.rondinha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://rondinha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ROQUE GONZALES",
+    "association": "AMM",
+    "site": "www.roquegonzales.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://roquegonzales.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "ROSÁRIO DO SUL",
+    "association": "AMFRO",
+    "site": "www.rosariodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://rosariodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SAGRADA FAMÍLIA",
+    "association": "AMZOP",
+    "site": "www.sagradafamilia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sagradafamilia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SALDANHA MARINHO",
+    "association": "AMAJA",
+    "site": "www.saldanhamarinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saldanhamarinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SALTO DO JACUÍ",
+    "association": "AMAJA",
+    "site": "www.saltodojacui.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saltodojacui.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SALVADOR DAS MISSÕES",
+    "association": "AMM",
+    "site": "www.salvadordasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://salvadordasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SALVADOR DO SUL",
+    "association": "AMVARC",
+    "site": "www.salvadordosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://salvadordosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANANDUVA",
+    "association": "AMUNOR",
+    "site": "www.sananduva.rs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://sananduva.rs.com.br/noticias"
+  },
+  {
+    "municipality": "SANTA BÁRBARA DO SUL",
+    "association": "AMAJA",
+    "site": "www.santabarbaradosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santabarbaradosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA CECÍLIA DO SUL",
+    "association": "AMUNOR",
+    "site": "www.santaceciliadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santaceciliadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA CLARA DO SUL",
+    "association": "AMVAT",
+    "site": "www.santaclaradosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santaclaradosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA CRUZ DO SUL",
+    "association": "AMVARP",
+    "site": "www.santacruz.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santacruz.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA MARGARIDA DO SUL",
+    "association": "AMFRO",
+    "site": "www.santamargaridadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santamargaridadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA MARIA",
+    "association": "AMCENTRO",
+    "site": "www.santamaria.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santamaria.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA MARIA DO HERVAL",
+    "association": "AMSERRA",
+    "site": "www.santamariadoherval.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santamariadoherval.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA ROSA",
+    "association": "AMUFRON",
+    "site": "www.prefeiturasantarosa.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://prefeiturasantarosa.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA TEREZA",
+    "association": "AMESNE",
+    "site": "www.santatereza.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santatereza.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTA VITÓRIA DO PALMAR",
+    "association": "AZONASUL",
+    "site": "www.santavitoriadopalmar.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santavitoriadopalmar.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTANA DA BOA VISTA",
+    "association": "AZONASUL",
+    "site": "www.santanadaboavista.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santanadaboavista.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTANA DO LIVRAMENTO",
+    "association": "AMFRO",
+    "site": "www.sdolivramento.com.br",
+    "category": "com.br",
+    "newsUrl": "https://sdolivramento.com.br/noticias"
+  },
+  {
+    "municipality": "SANTIAGO",
+    "association": "AMCENTRO",
+    "site": "www.santiago.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santiago.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTO ÂNGELO",
+    "association": "AMM",
+    "site": "www.santoangelo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santoangelo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTO ANTÔNIO DA PATRULHA",
+    "association": "GRANPAL",
+    "site": "www.santoantoniodapatrulha.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santoantoniodapatrulha.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTO ANTÔNIO DAS MISSÕES",
+    "association": "AMM",
+    "site": "www.santoantoniodasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santoantoniodasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTO ANTÔNIO DO PALMA",
+    "association": "AMPLA",
+    "site": "www.pmpalma.com.br",
+    "category": "com.br",
+    "newsUrl": "https://pmpalma.com.br/noticias"
+  },
+  {
+    "municipality": "SANTO ANTÔNIO DO PLANALTO",
+    "association": "AMAJA",
+    "site": "www.santoantoniodoplanalto.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santoantoniodoplanalto.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTO AUGUSTO",
+    "association": "AMUCELEIRO",
+    "site": "www.santoaugusto.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santoaugusto.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTO CRISTO",
+    "association": "AMUFRON",
+    "site": "www.santocristo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santocristo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SANTO EXPEDITO DO SUL",
+    "association": "AMUNOR",
+    "site": "www.santoexpeditodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://santoexpeditodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO BORJA",
+    "association": "AMFRO",
+    "site": "www.saoborja.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saoborja.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO DOMINGOS DO SUL",
+    "association": "AMPLA",
+    "site": "www.saodomingosdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saodomingosdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO FRANCISCO DE ASSIS",
+    "association": "AMCENTRO",
+    "site": "www.saofranciscodeassis.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saofranciscodeassis.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO FRANCISCO DE PAULA",
+    "association": "AMSERRA",
+    "site": "www.saofranciscodepaula.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saofranciscodepaula.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO GABRIEL",
+    "association": "AMFRO",
+    "site": "www.saogabriel.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saogabriel.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JERÔNIMO",
+    "association": "ASMURC",
+    "site": "www.saojeronimo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojeronimo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOÃO DA URTIGA",
+    "association": "AMUNOR",
+    "site": "www.saojoaodaurtiga.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojoaodaurtiga.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOÃO DO POLÊSINE",
+    "association": "AMCENTRO",
+    "site": "www.saojoaodopolesine.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojoaodopolesine.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JORGE",
+    "association": "AMESNE",
+    "site": "www.saojorge.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojorge.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DAS MISSÕES",
+    "association": "AMZOP",
+    "site": "www.saojosedasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DO HERVAL",
+    "association": "AMASBI",
+    "site": "www.saojosedoherval.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedoherval.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DO HORTÊNCIO",
+    "association": "AMVAG",
+    "site": "www.saojosedohortencio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedohortencio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DO INHACORÁ",
+    "association": "AMUFRON",
+    "site": "www.saojosedoinhacora.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedoinhacora.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DO NORTE",
+    "association": "AZONASUL",
+    "site": "www.saojosedonorte.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedonorte.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DO OURO",
+    "association": "AMUNOR",
+    "site": "www.saojosedoouro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedoouro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DO SUL",
+    "association": "AMVARC",
+    "site": "www.saojosedosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO JOSÉ DOS AUSENTES",
+    "association": "AMUCSER",
+    "site": "www.saojosedosausentes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saojosedosausentes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO LEOPOLDO",
+    "association": "AMVAG",
+    "site": "www.saoleopoldo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saoleopoldo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO LOURENÇO DO SUL",
+    "association": "AZONASUL",
+    "site": "www.saolourencodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saolourencodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO LUIZ GONZAGA",
+    "association": "AMM",
+    "site": "www.saoluizgonzaga.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saoluizgonzaga.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO MARCOS",
+    "association": "AMESNE",
+    "site": "www.saomarcos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saomarcos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO MARTINHO",
+    "association": "AMUCELEIRO",
+    "site": "www.saomartinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saomartinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO MARTINHO DA SERRA",
+    "association": "AMCENTRO",
+    "site": "www.saomartinhodaserra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saomartinhodaserra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO MIGUEL DAS MISSÕES",
+    "association": "AMM",
+    "site": "www.saomiguel.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saomiguel.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO NICOLAU",
+    "association": "AMM",
+    "site": "www.saonicolau.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saonicolau.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO PAULO DAS MISSÕES",
+    "association": "AMM",
+    "site": "www.saopaulodasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saopaulodasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO PEDRO DA SERRA",
+    "association": "AMVARC",
+    "site": "www.saopedrodaserra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saopedrodaserra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO PEDRO DAS MISSÕES",
+    "association": "AMZOP",
+    "site": "www.saopedrodasmissoes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saopedrodasmissoes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO PEDRO DO BUTIÁ",
+    "association": "AMM",
+    "site": "www.saopedrodobutia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saopedrodobutia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO PEDRO DO SUL",
+    "association": "AMCENTRO",
+    "site": "www.saopedrodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saopedrodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO SEBASTIÃO DO CAÍ",
+    "association": "AMVARC",
+    "site": "www.saosebastiaodocai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saosebastiaodocai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO SEPÉ",
+    "association": "AMCENTRO",
+    "site": "www.saosepe.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://saosepe.atende.net/noticias"
+  },
+  {
+    "municipality": "SÃO VALENTIM",
+    "association": "AMAU",
+    "site": "www.saovalentim.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saovalentim.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO VALENTIM DO SUL",
+    "association": "AMESNE",
+    "site": "www.saovalentimdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saovalentimdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO VALÉRIO DO SUL",
+    "association": "AMUCELEIRO",
+    "site": "www.saovaleriodosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saovaleriodosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO VENDELINO",
+    "association": "AMVARC",
+    "site": "www.saovendelino.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saovendelino.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÃO VICENTE DO SUL",
+    "association": "AMCENTRO",
+    "site": "www.saovicentedosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://saovicentedosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SAPIRANGA",
+    "association": "AMVAG",
+    "site": "www.sapiranga.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://sapiranga.atende.net/noticias"
+  },
+  {
+    "municipality": "SAPUCAIA DO SUL",
+    "association": "GRANPAL",
+    "site": "www.sapucaiadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sapucaiadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SARANDI",
+    "association": "AMZOP",
+    "site": "www.sarandi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sarandi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SEBERI",
+    "association": "AMZOP",
+    "site": "www.seberi.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://seberi.atende.net/noticias"
+  },
+  {
+    "municipality": "SEDE NOVA",
+    "association": "AMUCELEIRO",
+    "site": "www.sedenova.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://sedenova.atende.net/noticias"
+  },
+  {
+    "municipality": "SEGREDO",
+    "association": "AMCSERRA",
+    "site": "www.segredo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://segredo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SELBACH",
+    "association": "AMAJA",
+    "site": "www.selbach.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://selbach.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SENADOR SALGADO FILHO",
+    "association": "AMUFRON",
+    "site": "senadorsalgadofilho.atende.net",
+    "category": "atende.net",
+    "newsUrl": "http://senadorsalgadofilho.atende.net/noticias"
+  },
+  {
+    "municipality": "SENTINELA DO SUL",
+    "association": "ACOSTADOCE",
+    "site": "www.sentineladosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sentineladosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SERAFINA CORRÊA",
+    "association": "AMESNE",
+    "site": "www.serafinacorrea.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://serafinacorrea.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SÉRIO",
+    "association": "AMVAT",
+    "site": "www.serio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://serio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SERTÃO",
+    "association": "AMAU",
+    "site": "www.sertao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sertao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SERTÃO SANTANA",
+    "association": "ACOSTADOCE",
+    "site": "www.sertaosantana.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sertaosantana.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SETE DE SETEMBRO",
+    "association": "AMM",
+    "site": "www.setedesetembro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://setedesetembro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SEVERIANO DE ALMEIDA",
+    "association": "AMAU",
+    "site": "www.severianodealmeida.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://severianodealmeida.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SILVEIRA MARTINS",
+    "association": "AMCENTRO",
+    "site": "www.silveiramartins.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://silveiramartins.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SINIMBU",
+    "association": "AMVARP",
+    "site": "www.sinimbu.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sinimbu.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SOBRADINHO",
+    "association": "AMCSERRA",
+    "site": "www.sobradinho.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://sobradinho.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "SOLEDADE",
+    "association": "AMASBI",
+    "site": "www.soledade.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://soledade.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TABAÍ",
+    "association": "AMVAT",
+    "site": "www.tabai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tabai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TAPEJARA",
+    "association": "AMUNOR",
+    "site": "www.tapejara.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tapejara.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TAPERA",
+    "association": "AMAJA",
+    "site": "www.tapera.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tapera.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TAPES",
+    "association": "ACOSTADOCE",
+    "site": "www.tapes.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tapes.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TAQUARA",
+    "association": "AMPARA",
+    "site": "www.taquara.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://taquara.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TAQUARI",
+    "association": "AMVAT",
+    "site": "www.taquari.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://taquari.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TAQUARUÇU DO SUL",
+    "association": "AMZOP",
+    "site": "www.taquarucudosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://taquarucudosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TAVARES",
+    "association": "AMLINORTE",
+    "site": "www.tavares.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tavares.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TENENTE PORTELA",
+    "association": "AMUCELEIRO",
+    "site": "www.tenenteportela.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tenenteportela.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TERRA DE AREIA",
+    "association": "AMLINORTE",
+    "site": "www.terradeareia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://terradeareia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TEUTÔNIA",
+    "association": "AMVAT",
+    "site": "www.teutonia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://teutonia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TIO HUGO",
+    "association": "AMASBI",
+    "site": "www.tiohugo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tiohugo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TIRADENTES DO SUL",
+    "association": "AMUCELEIRO",
+    "site": "www.tiradentesdosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tiradentesdosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TOROPI",
+    "association": "AMCENTRO",
+    "site": "www.toropi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://toropi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TORRES",
+    "association": "AMLINORTE",
+    "site": "www.torres.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://torres.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRAMANDAÍ",
+    "association": "AMLINORTE",
+    "site": "www.tramandai.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tramandai.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRAVESSEIRO",
+    "association": "AMVAT",
+    "site": "www.travesseiro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://travesseiro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRÊS ARROIOS",
+    "association": "AMAU",
+    "site": "www.tresarroios.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tresarroios.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRÊS CACHOEIRAS",
+    "association": "AMLINORTE",
+    "site": "www.trescachoeiras.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://trescachoeiras.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRÊS COROAS",
+    "association": "AMPARA",
+    "site": "www.trescoroas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://trescoroas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRÊS DE MAIO",
+    "association": "AMUFRON",
+    "site": "www.tresdemaio.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tresdemaio.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRÊS FORQUILHAS",
+    "association": "AMLINORTE",
+    "site": "www.tresforquilhas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tresforquilhas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRÊS PALMEIRAS",
+    "association": "AMNG",
+    "site": "www.trespalmeiras.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://trespalmeiras.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRÊS PASSOS",
+    "association": "AMUCELEIRO",
+    "site": "www.trespassos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://trespassos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRINDADE DO SUL",
+    "association": "AMNG",
+    "site": "www.trindadedosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://trindadedosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TRIUNFO",
+    "association": "GRANPAL",
+    "site": "www.triunfo.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://triunfo.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TUCUNDUVA",
+    "association": "AMUFRON",
+    "site": "www.tucunduva.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tucunduva.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TUNAS",
+    "association": "AMCSERRA",
+    "site": "www.tunas.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tunas.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TUPANCI DO SUL",
+    "association": "AMUNOR",
+    "site": "www.tupancidosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tupancidosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TUPANCIRETÃ",
+    "association": "AMCENTRO",
+    "site": "www.tupancireta.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tupancireta.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TUPANDI",
+    "association": "AMVARC",
+    "site": "www.tupandi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tupandi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TUPARENDI",
+    "association": "AMUFRON",
+    "site": "www.tuparendi.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://tuparendi.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "TURUÇU",
+    "association": "AZONASUL",
+    "site": "www.turucu.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://turucu.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "UBIRETAMA",
+    "association": "AMM",
+    "site": "www.ubiretama.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://ubiretama.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "UNIÃO DA SERRA",
+    "association": "AMESNE",
+    "site": "www.uniaodaserra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://uniaodaserra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "UNISTALDA",
+    "association": "AMCENTRO",
+    "site": "www.unistalda.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://unistalda.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "URUGUAIANA",
+    "association": "AMFRO",
+    "site": "www.uruguaiana.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://uruguaiana.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VACARIA",
+    "association": "AMUCSER",
+    "site": "www.vacaria.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://vacaria.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VALE DO SOL",
+    "association": "AMVARP",
+    "site": "www.valedosol.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://valedosol.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VALE REAL",
+    "association": "AMVARC",
+    "site": "www.valereal.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://valereal.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VALE VERDE",
+    "association": "AMVARP",
+    "site": "www.valeverde.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://valeverde.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VANINI",
+    "association": "AMPLA",
+    "site": "www.prefeituradevanini.com.br",
+    "category": "com.br",
+    "newsUrl": "https://prefeituradevanini.com.br/noticias"
+  },
+  {
+    "municipality": "VENÂNCIO AIRES",
+    "association": "AMVARP",
+    "site": "www.venancioaires.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://venancioaires.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VERA CRUZ",
+    "association": "AMVARP",
+    "site": "www.veracruz.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://veracruz.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VERANÓPOLIS",
+    "association": "AMESNE",
+    "site": "www.veranopolis.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://veranopolis.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VESPASIANO CORRÊA",
+    "association": "AMAT",
+    "site": "www.vespasianocorrears.com.br",
+    "category": "com.br",
+    "newsUrl": "https://vespasianocorrears.com.br/noticias"
+  },
+  {
+    "municipality": "VIADUTOS",
+    "association": "AMAU",
+    "site": "www.viadutos.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://viadutos.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VIAMÃO",
+    "association": "GRANPAL",
+    "site": "www.viamao.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://viamao.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VICENTE DUTRA",
+    "association": "AMZOP",
+    "site": "www.@vicentedutra.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://@vicentedutra.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VICTOR GRAEFF",
+    "association": "AMASBI",
+    "site": "www.victorgraeff.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://victorgraeff.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VILA FLORES",
+    "association": "AMESNE",
+    "site": "www.vilaflores.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://vilaflores.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VILA LÂNGARO",
+    "association": "AMUNOR",
+    "site": "www.vilalangaro.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://vilalangaro.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VILA MARIA",
+    "association": "AMPLA",
+    "site": "www.vilamaria.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://vilamaria.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VILA NOVA DO SUL",
+    "association": "AMCENTRO",
+    "site": "www.vilanovadosul.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://vilanovadosul.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VISTA ALEGRE",
+    "association": "AMZOP",
+    "site": "www.pmvistaalegre.com.br",
+    "category": "com.br",
+    "newsUrl": "https://pmvistaalegre.com.br/noticias"
+  },
+  {
+    "municipality": "VISTA ALEGRE DO PRATA",
+    "association": "AMESNE",
+    "site": "www.vistalegredoprata.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://vistalegredoprata.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "VISTA GAÚCHA",
+    "association": "AMUCELEIRO",
+    "site": "www.vistagaucha-rs.com.br",
+    "category": "com.br",
+    "newsUrl": "https://vistagaucha-rs.com.br/noticias"
+  },
+  {
+    "municipality": "VITÓRIA DAS MISSÕES",
+    "association": "AMM",
+    "site": "www.pmvm.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://pmvm.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "WESTFÁLIA",
+    "association": "AMVAT",
+    "site": "www.westfalia.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://westfalia.rs.gov.br/noticias"
+  },
+  {
+    "municipality": "XANGRI-LÁ",
+    "association": "AMLINORTE",
+    "site": "www.xangrila.rs.gov.br",
+    "category": "gov.br",
+    "newsUrl": "https://xangrila.rs.gov.br/noticias"
+  }
+]

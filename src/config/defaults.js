@@ -1,0 +1,14 @@
+module.exports = {
+  CRON_SCHEDULE: '0 6 * * *',
+  CONCURRENCY_LIMIT: 10,
+  DOMAIN_DELAY_MS: 1500,
+  MAX_RETRIES: 3,
+  RETRY_BASE_DELAY_MS: 2000,
+  REQUEST_TIMEOUT_MS: 30000,
+  MAX_PAGES_PER_SITE: 3,
+  LOOKBACK_DAYS: 7,
+  DB_PATH: './data/scraper.db',
+  LOG_LEVEL: 'info',
+  LOG_DIR: './logs',
+  USER_AGENT: 'Mozilla/5.0 (compatible; RSNewsScraper/1.0)'
+};

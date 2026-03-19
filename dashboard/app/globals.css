@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --ink: #1a1a1a;
+  --ink-secondary: #8b7355;
+  --ink-tertiary: #a39585;
+  --paper: #f5f0e8;
+  --paper-white: #faf8f3;
+  --paper-dark: #ede7db;
+  --editorial-red: #c22d2d;
+  --editorial-red-soft: #c22d2d12;
+  --blue-pen: #2952a3;
+  --blue-pen-soft: #2952a312;
+  --serra-green: #3d6b4f;
+  --serra-green-soft: #3d6b4f12;
+  --fio: #d4cbb8;
+  --fio-strong: #b8ad9a;
+}
+
+@theme inline {
+  --color-ink: #1a1a1a;
+  --color-ink-secondary: #8b7355;
+  --color-ink-tertiary: #a39585;
+  --color-paper: #f5f0e8;
+  --color-paper-white: #faf8f3;
+  --color-paper-dark: #ede7db;
+  --color-editorial-red: #c22d2d;
+  --color-editorial-red-soft: #c22d2d12;
+  --color-blue-pen: #2952a3;
+  --color-blue-pen-soft: #2952a312;
+  --color-serra-green: #3d6b4f;
+  --color-serra-green-soft: #3d6b4f12;
+  --color-fio: #d4cbb8;
+  --color-fio-strong: #b8ad9a;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+.fio {
+  border-color: var(--fio);
+}
+
+.fio-strong {
+  border-color: var(--fio-strong);
+}
+
+::selection {
+  background: var(--editorial-red-soft);
+  color: var(--ink);
+}
+
+/* Scrollbar - subtle, paper-like */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--paper); }
+::-webkit-scrollbar-thumb { background: var(--fio-strong); border-radius: 3px; }
