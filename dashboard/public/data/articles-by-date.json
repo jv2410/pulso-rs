@@ -11,8 +11,8 @@
   ],
   "byDate": {
     "2026-03-18": {
-      "totalArticles": 120,
-      "totalMunicipalities": 53,
+      "totalArticles": 102,
+      "totalMunicipalities": 47,
       "articles": [
         {
           "municipality": "TORRES",
@@ -232,13 +232,6 @@
           "scrapedAt": "2026-03-19T12:15:25Z"
         },
         {
-          "municipality": "ARROIO GRANDE",
-          "title": "Prefeitura Municipal de Arroio Grande",
-          "url": "https://www.arroiogrande.rs.gov.br/blog/1/assessoria-imprensa/2",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T09:07:47Z"
-        },
-        {
           "municipality": "BAGÉ",
           "title": "Campanha de doação de sangue acontece no dia 28",
           "url": "https://www.bage.rs.gov.br/noticias/campanha-de-doacao-de-sangue-acontece-no-dia-28",
@@ -407,55 +400,6 @@
           "scrapedAt": "2026-03-19T09:51:43Z"
         },
         {
-          "municipality": "ERECHIM",
-          "title": "Prefeitura Municipal de Erechim",
-          "url": "https://www.pmerechim.rs.gov.br/noticias/esporte",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T10:52:55Z"
-        },
-        {
-          "municipality": "ERECHIM",
-          "title": "Prefeitura Municipal de Erechim",
-          "url": "https://www.pmerechim.rs.gov.br/noticias/fazenda",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T10:52:55Z"
-        },
-        {
-          "municipality": "ERECHIM",
-          "title": "Prefeitura Municipal de Erechim",
-          "url": "https://www.pmerechim.rs.gov.br/noticias/gabinete-do-prefeito",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T10:52:55Z"
-        },
-        {
-          "municipality": "ERECHIM",
-          "title": "Prefeitura Municipal de Erechim - 6º Open Erechim de Tênis de Mesa acontece no dia 17 de maio no Ginásio do SESI",
-          "url": "https://www.pmerechim.rs.gov.br/noticia/22223/6-open-erechim-de-tenis-de-mesa-acontece-no-dia-17-de-maio-no-ginasio-do-sesi",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T10:52:55Z"
-        },
-        {
-          "municipality": "ERECHIM",
-          "title": "Prefeitura Municipal de Erechim - CAPS AD amplia cuidado em saúde mental com nova oficina de pintura",
-          "url": "https://www.pmerechim.rs.gov.br/noticia/22222/caps-ad-amplia-cuidado-em-saude-mental-com-nova-oficina-de-pintura",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T10:52:55Z"
-        },
-        {
-          "municipality": "ERECHIM",
-          "title": "Prefeitura Municipal de Erechim - Erechim celebra o feriado com manhã de atividades ao ar livre na Avenida 7 de Setembro",
-          "url": "https://www.pmerechim.rs.gov.br/noticia/22221/erechim-celebra-o-feriado-com-manha-de-atividades-ao-ar-livre-na-avenida-7-de-setembro",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T10:52:55Z"
-        },
-        {
-          "municipality": "ERECHIM",
-          "title": "Prefeitura Municipal de Erechim - UBS São Cristóvão promove encontro com gestantes focado na saúde emocional",
-          "url": "https://www.pmerechim.rs.gov.br/noticia/22220/ubs-sao-cristovao-promove-encontro-com-gestantes-focado-na-saude-emocional",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T10:52:55Z"
-        },
-        {
           "municipality": "ESTÂNCIA VELHA",
           "title": "InícioO MunicípioNotíciasPrefeitura garante R$ 1,8 milhão para pavimentação Prefeitura garante R$ 1,8 milhão para pavimentação",
           "url": "https://estanciavelha.rs.gov.br/noticia/visualizar/id/4088/?prefeitura-garante-r-18-milhao-para-pavimentacao.html",
@@ -540,34 +484,6 @@
           "scrapedAt": "2026-03-19T11:21:40Z"
         },
         {
-          "municipality": "IVOTI",
-          "title": "Notícias sobre Assistência",
-          "url": "https://www.ivoti.rs.gov.br/categorias/noticias/noticias-sobre-assistencia",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T11:24:16Z"
-        },
-        {
-          "municipality": "IVOTI",
-          "title": "Notícias em Geral",
-          "url": "https://www.ivoti.rs.gov.br/categorias/noticias/noticias-em-geral",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T11:24:16Z"
-        },
-        {
-          "municipality": "IVOTI",
-          "title": "Notícias do Meio Ambiente",
-          "url": "https://www.ivoti.rs.gov.br/categorias/noticias/noticias-do-meio-ambiente",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T11:24:16Z"
-        },
-        {
-          "municipality": "IVOTI",
-          "title": "Notícias sobre Obras",
-          "url": "https://www.ivoti.rs.gov.br/categorias/noticias/noticias-sobre-obras",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T11:24:16Z"
-        },
-        {
           "municipality": "JÓIA",
           "title": "InícioInformativosNotíciasJóia inicia ano letivo 2026 com foco na qualificação da educação Jóia inicia ano letivo 2026 com foco na qualificação da educação",
           "url": "https://www.joia.rs.gov.br/noticia/visualizar/id/2475/?joia-inicia-ano-letivo-2026-com-foco-na-qualificacao-da-educacao.html",
@@ -636,13 +552,6 @@
           "url": "https://www.presidentelucena.rs.gov.br/noticias/voce-sabia",
           "publishedAt": "2026-03-18T12:00:00.000Z",
           "scrapedAt": "2026-03-19T12:10:17Z"
-        },
-        {
-          "municipality": "RONDINHA",
-          "title": "Prefeitura Municipal de Rondinha",
-          "url": "https://www.rondinha.rs.gov.br/site/Noticias/noticias/908484-patenccedilatildeo-jovens-rondinhenses-da-classe-de-2008p",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T12:11:21Z"
         },
         {
           "municipality": "SANTA MARIA",
@@ -757,34 +666,6 @@
           "scrapedAt": "2026-03-19T12:13:54Z"
         },
         {
-          "municipality": "TIRADENTES DO SUL",
-          "title": "Prefeitura Municipal de Tiradentes do Sul - RS",
-          "url": "https://www.tiradentesdosul.rs.gov.br/site/noticias/agricultura",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T12:14:08Z"
-        },
-        {
-          "municipality": "TRÊS DE MAIO",
-          "title": "Prefeitura Municipal de Três de Maio",
-          "url": "https://www.tresdemaio.rs.gov.br/site/conteudos/6181-esporte-lazer-e-juventude",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T12:14:32Z"
-        },
-        {
-          "municipality": "TRÊS DE MAIO",
-          "title": "Prefeitura Municipal de Três de Maio",
-          "url": "https://www.tresdemaio.rs.gov.br/site/conteudos/376-gestao-urbana-e-meio-ambiente",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T12:14:32Z"
-        },
-        {
-          "municipality": "TRÊS DE MAIO",
-          "title": "Prefeitura Municipal de Três de Maio",
-          "url": "https://www.tresdemaio.rs.gov.br/site/conteudos/380-politicas-da-mulher-e-direitos-humanos",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T12:14:32Z"
-        },
-        {
           "municipality": "VACARIA",
           "title": "Notícias - Prefeitura convida comunidade e empresas para o Desfile Temático de Páscoa",
           "url": "https://www.vacaria.rs.gov.br/noticia/prefeitura-convida-comunidade-e-empresas-para-o-desfile-tematico-de-pascoa",
@@ -844,13 +725,6 @@
           "municipality": "SÃO JOSÉ DO NORTE",
           "title": "Smou realiza nivelamento de solo na Povoação da Barra",
           "url": "https://www.saojosedonorte.rs.gov.br/noticias/smou-realiza-nivelamento-de-solo-na-povoacao-da-barra",
-          "publishedAt": "2026-03-18T12:00:00.000Z",
-          "scrapedAt": "2026-03-19T13:37:54Z"
-        },
-        {
-          "municipality": "SÃO JOSÉ DO NORTE",
-          "title": "Prefeitura Municipal conquista vaga como finalista em prêmio estadual do Sebrae",
-          "url": "https://www.saojosedonorte.rs.gov.br/noticias/prefeitura-municipal-conquista-vaga-como-finalista-em-premio-estadual-do-sebrae",
           "publishedAt": "2026-03-18T12:00:00.000Z",
           "scrapedAt": "2026-03-19T13:37:54Z"
         }

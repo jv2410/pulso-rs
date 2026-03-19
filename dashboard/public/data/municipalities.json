@@ -197,7 +197,7 @@
     "siteUrl": "www.arroiogrande.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 5
+    "articleCount": 4
   },
   {
     "name": "ARVOREZINHA",
@@ -261,7 +261,7 @@
     "siteUrl": "www.barradorioazul.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 3
+    "articleCount": 2
   },
   {
     "name": "BARRA FUNDA",
@@ -1165,7 +1165,7 @@
     "siteUrl": "www.pmerechim.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 15
+    "articleCount": 5
   },
   {
     "name": "ERNESTINA",
@@ -1341,7 +1341,7 @@
     "siteUrl": "www.formigueiro.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 4
+    "articleCount": 3
   },
   {
     "name": "FORQUETINHA",
@@ -1381,7 +1381,7 @@
     "siteUrl": "www.garruchos.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 2
+    "articleCount": 1
   },
   {
     "name": "GAURAMA",
@@ -1501,7 +1501,7 @@
     "siteUrl": "www.harmonia.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 13
+    "articleCount": 1
   },
   {
     "name": "HERVAL",
@@ -1605,7 +1605,7 @@
     "siteUrl": "www.ilopolis.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 6
+    "articleCount": 5
   },
   {
     "name": "IMBÉ",
@@ -1621,7 +1621,7 @@
     "siteUrl": "www.imigrante-rs.com.br",
     "category": "com.br",
     "status": "ok",
-    "articleCount": 3
+    "articleCount": 2
   },
   {
     "name": "INDEPENDÊNCIA",
@@ -1725,7 +1725,7 @@
     "siteUrl": "www.ivoti.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 19
+    "articleCount": 15
   },
   {
     "name": "JABOTICABA",
@@ -2381,7 +2381,7 @@
     "siteUrl": "www.paraisodosul.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 3
+    "articleCount": 2
   },
   {
     "name": "PARECI NOVO",
@@ -2453,7 +2453,7 @@
     "siteUrl": "www.pedroosorio.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 4
+    "articleCount": 3
   },
   {
     "name": "PEJUÇARA",
@@ -2461,7 +2461,7 @@
     "siteUrl": "www.pejucara.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 2
+    "articleCount": 1
   },
   {
     "name": "PELOTAS",
@@ -2589,7 +2589,7 @@
     "siteUrl": "www.portomaua.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 5
+    "articleCount": 4
   },
   {
     "name": "PORTO VERA CRUZ",
@@ -2597,7 +2597,7 @@
     "siteUrl": "www.portoveracruz.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 2
+    "articleCount": 1
   },
   {
     "name": "PORTO XAVIER",
@@ -2669,7 +2669,7 @@
     "siteUrl": "www.quarai.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 4
+    "articleCount": 3
   },
   {
     "name": "QUATRO IRMÃOS",
@@ -2693,7 +2693,7 @@
     "siteUrl": "www.quinzedenovembro.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 7
+    "articleCount": 5
   },
   {
     "name": "REDENTORA",
@@ -2788,16 +2788,16 @@
     "association": "AMNG",
     "siteUrl": "www.rondaalta.rs.gov.br",
     "category": "gov.br",
-    "status": "ok",
-    "articleCount": 1
+    "status": "failed",
+    "articleCount": 0
   },
   {
     "name": "RONDINHA",
     "association": "AMNG",
     "siteUrl": "www.rondinha.rs.gov.br",
     "category": "gov.br",
-    "status": "ok",
-    "articleCount": 1
+    "status": "failed",
+    "articleCount": 0
   },
   {
     "name": "ROQUE GONZALES",
@@ -2965,7 +2965,7 @@
     "siteUrl": "www.santiago.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 4
+    "articleCount": 2
   },
   {
     "name": "SANTO ANTÔNIO DA PATRULHA",
@@ -3125,7 +3125,7 @@
     "siteUrl": "www.sertaosantana.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 3
+    "articleCount": 2
   },
   {
     "name": "SETE DE SETEMBRO",
@@ -3269,7 +3269,7 @@
     "siteUrl": "www.saojosedonorte.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 9
+    "articleCount": 8
   },
   {
     "name": "SÃO JOSÉ DO OURO",
@@ -3357,7 +3357,7 @@
     "siteUrl": "www.saomartinhodaserra.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 8
+    "articleCount": 6
   },
   {
     "name": "SÃO MIGUEL DAS MISSÕES",
@@ -3549,7 +3549,7 @@
     "siteUrl": "www.tenenteportela.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 7
+    "articleCount": 6
   },
   {
     "name": "TERRA DE AREIA",
@@ -3581,7 +3581,7 @@
     "siteUrl": "www.tiradentesdosul.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 4
+    "articleCount": 3
   },
   {
     "name": "TOROPI",
@@ -3661,7 +3661,7 @@
     "siteUrl": "www.tresdemaio.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 5
+    "articleCount": 2
   },
   {
     "name": "TRÊS FORQUILHAS",
@@ -3733,7 +3733,7 @@
     "siteUrl": "www.tuparendi.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 5
+    "articleCount": 4
   },
   {
     "name": "TURUÇU",
@@ -3909,7 +3909,7 @@
     "siteUrl": "www.vilanovadosul.rs.gov.br",
     "category": "gov.br",
     "status": "ok",
-    "articleCount": 2
+    "articleCount": 1
   },
   {
     "name": "VISTA ALEGRE",
