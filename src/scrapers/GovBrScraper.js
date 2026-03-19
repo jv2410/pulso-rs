@@ -110,8 +110,24 @@ class GovBrScraper extends BaseScraper {
       return { articles, errors };
     }
 
-    // Step 2: Extract article links
-    const links = this.extractArticleLinks(listing.html, baseUrl);
+    // Step 2: Extract article links from main listing
+    let links = this.extractArticleLinks(listing.html, baseUrl);
+
+    // Step 2b: Also discover category/editorial sub-pages and extract their articles
+    const categoryPages = this.discoverCategoryPages(listing.html, baseUrl);
+    for (const catUrl of categoryPages) {
+      try {
+        const catHtml = await this.fetchPage(catUrl);
+        const catLinks = this.extractArticleLinks(catHtml, baseUrl);
+        // Add new links not already found
+        for (const link of catLinks) {
+          if (!links.includes(link)) links.push(link);
+        }
+      } catch {
+        // Category page failed, continue
+      }
+    }
+
     if (links.length === 0) {
       errors.push({
         type: 'no_links',
@@ -123,7 +139,6 @@ class GovBrScraper extends BaseScraper {
     }
 
     // Step 3: Try to extract dates from the listing page first
-    // Many sites show dates next to article links in the listing
     const today = this._getTodayString();
     const listingDates = this._extractListingDates(listing.html, links, baseUrl);
 

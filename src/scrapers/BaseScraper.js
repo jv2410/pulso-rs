@@ -76,7 +76,9 @@ const EXCLUDED_PATH_PATTERNS = [
   /\.jpg$/i,
   /\.png$/i,
   /\/site\/conteudos\//,                     // /site/conteudos/ — institutional pages, not news
-  /\/site\/noticias\/[a-z]/,                 // /site/noticias/categoria — category pages like /noticias/agricultura
+  /\/site\/noticias\/[a-z]/,                 // /site/noticias/categoria — category pages
+  /\/categorias\//,                          // /categorias/* — category listing pages
+  /\/noticias\/noticias-/,                   // /noticias/noticias-de-saude etc — category pages
 ];
 
 /**
@@ -314,6 +316,69 @@ class BaseScraper {
     }
 
     return null;
+  }
+
+  /**
+   * Discover category/editorial sub-pages that may contain additional news.
+   * Looks for links like /noticias/saude, /noticias/educacao, /categorias/noticias/*, etc.
+   * @param {string} listingHtml - HTML of the main listing page
+   * @param {string} baseUrl
+   * @returns {string[]} - array of category page URLs to scrape
+   */
+  discoverCategoryPages(listingHtml, baseUrl) {
+    const $ = this.loadHTML(listingHtml);
+    const categories = new Set();
+
+    let baseHost;
+    try {
+      baseHost = this._normalizeHost(new URL(baseUrl).hostname);
+    } catch {
+      return [];
+    }
+
+    // Editorial categories we care about
+    const EDITORIAL_KEYWORDS = [
+      'cidadania', 'meio-ambiente', 'bem-estar', 'animal', 'cultura',
+      'habitacao', 'habitação', 'infraestrutura', 'desenvolvimento',
+      'mobilidade', 'turismo', 'esporte', 'lazer', 'educacao', 'educação',
+      'gestao', 'gestão', 'saude', 'saúde', 'seguranca', 'segurança',
+      'resiliencia', 'resiliência', 'eventos', 'festas', 'obras',
+      'assistencia', 'assistência', 'agricultura', 'social', 'transporte',
+    ];
+
+    $('a[href]').each((_, el) => {
+      const href = $(el).attr('href');
+      if (!href) return;
+
+      const abs = this.buildAbsoluteUrl(href, baseUrl);
+      if (!abs) return;
+
+      try {
+        const linkHost = this._normalizeHost(new URL(abs).hostname);
+        if (linkHost !== baseHost) return;
+      } catch {
+        return;
+      }
+
+      const path = new URL(abs).pathname.toLowerCase();
+
+      // Match category-like paths: /noticias/{category}, /categorias/noticias/{category}
+      const isCategoryPage = (
+        /\/noticias\/[a-z][\w-]+\/?$/.test(path) ||
+        /\/categorias\/noticias\/[a-z][\w-]+\/?$/.test(path) ||
+        /\/site\/noticias\/[a-z][\w-]+\/?$/.test(path)
+      );
+
+      if (isCategoryPage) {
+        // Only include if it matches an editorial we care about
+        const matchesEditorial = EDITORIAL_KEYWORDS.some(kw => path.includes(kw));
+        if (matchesEditorial) {
+          categories.add(abs);
+        }
+      }
+    });
+
+    return Array.from(categories);
   }
 
   /**
