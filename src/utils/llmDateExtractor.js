@@ -73,4 +73,42 @@ async function extractWithLLM(title, textContent, url) {
   }
 }
 
-module.exports = { extractWithLLM };
+const SUMMARY_PROMPT = `Resuma esta notícia de uma prefeitura municipal brasileira em 1-2 frases curtas (máximo 200 caracteres).
+Seja direto e objetivo. Não comece com "A prefeitura" ou "O município". Foque no FATO principal.
+
+Título: `;
+
+/**
+ * Generate a short summary of a news article using Gemini Flash.
+ * @param {string} title
+ * @param {string} content - Article text content
+ * @returns {Promise<string|null>}
+ */
+async function summarizeWithLLM(title, content) {
+  const geminiUrl = getGeminiUrl();
+  if (!geminiUrl || !content) return null;
+
+  const input = `${title}\n\nConteúdo: ${content.substring(0, 1000)}`;
+
+  try {
+    const response = await axios.post(geminiUrl, {
+      contents: [{ parts: [{ text: SUMMARY_PROMPT + input }] }],
+      generationConfig: {
+        temperature: 0.3,
+        maxOutputTokens: 100,
+      }
+    }, {
+      timeout: 5000,
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    const raw = (response.data?.candidates?.[0]?.content?.parts?.[0]?.text || '').trim();
+    if (!raw || raw.length < 10) return null;
+    // Limit to 250 chars
+    return raw.substring(0, 250);
+  } catch {
+    return null;
+  }
+}
+
+module.exports = { extractWithLLM, summarizeWithLLM };

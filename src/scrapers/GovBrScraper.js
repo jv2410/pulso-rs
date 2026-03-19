@@ -1,5 +1,5 @@
 const BaseScraper = require('./BaseScraper');
-const { extractWithLLM } = require('../utils/llmDateExtractor');
+const { extractWithLLM, summarizeWithLLM } = require('../utils/llmDateExtractor');
 
 /**
  * Title selectors in priority order.
@@ -307,10 +307,14 @@ class GovBrScraper extends BaseScraper {
       }
     }
 
+    // Generate summary with LLM
+    const summary = await summarizeWithLLM(cleanTitle, cleanContent);
+
     return {
       title: cleanTitle,
       url: this.ensureProtocol(url),
       publishedAt,
+      summary,
       content: cleanContent,
       municipalityId: site.id || null,
       scrapedAt: new Date().toISOString()

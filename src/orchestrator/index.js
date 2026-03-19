@@ -100,6 +100,7 @@ async function runScraping() {
               url: article.url,
               published_at: article.publishedAt || null,
               content: article.content || null,
+              summary: article.summary || null,
             });
             // changes > 0 means it was inserted (not ignored as duplicate)
             if (res.changes > 0) newCount++;

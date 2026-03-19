@@ -35,6 +35,11 @@ function exportToday() {
     ORDER BY a.published_at DESC
   `).all(today);
 
+  // Add summary to today's articles
+  for (const a of articles) {
+    if (!a.summary) delete a.summary;
+  }
+
   const municipalities = new Set(articles.map(a => a.municipality));
 
   const data = {
@@ -120,7 +125,8 @@ function exportArticlesByDate() {
       a.title,
       a.url,
       a.published_at AS publishedAt,
-      a.scraped_at AS scrapedAt
+      a.scraped_at AS scrapedAt,
+      a.summary
     FROM articles a
     JOIN municipalities m ON m.id = a.municipality_id
     WHERE a.published_at IS NOT NULL
@@ -133,13 +139,15 @@ function exportArticlesByDate() {
     if (!byDate[d]) {
       byDate[d] = { totalArticles: 0, totalMunicipalities: 0, articles: [], _muniSet: new Set() };
     }
-    byDate[d].articles.push({
+    const article = {
       municipality: row.municipality,
       title: row.title,
       url: row.url,
       publishedAt: row.publishedAt,
       scrapedAt: row.scrapedAt,
-    });
+    };
+    if (row.summary) article.summary = row.summary;
+    byDate[d].articles.push(article);
     byDate[d]._muniSet.add(row.municipality);
     byDate[d].totalArticles++;
   }

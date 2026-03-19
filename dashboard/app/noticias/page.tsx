@@ -10,6 +10,7 @@ interface Article {
   url: string;
   publishedAt: string;
   scrapedAt: string;
+  summary?: string;
 }
 
 interface DateEntry {
@@ -224,6 +225,14 @@ export default function NoticiasPage() {
                 >
                   {article.title}
                 </h3>
+                {article.summary && (
+                  <p
+                    className="text-sm mt-1 leading-relaxed"
+                    style={{ color: "var(--ink-secondary)" }}
+                  >
+                    {article.summary}
+                  </p>
+                )}
               </div>
               <div className="flex items-center gap-2 shrink-0 mt-1">
                 <span
