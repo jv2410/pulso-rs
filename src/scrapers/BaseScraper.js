@@ -17,6 +17,7 @@ const ARTICLE_PATH_PATTERNS = [
   // ID-based patterns (most specific first)
   /\/noticia\/visualizar\/id\/\d+/,          // /noticia/visualizar/id/{id}
   /\/noticia\/view\/\d+\//,                   // /noticia/view/{id}/{slug}
+  /\/noticia\/\d+\/\d+/,                     // /noticia/{id}/{category_id} (Lajeado, Rio Grande)
   /\/noticias\/\d+\/[^/?#]+/,                // /noticias/{id}/{slug}
   /\/noticias\/\d+-[^/?#]+/,                 // /noticias/{id}-{slug}
   /\/noticia\/\d+\/[^/?#]+/,                 // /noticia/{id}/{slug}
