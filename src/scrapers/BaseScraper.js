@@ -31,11 +31,14 @@ const ARTICLE_PATH_PATTERNS = [
   // WordPress date-based
   /\/\d{4}\/\d{2}\/\d{2}\/[^/?#]+/,         // /{yyyy}/{mm}/{dd}/{slug}
   /\/\d{4}\/\d{2}\/[^/?#]+/,                // /{yyyy}/{mm}/{slug}
+  // Category-based patterns (Santiago etc.)
+  /\/noticias\/[a-z][\w-]+\/[a-z][a-z0-9-]{5,}/, // /noticias/{category}/{slug}
   // PHP query-string patterns
   /noticias_int\.php\?id=\d+/,               // noticias_int.php?id={id}
   /noticia\.php\?detalhe=\d+/,               // noticia.php?detalhe={id}
   /noticias_ver\.php\?id_noticia=\d+/,       // noticias_ver.php?id_noticia={id}
   /noticias\.php\?url=[A-Za-z0-9+/=]{10,}/,  // noticias.php?url={base64} (Tramandaí etc)
+  /artigo\.php\?id=\d+/,                     // artigo.php?id={id} (Igrejinha)
   // Slug-only patterns (least specific, last)
   /\/noticias\/[a-z][a-z0-9-]{5,}[^/?#]*$/, // /noticias/{slug} (min 6 chars)
   /\/noticia\/[a-z][a-z0-9-]{5,}[^/?#]*$/,  // /noticia/{slug} (min 6 chars)
@@ -77,7 +80,7 @@ const EXCLUDED_PATH_PATTERNS = [
   /\.png$/i,
   /\/site\/conteudos\//,                     // /site/conteudos/ — institutional pages, not news
   /\/site\/noticias\/[a-z]/,                 // /site/noticias/categoria — category pages
-  /\/categorias\//,                          // /categorias/* — category listing pages
+  /\/categorias\/(?!noticias)/,               // /categorias/* — category pages (except /categorias/noticias which is a listing)
   /\/noticias\/noticias-/,                   // /noticias/noticias-de-saude etc — category pages
 ];
 
@@ -100,6 +103,9 @@ const NEWS_LISTING_PATHS = [
   '/artigos',                          // Bom Retiro do Sul
   '/midias/noticias',                  // Jari
   '/blog/1/assessoria-imprensa/2',     // Arroio Grande
+  '/links/noticias',                   // Santa Cruz do Sul
+  '/categoria/noticias',               // Jaguarão (WordPress category)
+  '/categoria/noticias/',              // Jaguarão (trailing slash)
 ];
 
 class BaseScraper {
@@ -211,6 +217,30 @@ class BaseScraper {
       const [, day, month, year] = slashMatch;
       const d = new Date(`${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}T12:00:00Z`);
       return isNaN(d.getTime()) ? null : d.toISOString();
+    }
+
+    // DD/Mon/YYYY (e.g. 12/Mar/2026 — Alegrete)
+    const slashMonMatch = cleaned.match(/(\d{1,2})\/(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\/(\d{4})/i);
+    if (slashMonMatch) {
+      const shortMonths = { 'jan':'01','fev':'02','mar':'03','abr':'04','mai':'05','jun':'06','jul':'07','ago':'08','set':'09','out':'10','nov':'11','dez':'12' };
+      const [, day, mon, year] = slashMonMatch;
+      const month = shortMonths[mon.toLowerCase()];
+      if (month) {
+        const d = new Date(`${year}-${month}-${day.padStart(2, '0')}T12:00:00Z`);
+        return isNaN(d.getTime()) ? null : d.toISOString();
+      }
+    }
+
+    // DD mon YYYY (e.g. 17 mar 2026 — Encantado listing)
+    const shortMonthMatch = cleaned.toLowerCase().match(/(\d{1,2})\s+(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\s+(\d{4})/);
+    if (shortMonthMatch) {
+      const shortMonths = { 'jan':'01','fev':'02','mar':'03','abr':'04','mai':'05','jun':'06','jul':'07','ago':'08','set':'09','out':'10','nov':'11','dez':'12' };
+      const [, day, mon, year] = shortMonthMatch;
+      const month = shortMonths[mon];
+      if (month) {
+        const d = new Date(`${year}-${month}-${day.padStart(2, '0')}T12:00:00Z`);
+        return isNaN(d.getTime()) ? null : d.toISOString();
+      }
     }
 
     // "DD de mês de YYYY"
