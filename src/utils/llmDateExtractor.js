@@ -111,6 +111,39 @@ async function summarizeWithLLM(title, content) {
   }
 }
 
+/**
+ * Use Gemini to extract clean article body from raw page text.
+ * Used as fallback when CSS selectors fail to isolate content.
+ */
+async function extractContentWithLLM(title, rawText) {
+  const geminiUrl = getGeminiUrl();
+  if (!geminiUrl || !rawText) return null;
+
+  const prompt = `Extraia APENAS o corpo/texto da notícia abaixo. Remova completamente: menus, navegação, breadcrumbs, rodapés, botões de compartilhar, links de redes sociais, textos de acessibilidade, nomes de secretarias, sidebars.
+
+Retorne SOMENTE os parágrafos do artigo jornalístico, separados por linhas em branco. Não adicione nada, não resuma — copie o texto original da notícia.
+
+Se não conseguir identificar o corpo da notícia, responda: NULL
+
+Título da notícia: ${title}
+
+Texto da página:
+${rawText.substring(0, 3000)}`;
+
+  try {
+    const response = await axios.post(geminiUrl, {
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0, maxOutputTokens: 2000 }
+    }, { timeout: 10000, headers: { 'Content-Type': 'application/json' } });
+
+    const raw = (response.data?.candidates?.[0]?.content?.parts?.[0]?.text || '').trim();
+    if (!raw || raw === 'NULL' || raw.length < 50) return null;
+    return raw;
+  } catch {
+    return null;
+  }
+}
+
 const CATEGORY_PROMPT = `Classifique esta notícia de prefeitura municipal em UMA única categoria.
 Responda APENAS com a categoria, sem explicação.
 
@@ -190,4 +223,4 @@ Conteúdo: ${text}`;
   }
 }
 
-module.exports = { extractWithLLM, summarizeWithLLM, classifyAndSummarize };
+module.exports = { extractWithLLM, summarizeWithLLM, classifyAndSummarize, extractContentWithLLM };

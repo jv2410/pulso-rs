@@ -1,5 +1,5 @@
 const BaseScraper = require('./BaseScraper');
-const { extractWithLLM, classifyAndSummarize } = require('../utils/llmDateExtractor');
+const { extractWithLLM, classifyAndSummarize, extractContentWithLLM } = require('../utils/llmDateExtractor');
 
 /**
  * Title selectors in priority order.
@@ -299,9 +299,27 @@ class GovBrScraper extends BaseScraper {
 
     const dateRaw = this._extractDate($, html);
     let publishedAt = this.parseBrazilianDate(dateRaw);
-    const content = this._extractContent($);
     const cleanTitle = this.cleanText(title);
-    const cleanContent = this.cleanText(content) || null;
+
+    // Extract content — try CSS selectors first, then LLM fallback
+    let rawContent = this._extractContent($);
+    let cleanContent = rawContent || null;
+
+    // Detect if content is noise (menus, navigation, etc)
+    const isNoise = cleanContent && (
+      cleanContent.length < 200 ||
+      /^(menu principal|calendário municipal|secretaria de|pular para)/im.test(cleanContent) ||
+      (cleanContent.split('\n\n').filter(p => p.length > 50).length < 2)
+    );
+
+    // If content is missing, too short, or noise — use LLM to extract clean text
+    if (!cleanContent || isNoise) {
+      const pageText = $('body').text().replace(/\s+/g, ' ').trim();
+      const llmContent = await extractContentWithLLM(cleanTitle, pageText);
+      if (llmContent) {
+        cleanContent = llmContent;
+      }
+    }
 
     // If regex failed to find date: use LLM as fallback
     if (!publishedAt) {
@@ -503,13 +521,21 @@ class GovBrScraper extends BaseScraper {
 
       // Filter out navigation breadcrumbs, social buttons, and short noise
       const NOISE_PATTERNS = [
-        /^(início|home|notícias?|noticias?|voltar|anterior|próximo|compartilhar|tweetar|curtir|enviar|imprimir|whatsapp|facebook|twitter|instagram|linkedin)$/i,
+        /^(início|home|notícias?|noticias?|voltar|anterior|próximo|compartilhar|tweetar|curtir|enviar|imprimir|whatsapp|facebook|twitter|instagram|linkedin|pinterest)$/i,
         /^(janeiro|fevereiro|março|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|\d{4})$/i,
-        /^(menu|buscar|pesquisar|acessibilidade|aumentar|diminuir|fonte|alto contraste|libras|atalhos)$/i,
+        /^(menu|buscar|pesquisar|acessibilidade|aumentar|diminuir|fonte|alto contraste|libras|atalhos|pular para|ir para|user-lock|conteúdo|busca|rodapé)$/i,
+        /^(menu principal|o município|sobre |símbolos|turismo em|calendário|secretaria|departamento|contato|fale conosco|ouvidoria|transparência|licitaç|diário oficial)$/i,
+        /^(reduzir fonte|aumentar fonte|alto contraste|font-size|copyright|todos os direitos|desenvolvido por|powered by)$/i,
         /^atualizada?\s+dia/i,
         /^compartilhe/i,
         /^publicado\s+em/i,
         /^tags?:/i,
+        /^(leia mais|leia também|veja também|saiba mais|notícias relacionadas|últimas notícias)$/i,
+        /^https?:\/\//i,
+        /^www\./i,
+        /^#\w/,
+        /^\d{1,2}\/\d{1,2}\/\d{4}$/,
+        /^\d{1,2}\s+de\s+\w+\s+de\s+\d{4}$/i,
       ];
 
       const filtered = paragraphs.map(p => p.replace(/^[>\s]+/, '').trim()).filter(p => {
@@ -528,11 +554,22 @@ class GovBrScraper extends BaseScraper {
       if (text && text.length > 50) return text;
     }
 
-    // Fallback: try body
+    // Fallback: try body but be more aggressive with cleanup
     const body = $('body').clone();
     if (body.length) {
+      // Remove more noise elements
+      body.find('script, style, nav, header, footer, aside, .menu, .sidebar, .breadcrumb, .pagination, .nav, .topbar, .toolbar, .acessibilidade, .accessibility, .social, .share, .related, .tags, form, iframe, .banner, .carousel, .slider, [role="navigation"], [role="banner"], [role="complementary"]').remove();
+
       const text = htmlToText(body);
-      if (text && text.length > 100) return text.substring(0, 10000);
+
+      // Validate: if more than 30% of paragraphs are noise (< 20 chars), reject
+      if (text && text.length > 100) {
+        const paras = text.split('\n\n');
+        const goodParas = paras.filter(p => p.length > 30);
+        if (goodParas.length >= 2) {
+          return goodParas.join('\n\n').substring(0, 10000);
+        }
+      }
     }
 
     return null;
