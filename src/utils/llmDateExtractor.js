@@ -145,16 +145,25 @@ Título: `;
  */
 async function classifyAndSummarize(title, content) {
   const geminiUrl = getGeminiUrl();
-  if (!geminiUrl) return { summary: null, category: null };
+  if (!geminiUrl) return { summary: null, category: null, relevanceScore: null };
 
-  const text = (content || '').substring(0, 1000);
-  const prompt = `Analise esta notícia e responda em JSON exato, sem markdown:
-{"category":"<categoria>","summary":"<resumo em 1-2 frases, max 200 chars>"}
+  const text = (content || '').substring(0, 1500);
+  const prompt = `Analise esta notícia de prefeitura municipal e responda em JSON exato, sem markdown:
+{"category":"<categoria>","summary":"<resumo 1-2 frases, max 200 chars>","score":<1-5>}
 
-Categorias válidas: Cidadania, Meio Ambiente, Cultura, Habitação, Infraestrutura, Desenvolvimento, Mobilidade, Turismo, Esporte e Lazer, Educação, Gestão, Saúde, Segurança, Resiliência, Eventos, Agricultura, Assistência Social.
-Se for sobre crise/desastre/tragédia/escândalo, use: Crise
+CATEGORIAS: Cidadania, Meio Ambiente, Cultura, Habitação, Infraestrutura, Desenvolvimento, Mobilidade, Turismo, Esporte e Lazer, Educação, Gestão, Saúde, Segurança, Resiliência, Eventos, Agricultura, Assistência Social.
+Se for crise/desastre/tragédia/escândalo: Crise
 
-Regras do resumo: seja direto, não comece com "A prefeitura" ou "O município".
+RESUMO: direto, não comece com "A prefeitura" ou "O município".
+
+SCORE DE RELEVÂNCIA (1-5 estrelas):
+5 = Ação concreta que transforma a vida do cidadão. Inauguração de obras (escolas, postos, praças), programas sociais inovadores, modernização administrativa, resiliência climática, regularização fundiária, parcerias intermunicipais, mobilidade urbana.
+4 = Conteúdo relevante. Cursos/capacitações para comunidade, eventos culturais, audiências públicas, assistência social, apoio ao empreendedorismo, monitoramento/prevenção, parcerias com governo federal/estadual/instituições (Banco Mundial, Sebrae, Unicef, etc).
+3 = Pode publicar mas não é prioridade. Prazos genéricos, comunicados de funcionamento, divulgação sem inovação.
+2 = Foge da proposta. Notícias negativas sem solução, burocracia interna, nomeações, prestação de contas pura, editais em formato legal, problemas sem ação da prefeitura.
+1 = Não publica. Propaganda político-partidária, autopromoção, ataques políticos, conteúdo eleitoral, disputas judiciais, diário oficial, convocações internas, fake news.
+
+PERGUNTA-CHAVE: É ação concreta com impacto positivo? → nota alta. É burocracia/autopromoção? → nota baixa.
 
 Título: ${title}
 Conteúdo: ${text}`;
@@ -170,12 +179,14 @@ Conteúdo: ${text}`;
     if (!jsonMatch) return { summary: null, category: null };
 
     const parsed = JSON.parse(jsonMatch[0]);
+    const score = parseInt(parsed.score);
     return {
       summary: parsed.summary ? parsed.summary.substring(0, 250) : null,
       category: parsed.category || null,
+      relevanceScore: (score >= 1 && score <= 5) ? score : null,
     };
   } catch {
-    return { summary: null, category: null };
+    return { summary: null, category: null, relevanceScore: null };
   }
 }
 

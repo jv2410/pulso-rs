@@ -13,6 +13,7 @@ interface Article {
   published_at: string;
   summary: string | null;
   category: string | null;
+  relevance_score: number | null;
   content: string | null;
 }
 
@@ -30,6 +31,7 @@ export default function NoticiasPage() {
   const [search, setSearch] = useState("");
   const [filterMunicipality, setFilterMunicipality] = useState("");
   const [filterCategory, setFilterCategory] = useState("");
+  const [filterScore, setFilterScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [loadingContent, setLoadingContent] = useState(false);
@@ -58,7 +60,7 @@ export default function NoticiasPage() {
     (async () => {
       const { data } = await supabase
         .from("articles")
-        .select("id, title, url, published_at, summary, category, municipalities(name)")
+        .select("id, title, url, published_at, summary, category, relevance_score, municipalities(name)")
         .gte("published_at", selectedDate + "T00:00:00Z")
         .lte("published_at", selectedDate + "T23:59:59Z")
         .neq("category", "Crise")
@@ -132,9 +134,10 @@ export default function NoticiasPage() {
         (a.summary || "").toLowerCase().includes(search.toLowerCase());
       const matchMunicipality = !filterMunicipality || a.municipality === filterMunicipality;
       const matchCategory = !filterCategory || a.category === filterCategory;
-      return matchSearch && matchMunicipality && matchCategory;
+      const matchScore = !filterScore || (a.relevance_score !== null && a.relevance_score >= filterScore);
+      return matchSearch && matchMunicipality && matchCategory && matchScore;
     });
-  }, [articles, search, filterMunicipality, filterCategory]);
+  }, [articles, search, filterMunicipality, filterCategory, filterScore]);
 
   function formatDateBR(isoDate: string): string {
     const [y, m, d] = isoDate.split("-");
@@ -196,6 +199,16 @@ export default function NoticiasPage() {
             <option value="">Todos os municípios</option>
             {municipalities.map((m) => <option key={m} value={m}>{m}</option>)}
           </select>
+
+          {/* Score filter */}
+          <select value={filterScore} onChange={(e) => setFilterScore(Number(e.target.value))}
+            className="px-3 py-2 text-sm focus:outline-none"
+            style={{ background: "var(--paper-white)", border: "1px solid var(--fio)", borderRadius: "2px", color: "var(--ink)" }}>
+            <option value={0}>Todas as notas</option>
+            <option value={5}>★★★★★ (5)</option>
+            <option value={4}>★★★★ (4+)</option>
+            <option value={3}>★★★ (3+)</option>
+          </select>
         </div>
       </div>
 
@@ -203,6 +216,7 @@ export default function NoticiasPage() {
       <p className="text-sm mb-4" style={{ color: "var(--ink-secondary)" }}>
         {filtered.length} notícias em {formatDateBR(selectedDate)}
         {filterCategory && ` · ${filterCategory}`}
+        {filterScore > 0 && ` · ${"★".repeat(filterScore)}+`}
       </p>
 
       {/* Article list */}
@@ -220,6 +234,11 @@ export default function NoticiasPage() {
                   <p className="text-xs uppercase tracking-[0.15em]" style={{ color: "var(--ink-secondary)" }}>
                     {article.municipality}
                   </p>
+                  {article.relevance_score && (
+                    <span className="text-xs" style={{ color: "#d4a017", letterSpacing: "1px" }}>
+                      {"★".repeat(article.relevance_score)}{"☆".repeat(5 - article.relevance_score)}
+                    </span>
+                  )}
                   {article.category && (
                     <span className="text-xs px-1.5 py-0.5"
                       style={{ background: "var(--paper-dark)", color: "var(--ink-secondary)", borderRadius: "2px" }}>
@@ -333,6 +352,11 @@ export default function NoticiasPage() {
                 <p className="text-xs uppercase tracking-[0.15em]" style={{ color: "var(--ink-secondary)" }}>
                   {selectedArticle.municipality}
                 </p>
+                {selectedArticle.relevance_score && (
+                  <span className="text-sm" style={{ color: "#d4a017", letterSpacing: "1px" }}>
+                    {"★".repeat(selectedArticle.relevance_score)}{"☆".repeat(5 - selectedArticle.relevance_score)}
+                  </span>
+                )}
                 {selectedArticle.category && (
                   <span className="text-xs px-1.5 py-0.5"
                     style={{ background: "var(--paper-dark)", color: "var(--ink-secondary)", borderRadius: "2px" }}>

@@ -317,8 +317,8 @@ class GovBrScraper extends BaseScraper {
       }
     }
 
-    // Classify and summarize with LLM (single call)
-    const { summary, category } = await classifyAndSummarize(cleanTitle, cleanContent);
+    // Classify, summarize, and rate with LLM (single call)
+    const { summary, category, relevanceScore } = await classifyAndSummarize(cleanTitle, cleanContent);
 
     return {
       title: cleanTitle,
@@ -326,6 +326,7 @@ class GovBrScraper extends BaseScraper {
       publishedAt,
       summary,
       category,
+      relevanceScore,
       content: cleanContent,
       municipalityId: site.id || null,
       scrapedAt: new Date().toISOString()
