@@ -450,44 +450,88 @@ class GovBrScraper extends BaseScraper {
 
   /**
    * Extract article content with paragraph formatting preserved.
+   * Converts HTML block elements into double-newline separated paragraphs.
    */
   _extractContent($) {
+    // Block-level tags that should create paragraph breaks
+    const BLOCK_TAGS = new Set(['p', 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'blockquote', 'tr', 'figcaption', 'section']);
+
+    function htmlToText(el) {
+      // Remove unwanted elements
+      el.find('script, style, nav, header, footer, aside, .share, .social, .tags, .related, .breadcrumb, .menu, .sidebar, .pagination, .nav, .comentarios, .comments, form, iframe').remove();
+
+      const paragraphs = [];
+      let currentParagraph = '';
+
+      // Get the inner HTML and process it
+      const html = el.html();
+      if (!html) return '';
+
+      // Replace <br> with newline markers
+      const processed = html
+        .replace(/<br\s*\/?>/gi, '\n')
+        // Add paragraph markers before block elements
+        .replace(/<(p|div|h[1-6]|li|blockquote|tr|figcaption|section)[^>]*>/gi, '\n\n<<BLOCK>>\n')
+        // Add paragraph markers after closing block elements
+        .replace(/<\/(p|div|h[1-6]|li|blockquote|tr|figcaption|section)>/gi, '\n\n')
+        // Remove all remaining HTML tags
+        .replace(/<[^>]*>/g, '')
+        // Decode common HTML entities
+        .replace(/&nbsp;/g, ' ')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&rsquo;/g, "'")
+        .replace(/&ldquo;/g, '"')
+        .replace(/&rdquo;/g, '"')
+        .replace(/&mdash;/g, '—')
+        .replace(/&ndash;/g, '–');
+
+      // Split by double newlines and clean each paragraph
+      const rawParagraphs = processed.split(/\n{2,}/);
+      for (const p of rawParagraphs) {
+        const cleaned = p
+          .replace(/<<BLOCK>>/g, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+        if (cleaned && cleaned.length > 2) {
+          paragraphs.push(cleaned);
+        }
+      }
+
+      // Filter out navigation breadcrumbs, social buttons, and short noise
+      const NOISE_PATTERNS = [
+        /^(início|home|notícias?|noticias?|voltar|anterior|próximo|compartilhar|tweetar|curtir|enviar|imprimir|whatsapp|facebook|twitter|instagram|linkedin)$/i,
+        /^(janeiro|fevereiro|março|marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro|\d{4})$/i,
+        /^(menu|buscar|pesquisar|acessibilidade|aumentar|diminuir|fonte|alto contraste|libras|atalhos)$/i,
+        /^atualizada?\s+dia/i,
+        /^compartilhe/i,
+        /^publicado\s+em/i,
+        /^tags?:/i,
+      ];
+
+      const filtered = paragraphs.map(p => p.replace(/^[>\s]+/, '').trim()).filter(p => {
+        if (p.length < 4) return false;
+        return !NOISE_PATTERNS.some(re => re.test(p));
+      });
+
+      return filtered.join('\n\n');
+    }
+
     for (const selector of CONTENT_SELECTORS) {
       const el = $(selector).first();
       if (!el.length) continue;
 
-      // Convert block elements to newlines before extracting text
-      el.find('br').replaceWith('\n');
-      el.find('p, div, h1, h2, h3, h4, h5, h6, li, blockquote').each((_, tag) => {
-        const $tag = $(tag);
-        $tag.prepend('\n\n');
-        $tag.append('\n');
-      });
-
-      // Remove script/style/nav inside content
-      el.find('script, style, nav, header, footer, .share, .social, .tags, .related').remove();
-
-      let text = el.text()
-        .replace(/\t/g, ' ')
-        .replace(/ {2,}/g, ' ')
-        .replace(/\n{3,}/g, '\n\n')
-        .trim();
-
+      const text = htmlToText(el);
       if (text && text.length > 50) return text;
     }
 
-    // Fallback: try the whole body, extracting main text
-    const body = $('body');
+    // Fallback: try body
+    const body = $('body').clone();
     if (body.length) {
-      body.find('script, style, nav, header, footer, aside, .menu, .sidebar').remove();
-      body.find('p').each((_, tag) => {
-        $(tag).prepend('\n\n');
-      });
-      const text = body.text()
-        .replace(/\t/g, ' ')
-        .replace(/ {2,}/g, ' ')
-        .replace(/\n{3,}/g, '\n\n')
-        .trim();
+      const text = htmlToText(body);
       if (text && text.length > 100) return text.substring(0, 10000);
     }
 
