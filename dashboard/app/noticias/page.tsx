@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo, useCallback } from "react";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { supabase } from "../../lib/supabase";
+import PublishToWP from "../components/PublishToWP";
 
 interface Article {
   id: number;
@@ -36,6 +37,7 @@ export default function NoticiasPage() {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [loadingContent, setLoadingContent] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [showPublish, setShowPublish] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -331,8 +333,19 @@ export default function NoticiasPage() {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                  Visitar notícia
+                  Visitar noticia
                 </a>
+
+                <button
+                  onClick={() => setShowPublish(true)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium"
+                  style={{ borderRadius: "2px", background: "var(--editorial-red)", color: "white", border: "none" }}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                  </svg>
+                  Portal 497
+                </button>
               </div>
 
               <button
@@ -404,6 +417,24 @@ export default function NoticiasPage() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Publish to WP Modal */}
+      {showPublish && selectedArticle && (
+        <PublishToWP
+          article={{
+            title: selectedArticle.title,
+            content: selectedArticle.content,
+            summary: selectedArticle.summary,
+            municipality: selectedArticle.municipality,
+            category: selectedArticle.category,
+            url: selectedArticle.url,
+          }}
+          onClose={() => setShowPublish(false)}
+          onPublished={(link) => {
+            setShowPublish(false);
+          }}
+        />
       )}
     </div>
   );
