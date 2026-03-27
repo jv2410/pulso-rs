@@ -100,6 +100,49 @@ const TITLE_BLACKLIST = [
   'home',
 ];
 
+/**
+ * Mojibake replacements (UTF-8 interpreted as Latin-1).
+ */
+const MOJIBAKE_MAP = [
+  ['Ã£', 'ã'],
+  ['Ã§', 'ç'],
+  ['Ã©', 'é'],
+  ['Ãº', 'ú'],
+  ['Ã³', 'ó'],
+  ['Ã¡', 'á'],
+  ['Ãª', 'ê'],
+  ['Ã\xad', 'í'],
+];
+
+/**
+ * Patterns that indicate an accessibility/navigation title, not a real article.
+ */
+const JUNK_TITLE_PATTERNS = [
+  /^ir para o conte[uú]do/i,
+  /^pular para/i,
+  /^skip to/i,
+  /^not[ií]cias?$/i,
+  /^home$/i,
+  /^in[ií]cio$/i,
+  /^edital\b/i,
+  /^decreto\b/i,
+  /^portaria\b/i,
+  /^lei\s+n[º°]/i,
+  /^ata\s+da\b/i,
+  /^convoca[çc][ãa]o\b/i,
+];
+
+/**
+ * Content noise prefixes — if content starts with these, it's nav/menu garbage.
+ */
+const CONTENT_NOISE_PREFIXES = [
+  /^menu principal/i,
+  /^pular para/i,
+  /^reduzir fonte/i,
+  /^calend[aá]rio municipal/i,
+  /^secretaria de administra[çc][ãa]o/i,
+];
+
 class GovBrScraper extends BaseScraper {
   /**
    * Scrape a municipal government site - ONLY articles from today.
@@ -288,6 +331,60 @@ class GovBrScraper extends BaseScraper {
   }
 
   /**
+   * Fix mojibake encoding and validate title + content.
+   * Returns { valid, cleanTitle, cleanContent } or { valid: false } for junk.
+   */
+  _validateArticle(title, content) {
+    let cleanTitle = title || '';
+    let cleanContent = content || null;
+
+    // --- Fix mojibake encoding ---
+    for (const [bad, good] of MOJIBAKE_MAP) {
+      cleanTitle = cleanTitle.split(bad).join(good);
+      if (cleanContent) {
+        cleanContent = cleanContent.split(bad).join(good);
+      }
+    }
+
+    // --- Title validation ---
+    // Reject if title still has replacement-character after encoding fix
+    if (cleanTitle.includes('\uFFFD')) {
+      return { valid: false, cleanTitle, cleanContent };
+    }
+
+    // Too short
+    if (cleanTitle.length < 15) {
+      return { valid: false, cleanTitle, cleanContent };
+    }
+
+    // Matches accessibility / navigation text
+    if (JUNK_TITLE_PATTERNS.some(re => re.test(cleanTitle.trim()))) {
+      return { valid: false, cleanTitle, cleanContent };
+    }
+
+    // Generic site-name title: "Prefeitura Municipal de <City>" with nothing else
+    const prefeituraMatch = cleanTitle.match(/^Prefeitura\s+Municipal\s+de\s+(.+)$/i);
+    if (prefeituraMatch) {
+      // After the city name there should be meaningful words (e.g. " - Notícia tal")
+      // A bare city name (1-3 words, no punctuation separators) is junk
+      const rest = prefeituraMatch[1].trim();
+      if (!/[-–|:]/.test(rest) && rest.split(/\s+/).length <= 3) {
+        return { valid: false, cleanTitle, cleanContent };
+      }
+    }
+
+    // --- Content validation ---
+    if (cleanContent) {
+      const isContentNoise = CONTENT_NOISE_PREFIXES.some(re => re.test(cleanContent.trim()));
+      if (isContentNoise) {
+        cleanContent = null; // discard garbage, keep article with null content
+      }
+    }
+
+    return { valid: true, cleanTitle, cleanContent };
+  }
+
+  /**
    * Fetch a single article page and extract title, date, content.
    */
   async _fetchArticle(url, site, baseUrl) {
@@ -335,17 +432,24 @@ class GovBrScraper extends BaseScraper {
       }
     }
 
+    // Validate and fix encoding before persisting
+    const validation = this._validateArticle(cleanTitle, cleanContent);
+    if (!validation.valid) return null;
+
+    const validatedTitle = validation.cleanTitle;
+    const validatedContent = validation.cleanContent;
+
     // Classify, summarize, and rate with LLM (single call)
-    const { summary, category, relevanceScore } = await classifyAndSummarize(cleanTitle, cleanContent);
+    const { summary, category, relevanceScore } = await classifyAndSummarize(validatedTitle, validatedContent);
 
     return {
-      title: cleanTitle,
+      title: validatedTitle,
       url: this.ensureProtocol(url),
       publishedAt,
       summary,
       category,
       relevanceScore,
-      content: cleanContent,
+      content: validatedContent,
       municipalityId: site.id || null,
       scrapedAt: new Date().toISOString()
     };
