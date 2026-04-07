@@ -239,15 +239,24 @@ class GovBrScraper extends BaseScraper {
   }
 
   /**
-   * Check if a date string (ISO or parsed) is today.
+   * Check if a date is within the lookback window (today + last 3 days).
+   * This ensures weekend articles are captured on Monday scrapes.
    */
   _isToday(dateStr) {
     if (!dateStr) return false;
-    const today = this._getTodayString();
     try {
       const d = new Date(dateStr);
       if (isNaN(d.getTime())) return false;
-      return d.toISOString().split('T')[0] === today;
+      const articleDate = d.toISOString().split('T')[0];
+      const today = this._getTodayString();
+
+      // Accept if it's exactly the target date
+      if (articleDate === today) return true;
+
+      // Also accept articles from the last 3 days (catches weekends)
+      const cutoff = new Date(today + 'T00:00:00Z');
+      cutoff.setDate(cutoff.getDate() - 3);
+      return d >= cutoff;
     } catch {
       return false;
     }

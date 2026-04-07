@@ -26,6 +26,7 @@ const ARTICLE_PATH_PATTERNS = [
   /\/artigo\/\d+\/[^/?#]+/,                  // /artigo/{id}/{slug}
   /\/artigos\/item\/\d+/,                    // /artigos/item/{id} (Bom Retiro do Sul)
   /\/site\/noticias\/\d+-[^/?#]+/,           // /site/noticias/{id}-{slug} (NOT /site/conteudos/ — those are institutional)
+  /\/site\/noticias\/[a-z][\w-]+\/\d+-[^/?#]+/, // /site/noticias/{category}/{id}-{slug} (Abase Sistemas)
   /\/site\/publicacao\/[^/?#]+/,             // /site/publicacao/{slug} (Barão de Cotegipe)
   /\/noticiasView\/\d+_[^/?#]+/,            // /noticiasView/{id}_{slug}.html (Barra do Ribeiro)
   /\/midias\/noticias\/[^/]+\/\d+/,          // /midias/noticias/{slug}/{id} (Jari)
