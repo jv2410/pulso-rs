@@ -20,6 +20,8 @@ const ARTICLE_PATH_PATTERNS = [
   /\/noticia\/\d+\/\d+/,                     // /noticia/{id}/{category_id} (Lajeado, Rio Grande)
   /\/noticias\/\d+\/[^/?#]+/,                // /noticias/{id}/{slug}
   /\/noticias\/\d+-[^/?#]+/,                 // /noticias/{id}-{slug}
+  /\/noticias\/descricao\/\d+\//,            // /noticias/descricao/{id}/{slug} (Tres Palmeiras)
+  /\/noticia\/\d+-/,                         // /noticia/{id}-{slug}
   /\/noticia\/\d+\/[^/?#]+/,                 // /noticia/{id}/{slug}
   /\/artigo\/\d+\/[^/?#]+/,                  // /artigo/{id}/{slug}
   /\/artigos\/item\/\d+/,                    // /artigos/item/{id} (Bom Retiro do Sul)
@@ -80,7 +82,7 @@ const EXCLUDED_PATH_PATTERNS = [
   /\.jpg$/i,
   /\.png$/i,
   /\/site\/conteudos\//,                     // /site/conteudos/ — institutional pages, not news
-  /\/site\/noticias\/[a-z]/,                 // /site/noticias/categoria — category pages
+  /\/site\/noticias\/[a-z][a-z-]+\/?$/,      // /site/noticias/categoria — category listing pages (no numeric ID)
   /\/categorias\/(?!noticias)/,               // /categorias/* — category pages (except /categorias/noticias which is a listing)
   /\/noticias\/noticias-/,                   // /noticias/noticias-de-saude etc — category pages
 ];
@@ -103,6 +105,7 @@ const NEWS_LISTING_PATHS = [
   '/blog',
   '/artigos',                          // Bom Retiro do Sul
   '/midias/noticias',                  // Jari
+  '/noticias/descricao',               // Tres Palmeiras
   '/blog/1/assessoria-imprensa/2',     // Arroio Grande
   '/links/noticias',                   // Santa Cruz do Sul
   '/categoria/noticias',               // Jaguarão (WordPress category)

@@ -640,6 +640,39 @@ class GovBrScraper extends BaseScraper {
         /^#\w/,
         /^\d{1,2}\/\d{1,2}\/\d{4}$/,
         /^\d{1,2}\s+de\s+\w+\s+de\s+\d{4}$/i,
+        // Social/share buttons that merge into text
+        /compartilhar\s*enviar/i,
+        /compartilhar\s*imprimir/i,
+        // Sidebar content
+        /^acesso r[aá]pido$/i,
+        /^mais secretarias$/i,
+        /^mais atra[çc][oõ]es$/i,
+        // Print/email buttons
+        /^visualizar impress[ãa]o$/i,
+        /^imprimir\s+fechar$/i,
+        /^enviar e-?mail$/i,
+        // Metadata lines
+        /^data de publica[çc][ãa]o:/i,
+        /^fonte:/i,
+        // Font size controls
+        /^A\+\s*A-$/,
+        // Date lines with "Publicado" or "às"
+        /^\d{1,2}\s+de\s+\w+\s+de\s+\d{4}\s*[-–]\s*(publicado|às)/i,
+        // Social media follow
+        /^siga nossas redes sociais/i,
+        // Accessibility markers
+        /^in[ií]cio conte[uú]do$/i,
+        // Secretaria names as standalone paragraphs
+        /^sec\.\s+de\s/i,
+        /^secretaria\s+(municipal\s+)?de\s/i,
+        /^SECRETARIAS$/,
+        /^TURISMO$/,
+        /^EDUCAÇÃO$/,
+        /^SAÚDE$/,
+        // Navigation remnants
+        /^mais\s/i,
+        /^ver\s+todos?$/i,
+        /^ver\s+mais$/i,
       ];
 
       const filtered = paragraphs.map(p => p.replace(/^[>\s]+/, '').trim()).filter(p => {
@@ -650,12 +683,41 @@ class GovBrScraper extends BaseScraper {
       return filtered.join('\n\n');
     }
 
+    // Post-processing: trim trailing noise paragraphs (footer remnants)
+    function trimTrailingNoise(text) {
+      if (!text) return text;
+      const TRAILING_NOISE = [
+        /^(copyright|todos os direitos|desenvolvido por|powered by)/i,
+        /^(endere[çc]o|telefone|fone|cnpj|cep)[\s:]/i,
+        /^horário de (atendimento|funcionamento)/i,
+        /^siga nossas redes/i,
+        /^acesso r[aá]pido$/i,
+        /^links? [uú]teis?$/i,
+        /^mapa do site$/i,
+        /^prefeitura municipal de\s/i,
+        /^secretaria\s+de\s/i,
+        /^rua\s|^av\.\s|^avenida\s/i,
+        /^\(\d{2}\)\s*\d/,
+      ];
+      const paras = text.split('\n\n');
+      // Trim from the end while paragraphs match noise
+      while (paras.length > 1) {
+        const last = paras[paras.length - 1].trim();
+        if (TRAILING_NOISE.some(re => re.test(last)) || last.length < 10) {
+          paras.pop();
+        } else {
+          break;
+        }
+      }
+      return paras.join('\n\n');
+    }
+
     for (const selector of CONTENT_SELECTORS) {
       const el = $(selector).first();
       if (!el.length) continue;
 
       const text = htmlToText(el);
-      if (text && text.length > 50) return text;
+      if (text && text.length > 50) return trimTrailingNoise(text);
     }
 
     // Fallback: try body but be more aggressive with cleanup
@@ -671,7 +733,7 @@ class GovBrScraper extends BaseScraper {
         const paras = text.split('\n\n');
         const goodParas = paras.filter(p => p.length > 30);
         if (goodParas.length >= 2) {
-          return goodParas.join('\n\n').substring(0, 10000);
+          return trimTrailingNoise(goodParas.join('\n\n').substring(0, 10000));
         }
       }
     }
