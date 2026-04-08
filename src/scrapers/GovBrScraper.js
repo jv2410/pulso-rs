@@ -400,6 +400,8 @@ class GovBrScraper extends BaseScraper {
     const title = this._extractTitle($, site.name);
     if (!title) return null;
 
+    const imageUrl = this._extractImage($, url);
+
     const dateRaw = this._extractDate($, html);
     let publishedAt = this.parseBrazilianDate(dateRaw);
     const cleanTitle = this.cleanText(title);
@@ -456,9 +458,89 @@ class GovBrScraper extends BaseScraper {
       category,
       relevanceScore,
       content: validatedContent,
+      imageUrl: imageUrl || null,
       municipalityId: site.id || null,
       scrapedAt: new Date().toISOString()
     };
+  }
+
+  /**
+   * Extract the main image URL from an article page.
+   * Tries og:image, twitter:image, article content area, then heuristic patterns.
+   * Skips tiny/tracking images, logos, icons, and SVGs.
+   */
+  _extractImage($, url) {
+    const SKIP_SRC_PATTERNS = [
+      /^data:image/i,
+      /\.svg(\?|$)/i,
+      /\.gif(\?|$)/i,
+      /logo/i,
+      /icon/i,
+      /favicon/i,
+      /banner/i,
+      /pixel/i,
+      /1x1/i,
+      /spacer/i,
+      /transparent/i,
+      /tracking/i,
+    ];
+
+    const isValidImageSrc = (src) => {
+      if (!src || src.length < 5) return false;
+      return !SKIP_SRC_PATTERNS.some((re) => re.test(src));
+    };
+
+    const baseUrl = url.replace(/\/[^/]*$/, '');
+
+    const resolve = (src) => {
+      if (!src) return null;
+      const abs = this.buildAbsoluteUrl(src.trim(), baseUrl);
+      return abs && isValidImageSrc(abs) ? abs : null;
+    };
+
+    // Strategy 1: og:image meta tag
+    const ogImage = $('meta[property="og:image"]').attr('content');
+    if (ogImage) {
+      const resolved = resolve(ogImage);
+      if (resolved) return resolved;
+    }
+
+    // Strategy 2: twitter:image meta tag
+    const twImage = $('meta[name="twitter:image"]').attr('content');
+    if (twImage) {
+      const resolved = resolve(twImage);
+      if (resolved) return resolved;
+    }
+
+    // Strategy 3: First <img> inside article content area
+    for (const selector of CONTENT_SELECTORS) {
+      const container = $(selector).first();
+      if (!container.length) continue;
+      const img = container.find('img').first();
+      if (img.length) {
+        const src = img.attr('src');
+        const resolved = resolve(src);
+        if (resolved) return resolved;
+      }
+      break; // only check the first matching content container
+    }
+
+    // Strategy 4: First <img> with src containing common media path patterns
+    const MEDIA_PATTERNS = /upload|wp-content|media|imagem|foto/i;
+    let fallbackImg = null;
+    $('img').each((_, el) => {
+      if (fallbackImg) return false; // break
+      const src = $(el).attr('src') || '';
+      if (MEDIA_PATTERNS.test(src)) {
+        const resolved = resolve(src);
+        if (resolved) {
+          fallbackImg = resolved;
+          return false; // break
+        }
+      }
+    });
+
+    return fallbackImg;
   }
 
   /**

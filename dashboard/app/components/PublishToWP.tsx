@@ -10,6 +10,7 @@ interface PublishToWPProps {
     municipality: string;
     category: string | null;
     url: string;
+    imageUrl?: string;
   };
   onClose: () => void;
   onPublished: (link: string) => void;
@@ -85,7 +86,7 @@ export default function PublishToWP({ article, onClose, onPublished }: PublishTo
   const [tags, setTags] = useState<string[]>([]);
   const [author, setAuthor] = useState(8); // Joao default
   const [status, setStatus] = useState<"draft" | "publish">("draft");
-  const [imageUrl, setImageUrl] = useState("");
+  const [imageUrl, setImageUrl] = useState(article.imageUrl || "");
   const [publishing, setPublishing] = useState(false);
   const [result, setResult] = useState<{ success: boolean; link?: string; editLink?: string; status?: string; error?: string } | null>(null);
 

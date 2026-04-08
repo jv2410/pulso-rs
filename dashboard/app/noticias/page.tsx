@@ -16,6 +16,7 @@ interface Article {
   category: string | null;
   relevance_score: number | null;
   content: string | null;
+  image_url: string | null;
 }
 
 const CATEGORIES = [
@@ -62,7 +63,7 @@ export default function NoticiasPage() {
     (async () => {
       const { data } = await supabase
         .from("articles")
-        .select("id, title, url, published_at, summary, category, relevance_score, municipalities(name)")
+        .select("id, title, url, published_at, summary, category, relevance_score, image_url, municipalities(name)")
         .gte("published_at", selectedDate + "T00:00:00Z")
         .lte("published_at", selectedDate + "T23:59:59Z")
         .neq("category", "Crise")
@@ -70,7 +71,7 @@ export default function NoticiasPage() {
 
       if (data) {
         setArticles(data.map((a: any) => ({
-          ...a, municipality: a.municipalities?.name || "", content: null,
+          ...a, municipality: a.municipalities?.name || "", content: null, image_url: a.image_url || null,
         })));
       }
       setLoading(false);
@@ -85,12 +86,12 @@ export default function NoticiasPage() {
       setLoadingContent(true);
       const { data } = await supabase
         .from("articles")
-        .select("content")
+        .select("content, image_url")
         .eq("id", article.id)
         .single();
 
       if (data) {
-        const updated = { ...article, content: data.content };
+        const updated = { ...article, content: data.content, image_url: data.image_url || article.image_url };
         setSelectedArticle(updated);
         setArticles((prev) => prev.map((a) => (a.id === article.id ? updated : a)));
       }
@@ -231,6 +232,15 @@ export default function NoticiasPage() {
             style={{ borderBottom: "1px solid var(--fio)" }}
           >
             <div className="flex items-start justify-between gap-4">
+              {article.image_url && (
+                <img
+                  src={article.image_url}
+                  alt=""
+                  className="w-12 h-12 rounded object-cover shrink-0 mt-0.5"
+                  style={{ border: "1px solid var(--fio)" }}
+                  onError={(e) => (e.currentTarget.style.display = "none")}
+                />
+              )}
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <p className="text-xs uppercase tracking-[0.15em]" style={{ color: "var(--ink-secondary)" }}>
@@ -361,6 +371,15 @@ export default function NoticiasPage() {
 
             {/* Content */}
             <div className="p-6">
+              {selectedArticle.image_url && (
+                <img
+                  src={selectedArticle.image_url}
+                  alt=""
+                  className="w-full rounded mb-4 object-cover"
+                  style={{ maxHeight: "300px", border: "1px solid var(--fio)" }}
+                  onError={(e) => (e.currentTarget.style.display = "none")}
+                />
+              )}
               <div className="flex items-center gap-2 mb-3">
                 <p className="text-xs uppercase tracking-[0.15em]" style={{ color: "var(--ink-secondary)" }}>
                   {selectedArticle.municipality}
@@ -429,6 +448,7 @@ export default function NoticiasPage() {
             municipality: selectedArticle.municipality,
             category: selectedArticle.category,
             url: selectedArticle.url,
+            imageUrl: selectedArticle.image_url || undefined,
           }}
           onClose={() => setShowPublish(false)}
           onPublished={(link) => {
