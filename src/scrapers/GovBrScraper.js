@@ -104,14 +104,11 @@ const TITLE_BLACKLIST = [
  * Mojibake replacements (UTF-8 interpreted as Latin-1).
  */
 const MOJIBAKE_MAP = [
-  ['Ã£', 'ã'],
-  ['Ã§', 'ç'],
-  ['Ã©', 'é'],
-  ['Ãº', 'ú'],
-  ['Ã³', 'ó'],
-  ['Ã¡', 'á'],
-  ['Ãª', 'ê'],
-  ['Ã\xad', 'í'],
+  ['Ã£', 'ã'], ['Ã§', 'ç'], ['Ã©', 'é'], ['Ãº', 'ú'],
+  ['Ã³', 'ó'], ['Ã¡', 'á'], ['Ãª', 'ê'], ['Ã\xad', 'í'],
+  ['Ã¢', 'â'], ['Ã´', 'ô'], ['Ã', 'Á'], ['Ã‰', 'É'],
+  ['Ã"', 'Ó'], ['Ãš', 'Ú'], ['Ã‡', 'Ç'], ['Ãƒ', 'Ã'],
+  ['Ã¼', 'ü'], ['Ã±', 'ñ'],
 ];
 
 /**
@@ -664,7 +661,7 @@ class GovBrScraper extends BaseScraper {
         /^data de publica[çc][ãa]o:/i,
         /^fonte:/i,
         // Font size controls
-        /^A\+\s*A-$/,
+        /^A\+\s*A-/,
         // Date lines with "Publicado" or "às"
         /^\d{1,2}\s+de\s+\w+\s+de\s+\d{4}\s*[-–]\s*(publicado|às)/i,
         // Social media follow
@@ -682,6 +679,17 @@ class GovBrScraper extends BaseScraper {
         /^mais\s/i,
         /^ver\s+todos?$/i,
         /^ver\s+mais$/i,
+        // Photo credits as standalone paragraph
+        /^foto\s*:/i,
+        /^cr[eé]dito\s*:/i,
+        /^imagem\s*:/i,
+        /^divulga[çc][ãa]o\s*$/i,
+        // Footer content
+        /^hor[aá]rio de atendimento/i,
+        /^endere[çc]o\s*:/i,
+        /^telefone\s*:/i,
+        /^fone\s*:/i,
+        /^\(\d{2}\)\s*\d{4}/,
       ];
 
       const filtered = paragraphs.map(p => p.replace(/^[>\s]+/, '').trim()).filter(p => {
@@ -698,15 +706,27 @@ class GovBrScraper extends BaseScraper {
       const TRAILING_NOISE = [
         /^(copyright|todos os direitos|desenvolvido por|powered by)/i,
         /^(endere[çc]o|telefone|fone|cnpj|cep)[\s:]/i,
-        /^horário de (atendimento|funcionamento)/i,
+        /^hor[aá]rio de (atendimento|funcionamento)/i,
         /^siga nossas redes/i,
         /^acesso r[aá]pido$/i,
         /^links? [uú]teis?$/i,
         /^mapa do site$/i,
         /^prefeitura municipal de\s/i,
-        /^secretaria\s+de\s/i,
+        /^sec\.\s+de\s/i,
+        /^secretaria\s+(municipal\s+)?de\s/i,
+        /^SECRETARIAS$/,
         /^rua\s|^av\.\s|^avenida\s/i,
         /^\(\d{2}\)\s*\d/,
+        /^foto\s*:/i,
+        /^fonte\s*:/i,
+        /^cr[eé]dito\s*:/i,
+        /^compartilhar/i,
+        /^imprimir/i,
+        /^mais secretarias$/i,
+        /^mais atra[çc][oõ]es$/i,
+        /^TURISMO$/,
+        /^EDUCA[ÇC][ÃA]O$/,
+        /^SA[ÚU]DE$/,
       ];
       const paras = text.split('\n\n');
       // Trim from the end while paragraphs match noise
