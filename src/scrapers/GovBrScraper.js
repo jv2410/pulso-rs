@@ -201,7 +201,7 @@ class GovBrScraper extends BaseScraper {
           continue;
         }
 
-        const article = await this._fetchArticle(articleUrl, site, baseUrl);
+        const article = await this._fetchArticle(articleUrl, site, baseUrl, listingDate);
         if (!article) continue;
 
         // If date is confirmed and it's today -> include
@@ -256,6 +256,31 @@ class GovBrScraper extends BaseScraper {
       return d >= cutoff;
     } catch {
       return false;
+    }
+  }
+
+  /**
+   * Check if a parsed date is implausible (future or too old).
+   * Used to detect wrong dates extracted from body text (event dates, deadlines).
+   */
+  _isDateSuspicious(dateStr) {
+    if (!dateStr) return false;
+    try {
+      const d = new Date(dateStr);
+      if (isNaN(d.getTime())) return true;
+      const now = new Date();
+      const tomorrow = new Date(now);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(23, 59, 59, 999);
+      // Reject future dates beyond tomorrow
+      if (d > tomorrow) return true;
+      // Reject dates older than 60 days (outside lookback window)
+      const cutoff = new Date(now);
+      cutoff.setDate(cutoff.getDate() - 60);
+      if (d < cutoff) return true;
+      return false;
+    } catch {
+      return true;
     }
   }
 
@@ -393,7 +418,7 @@ class GovBrScraper extends BaseScraper {
   /**
    * Fetch a single article page and extract title, date, content.
    */
-  async _fetchArticle(url, site, baseUrl) {
+  async _fetchArticle(url, site, baseUrl, listingDate = null) {
     const html = await this.fetchPage(url);
     const $ = this.loadHTML(html);
 
@@ -404,6 +429,29 @@ class GovBrScraper extends BaseScraper {
 
     const dateRaw = this._extractDate($, html);
     let publishedAt = this.parseBrazilianDate(dateRaw);
+
+    // Layer 3: reject suspicious dates (future/too-old) and let LLM try
+    if (publishedAt && this._isDateSuspicious(publishedAt)) {
+      publishedAt = null;
+    }
+
+    // Layer 4a: if listingDate is trustworthy and extracted date diverges
+    // by more than 2 days, prefer the listing date (it's the trusted source).
+    const trustedListingDate = (listingDate && !this._isDateSuspicious(listingDate)) ? listingDate : null;
+    if (trustedListingDate && publishedAt) {
+      const diffDays = Math.abs(
+        (new Date(publishedAt).getTime() - new Date(trustedListingDate).getTime()) / (1000 * 60 * 60 * 24)
+      );
+      if (diffDays > 2) {
+        publishedAt = trustedListingDate;
+      }
+    }
+
+    // Layer 4b: seed with listing date when extraction produced nothing
+    if (!publishedAt && trustedListingDate) {
+      publishedAt = trustedListingDate;
+    }
+
     const cleanTitle = this.cleanText(title);
 
     // Extract content — try CSS selectors first, then LLM fallback
@@ -434,9 +482,25 @@ class GovBrScraper extends BaseScraper {
       // LLM says it's not a news article → reject
       if (!llmResult.isNews) return null;
 
-      // LLM found a date when regex didn't
-      if (llmResult.date) {
+      // LLM found a date when regex didn't — reject if suspicious
+      if (llmResult.date && !this._isDateSuspicious(llmResult.date)) {
         publishedAt = llmResult.date;
+      }
+    }
+
+    // Layer 4c: listing date has FINAL priority — if present and trustworthy,
+    // and the current publishedAt is either missing or diverges by > 2 days,
+    // trust the listing page as the canonical source.
+    if (trustedListingDate) {
+      if (!publishedAt) {
+        publishedAt = trustedListingDate;
+      } else {
+        const diffDays = Math.abs(
+          (new Date(publishedAt).getTime() - new Date(trustedListingDate).getTime()) / (1000 * 60 * 60 * 24)
+        );
+        if (diffDays > 2) {
+          publishedAt = trustedListingDate;
+        }
       }
     }
 
@@ -636,6 +700,21 @@ class GovBrScraper extends BaseScraper {
           .replace(/<nav[^>]*>[\s\S]*?<\/nav>/gi, '')
           .replace(/<[^>]*>/g, ' ')
           .substring(0, 8000);
+      }
+
+      // Anchored phrases take priority over generic date matches
+      const ANCHORED_PATTERNS = [
+        /publicad[oa]\s+em[:\s]+(\d{1,2}\/\d{1,2}\/\d{4})/i,
+        /data\s+de\s+publica[çc][ãa]o[:\s]+(\d{1,2}\/\d{1,2}\/\d{4})/i,
+        /publica[çc][ãa]o[:\s]+(\d{1,2}\/\d{1,2}\/\d{4})/i,
+        /postad[oa]\s+em[:\s]+(\d{1,2}\/\d{1,2}\/\d{4})/i,
+        /criad[oa]\s+em[:\s]+(\d{1,2}\/\d{1,2}\/\d{4})/i,
+        /\bem\s+(\d{1,2}\/\d{1,2}\/\d{4})\s*(?:às|as)\s+\d{1,2}[h:]/i,
+        /publicad[oa]\s+em\s+(\d{1,2}\s+de\s+\w+\s+de\s+\d{4})/i,
+      ];
+      for (const pat of ANCHORED_PATTERNS) {
+        const m = plainText.match(pat);
+        if (m) return m[1];
       }
 
       // Try DD/MM/YYYY first
