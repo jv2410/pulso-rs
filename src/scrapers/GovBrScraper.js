@@ -440,6 +440,17 @@ class GovBrScraper extends BaseScraper {
     const dateRaw = this._extractDate($, html);
     let publishedAt = this.parseBrazilianDate(dateRaw);
 
+    // Layer 2.5: If meta tag gave a VERY old date (> 1 year), the article is genuinely old
+    // Don't override with LLM — just discard the article entirely
+    if (publishedAt) {
+      const articleDate = new Date(publishedAt);
+      const oneYearAgo = new Date();
+      oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+      if (articleDate < oneYearAgo) {
+        return null; // Article is genuinely old, skip it
+      }
+    }
+
     // Layer 3: reject suspicious dates (future/too-old) and let LLM try
     if (publishedAt && this._isDateSuspicious(publishedAt)) {
       publishedAt = null;
