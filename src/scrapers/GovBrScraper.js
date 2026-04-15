@@ -106,8 +106,8 @@ const TITLE_BLACKLIST = [
 const MOJIBAKE_MAP = [
   ['Ã£', 'ã'], ['Ã§', 'ç'], ['Ã©', 'é'], ['Ãº', 'ú'],
   ['Ã³', 'ó'], ['Ã¡', 'á'], ['Ãª', 'ê'], ['Ã\xad', 'í'],
-  ['Ã¢', 'â'], ['Ã´', 'ô'], ['Ã', 'Á'], ['Ã‰', 'É'],
-  ['Ã"', 'Ó'], ['Ãš', 'Ú'], ['Ã‡', 'Ç'], ['Ãƒ', 'Ã'],
+  ['Ã¢', 'â'], ['Ã´', 'ô'], ['Ã‰', 'É'],
+  ['Ã"', 'Ó'], ['Ãš', 'Ú'], ['Ã‡', 'Ç'],
   ['Ã¼', 'ü'], ['Ã±', 'ñ'],
 ];
 
@@ -127,6 +127,16 @@ const JUNK_TITLE_PATTERNS = [
   /^lei\s+n[º°]/i,
   /^ata\s+da\b/i,
   /^convoca[çc][ãa]o\b/i,
+  /preg[ãa]o\s+(presencial|eletr[oô]nico)/i,
+  /^preg[ãa]o\b/i,
+  /licita[çc][ãa]o/i,
+  /processo licitat[oó]rio/i,
+  /dispensa\s+de\s+licita/i,
+  /inexigibilidade/i,
+  /^tomada\s+de\s+pre[çc]o/i,
+  /^carta\s+convite/i,
+  /chamamento\s+p[uú]blico/i,
+  /aviso\s+de\s+licita/i,
 ];
 
 /**
