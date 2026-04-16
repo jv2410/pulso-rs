@@ -86,6 +86,14 @@ const EXCLUDED_PATH_PATTERNS = [
   /\/site\/noticias\/[a-z][a-z-]+\/?$/,      // /site/noticias/categoria — category listing pages (no numeric ID)
   /\/categorias\/(?!noticias)/,               // /categorias/* — category pages (except /categorias/noticias which is a listing)
   /\/noticias\/noticias-/,                   // /noticias/noticias-de-saude etc — category pages
+  /\/dados-do-municipio/i,                   // institutional: municipal data
+  /\/hino-do-municipio/i,                    // institutional: municipal anthem
+  /\/historia-do-municipio/i,                // institutional: municipal history
+  /\/formularios-/i,                         // institutional: forms
+  /\/demonstrativos-contabeis/i,             // institutional: accounting reports
+  /\/legislacao-municipal/i,                 // institutional: municipal legislation
+  /\/estrutura-organizacional/i,             // institutional: org structure
+  /\/informacoes-do-municipio/i,             // institutional: municipal info
 ];
 
 /**
@@ -206,6 +214,24 @@ class BaseScraper {
   parseBrazilianDate(dateStr) {
     if (!dateStr) return null;
     const cleaned = dateStr.trim();
+
+    // Helper to reject dates in the future (beyond tomorrow) or too old
+    const validateDate = (iso) => {
+      if (!iso) return null;
+      const d = new Date(iso);
+      if (isNaN(d.getTime())) return null;
+      const now = new Date();
+      const tomorrow = new Date(now);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(23, 59, 59, 999);
+      // Reject future dates beyond tomorrow
+      if (d > tomorrow) return null;
+      // Reject dates older than 10 years
+      const tenYearsAgo = new Date(now);
+      tenYearsAgo.setFullYear(tenYearsAgo.getFullYear() - 10);
+      if (d < tenYearsAgo) return null;
+      return iso;
+    };
 
     // Already ISO (full datetime or date-only, with optional timezone offset)
     const isoMatch = cleaned.match(/^(\d{4}-\d{2}-\d{2})(T[\d:.]+([+-]\d{2}:?\d{2}|Z)?)?/);

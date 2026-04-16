@@ -153,6 +153,11 @@ const CONTENT_NOISE_PREFIXES = [
 ];
 
 class GovBrScraper extends BaseScraper {
+  constructor(config = {}) {
+    super(config);
+    this.lookbackDays = config.LOOKBACK_DAYS || 7;
+  }
+
   /**
    * Scrape a municipal government site - ONLY articles from today.
    */
@@ -262,9 +267,9 @@ class GovBrScraper extends BaseScraper {
       // Accept if it's exactly the target date
       if (articleDate === today) return true;
 
-      // Also accept articles from the last 3 days (catches weekends)
+      // Also accept articles within the lookback window (catches weekends)
       const cutoff = new Date(today + 'T00:00:00Z');
-      cutoff.setDate(cutoff.getDate() - 3);
+      cutoff.setDate(cutoff.getDate() - this.lookbackDays);
       return d >= cutoff;
     } catch {
       return false;
@@ -420,6 +425,14 @@ class GovBrScraper extends BaseScraper {
     }
     // Generic "Município de <City> (- RS)"
     if (/^Município de\s+.{3,}\s*-?\s*RS$/i.test(cleanTitle.trim())) {
+      return { valid: false, cleanTitle, cleanContent };
+    }
+    // Bare "Prefeitura de <City>" (without "Municipal")
+    if (/^Prefeitura de\s+\S+(\s+\S+){0,3}$/i.test(cleanTitle.trim())) {
+      return { valid: false, cleanTitle, cleanContent };
+    }
+    // "Prefeitura de <City> - RS" variant
+    if (/^Prefeitura de\s+.+\s*-\s*RS$/i.test(cleanTitle.trim())) {
       return { valid: false, cleanTitle, cleanContent };
     }
     // Original prefeitura check for bare city names without " - RS"
