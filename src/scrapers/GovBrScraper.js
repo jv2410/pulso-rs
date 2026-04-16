@@ -137,6 +137,8 @@ const JUNK_TITLE_PATTERNS = [
   /^carta\s+convite/i,
   /chamamento\s+p[uú]blico/i,
   /aviso\s+de\s+licita/i,
+  /processo seletivo/i,
+  /siga nossas redes sociais/i,
 ];
 
 /**
@@ -387,14 +389,23 @@ class GovBrScraper extends BaseScraper {
       }
     }
 
+    // --- Title cleaning (after mojibake fix, before validation) ---
+    // Strip concatenated breadcrumb prefixes from broken sites
+    cleanTitle = cleanTitle.replace(/^InícioInformativosNotícias\s*/, '');
+    cleanTitle = cleanTitle.replace(/^Início\s+Informativos\s+Notícias\s+/, '');
+    // Strip leading "Notícia - " or "Notícias - " prefix
+    cleanTitle = cleanTitle.replace(/^Not[ií]cias?\s*-\s*/, '');
+    // Strip trailing " - RS" when preceded by a city name pattern
+    cleanTitle = cleanTitle.replace(/\s+-\s*RS\s*$/, '').trim();
+
     // --- Title validation ---
     // Reject if title still has replacement-character after encoding fix
     if (cleanTitle.includes('\uFFFD')) {
       return { valid: false, cleanTitle, cleanContent };
     }
 
-    // Too short
-    if (cleanTitle.length < 15) {
+    // Too short (after cleaning)
+    if (cleanTitle.length < 20) {
       return { valid: false, cleanTitle, cleanContent };
     }
 
@@ -403,11 +414,17 @@ class GovBrScraper extends BaseScraper {
       return { valid: false, cleanTitle, cleanContent };
     }
 
-    // Generic site-name title: "Prefeitura Municipal de <City>" with nothing else
+    // Generic site-name title: "Prefeitura (Municipal) de <City> (- RS)"
+    if (/^Prefeitura\s+(Municipal\s+)?de\s+.+\s*-\s*RS$/i.test(cleanTitle.trim())) {
+      return { valid: false, cleanTitle, cleanContent };
+    }
+    // Generic "Município de <City> (- RS)"
+    if (/^Município de\s+.{3,}\s*-?\s*RS$/i.test(cleanTitle.trim())) {
+      return { valid: false, cleanTitle, cleanContent };
+    }
+    // Original prefeitura check for bare city names without " - RS"
     const prefeituraMatch = cleanTitle.match(/^Prefeitura\s+Municipal\s+de\s+(.+)$/i);
     if (prefeituraMatch) {
-      // After the city name there should be meaningful words (e.g. " - Notícia tal")
-      // A bare city name (1-3 words, no punctuation separators) is junk
       const rest = prefeituraMatch[1].trim();
       if (!/[-–|:]/.test(rest) && rest.split(/\s+/).length <= 3) {
         return { valid: false, cleanTitle, cleanContent };
