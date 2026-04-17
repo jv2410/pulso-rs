@@ -5,6 +5,11 @@ const { extractWithLLM, classifyAndSummarize, extractContentWithLLM } = require(
  * Title selectors in priority order.
  */
 const TITLE_SELECTORS = [
+  // Abase Sistemas CMS (Layout 2019) — ~150 municipal sites
+  'h2.doctor-name',
+  '.doctor-details h2',
+  // Abase Sistemas CMS (Bossoroca-style layout)
+  '.section-title h2',
   'h1.titulo-noticia',
   'h1.titulo',
   'article h1',
@@ -36,6 +41,9 @@ const DATE_META_SELECTORS = [
 ];
 
 const DATE_TEXT_SELECTORS = [
+  // Abase Sistemas CMS — "Publicado em: DD/MM/YYYY às HH:MM"
+  '.doctor-edu li',
+  '.cp-post-tools li',
   '.data-publicacao',
   '.data',
   '.date',
@@ -70,6 +78,8 @@ const DATE_TEXT_SELECTORS = [
  * Content selectors in priority order.
  */
 const CONTENT_SELECTORS = [
+  // Abase Sistemas CMS
+  '.doctor-details',
   '.conteudo-noticia',
   '.noticia-conteudo',
   '.noticia-texto',
