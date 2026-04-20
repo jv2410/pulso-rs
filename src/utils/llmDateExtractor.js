@@ -3,7 +3,7 @@ const axios = require('axios');
 function getGeminiUrl() {
   const key = process.env.GEMINI_API_KEY;
   if (!key) return null;
-  return `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${key}`;
+  return `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
 }
 
 const PROMPT = `Analise este conteúdo de uma página web de uma prefeitura municipal brasileira.
@@ -41,10 +41,10 @@ async function extractWithLLM(title, textContent, url) {
       contents: [{ parts: [{ text: PROMPT + input }] }],
       generationConfig: {
         temperature: 0,
-        maxOutputTokens: 60,
+        maxOutputTokens: 256,
       }
     }, {
-      timeout: 5000,
+      timeout: 15000,
       headers: { 'Content-Type': 'application/json' }
     });
 
@@ -95,10 +95,10 @@ async function summarizeWithLLM(title, content) {
       contents: [{ parts: [{ text: SUMMARY_PROMPT + input }] }],
       generationConfig: {
         temperature: 0.3,
-        maxOutputTokens: 100,
+        maxOutputTokens: 512,
       }
     }, {
-      timeout: 5000,
+      timeout: 15000,
       headers: { 'Content-Type': 'application/json' }
     });
 
@@ -204,8 +204,8 @@ Conteúdo: ${text}`;
   try {
     const response = await axios.post(geminiUrl, {
       contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { temperature: 0.2, maxOutputTokens: 150 }
-    }, { timeout: 6000, headers: { 'Content-Type': 'application/json' } });
+      generationConfig: { temperature: 0.2, maxOutputTokens: 1024 }
+    }, { timeout: 15000, headers: { 'Content-Type': 'application/json' } });
 
     const raw = (response.data?.candidates?.[0]?.content?.parts?.[0]?.text || '').trim();
     const jsonMatch = raw.match(/\{[\s\S]*?\}/);
