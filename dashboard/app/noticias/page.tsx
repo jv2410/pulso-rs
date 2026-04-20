@@ -66,7 +66,7 @@ export default function NoticiasPage() {
         .select("id, title, url, published_at, summary, category, relevance_score, image_url, municipalities(name)")
         .gte("published_at", selectedDate + "T00:00:00Z")
         .lte("published_at", selectedDate + "T23:59:59Z")
-        .neq("category", "Crise")
+        .or("category.is.null,category.neq.Crise")
         .order("published_at", { ascending: false });
 
       if (data) {
