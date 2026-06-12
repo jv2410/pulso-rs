@@ -3,7 +3,9 @@ const axios = require('axios');
 function getGeminiUrl() {
   const key = process.env.GEMINI_API_KEY;
   if (!key) return null;
-  return `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`;
+  // Use Flash Lite (cheaper) by default; override with GEMINI_MODEL env if needed.
+  const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
+  return `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`;
 }
 
 const PROMPT = `Analise este conteúdo de uma página web de uma prefeitura municipal brasileira.

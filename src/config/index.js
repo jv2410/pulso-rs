@@ -16,7 +16,11 @@ const config = {
   DB_PATH: process.env.DB_PATH || defaults.DB_PATH,
   LOG_LEVEL: process.env.LOG_LEVEL || defaults.LOG_LEVEL,
   LOG_DIR: process.env.LOG_DIR || defaults.LOG_DIR,
-  USER_AGENT: process.env.USER_AGENT || defaults.USER_AGENT
+  USER_AGENT: process.env.USER_AGENT || defaults.USER_AGENT,
+  PLAYWRIGHT_ENABLED: process.env.PLAYWRIGHT_ENABLED ? process.env.PLAYWRIGHT_ENABLED !== 'false' : defaults.PLAYWRIGHT_ENABLED,
+  PLAYWRIGHT_MAX_PER_RUN: parseInt(process.env.PLAYWRIGHT_MAX_PER_RUN, 10) || defaults.PLAYWRIGHT_MAX_PER_RUN,
+  PLAYWRIGHT_PAGE_TIMEOUT_MS: parseInt(process.env.PLAYWRIGHT_PAGE_TIMEOUT_MS, 10) || defaults.PLAYWRIGHT_PAGE_TIMEOUT_MS,
+  USER_AGENT_ROTATION_ENABLED: process.env.USER_AGENT_ROTATION_ENABLED ? process.env.USER_AGENT_ROTATION_ENABLED !== 'false' : defaults.USER_AGENT_ROTATION_ENABLED
 };
 
 module.exports = config;

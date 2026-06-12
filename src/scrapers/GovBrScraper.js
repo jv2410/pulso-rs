@@ -10,7 +10,9 @@ const TITLE_SELECTORS = [
   '.doctor-details h2',
   // Abase Sistemas CMS (Bossoroca-style layout)
   '.section-title h2',
+  // Specific h1 classes — these are real article titles
   'h1.titulo-noticia',
+  'h1.titulo-internas',  // Barra do Ribeiro
   'h1.titulo',
   'article h1',
   '.entry-title',
@@ -18,10 +20,14 @@ const TITLE_SELECTORS = [
   '.page-title',
   '.post-title',
   'h2.titulo-noticia',
-  'h2.titulo',
+  // ".content h1" / ".container h1" / generic h1 — try BEFORE h2.titulo
+  // because some sites put "Leia Mais" in <h2 class="titulo"> which would
+  // otherwise be picked instead of the real <h1> article title.
   '.content h1',
   '.container h1',
   'h1',
+  // Generic h2.titulo fallback last (Bom Retiro do Sul etc.)
+  'h2.titulo',
 ];
 
 /**
@@ -80,6 +86,9 @@ const DATE_TEXT_SELECTORS = [
 const CONTENT_SELECTORS = [
   // Abase Sistemas CMS
   '.doctor-details',
+  // Drupal/Porto Alegre new portal — node article wrapper holds title+body
+  '.node--type-article',
+  '.field--name-body',
   '.conteudo-noticia',
   '.noticia-conteudo',
   '.noticia-texto',
@@ -101,6 +110,14 @@ const CONTENT_SELECTORS = [
 ];
 
 /**
+ * Minimum content length to accept from a CONTENT_SELECTOR before falling
+ * through to the next one. Below this, the matched element is presumed to
+ * be a wrapper for accessibility widgets / "Reduzir Fonte / Aumentar Fonte"
+ * controls (Alvorada-style WordPress sites) rather than the real article body.
+ */
+const MIN_CONTENT_LEN = 200;
+
+/**
  * Words/phrases that indicate a title is actually a site name or navigation.
  */
 const TITLE_BLACKLIST = [
@@ -108,6 +125,19 @@ const TITLE_BLACKLIST = [
   'noticias',
   'página inicial',
   'home',
+  'início',
+  'inicio',
+  'leia mais',
+  'ler mais',
+  'ver mais',
+  'saiba mais',
+  'continuar lendo',
+  'ir para o conteúdo',
+  'ir para o conteudo',
+  'pular para o conteúdo',
+  'siga nossas redes sociais',
+  'mapa do site',
+  'fale conosco',
 ];
 
 /**
@@ -166,6 +196,45 @@ class GovBrScraper extends BaseScraper {
   constructor(config = {}) {
     super(config);
     this.lookbackDays = config.LOOKBACK_DAYS || 7;
+    // Pagination (Atlas 2026-06-11): high-volume sites spill recent articles
+    // onto pages 2+. Only paginate when page 1 looks high-volume to avoid
+    // wasting fetches (and blowing timeouts) on low-volume cities.
+    this.paginationMinLinks = config.PAGINATION_MIN_LINKS || 12;
+    this.maxListingPages = config.MAX_LISTING_PAGES || 4;
+    this.maxArticlesPerCity = config.MAX_ARTICLES_PER_CITY || 60;
+    this.articleConcurrency = config.ARTICLE_CONCURRENCY || 6;
+  }
+
+  /**
+   * Find the "next page" URL in a listing's HTML by following the site's own
+   * pagination link. Tries rel=next, common pager classes, then anchor text
+   * ("próxima"/"próximo"/»). Returns an absolute same-origin URL or null.
+   */
+  _findNextPageUrl(html, currentUrl, baseUrl) {
+    try {
+      const $ = this.loadHTML(html);
+      let href = $('a[rel="next"]').first().attr('href')
+        || $('link[rel="next"]').first().attr('href')
+        || $('.pager__item--next a, li.pager__item--next a, .pager-next a, a.next, .next > a, a.page-link[rel="next"], .pagination-next a').first().attr('href');
+      if (!href) {
+        $('a').each((i, el) => {
+          if (href) return;
+          const t = ($(el).text() || '').trim().toLowerCase();
+          const al = ($(el).attr('aria-label') || '').toLowerCase();
+          if (/^(pr[óo]xim[ao]|next|»|›|>>)$/.test(t) || /^(pr[óo]xim|next)/.test(al)) {
+            const h = $(el).attr('href');
+            if (h && !/^#/.test(h) && !/javascript:/i.test(h)) href = h;
+          }
+        });
+      }
+      if (!href) return null;
+      const abs = new URL(href, currentUrl).href;
+      if (new URL(abs).origin !== new URL(currentUrl).origin) return null;
+      if (abs.replace(/#.*$/, '') === currentUrl.replace(/#.*$/, '')) return null;
+      return abs;
+    } catch {
+      return null;
+    }
   }
 
   /**
@@ -176,8 +245,8 @@ class GovBrScraper extends BaseScraper {
     const errors = [];
     const baseUrl = this.ensureProtocol(site.site_url).replace(/\/+$/, '');
 
-    // Step 1: Discover news listing page
-    const listing = await this.discoverNewsPage(baseUrl);
+    // Step 1: Discover news listing page (with optional override by site name)
+    const listing = await this.discoverNewsPage(baseUrl, site.name);
     if (!listing) {
       errors.push({
         type: 'listing_not_found',
@@ -187,15 +256,40 @@ class GovBrScraper extends BaseScraper {
       return { articles, errors };
     }
 
+    // If the listing URL is on a different host than the configured site_url,
+    // use the listing's origin so relative links resolve to the live domain.
+    let effectiveBaseUrl = baseUrl;
+    try {
+      const listingOrigin = new URL(listing.url).origin;
+      const baseOrigin = new URL(baseUrl).origin;
+      if (listingOrigin !== baseOrigin) effectiveBaseUrl = listingOrigin;
+    } catch {}
+
     // Step 2: Extract article links from main listing
-    let links = this.extractArticleLinks(listing.html, baseUrl);
+    let links = this.extractArticleLinks(listing.html, effectiveBaseUrl);
+
+    // If site has hardcoded absolute links to a stale/dead domain (different
+    // from where we found the listing), rewrite link hosts to the live origin.
+    try {
+      const listingHost = this._normalizeHost(new URL(listing.url).hostname);
+      const baseHost = this._normalizeHost(new URL(baseUrl).hostname);
+      if (listingHost !== baseHost) {
+        links = links.map(u => {
+          try {
+            const lu = new URL(u);
+            const liveOrigin = new URL(listing.url).origin;
+            return liveOrigin + lu.pathname + lu.search + lu.hash;
+          } catch { return u; }
+        });
+      }
+    } catch {}
 
     // Step 2b: Also discover category/editorial sub-pages and extract their articles
-    const categoryPages = this.discoverCategoryPages(listing.html, baseUrl);
+    const categoryPages = this.discoverCategoryPages(listing.html, effectiveBaseUrl);
     for (const catUrl of categoryPages) {
       try {
         const catHtml = await this.fetchPage(catUrl);
-        const catLinks = this.extractArticleLinks(catHtml, baseUrl);
+        const catLinks = this.extractArticleLinks(catHtml, effectiveBaseUrl);
         // Add new links not already found
         for (const link of catLinks) {
           if (!links.includes(link)) links.push(link);
@@ -215,42 +309,87 @@ class GovBrScraper extends BaseScraper {
       return { articles, errors };
     }
 
+    // Step 2c: PAGINATION (Atlas 2026-06-11) — high-volume sites (POA, Caxias)
+    // spill recent articles onto pages 2+; reading only page 1 loses 30-60% of
+    // them permanently. We follow the site's own "next" link, bounded by:
+    //  - GATE: only when page 1 yields >= paginationMinLinks (high-volume) so
+    //    low-volume cities (most of the 442) never paginate → zero regression;
+    //  - page cap (maxListingPages) and total-links cap (maxArticlesPerCity)
+    //    to bound per-city cost and avoid blowing the sync HARD timeout;
+    //  - stop early when a page adds no new links.
+    // The lookback/date filter in _fetchArticle still gates final inclusion,
+    // so old articles fetched from deeper pages are simply rejected.
+    if (links.length >= this.paginationMinLinks) {
+      const seen = new Set(links);
+      const visitedPages = new Set([listing.url]);
+      let curHtml = listing.html;
+      let curUrl = listing.url;
+      let pages = 0;
+      while (pages < this.maxListingPages && links.length < this.maxArticlesPerCity) {
+        const nextUrl = this._findNextPageUrl(curHtml, curUrl, effectiveBaseUrl);
+        if (!nextUrl || visitedPages.has(nextUrl)) break;
+        visitedPages.add(nextUrl);
+        let nextHtml;
+        try {
+          nextHtml = await this.fetchPage(nextUrl);
+        } catch {
+          break;
+        }
+        const nextLinks = this.extractArticleLinks(nextHtml, effectiveBaseUrl);
+        let added = 0;
+        for (const l of nextLinks) {
+          if (!seen.has(l)) { seen.add(l); links.push(l); added++; }
+          if (links.length >= this.maxArticlesPerCity) break;
+        }
+        if (added === 0) break;
+        curHtml = nextHtml;
+        curUrl = nextUrl;
+        pages++;
+      }
+    }
+
+    // Hard cap on total links to fetch (Atlas 2026-06-11). Category pages
+    // (Step 2b) can push the link count well past maxArticlesPerCity (e.g.
+    // ERECHIM accumulated ~160 links → 160 serial-ish fetches → blew the 120s
+    // sync timeout → captured 0). Links are in listing order (newest first),
+    // so truncating keeps the most recent — exactly what the D-1/lookback
+    // window needs — while bounding per-city cost.
+    if (links.length > this.maxArticlesPerCity) {
+      links = links.slice(0, this.maxArticlesPerCity);
+    }
+
     // Step 3: Try to extract dates from the listing page first
     const today = this._getTodayString();
     const listingDates = this._extractListingDates(listing.html, links, baseUrl);
 
-    // Step 4: Fetch articles - prioritize those that appear to be from today
-    for (const articleUrl of links) {
-      try {
-        // If we got a date from the listing and it's not today, skip
-        const listingDate = listingDates.get(articleUrl);
-        if (listingDate && !this._isToday(listingDate)) {
-          continue;
-        }
-
-        const article = await this._fetchArticle(articleUrl, site, baseUrl, listingDate);
-        if (!article) continue;
-
-        // If date is confirmed and it's today -> include
-        // If date is confirmed and NOT today -> skip
-        // If no date -> include (first page of listing = likely recent)
-        if (article.publishedAt) {
-          if (this._isToday(article.publishedAt)) {
+    // Step 4: Fetch articles with BOUNDED CONCURRENCY (Atlas 2026-06-11).
+    // Previously serial — with pagination surfacing 50-90 links, serial fetch
+    // blew the per-city HARD timeout (POA/Tabaí timed out → captured 0). A
+    // small concurrency pool keeps total time well under the 120s budget.
+    // We do NOT skip based on listingDate alone (it's often the wrong date);
+    // _fetchArticle owns the final date decision and lookback filter.
+    const ARTICLE_CONCURRENCY = this.articleConcurrency || 6;
+    let qIdx = 0;
+    const worker = async () => {
+      while (qIdx < links.length) {
+        const articleUrl = links[qIdx++];
+        try {
+          const listingDate = listingDates.get(articleUrl);
+          const article = await this._fetchArticle(articleUrl, site, baseUrl, listingDate);
+          // Strict policy: only accept a confirmed per-page/per-URL date within
+          // the lookback window. Dateless articles are REJECTED (they polluted
+          // the feed with year-old content stamped as "today").
+          if (article && article.publishedAt && this._isToday(article.publishedAt)) {
             articles.push(article);
           }
-          // confirmed not today -> skip
-        } else if (!listingDate) {
-          // no date anywhere -> include (trust listing page recency)
-          articles.push(article);
+        } catch (err) {
+          errors.push({ type: 'article_fetch', url: articleUrl, message: err.message });
         }
-      } catch (err) {
-        errors.push({
-          type: 'article_fetch',
-          url: articleUrl,
-          message: err.message
-        });
       }
-    }
+    };
+    await Promise.all(
+      Array.from({ length: Math.min(ARTICLE_CONCURRENCY, links.length) }, () => worker())
+    );
 
     return { articles, errors };
   }
@@ -284,6 +423,55 @@ class GovBrScraper extends BaseScraper {
     } catch {
       return false;
     }
+  }
+
+  /**
+   * Check if a date is in the future (after today's end-of-day).
+   * Stricter than _isDateSuspicious — used to reject listing-date fallbacks
+   * that would mark articles with tomorrow's date.
+   */
+  _isFutureDate(dateStr) {
+    if (!dateStr) return false;
+    try {
+      const d = new Date(dateStr);
+      if (isNaN(d.getTime())) return false;
+      const today = this._getTodayString();
+      const endOfToday = new Date(today + 'T23:59:59Z');
+      return d > endOfToday;
+    } catch {
+      return false;
+    }
+  }
+
+  /**
+   * Try to parse a date embedded in the article URL.
+   * Recognizes /YYYY-MM-DD/, /DD-MM-YYYY/, /YYYY/MM/DD/ patterns.
+   * Returns ISO string or null.
+   */
+  _extractDateFromUrl(url) {
+    if (!url) return null;
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(23, 59, 59, 999);
+    const accept = (iso) => {
+      const d = new Date(iso);
+      if (isNaN(d.getTime())) return null;
+      if (d > tomorrow) return null; // reject future dates (event deadlines in slug)
+      return d.toISOString();
+    };
+    // YYYY-MM-DD or YYYY/MM/DD
+    let m = url.match(/[/_-](20\d{2})[-/](\d{2})[-/](\d{2})(?=[/_.-]|$)/);
+    if (m) {
+      const r = accept(`${m[1]}-${m[2]}-${m[3]}T12:00:00Z`);
+      if (r) return r;
+    }
+    // DD-MM-YYYY
+    m = url.match(/[/_-](\d{2})-(\d{2})-(20\d{2})(?=[/_.-]|$)/);
+    if (m) {
+      const r = accept(`${m[3]}-${m[2]}-${m[1]}T12:00:00Z`);
+      if (r) return r;
+    }
+    return null;
   }
 
   /**
@@ -479,6 +667,56 @@ class GovBrScraper extends BaseScraper {
 
     const dateRaw = this._extractDate($, html);
     let publishedAt = this.parseBrazilianDate(dateRaw);
+    let publishedAtFromUrl = false;
+
+    // WORDPRESS DATE-PERMALINK PRIORITY (Atlas 2026-06-09):
+    // URLs shaped /YYYY/MM/DD/slug encode an UNAMBIGUOUS publication date set
+    // by the CMS at publish time. Some WP themes render the visible "Publicado
+    // em" stamp in MM/DD/YYYY (American) format — e.g. June 9 shown as
+    // "06/09/2026" — which parseBrazilianDate misreads as DD/MM (→ 6 September).
+    // When the URL carries an explicit /YYYY/MM/DD/ date, trust it over any
+    // body-text date. Only affects date-permalink sites (Arroio do Sal etc.);
+    // ID/slug-based sites (incl. all banner-bug cities) return null here and
+    // are left completely untouched.
+    const urlPermalinkDate = this._extractDateFromUrl(url);
+    if (urlPermalinkDate && !this._isFutureDate(urlPermalinkDate)) {
+      const urlDay = urlPermalinkDate.slice(0, 10);
+      if (!publishedAt || publishedAt.slice(0, 10) !== urlDay) {
+        publishedAt = urlPermalinkDate;
+        publishedAtFromUrl = true;
+      }
+    }
+
+    // BANNER-BUG GUARD (Atlas 2026-05-04):
+    // If the only date we found equals "today" AND the page contains the
+    // "<City>, <weekday>, DD de mês de YYYY" header banner with that exact
+    // date AND there is NO article-anchored date keyword (Publicado/Postado/
+    // Data de publicação) anywhere in the HTML, we cannot trust the extracted
+    // date — it almost certainly came from the page header banner that
+    // every page on the site renders for "today". Discard the date and let
+    // the LLM/listing-date paths attempt recovery.
+    if (publishedAt && html && !publishedAtFromUrl) {
+      const today = this._getTodayString ? this._getTodayString() : new Date().toISOString().slice(0, 10);
+      const isToday = publishedAt.slice(0, 10) === today;
+      if (isToday) {
+        const hasArticleAnchor = /(?:Data\s+de\s+publica(?:[cç]|&ccedil;)(?:[aã]|&atilde;)o|Publicad[oa]\s+em|Postad[oa]\s+em|article:published_time|datePublished)/i.test(html);
+        const hasCityBanner = /[A-ZÀ-Ú][a-zà-úA-ZÀ-Ú\s'-]+,\s+(?:[a-zçé-]+-feira,\s+)?\d{1,2}\s+de\s+\w+\s+de\s+\d{4}/i.test(html);
+        if (!hasArticleAnchor && hasCityBanner) {
+          publishedAt = null; // banner-bug suspected — refuse to mark as today
+        }
+      }
+    }
+
+    // Strong fallback: many municipal sites encode the publication date
+    // directly in the article URL (e.g. /noticia/1810/10-03-2026/...).
+    // Trust that over the listingDate when meta-tag extraction fails.
+    if (!publishedAt) {
+      const urlDate = this._extractDateFromUrl(url);
+      if (urlDate && !this._isDateSuspicious(urlDate) && !this._isFutureDate(urlDate)) {
+        publishedAt = urlDate;
+        publishedAtFromUrl = true;
+      }
+    }
 
     // Layer 2.5: If meta tag gave a VERY old date (> 1 year), the article is genuinely old
     // Don't override with LLM — just discard the article entirely
@@ -496,22 +734,18 @@ class GovBrScraper extends BaseScraper {
       publishedAt = null;
     }
 
-    // Layer 4a: if listingDate is trustworthy and extracted date diverges
-    // by more than 2 days, prefer the listing date (it's the trusted source).
-    const trustedListingDate = (listingDate && !this._isDateSuspicious(listingDate)) ? listingDate : null;
-    if (trustedListingDate && publishedAt) {
-      const diffDays = Math.abs(
-        (new Date(publishedAt).getTime() - new Date(trustedListingDate).getTime()) / (1000 * 60 * 60 * 24)
-      );
-      if (diffDays > 2) {
-        publishedAt = trustedListingDate;
-      }
-    }
+    // Layer 4a: listingDate is UNRELIABLE for date attribution.
+    // It often reflects the listing page's "last updated" stamp (which is
+    // today) rather than each article's real publication date. We never
+    // overwrite a per-page extracted publishedAt with a listingDate.
+    // listingDate is now used ONLY as a final tie-breaker when nothing else
+    // worked AND it's within a tight window (Layer 4c below).
+    const trustedListingDate = (listingDate && !this._isDateSuspicious(listingDate) && !this._isFutureDate(listingDate)) ? listingDate : null;
 
-    // Layer 4b: seed with listing date when extraction produced nothing
-    if (!publishedAt && trustedListingDate) {
-      publishedAt = trustedListingDate;
-    }
+    // Layer 4b: REMOVED — never seed publishedAt from listingDate alone.
+    // Listing dates are typically page-level "last update" stamps, not
+    // article-specific publication dates, and were misleading articles
+    // with today's date when articles were actually months/years old.
 
     const cleanTitle = this.cleanText(title);
 
@@ -527,7 +761,7 @@ class GovBrScraper extends BaseScraper {
     );
 
     // If content is missing, too short, or noise — use LLM to extract clean text
-    if (!cleanContent || isNoise) {
+    if ((!cleanContent || isNoise) && process.env.SKIP_LLM !== 'true') {
       const pageText = $('body').text().replace(/\s+/g, ' ').trim();
       const llmContent = await extractContentWithLLM(cleanTitle, pageText);
       if (llmContent) {
@@ -535,8 +769,21 @@ class GovBrScraper extends BaseScraper {
       }
     }
 
-    // If regex failed to find date: use LLM as fallback
-    if (!publishedAt) {
+    // Sites where the LLM is known to extract the page-template "today"
+    // banner instead of the article date — disable LLM date for these.
+    const DATE_LLM_BLACKLIST = new Set([
+      'COQUEIRO BAIXO', 'LAVRAS DO SUL', 'PROGRESSO', 'NOVA ALVORADA', 'IBARAMA',
+      'AUGUSTO PESTANA', 'BALNEÁRIO PINHAL', 'BARRA DO QUARAÍ', 'MAMPITUBA',
+      'PUTINGA', 'DOUTOR RICARDO', 'HULHA NEGRA', 'DOM PEDRO DE ALCÂNTARA',
+      'QUEVEDOS', 'BOA VISTA DO CADEADO',
+    ]);
+    const skipLlmForThisSite = site && site.name && DATE_LLM_BLACKLIST.has(site.name);
+
+    // If regex/URL failed to find a date, ALWAYS try LLM — date is critical
+    // (without it the article is rejected). Only the heavier categorize/
+    // summarize calls respect SKIP_LLM. Honor SKIP_LLM_DATE override if set.
+    // Skip LLM entirely for blacklisted sites (chronic mis-attribution).
+    if (!publishedAt && process.env.SKIP_LLM_DATE !== 'true' && !skipLlmForThisSite) {
       const pageText = $('body').text().replace(/\s+/g, ' ').trim();
       const llmResult = await extractWithLLM(cleanTitle, pageText, url);
 
@@ -549,21 +796,10 @@ class GovBrScraper extends BaseScraper {
       }
     }
 
-    // Layer 4c: listing date has FINAL priority — if present and trustworthy,
-    // and the current publishedAt is either missing or diverges by > 2 days,
-    // trust the listing page as the canonical source.
-    if (trustedListingDate) {
-      if (!publishedAt) {
-        publishedAt = trustedListingDate;
-      } else {
-        const diffDays = Math.abs(
-          (new Date(publishedAt).getTime() - new Date(trustedListingDate).getTime()) / (1000 * 60 * 60 * 24)
-        );
-        if (diffDays > 2) {
-          publishedAt = trustedListingDate;
-        }
-      }
-    }
+    // Layer 4c: REMOVED — listingDate is no longer used as a fallback
+    // source for publishedAt. Articles without a per-page or per-URL
+    // detected date will keep publishedAt = null and be rejected by
+    // the lookback filter rather than being mis-dated as "today".
 
     // Validate and fix encoding before persisting
     const validation = this._validateArticle(cleanTitle, cleanContent);
@@ -572,8 +808,12 @@ class GovBrScraper extends BaseScraper {
     const validatedTitle = validation.cleanTitle;
     const validatedContent = validation.cleanContent;
 
-    // Classify, summarize, and rate with LLM (single call)
-    const { summary, category, relevanceScore } = await classifyAndSummarize(validatedTitle, validatedContent);
+    // Classify, summarize, and rate with LLM (single call).
+    // Can be disabled via SKIP_LLM=true to speed up bulk runs (categorize later).
+    let summary = null, category = null, relevanceScore = null;
+    if (process.env.SKIP_LLM !== 'true') {
+      ({ summary, category, relevanceScore } = await classifyAndSummarize(validatedTitle, validatedContent));
+    }
 
     return {
       title: validatedTitle,
@@ -670,23 +910,34 @@ class GovBrScraper extends BaseScraper {
 
   /**
    * Extract article title using multiple selectors.
+   * For each selector, the candidate text is rejected if it matches a blacklist
+   * entry, the site name, or a JUNK_TITLE_PATTERN — and we move on to the next
+   * selector instead of returning the noise text.
    */
   _extractTitle($, siteName) {
+    const isJunkCandidate = (text) => {
+      const trimmed = (text || '').trim();
+      if (!trimmed) return true;
+      const lower = trimmed.toLowerCase();
+      if (TITLE_BLACKLIST.some(bl => lower === bl)) return true;
+      if (siteName && lower === siteName.toLowerCase().trim()) return true;
+      if (JUNK_TITLE_PATTERNS.some(re => re.test(trimmed))) return true;
+      // Too short to be a real title
+      if (trimmed.length < 5) return true;
+      return false;
+    };
+
     for (const selector of TITLE_SELECTORS) {
-      const el = $(selector).first();
-      if (!el.length) continue;
-
-      const text = el.text().trim();
-      if (!text) continue;
-
-      if (selector === 'h1' || selector === '.container h1' || selector === '.content h1') {
-        const lower = text.toLowerCase().trim();
-        const isBlacklisted = TITLE_BLACKLIST.some(bl => lower === bl);
-        const isSiteName = siteName && lower === siteName.toLowerCase().trim();
-        if (isBlacklisted || isSiteName) continue;
-      }
-
-      return text;
+      // Try every match for the selector — some pages have multiple h1s where
+      // the first is junk ("Notícias") and the second is the real title.
+      const elements = $(selector);
+      let chosen = null;
+      elements.each((_, el) => {
+        if (chosen) return;
+        const text = $(el).text().trim();
+        if (!isJunkCandidate(text)) chosen = text;
+      });
+      if (chosen) return chosen;
     }
 
     // Last resort: <title> tag
@@ -709,6 +960,29 @@ class GovBrScraper extends BaseScraper {
    * and finally regex scanning the page text.
    */
   _extractDate($, html) {
+    // Strategy 0: Anchored "Data de publicação:" / "Publicado em" patterns in raw HTML.
+    // These take priority over meta tags and CSS selectors because some sites have
+    // a banner like "Cidade, DD de Mês de YYYY" in the header that gets picked up
+    // by selectors but is actually the page-render date, not the article date.
+    if (html) {
+      // Pattern A: <strong>Data de publicação:</strong> DD/MM/YYYY (handles HTML entities)
+      let m = html.match(/Data de publica(?:[cç]|&ccedil;)(?:[aã]|&atilde;)o:?\s*<\/strong>\s*(\d{1,2}\/\d{1,2}\/\d{4})/i);
+      if (m) return m[1];
+      m = html.match(/Data de publica(?:[cç]|&ccedil;)(?:[aã]|&atilde;)o:?[^0-9<]{0,30}(\d{1,2}\/\d{1,2}\/\d{4})/i);
+      if (m) return m[1];
+      // Pattern B: "Publicado em DD/MM/YYYY" / "Publicada em" / "Postado em" anchors
+      m = html.match(/Publicad[oa]\s+em:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i);
+      if (m) return m[1];
+      m = html.match(/Postad[oa]\s+em:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i);
+      if (m) return m[1];
+      // Pattern C: <h2><span>...DD de Mês de YYYY...</span></h2> (Jaguari, Coronel Barros style)
+      m = html.match(/<h2[^>]*>\s*<span[^>]*>[\s\S]{0,200}?(\d{1,2})\s+de\s+([A-Za-zçÇ]+)\s+de\s+(\d{4})[\s\S]{0,50}?<\/span>/i);
+      if (m) return `${m[1]} de ${m[2]} de ${m[3]}`;
+      // Pattern D: Drupal grupo-datas block (Novo Hamburgo)
+      m = html.match(/grupo-datas[^>]*>\s*Publicado em\s*(\d{1,2}\/\d{1,2}\/\d{4})/i);
+      if (m) return m[1];
+    }
+
     // Strategy 1: Meta tags and time elements
     for (const { selector, attr } of DATE_META_SELECTORS) {
       const el = $(selector).first();
@@ -724,10 +998,20 @@ class GovBrScraper extends BaseScraper {
       const el = $(selector).first();
       if (el.length) {
         const text = el.text().trim();
-        // Only accept text that looks like a parseable date (must contain a year)
-        if (text && /\d{4}/.test(text)) return text;
-        // Accept DD/MM/YYYY format
-        if (text && /\d{1,2}\/\d{1,2}\/\d{4}/.test(text)) return text;
+        if (!text) continue;
+        // Normalize whitespace (templates often split "DD de\n  mes de\n  YYYY")
+        const norm = text.replace(/\s+/g, ' ').trim();
+        // Reject site-banner pattern: "<City Name>, DD de mes de YYYY"
+        if (/^[A-ZÀ-Ú][a-zà-úA-ZÀ-Ú\s'-]+,\s+\d{1,2}\s+de\s+\w+\s+de\s+\d{4}/.test(norm)) continue;
+        // Reject bare "DD de mes de YYYY" with no anchor/time/slash — this is
+        // the page-template "today" banner on sites like Nova Alvorada/Ibarama.
+        // Real article date selectors typically include "Publicado em", time,
+        // or DD/MM/YYYY format.
+        if (/^\d{1,2}\s+de\s+\w+\s+de\s+\d{4}\.?$/i.test(norm)) continue;
+        // Prefer slash format
+        if (/\d{1,2}\/\d{1,2}\/\d{4}/.test(norm)) return norm;
+        // Accept text with year if it has anchor words or time
+        if (/\d{4}/.test(norm) && /(publicad|postad|criad|atualizad|às|as\s+\d|\d+\s*h\d|\d{1,2}:\d{2})/i.test(norm)) return norm;
       }
     }
 
@@ -778,12 +1062,19 @@ class GovBrScraper extends BaseScraper {
         if (m) return m[1];
       }
 
+      // Reject site-banner "header" date pattern: "<City Name>, DD de mes de YYYY"
+      // — this is the page-template "today" stamp, not the article publication date.
+      // We strip these matches from plainText before further regex extraction.
+      const headerBanner = plainText.match(/[A-ZÀ-Ú][a-zà-ú\s'-]+,\s+\d{1,2}\s+de\s+\w+\s+de\s+\d{4}\.?/);
+      let cleanText = plainText;
+      if (headerBanner) cleanText = plainText.split(headerBanner[0]).join(' ');
+
       // Try DD/MM/YYYY first
-      const slashMatch = plainText.match(/\d{1,2}\/\d{1,2}\/\d{4}/);
+      const slashMatch = cleanText.match(/\d{1,2}\/\d{1,2}\/\d{4}/);
       if (slashMatch) return slashMatch[0];
 
       // Try "DD de mês de YYYY"
-      const longMatch = plainText.match(/\d{1,2}\s+de\s+\w+\s+de\s+\d{4}/i);
+      const longMatch = cleanText.match(/\d{1,2}\s+de\s+\w+\s+de\s+\d{4}/i);
       if (longMatch) return longMatch[0];
 
       // Try "DD mon YYYY" (short month)
@@ -963,12 +1254,31 @@ class GovBrScraper extends BaseScraper {
       return paras.join('\n\n');
     }
 
+    // Strip a leading "Pular para o conteúdo principal" navigation preamble
+    // that Drupal-style portals (e.g. PoA) bake into every page wrapper.
+    function stripNavPreamble(text) {
+      if (!text) return text;
+      const NAV_PREAMBLE = [
+        /^pular para o conte[uú]do principal[^\n]*\n+/i,
+        /^agora,?\s+este [eé] o portal oficial[\s\S]*?ao site antigo\.?\s*\n+/i,
+      ];
+      let out = text;
+      for (const re of NAV_PREAMBLE) out = out.replace(re, '');
+      return out.trim();
+    }
+
     for (const selector of CONTENT_SELECTORS) {
       const el = $(selector).first();
       if (!el.length) continue;
 
-      const text = htmlToText(el);
-      if (text && text.length > 50) return trimTrailingNoise(text);
+      let text = htmlToText(el);
+      if (!text) continue;
+      text = stripNavPreamble(text);
+      // Threshold raised from 50 -> MIN_CONTENT_LEN to skip tiny "accessibility
+      // widget" wrappers like Alvorada's `.entry-content` (53 chars: "Reduzir
+      // Fonte A- Aumentar Fonte A+ Alto Contraste A") — falls through to the
+      // real article container (article / main).
+      if (text.length >= MIN_CONTENT_LEN) return trimTrailingNoise(text);
     }
 
     // Fallback: try body but be more aggressive with cleanup
@@ -977,7 +1287,8 @@ class GovBrScraper extends BaseScraper {
       // Remove more noise elements
       body.find('script, style, nav, header, footer, aside, .menu, .sidebar, .breadcrumb, .pagination, .nav, .topbar, .toolbar, .acessibilidade, .accessibility, .social, .share, .related, .tags, form, iframe, .banner, .carousel, .slider, [role="navigation"], [role="banner"], [role="complementary"]').remove();
 
-      const text = htmlToText(body);
+      let text = htmlToText(body);
+      text = stripNavPreamble(text);
 
       // Validate: if more than 30% of paragraphs are noise (< 20 chars), reject
       if (text && text.length > 100) {

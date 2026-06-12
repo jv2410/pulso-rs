@@ -10,5 +10,9 @@ module.exports = {
   DB_PATH: './data/scraper.db',
   LOG_LEVEL: 'info',
   LOG_DIR: './logs',
-  USER_AGENT: 'Mozilla/5.0 (compatible; RSNewsScraper/1.0)'
+  USER_AGENT: 'Mozilla/5.0 (compatible; RSNewsScraper/1.0)',
+  PLAYWRIGHT_ENABLED: true,
+  PLAYWRIGHT_MAX_PER_RUN: 60,
+  PLAYWRIGHT_PAGE_TIMEOUT_MS: 15000,
+  USER_AGENT_ROTATION_ENABLED: true
 };

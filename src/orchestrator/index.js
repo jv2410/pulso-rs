@@ -25,6 +25,19 @@ async function runScraping() {
   const startTime = Date.now();
   logger.info('Starting scraping run...');
 
+  try {
+    return await _runScrapingInternal(startTime);
+  } finally {
+    try {
+      const { getInstance } = require('../scrapers/BrowserPool');
+      await getInstance().close();
+    } catch (err) {
+      logger.error({ err: err.message }, '[orchestrator] Browser close failed');
+    }
+  }
+}
+
+async function _runScrapingInternal(startTime) {
   // 1. Database setup
   const db = require('../db/connection').getDb();
 

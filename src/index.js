@@ -31,13 +31,21 @@ if (process.argv.includes('--now')) {
   });
 
   // Graceful shutdown
-  process.on('SIGINT', () => {
+  process.on('SIGINT', async () => {
     logger.info('Shutting down (SIGINT)...');
+    try {
+      const { getInstance } = require('./scrapers/BrowserPool');
+      await getInstance().close();
+    } catch {}
     process.exit(0);
   });
 
-  process.on('SIGTERM', () => {
+  process.on('SIGTERM', async () => {
     logger.info('Shutting down (SIGTERM)...');
+    try {
+      const { getInstance } = require('./scrapers/BrowserPool');
+      await getInstance().close();
+    } catch {}
     process.exit(0);
   });
 
