@@ -5,6 +5,7 @@ import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { supabase } from "../../lib/supabase";
 import PublishToWP from "../components/PublishToWP";
+import WhatsNewPopup from "../components/WhatsNewPopup";
 
 interface Article {
   id: number;
@@ -39,6 +40,7 @@ export default function NoticiasPage() {
   const [loadingContent, setLoadingContent] = useState(false);
   const [copied, setCopied] = useState(false);
   const [showPublish, setShowPublish] = useState(false);
+  const [lastHidden, setLastHidden] = useState<Article | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -67,6 +69,7 @@ export default function NoticiasPage() {
         .gte("published_at", selectedDate + "T00:00:00Z")
         .lte("published_at", selectedDate + "T23:59:59Z")
         .or("category.is.null,category.neq.Crise")
+        .or("relevance_score.is.null,relevance_score.gt.0") // oculta as marcadas como inválidas (score 0)
         .order("published_at", { ascending: false });
 
       if (data) {
@@ -119,6 +122,43 @@ export default function NoticiasPage() {
     setTimeout(() => setCopied(false), 2000);
   }, [selectedArticle]);
 
+  // Marca a notícia como inválida (não deveria aparecer). Soft-hide: grava
+  // relevance_score = 0 — a notícia some do feed mas não é apagada (reversível).
+  const markInvalid = useCallback(async (article: Article) => {
+    // remove da lista imediatamente (otimista) e fecha o painel se aberto
+    setArticles((prev) => prev.filter((a) => a.id !== article.id));
+    setLastHidden(article);
+    if (selectedArticle?.id === article.id) setSelectedArticle(null);
+    const { error } = await supabase
+      .from("articles")
+      .update({ relevance_score: 0 })
+      .eq("id", article.id);
+    if (error) {
+      // falhou no banco — desfaz a remoção e avisa
+      setArticles((prev) => [article, ...prev]);
+      setLastHidden(null);
+      alert("Não foi possível marcar como inválida. Tente novamente.");
+    }
+  }, [selectedArticle]);
+
+  // Desfaz a última marcação de inválida, restaurando o score original.
+  const undoInvalid = useCallback(async () => {
+    if (!lastHidden) return;
+    const art = lastHidden;
+    setLastHidden(null);
+    const restore = art.relevance_score && art.relevance_score > 0 ? art.relevance_score : 3;
+    await supabase.from("articles").update({ relevance_score: restore }).eq("id", art.id);
+    setArticles((prev) => [art, ...prev]
+      .sort((a, b) => (b.published_at || "").localeCompare(a.published_at || "")));
+  }, [lastHidden]);
+
+  // Auto-fecha o snackbar de "desfazer" após 7s
+  useEffect(() => {
+    if (!lastHidden) return;
+    const t = setTimeout(() => setLastHidden(null), 7000);
+    return () => clearTimeout(t);
+  }, [lastHidden]);
+
   const municipalities = useMemo(() => {
     const set = new Set(articles.map((a) => a.municipality));
     return Array.from(set).sort();
@@ -159,6 +199,7 @@ export default function NoticiasPage() {
 
   return (
     <div>
+      <WhatsNewPopup />
       {/* Page Header */}
       <div className="mb-6">
         <h1 className="font-editorial text-3xl font-bold mb-1" style={{ color: "var(--ink)" }}>
@@ -270,15 +311,50 @@ export default function NoticiasPage() {
                   </p>
                 )}
               </div>
-              <div className="flex items-center gap-2 shrink-0 mt-1">
+              <div className="flex flex-col items-end gap-2 shrink-0 mt-1">
                 <span className="text-xs" style={{ color: "var(--ink-tertiary)" }}>
                   {article.published_at ? format(new Date(article.published_at), "dd/MM/yyyy", { locale: ptBR }) : ""}
                 </span>
+                {/* Marcar como inválida — aparece no hover do card */}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (confirm(`Marcar como inválida e ocultar?\n\n"${article.title}"`)) markInvalid(article);
+                  }}
+                  title="Marcar como inválida (oculta do feed)"
+                  className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs px-2 py-1"
+                  style={{ border: "1px solid var(--fio)", borderRadius: "2px", color: "var(--ink-tertiary)", background: "var(--paper-white)" }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "var(--editorial-red)"; e.currentTarget.style.borderColor = "var(--editorial-red)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink-tertiary)"; e.currentTarget.style.borderColor = "var(--fio)"; }}
+                >
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                  </svg>
+                  Inválida
+                </button>
               </div>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Snackbar de desfazer (undo) */}
+      {lastHidden && (
+        <div
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] flex items-center gap-4 px-4 py-3 shadow-lg"
+          style={{ background: "var(--ink)", color: "var(--paper-white)", borderRadius: "4px" }}
+        >
+          <span className="text-sm">Notícia marcada como inválida e ocultada.</span>
+          <button
+            onClick={undoInvalid}
+            className="text-sm font-semibold uppercase tracking-wide"
+            style={{ color: "#f5b942" }}
+          >
+            Desfazer
+          </button>
+          <button onClick={() => setLastHidden(null)} className="text-sm opacity-60 hover:opacity-100">✕</button>
+        </div>
+      )}
 
       {filtered.length === 0 && !loading && (
         <div className="text-center py-16">
@@ -355,6 +431,22 @@ export default function NoticiasPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                   </svg>
                   Portal 497
+                </button>
+
+                <button
+                  onClick={() => {
+                    if (selectedArticle && confirm(`Marcar como inválida e ocultar?\n\n"${selectedArticle.title}"`)) markInvalid(selectedArticle);
+                  }}
+                  title="Marcar como inválida (oculta do feed)"
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm"
+                  style={{ border: "1px solid var(--fio)", borderRadius: "2px", color: "var(--ink-tertiary)" }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "var(--editorial-red)"; e.currentTarget.style.borderColor = "var(--editorial-red)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink-tertiary)"; e.currentTarget.style.borderColor = "var(--fio)"; }}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                  </svg>
+                  Inválida
                 </button>
               </div>
 

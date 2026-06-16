@@ -130,6 +130,7 @@ const EXCLUDED_PATH_PATTERNS = [
   /\/galeria/,
   /\/wp-admin/,
   /\/wp-content/,
+  /\/attachment\//,                          // WP image-attachment pages, não são artigos
   /\/feed\/?$/,
   /\.pdf$/i,
   /\.jpg$/i,
@@ -946,7 +947,10 @@ class BaseScraper {
       // Skip non-navigational links
       if (href.startsWith('#') || href.startsWith('javascript:') || href.startsWith('mailto:')) return;
 
-      const abs = this.buildAbsoluteUrl(href, baseUrl);
+      let abs = this.buildAbsoluteUrl(href, baseUrl);
+      // Strip URL fragment (#respond, #comments etc). The fragment points at
+      // the SAME article — keeping it produced duplicate rows (Atlas 2026-06-15).
+      if (abs) abs = abs.replace(/#.*$/, '');
       if (!abs || seen.has(abs)) return;
 
       // Skip external domains (normalize www prefix for comparison)
@@ -982,7 +986,8 @@ class BaseScraper {
         $('article a, .entry-title a, .post-title a, h2.entry-title a, h2 a, .card a').each((_, el) => {
           const href = $(el).attr('href');
           if (!href) return;
-          const wpAbs = this.buildAbsoluteUrl(href, baseUrl);
+          let wpAbs = this.buildAbsoluteUrl(href, baseUrl);
+          if (wpAbs) wpAbs = wpAbs.replace(/#.*$/, '');
           if (!wpAbs || seen.has(wpAbs)) return;
           try {
             const linkHost = this._normalizeHost(new URL(wpAbs).hostname);
