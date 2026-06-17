@@ -60,9 +60,21 @@ class BrowserPool {
         : 3000;
     this._userAgent = options.userAgent || DEFAULT_USER_AGENT;
 
-    // Allow constructor overrides to win over env where caller explicitly
-    // passes them (env still wins for the two playwright env vars above —
-    // ops-controllable knobs).
+    // STABILITY (Atlas 2026-06-17): a single long-lived Chromium serving the
+    // whole sync crashed under load (memory buildup + too many concurrent
+    // contexts when ~10 cities render at once → "browser context not found").
+    // Two guards:
+    //  - _maxConcurrent: cap simultaneous renders on the single browser.
+    //  - _recycleEvery: close & relaunch the browser every N renders so memory
+    //    is flushed before it crashes.
+    this._maxConcurrent = parseIntEnv(
+      process.env.PLAYWRIGHT_MAX_CONCURRENT,
+      typeof options.maxConcurrent === 'number' ? options.maxConcurrent : 3
+    );
+    this._recycleEvery = parseIntEnv(
+      process.env.PLAYWRIGHT_RECYCLE_EVERY,
+      typeof options.recycleEvery === 'number' ? options.recycleEvery : 60
+    );
 
     // Mutable state.
     this._browser = null;
@@ -71,6 +83,54 @@ class BrowserPool {
     this._successCount = 0;
     this._errorCount = 0;
     this._closing = false;
+    // Concurrency semaphore + recycle counter.
+    this._activeRenders = 0;
+    this._waiters = [];
+    this._rendersOnBrowser = 0;
+  }
+
+  /**
+   * Acquire a concurrency slot (waits if _maxConcurrent renders are in flight).
+   * @private
+   */
+  async _acquireSlot() {
+    while (this._activeRenders >= this._maxConcurrent) {
+      await new Promise((resolve) => this._waiters.push(resolve));
+    }
+    this._activeRenders += 1;
+  }
+
+  /**
+   * Release a concurrency slot and wake the next waiter (if any).
+   * @private
+   */
+  _releaseSlot() {
+    this._activeRenders -= 1;
+    const next = this._waiters.shift();
+    if (next) next();
+  }
+
+  /**
+   * Recycle the Chromium browser after _recycleEvery renders, but only when no
+   * render is in flight. Closing nulls the singleton so the next _init() spins
+   * up a fresh process — flushing accumulated memory and preventing crashes.
+   * @private
+   */
+  async _maybeRecycle() {
+    if (this._rendersOnBrowser < this._recycleEvery) return;
+    if (this._activeRenders > 0) return; // wait until idle to avoid killing in-flight renders
+    const browser = this._browser;
+    this._browser = null;
+    this._initPromise = null;
+    this._rendersOnBrowser = 0;
+    if (browser) {
+      console.log(`[BrowserPool] recycling Chromium after ${this._recycleEvery} renders…`);
+      try {
+        await browser.close();
+      } catch (_) {
+        /* ignore */
+      }
+    }
   }
 
   /**
@@ -156,11 +216,15 @@ class BrowserPool {
 
     this._fetchCount += 1;
 
+    // Wait for a concurrency slot before touching the browser.
+    await this._acquireSlot();
+
     let browser;
     try {
       browser = await this._init();
     } catch (err) {
       this._errorCount += 1;
+      this._releaseSlot();
       console.error('[BrowserPool] failed to launch browser:', err.message);
       throw err;
     }
@@ -208,6 +272,7 @@ class BrowserPool {
 
       const html = await page.content();
       this._successCount += 1;
+      this._rendersOnBrowser += 1;
       return html;
     } catch (err) {
       this._errorCount += 1;
@@ -230,6 +295,14 @@ class BrowserPool {
         } catch (_) {
           /* ignore */
         }
+      }
+      // Free the slot, then recycle the browser if it has served enough renders
+      // and is now idle. Order matters: release before the idle check.
+      this._releaseSlot();
+      try {
+        await this._maybeRecycle();
+      } catch (_) {
+        /* ignore */
       }
     }
   }
