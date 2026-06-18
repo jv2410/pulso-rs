@@ -356,5 +356,7 @@
   "IMBÉ": {
     "url": "https://www.imbe.rs.gov.br/",
     "scraper": "atendenet"
-  }
+  },
+  "ARARICÁ": "https://ararica.rs.gov.br/noticia",
+  "CONSTANTINA": "https://constantina.rs.gov.br/category/noticias/"
 }

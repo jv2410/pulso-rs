@@ -20,7 +20,12 @@ const BRAZILIAN_MONTHS = {
   'janeiro': '01', 'fevereiro': '02', 'março': '03', 'marco': '03',
   'abril': '04', 'maio': '05', 'junho': '06',
   'julho': '07', 'agosto': '08', 'setembro': '09',
-  'outubro': '10', 'novembro': '11', 'dezembro': '12'
+  'outubro': '10', 'novembro': '11', 'dezembro': '12',
+  // Aliases EN (Atlas 2026-06-18) — alguns temas renderizam o mês em inglês
+  // ("17 de June de 2026" — Herval, Pedras Altas). Sem colisão com PT.
+  'january': '01', 'february': '02', 'march': '03', 'april': '04',
+  'may': '05', 'june': '06', 'july': '07', 'august': '08',
+  'september': '09', 'october': '10', 'november': '11', 'december': '12'
 };
 
 /**
@@ -465,6 +470,16 @@ class BaseScraper {
     const textMatch = cleaned.toLowerCase().match(/(\d{1,2})\s+de\s+([a-záàâãéèêíïóôõúç]+)\s+de\s+(\d{4})/);
     if (textMatch) {
       const [, day, monthName, year] = textMatch;
+      const month = BRAZILIAN_MONTHS[monthName];
+      if (month) return buildIso(year, month, day);
+    }
+
+    // "DD mês-extenso YYYY" sem "de" (ex: "18 junho 2026", "17 June 2026" —
+    // Jari, Ivorá, Nova Palma, Herval). Atlas 2026-06-18. Só resolve quando a
+    // palavra do meio é um mês conhecido (PT ou EN); senão cai no return null.
+    const fullMonthMatch = cleaned.toLowerCase().match(/(\d{1,2})\s+([a-záàâãéèêíïóôõúç]+)\s+(\d{4})/);
+    if (fullMonthMatch) {
+      const [, day, monthName, year] = fullMonthMatch;
       const month = BRAZILIAN_MONTHS[monthName];
       if (month) return buildIso(year, month, day);
     }

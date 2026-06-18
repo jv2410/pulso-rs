@@ -26,6 +26,10 @@ const TITLE_SELECTORS = [
   '.content h1',
   '.container h1',
   'h1',
+  // Títulos escopados de CMS cittaweb (Atlas 2026-06-18) — tentados depois do
+  // h1 genérico, antes do fallback. isJunkCandidate continua filtrando lixo.
+  '#content h3',          // Coqueiros do Sul
+  'div.texto > h4',       // Marques de Souza
   // Generic h2.titulo fallback last (Bom Retiro do Sul etc.)
   'h2.titulo',
 ];
