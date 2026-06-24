@@ -124,14 +124,17 @@ export default function NoticiasPage() {
 
   // Marca a notícia como inválida (não deveria aparecer). Soft-hide: grava
   // relevance_score = 0 — a notícia some do feed mas não é apagada (reversível).
-  const markInvalid = useCallback(async (article: Article) => {
+  // reason="antiga" também grava category="Notícia Antiga" (motivo da invalidação).
+  const markInvalid = useCallback(async (article: Article, reason?: "antiga") => {
     // remove da lista imediatamente (otimista) e fecha o painel se aberto
     setArticles((prev) => prev.filter((a) => a.id !== article.id));
     setLastHidden(article);
     if (selectedArticle?.id === article.id) setSelectedArticle(null);
+    const patch: { relevance_score: number; category?: string } = { relevance_score: 0 };
+    if (reason === "antiga") patch.category = "Notícia Antiga";
     const { error } = await supabase
       .from("articles")
-      .update({ relevance_score: 0 })
+      .update(patch)
       .eq("id", article.id);
     if (error) {
       // falhou no banco — desfaz a remoção e avisa
@@ -141,13 +144,16 @@ export default function NoticiasPage() {
     }
   }, [selectedArticle]);
 
-  // Desfaz a última marcação de inválida, restaurando o score original.
+  // Desfaz a última marcação, restaurando score E categoria originais.
   const undoInvalid = useCallback(async () => {
     if (!lastHidden) return;
     const art = lastHidden;
     setLastHidden(null);
     const restore = art.relevance_score && art.relevance_score > 0 ? art.relevance_score : 3;
-    await supabase.from("articles").update({ relevance_score: restore }).eq("id", art.id);
+    await supabase
+      .from("articles")
+      .update({ relevance_score: restore, category: art.category })
+      .eq("id", art.id);
     setArticles((prev) => [art, ...prev]
       .sort((a, b) => (b.published_at || "").localeCompare(a.published_at || "")));
   }, [lastHidden]);
@@ -315,23 +321,43 @@ export default function NoticiasPage() {
                 <span className="text-xs" style={{ color: "var(--ink-tertiary)" }}>
                   {article.published_at ? format(new Date(article.published_at), "dd/MM/yyyy", { locale: ptBR }) : ""}
                 </span>
-                {/* Marcar como inválida — aparece no hover do card */}
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (confirm(`Marcar como inválida e ocultar?\n\n"${article.title}"`)) markInvalid(article);
-                  }}
-                  title="Marcar como inválida (oculta do feed)"
-                  className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs px-2 py-1"
-                  style={{ border: "1px solid var(--fio)", borderRadius: "2px", color: "var(--ink-tertiary)", background: "var(--paper-white)" }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = "var(--editorial-red)"; e.currentTarget.style.borderColor = "var(--editorial-red)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink-tertiary)"; e.currentTarget.style.borderColor = "var(--fio)"; }}
-                >
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-                  </svg>
-                  Inválida
-                </button>
+                {/* Ações de invalidação — aparecem no hover do card */}
+                <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {/* Notícia antiga */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (confirm(`Marcar como NOTÍCIA ANTIGA e ocultar?\n\n"${article.title}"`)) markInvalid(article, "antiga");
+                    }}
+                    title="Marcar como notícia antiga (oculta do feed)"
+                    className="flex items-center gap-1 text-xs px-2 py-1"
+                    style={{ border: "1px solid var(--fio)", borderRadius: "2px", color: "var(--ink-tertiary)", background: "var(--paper-white)" }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = "#b8860b"; e.currentTarget.style.borderColor = "#b8860b"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink-tertiary)"; e.currentTarget.style.borderColor = "var(--fio)"; }}
+                  >
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Antiga
+                  </button>
+                  {/* Inválida (genérica) */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (confirm(`Marcar como inválida e ocultar?\n\n"${article.title}"`)) markInvalid(article);
+                    }}
+                    title="Marcar como inválida (oculta do feed)"
+                    className="flex items-center gap-1 text-xs px-2 py-1"
+                    style={{ border: "1px solid var(--fio)", borderRadius: "2px", color: "var(--ink-tertiary)", background: "var(--paper-white)" }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = "var(--editorial-red)"; e.currentTarget.style.borderColor = "var(--editorial-red)"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink-tertiary)"; e.currentTarget.style.borderColor = "var(--fio)"; }}
+                  >
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                    </svg>
+                    Inválida
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -431,6 +457,22 @@ export default function NoticiasPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                   </svg>
                   Portal 497
+                </button>
+
+                <button
+                  onClick={() => {
+                    if (selectedArticle && confirm(`Marcar como NOTÍCIA ANTIGA e ocultar?\n\n"${selectedArticle.title}"`)) markInvalid(selectedArticle, "antiga");
+                  }}
+                  title="Marcar como notícia antiga (oculta do feed)"
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-sm"
+                  style={{ border: "1px solid var(--fio)", borderRadius: "2px", color: "var(--ink-tertiary)" }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "#b8860b"; e.currentTarget.style.borderColor = "#b8860b"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--ink-tertiary)"; e.currentTarget.style.borderColor = "var(--fio)"; }}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Antiga
                 </button>
 
                 <button
