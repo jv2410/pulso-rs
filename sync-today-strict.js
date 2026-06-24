@@ -30,7 +30,20 @@ async function main() {
     const { data } = await sb.from('articles').select('url').in('municipality_id', ids.slice(i, i+100)).gte('published_at', WINDOW_START).lte('published_at', TODAY_END);
     for (const a of data||[]) existingUrls.add(a.url);
   }
-  console.log(`URLs já no DB hoje: ${existingUrls.size}\n`);
+  console.log(`URLs já no DB hoje: ${existingUrls.size}`);
+
+  // PROTEÇÃO DE INVALIDAÇÕES (Atlas 2026-06-24): notícias marcadas como inválidas
+  // no dashboard (relevance_score = 0) NUNCA podem ser sobrescritas pelo upsert —
+  // senão o usuário marca, o sync re-encontra a URL (banner-bug re-datado sai da
+  // janela) e o upsert zera o score 0, fazendo a notícia voltar ao feed.
+  let invPage = 0; const invSet = new Set();
+  while (true) {
+    const { data } = await sb.from('articles').select('url').eq('relevance_score', 0).range(invPage*1000, invPage*1000+999);
+    if (!data || !data.length) break;
+    for (const a of data) { existingUrls.add(a.url); invSet.add(a.url); }
+    if (data.length < 1000) break; invPage++;
+  }
+  console.log(`URLs invalidadas protegidas: ${invSet.size}\n`);
 
   const pLimit = (await import('p-limit')).default;
   const limit = pLimit(10);
