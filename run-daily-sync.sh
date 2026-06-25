@@ -27,8 +27,11 @@ echo "--- sync exit=${SYNC_EXIT} ---" >> "$LOG"
 
 # Pipeline para hoje E ontem (janela D-1 pode ter inserido em ambos).
 # Ordem importa: audit ANTES de categorize (evita race em datas).
+# audit v2 (Atlas 2026-06-25): detecção corrigida (estruturada > rótulo > data crua,
+# JSON-LD, container .noticia) e BACKWARD-ONLY — corrige "antiga como nova" que o v1
+# deixava passar. DRY_RUN=false para APLICAR (o default do script é dry-run seguro).
 for D in "$TODAY" "$YESTERDAY"; do
-  node audit-banner-bug-today.js "$D" >> "$LOG" 2>&1
+  DRY_RUN=false node audit-banner-bug-v2.js "$D" >> "$LOG" 2>&1
 done
 for D in "$TODAY" "$YESTERDAY"; do
   node categorize-today.js "$D" >> "$LOG" 2>&1
