@@ -25,6 +25,10 @@ node sync-today-strict.js "$TODAY" >> "$LOG" 2>&1
 SYNC_EXIT=$?
 echo "--- sync exit=${SYNC_EXIT} ---" >> "$LOG"
 
+# Respiro: rodar o audit IMEDIATAMENTE após a sync pesada resetava a conexão
+# Supabase e o audit crashava sem corrigir. 15s deixam as conexões drenarem.
+sleep 15
+
 # Pipeline para hoje E ontem (janela D-1 pode ter inserido em ambos).
 # Ordem importa: audit ANTES de categorize (evita race em datas).
 # audit v2 (Atlas 2026-06-25): detecção corrigida (estruturada > rótulo > data crua,
