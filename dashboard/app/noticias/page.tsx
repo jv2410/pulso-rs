@@ -130,13 +130,24 @@ export default function NoticiasPage() {
     setArticles((prev) => prev.filter((a) => a.id !== article.id));
     setLastHidden(article);
     if (selectedArticle?.id === article.id) setSelectedArticle(null);
-    const patch: { relevance_score: number; category?: string } = { relevance_score: 0 };
-    if (reason === "antiga") patch.category = "Notícia Antiga";
-    const { error } = await supabase
-      .from("articles")
-      .update(patch)
-      .eq("id", article.id);
-    if (error) {
+    // Escreve via rota server-side (service key). A escrita anônima direta era
+    // bloqueada pelo RLS silenciosamente (error null, 0 linhas) — nunca persistia.
+    const body: { id: number | string; relevance_score: number; category?: string } = {
+      id: article.id, relevance_score: 0,
+    };
+    if (reason === "antiga") body.category = "Notícia Antiga";
+    let ok = false;
+    try {
+      const res = await fetch("/api/invalidate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      ok = res.ok && (await res.json())?.success === true;
+    } catch {
+      ok = false;
+    }
+    if (!ok) {
       // falhou no banco — desfaz a remoção e avisa
       setArticles((prev) => [article, ...prev]);
       setLastHidden(null);
@@ -150,10 +161,11 @@ export default function NoticiasPage() {
     const art = lastHidden;
     setLastHidden(null);
     const restore = art.relevance_score && art.relevance_score > 0 ? art.relevance_score : 3;
-    await supabase
-      .from("articles")
-      .update({ relevance_score: restore, category: art.category })
-      .eq("id", art.id);
+    await fetch("/api/invalidate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: art.id, relevance_score: restore, category: art.category }),
+    }).catch(() => {});
     setArticles((prev) => [art, ...prev]
       .sort((a, b) => (b.published_at || "").localeCompare(a.published_at || "")));
   }, [lastHidden]);
