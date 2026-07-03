@@ -51,8 +51,10 @@ export async function GET() {
 
     const hoje = byDate[latestDate] || { articles: 0, munis: new Set<number>() };
 
-    // cobertura: municípios distintos nos últimos 30 dias
-    const start30 = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 29 * DAY));
+    // cobertura: municípios distintos nos últimos 90 dias. Janela de 90d (não 30d)
+    // porque prefeituras pequenas publicam de forma esporádica (a cada 40-60 dias);
+    // 30d as excluía injustamente. 90d reflete a base ativa real (~67%).
+    const start30 = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 89 * DAY));
     const munis30 = new Set<number>();
     for (const d of Object.keys(byDate)) if (d >= start30) byDate[d].munis.forEach((m) => munis30.add(m));
 
