@@ -39,106 +39,42 @@ export default function DashboardPage() {
   useEffect(() => {
     (async () => {
       try {
-        // 1. Get latest date
-        const { data: latest } = await supabase
-          .from("articles")
-          .select("published_at")
-          .not("published_at", "is", null)
-          .order("published_at", { ascending: false })
-          .limit(1)
-          .single();
+        // Indicadores + evolução: API server-side (/api/stats) computa tudo direto
+        // do banco, sempre atualizado. Substitui as queries anteriores que usavam
+        // .order(ascending).limit(2000) e pegavam os artigos MAIS ANTIGOS (desde
+        // 1969), mostrando evolução velha e cobertura enviesada.
+        const res = await fetch("/api/stats", { cache: "no-store" });
+        if (!res.ok) throw new Error("Falha ao carregar estatísticas");
+        const s = await res.json();
+        if (s.error) throw new Error(s.error);
 
-        if (!latest) { setError("Sem artigos"); setLoading(false); return; }
-
-        const latestDate = latest.published_at.split("T")[0];
+        const latestDate = s.latestDate;
         setTodayDate(latestDate);
+        setTodayCount(s.today.articles);
+        setTodayMunis(s.today.municipalities);
+        setTotalMunicipalities(s.coverage.total);
+        setCoveragePercent(s.coverage.percent);
+        setDaysOfOperation(s.edicoes);
+        setDailyStats(
+          (s.daily as { date: string; articles: number; municipalities: number }[]).map((d) => ({
+            ...d,
+            label: format(new Date(d.date + "T12:00:00Z"), "dd/MM", { locale: ptBR }),
+          }))
+        );
 
-        // 2. Get today's articles (limit 10 for manchetes)
+        // Manchetes do dia (leitura anônima; RLS permite SELECT)
         const { data: todayData } = await supabase
           .from("articles")
           .select("title, url, summary, category, municipalities(name)")
-          .gte("published_at", latestDate + "T00:00:00Z")
-          .lte("published_at", latestDate + "T23:59:59Z")
+          .gte("published_at", latestDate + "T00:00:00")
+          .lte("published_at", latestDate + "T23:59:59")
           .order("published_at", { ascending: false })
           .limit(10);
-
         if (todayData) {
           setTodayArticles(todayData.map((a: any) => ({
             ...a, municipality: a.municipalities?.name || "",
           })));
         }
-
-        // 3. Count today's articles
-        const { count: todayTotal } = await supabase
-          .from("articles")
-          .select("id", { count: "exact", head: true })
-          .gte("published_at", latestDate + "T00:00:00Z")
-          .lte("published_at", latestDate + "T23:59:59Z");
-        setTodayCount(todayTotal || 0);
-
-        // 4. Count today's distinct municipalities
-        const { data: todayMuniData } = await supabase
-          .from("articles")
-          .select("municipality_id")
-          .gte("published_at", latestDate + "T00:00:00Z")
-          .lte("published_at", latestDate + "T23:59:59Z");
-        const uniqueMunis = new Set(todayMuniData?.map(a => a.municipality_id));
-        setTodayMunis(uniqueMunis.size);
-
-        // 5. Total municipalities
-        const { count: totalMuni } = await supabase
-          .from("municipalities")
-          .select("id", { count: "exact", head: true });
-        setTotalMunicipalities(totalMuni || 497);
-
-        // 6. Coverage (distinct municipalities with any article)
-        const { data: allMuniIds } = await supabase
-          .from("articles")
-          .select("municipality_id")
-          .not("published_at", "is", null)
-          .limit(2000);
-        const activeMunis = new Set(allMuniIds?.map(a => a.municipality_id));
-        setCoveragePercent(
-          totalMuni ? Math.round((activeMunis.size / totalMuni) * 1000) / 10 : 0
-        );
-
-        // 7. Daily stats (get distinct dates + counts)
-        const { data: allDates } = await supabase
-          .from("articles")
-          .select("published_at")
-          .not("published_at", "is", null)
-          .order("published_at", { ascending: true })
-          .limit(2000);
-
-        if (allDates) {
-          const byDate: Record<string, { articles: number; munis: Set<number> }> = {};
-          // We need municipality_id too - fetch separately
-          const { data: allWithMuni } = await supabase
-            .from("articles")
-            .select("published_at, municipality_id")
-            .not("published_at", "is", null)
-            .order("published_at", { ascending: true })
-            .limit(2000);
-
-          if (allWithMuni) {
-            for (const a of allWithMuni) {
-              const d = a.published_at!.split("T")[0];
-              if (!byDate[d]) byDate[d] = { articles: 0, munis: new Set() };
-              byDate[d].articles++;
-              byDate[d].munis.add(a.municipality_id);
-            }
-          }
-
-          const stats = Object.entries(byDate).map(([date, v]) => ({
-            date,
-            articles: v.articles,
-            municipalities: v.munis.size,
-            label: format(new Date(date + "T12:00:00Z"), "dd/MM", { locale: ptBR }),
-          }));
-          setDailyStats(stats.slice(-7));
-          setDaysOfOperation(stats.length);
-        }
-
       } catch (err: any) {
         setError(err.message || "Erro ao carregar");
       }

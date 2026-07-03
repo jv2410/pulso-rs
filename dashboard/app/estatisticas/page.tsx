@@ -29,9 +29,11 @@ export default function EstatisticasPage() {
   const [stats, setStats] = useState<StatsData | null>(null);
 
   useEffect(() => {
-    fetch("/data/stats.json")
+    // API server-side sempre atualizada (substitui /data/stats.json, congelado
+    // em março). daily = série histórica completa (dailyFull) para o gráfico.
+    fetch("/api/stats", { cache: "no-store" })
       .then((r) => r.json())
-      .then(setStats);
+      .then((s) => setStats({ daily: s.dailyFull, totals: s.totals }));
   }, []);
 
   if (!stats) {
