@@ -11,6 +11,15 @@ const { getScraperForSite } = require('./src/scrapers/ScraperFactory');
 const sb = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
 const HARD = (p, ms) => Promise.race([p, new Promise((_, r) => setTimeout(() => r(new Error('hard_timeout_'+ms)), ms))]);
 
+// Normalização canônica de URL (Atlas 2026-07-06): a MESMA notícia às vezes é
+// servida como http:// e https:// (ou com/sem www, com/sem barra final). Como o
+// upsert usa onConflict:'url', essas variantes viravam LINHAS DIFERENTES — o
+// usuário marcava uma como inválida (score 0) e o sync re-inseria a variante,
+// fazendo a notícia "voltar" ao feed. Normalizar previne isso e corta duplicatas.
+const normUrl = (u) => (u || '').trim().toLowerCase()
+  .replace(/^https?:\/\//, '').replace(/^www\./, '')
+  .replace(/[?#].*$/, '').replace(/\/+$/, '');
+
 const TODAY = process.argv[2] || new Date().toISOString().slice(0, 10);
 // Janela D-1 (Atlas 2026-06-10): publicações da noite anterior só aparecem no
 // run seguinte; sem esta janela elas eram descartadas para sempre (skipOld).
@@ -23,24 +32,24 @@ async function main() {
   const { data: munis } = await sb.from('municipalities').select('*').eq('active', true);
   console.log(`Sync ESTRITO de ${TODAY} (janela D-1: aceita ${YESTERDAY}) em ${munis.length} cidades ativas\n`);
 
-  // URLs já no DB hoje pra evitar re-fetch
+  // URLs já no DB hoje pra evitar re-fetch (comparadas por forma NORMALIZADA,
+  // pra dedup também pegar variantes http/https/www).
   const ids = munis.map(m => m.id);
   const existingUrls = new Set();
   for (let i = 0; i < ids.length; i += 100) {
     const { data } = await sb.from('articles').select('url').in('municipality_id', ids.slice(i, i+100)).gte('published_at', WINDOW_START).lte('published_at', TODAY_END);
-    for (const a of data||[]) existingUrls.add(a.url);
+    for (const a of data||[]) existingUrls.add(normUrl(a.url));
   }
   console.log(`URLs já no DB hoje: ${existingUrls.size}`);
 
-  // PROTEÇÃO DE INVALIDAÇÕES (Atlas 2026-06-24): notícias marcadas como inválidas
-  // no dashboard (relevance_score = 0) NUNCA podem ser sobrescritas pelo upsert —
-  // senão o usuário marca, o sync re-encontra a URL (banner-bug re-datado sai da
-  // janela) e o upsert zera o score 0, fazendo a notícia voltar ao feed.
+  // PROTEÇÃO DE INVALIDAÇÕES (Atlas 2026-06-24, normalizada 2026-07-06): notícias
+  // marcadas como inválidas (relevance_score = 0) NUNCA podem ser re-inseridas —
+  // nem pela URL exata nem por variante http/https/www. Comparação normalizada.
   let invPage = 0; const invSet = new Set();
   while (true) {
     const { data } = await sb.from('articles').select('url').eq('relevance_score', 0).range(invPage*1000, invPage*1000+999);
     if (!data || !data.length) break;
-    for (const a of data) { existingUrls.add(a.url); invSet.add(a.url); }
+    for (const a of data) { const n = normUrl(a.url); existingUrls.add(n); invSet.add(n); }
     if (data.length < 1000) break; invPage++;
   }
   console.log(`URLs invalidadas protegidas: ${invSet.size}\n`);
@@ -68,7 +77,7 @@ async function main() {
         if (d < YESTERDAY) { stats.skipOld++; continue; }
         // d === TODAY ou YESTERDAY (janela D-1)
         stats.today++;
-        if (existingUrls.has(a.url)) { stats.skipDup++; continue; }
+        if (existingUrls.has(normUrl(a.url))) { stats.skipDup++; continue; }
         // Auto-skip score 1 (lixo: títulos genéricos, listas administrativas)
         if (a.relevanceScore === 1) { stats.skipScore1 = (stats.skipScore1||0) + 1; continue; }
         const { error, data } = await sb.from('articles').upsert({
@@ -80,7 +89,7 @@ async function main() {
         }, { onConflict: 'url', ignoreDuplicates: false }).select();
         if (!error && data?.length) {
           stats.inserted++;
-          existingUrls.add(a.url);
+          existingUrls.add(normUrl(a.url));
         } else if (data && !data.length) {
           stats.skipDup++;
         }
