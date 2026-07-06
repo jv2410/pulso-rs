@@ -75,9 +75,9 @@ export default function EvolucaoPage() {
     {
       dayNumber: 10,
       date: "Segunda, 16 de março",
-      title: "Pulso RS no ar",
+      title: "497 RS no ar",
       description:
-        "Lançamento do painel que você está vendo agora. Com 340 dos 497 municípios cobertos (68,4%), o Pulso RS permite acompanhar em tempo real o que as prefeituras gaúchas estão publicando. Filtro por data, busca por município, indicadores de evolução — tudo acessível de forma simples para quem precisa da informação.",
+        "Lançamento do painel que você está vendo agora. Com 340 dos 497 municípios cobertos (68,4%), o 497 RS permite acompanhar em tempo real o que as prefeituras gaúchas estão publicando. Filtro por data, busca por município, indicadores de evolução — tudo acessível de forma simples para quem precisa da informação.",
       stats: ["340 sites", "68,4% do RS", "Painel ativo"],
     },
   ];
@@ -93,7 +93,7 @@ export default function EvolucaoPage() {
       number: 2,
       title: "Adaptação Inteligente",
       description:
-        "Cada prefeitura usa uma plataforma diferente. O Pulso RS reconhece mais de 16 formatos distintos de site, se adaptando automaticamente para extrair as notícias de cada um.",
+        "Cada prefeitura usa uma plataforma diferente. O 497 RS reconhece mais de 16 formatos distintos de site, se adaptando automaticamente para extrair as notícias de cada um.",
     },
     {
       number: 3,
@@ -127,7 +127,7 @@ export default function EvolucaoPage() {
           Bastidores
         </h1>
         <p style={{ color: "var(--ink-secondary)" }}>
-          O diário de bordo do Pulso RS — como construímos a cobertura de 340 municípios em 10 dias
+          O diário de bordo do 497 RS — como construímos a cobertura de 340 municípios em 10 dias
         </p>
       </div>
       <div

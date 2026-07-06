@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <title>Pulso RS — Monitor de Notícias Municipal</title>
+        <title>497 RS — Monitor de Notícias Municipal</title>
         <meta
           name="description"
           content="Monitoramento jornalístico dos municípios do Rio Grande do Sul"
@@ -50,7 +50,7 @@ export default function RootLayout({
               className="font-editorial text-3xl font-black tracking-[0.2em] uppercase"
               style={{ color: "var(--ink)" }}
             >
-              Pulso RS
+              497 RS
             </h1>
             <p
               className="text-xs uppercase tracking-[0.3em] mt-1"
@@ -211,7 +211,7 @@ export default function RootLayout({
               className="text-sm"
               style={{ color: "var(--ink-tertiary)" }}
             >
-              Pulso RS &mdash; Monitoramento jornalístico dos municípios gaúchos
+              497 RS &mdash; Monitoramento jornalístico dos municípios gaúchos
             </p>
           </div>
         </footer>

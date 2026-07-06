@@ -102,7 +102,7 @@ export default function EstatisticasPage() {
           <span className="font-semibold">
             Em {daysOfOperation} dias de operação
           </span>
-          , o Pulso RS coletou{" "}
+          , o 497 RS coletou{" "}
           <span
             className="font-semibold"
             style={{ color: "var(--editorial-red)" }}
