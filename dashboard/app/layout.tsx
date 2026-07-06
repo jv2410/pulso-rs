@@ -12,6 +12,7 @@ const navItems = [
   { href: "/estatisticas", label: "Indicadores" },
   { href: "/evolucao", label: "Bastidores" },
   { href: "/municipios", label: "Cobertura" },
+  { href: "/sincronizacao", label: "Sincronização" },
 ];
 
 export default function RootLayout({

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { admin } from "../../../lib/admin";
 
 // Rota SERVER-SIDE (Atlas 2026-06-30): a feature de invalidar notícia escrevia
 // com a chave ANÔNIMA, mas o RLS do Supabase BLOQUEIA UPDATE anônimo — retornava
@@ -8,10 +8,7 @@ import { createClient } from "@supabase/supabase-js";
 // para escrever de verdade. Preferência por env var; fallback embutido para
 // funcionar sem configuração extra (mesmo padrão do publish-wp). RECOMENDADO:
 // mover para env var SUPABASE_SERVICE_KEY no Vercel e rotacionar a chave.
-const SUPABASE_URL = process.env.SUPABASE_URL || "https://kkuxgyjecjlfgahhoipv.supabase.co";
-const SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdXhneWplY2psZmdhaGhvaXB2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MTE1MDU1OCwiZXhwIjoyMDU2NzI2NTU4fQ.L5Oim4rS-ERTNrS8svfKRrQwnEpwhDiECF4IQjYssqk";
 
-const admin = createClient(SUPABASE_URL, SERVICE_KEY);
 
 // Forma canônica (sem protocolo/www/barra final/query) — a MESMA notícia é
 // servida como http e https, com/sem www. Marcar uma precisa marcar todas, senão
