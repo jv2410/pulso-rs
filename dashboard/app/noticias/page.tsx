@@ -41,6 +41,7 @@ export default function NoticiasPage() {
   const [copied, setCopied] = useState(false);
   const [showPublish, setShowPublish] = useState(false);
   const [lastHidden, setLastHidden] = useState<Article | null>(null);
+  const [usedIds, setUsedIds] = useState<Set<number>>(new Set()); // matérias usadas no portal 497
 
   useEffect(() => {
     (async () => {
@@ -77,9 +78,42 @@ export default function NoticiasPage() {
           ...a, municipality: a.municipalities?.name || "", content: null, image_url: a.image_url || null,
         })));
       }
+      // carrega quais matérias já foram usadas no portal 497 (tolerante: se a
+      // coluna ainda não existir, volta vazio e não quebra o feed)
+      try {
+        const r = await fetch(`/api/mark-used?date=${selectedDate}`, { cache: "no-store" });
+        const j = await r.json();
+        setUsedIds(new Set<number>(j.usedIds || []));
+      } catch { setUsedIds(new Set()); }
       setLoading(false);
     })();
   }, [selectedDate]);
+
+  // Marca/desmarca "usada no portal 497" (persiste via rota server-side).
+  const markUsed = useCallback(async (article: Article) => {
+    const willUse = !usedIds.has(article.id);
+    setUsedIds((prev) => {
+      const n = new Set(prev);
+      if (willUse) n.add(article.id); else n.delete(article.id);
+      return n;
+    });
+    try {
+      const res = await fetch("/api/mark-used", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: article.id, used: willUse }),
+      });
+      if (!res.ok) {
+        const j = await res.json().catch(() => ({}));
+        setUsedIds((prev) => { const n = new Set(prev); if (willUse) n.delete(article.id); else n.add(article.id); return n; });
+        alert(j.columnMissing
+          ? "A coluna 'usada no portal' ainda não foi criada no banco. Rode o SQL informado."
+          : "Não foi possível marcar. Tente novamente.");
+      }
+    } catch {
+      setUsedIds((prev) => { const n = new Set(prev); if (willUse) n.delete(article.id); else n.add(article.id); return n; });
+    }
+  }, [usedIds]);
 
   const openArticle = useCallback(async (article: Article) => {
     setSelectedArticle(article);
@@ -333,8 +367,37 @@ export default function NoticiasPage() {
                 <span className="text-xs" style={{ color: "var(--ink-tertiary)" }}>
                   {article.published_at ? format(new Date(article.published_at), "dd/MM/yyyy", { locale: ptBR }) : ""}
                 </span>
-                {/* Ações de invalidação — aparecem no hover do card */}
+                {/* Badge fixo quando a matéria já foi usada no portal 497 */}
+                {usedIds.has(article.id) && (
+                  <span className="flex items-center gap-1 text-xs px-2 py-0.5 font-semibold"
+                    style={{ background: "var(--serra-green)", color: "white", borderRadius: "2px" }}>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Usada no 497
+                  </span>
+                )}
+                {/* Ações — aparecem no hover do card */}
                 <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {/* Usada no portal 497 (toggle) */}
+                  <button
+                    onClick={(e) => { e.stopPropagation(); markUsed(article); }}
+                    title="Sinalizar que a matéria foi usada no portal 497"
+                    className="flex items-center gap-1 text-xs px-2 py-1"
+                    style={{
+                      border: "1px solid " + (usedIds.has(article.id) ? "var(--serra-green)" : "var(--fio)"),
+                      borderRadius: "2px",
+                      color: usedIds.has(article.id) ? "var(--serra-green)" : "var(--ink-tertiary)",
+                      background: "var(--paper-white)",
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.color = "var(--serra-green)"; e.currentTarget.style.borderColor = "var(--serra-green)"; }}
+                    onMouseLeave={(e) => { const on = usedIds.has(article.id); e.currentTarget.style.color = on ? "var(--serra-green)" : "var(--ink-tertiary)"; e.currentTarget.style.borderColor = on ? "var(--serra-green)" : "var(--fio)"; }}
+                  >
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {usedIds.has(article.id) ? "Usada" : "Usar no 497"}
+                  </button>
                   {/* Notícia antiga */}
                   <button
                     onClick={(e) => {
