@@ -126,10 +126,12 @@ export async function POST(req: NextRequest) {
     const post = await postRes.json();
 
     // Publicou no portal 497 → marca a matéria como "usada" (badge no dashboard).
-    // Tolerante: se a coluna used_in_portal ainda não existir, não falha a publicação.
+    // Tolerante: se a coluna used_in_portal não existir, não falha a publicação.
+    let markedUsed = false;
     if (articleId) {
-      try { await admin.from("articles").update({ used_in_portal: true }).eq("id", articleId); }
-      catch { /* coluna ausente ou erro de rede — publicação já foi, ignora */ }
+      const { data: upd, error: markErr } = await admin
+        .from("articles").update({ used_in_portal: true }).eq("id", articleId).select("id");
+      markedUsed = !markErr && !!upd && upd.length > 0;
     }
 
     // For drafts, WP returns /?p=ID which isn't useful — give wp-admin edit link instead
@@ -141,6 +143,7 @@ export async function POST(req: NextRequest) {
       link: publicLink,
       editLink,
       status: post.status,
+      markedUsed,
     });
   } catch (err: any) {
     return NextResponse.json(
