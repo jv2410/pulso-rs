@@ -214,6 +214,16 @@ export default function RootLayout({
             >
               497 RS &mdash; Monitoramento jornalístico dos municípios gaúchos
             </p>
+            <p
+              className="text-[10px] mt-1 select-all"
+              style={{ color: "var(--ink-tertiary)", opacity: 0.4 }}
+              title="Versão em produção (commit + horário do build)"
+            >
+              v {process.env.NEXT_PUBLIC_COMMIT_SHA}
+              {process.env.NEXT_PUBLIC_BUILD_TIME
+                ? " · " + new Date(process.env.NEXT_PUBLIC_BUILD_TIME).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })
+                : ""}
+            </p>
           </div>
         </footer>
         <Analytics />
