@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { admin } from "../../../lib/admin";
 
 const WP_URL = "https://portal497.com.br/wp-json/wp/v2";
 const WP_USER = "joao";
@@ -10,6 +11,7 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const {
+      articleId,
       title,
       content,
       excerpt,
@@ -122,6 +124,14 @@ export async function POST(req: NextRequest) {
     }
 
     const post = await postRes.json();
+
+    // Publicou no portal 497 → marca a matéria como "usada" (badge no dashboard).
+    // Tolerante: se a coluna used_in_portal ainda não existir, não falha a publicação.
+    if (articleId) {
+      try { await admin.from("articles").update({ used_in_portal: true }).eq("id", articleId); }
+      catch { /* coluna ausente ou erro de rede — publicação já foi, ignora */ }
+    }
+
     // For drafts, WP returns /?p=ID which isn't useful — give wp-admin edit link instead
     const editLink = `https://portal497.com.br/wp-admin/post.php?post=${post.id}&action=edit`;
     const publicLink = post.status === "publish" ? post.link : editLink;

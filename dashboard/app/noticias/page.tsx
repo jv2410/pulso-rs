@@ -651,6 +651,7 @@ export default function NoticiasPage() {
       {showPublish && selectedArticle && (
         <PublishToWP
           article={{
+            id: selectedArticle.id,
             title: selectedArticle.title,
             content: selectedArticle.content,
             summary: selectedArticle.summary,
@@ -660,7 +661,9 @@ export default function NoticiasPage() {
             imageUrl: selectedArticle.image_url || undefined,
           }}
           onClose={() => setShowPublish(false)}
-          onPublished={(link) => {
+          onPublished={() => {
+            // publicou no WP → já marca como "usada no 497" (badge na hora)
+            if (selectedArticle) setUsedIds((prev) => new Set(prev).add(selectedArticle.id));
             setShowPublish(false);
           }}
         />

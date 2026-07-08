@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 
 interface PublishToWPProps {
   article: {
+    id: number;
     title: string;
     content: string | null;
     summary: string | null;
@@ -154,6 +155,7 @@ export default function PublishToWP({ article, onClose, onPublished }: PublishTo
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          articleId: article.id,
           title,
           content: contentHtml,
           excerpt: article.summary || "",
