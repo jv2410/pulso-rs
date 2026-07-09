@@ -95,7 +95,7 @@
   "CAPELA DE SANTANA": "https://www.capeladesantana.rs.gov.br/noticia",
   "CAPITÃO": "https://www.capitao.rs.gov.br/categoria/noticias/",
   "CAPIVARI DO SUL": "https://capivaridosul.rs.gov.br/blog-grid/",
-  "CARAÁ": "https://www.caraa.rs.gov.br/categoria/noticias/31/",
+  "CARAÁ": "https://www.caraa.rs.gov.br/site/noticias",
   "CARLOS BARBOSA": "https://www.carlosbarbosa.rs.gov.br/noticias",
   "CARLOS GOMES": "https://carlosgomes.rs.gov.br/site/noticias",
   "CASCA": "https://www.casca.rs.gov.br/portal/noticias",
@@ -130,7 +130,7 @@
   "FLORIANO PEIXOTO": "https://www.florianopeixoto.rs.gov.br/noticias",
   "FORMIGUEIRO": "https://www.formigueiro.rs.gov.br/noticia/categoria",
   "FORQUETINHA": "https://www.forquetinha.rs.gov.br/portal/noticias",
-  "FORTALEZA DOS VALOS": "https://pmfv.rs.gov.br/category/noticia",
+  "FORTALEZA DOS VALOS": "https://pmfv.rs.gov.br/?pg=noticias",
   "GARIBALDI": "https://www.garibaldi.rs.gov.br/noticias",
   "GARRUCHOS": "https://www.garruchos.rs.gov.br/noticia/categoria",
   "GENTIL": "https://www.pmgentil.com.br/departamento.php?id=13",
@@ -360,5 +360,8 @@
   "ARARICÁ": "https://ararica.rs.gov.br/noticia",
   "CONSTANTINA": "https://constantina.rs.gov.br/category/noticias/",
   "PROGRESSO": "https://progresso.rs.gov.br/noticia",
-  "ANTÔNIO PRADO": "https://antonioprado.rs.gov.br/index.php/noticias"
+  "ANTÔNIO PRADO": "https://antonioprado.rs.gov.br/index.php/noticias",
+  "ÁUREA": "https://aurea.rs.gov.br/?pg=noticias",
+  "TRÊS ARROIOS": "https://tresarroios.rs.gov.br/?pg=noticias",
+  "PLANALTO": "https://planalto.rs.gov.br/?pg=noticias"
 }
