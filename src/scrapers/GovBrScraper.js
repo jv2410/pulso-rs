@@ -944,6 +944,17 @@ class GovBrScraper extends BaseScraper {
       if (chosen) return chosen;
     }
 
+    // og:title / twitter:title (Atlas 2026-07-09): em templates tipo /noticia/view/
+    // (Erechim, Araricá etc.) o <title> é genérico ("Cidade/RS") e os seletores
+    // não pegam o h2 do artigo — mas o título REAL está no og:title. Tentado antes
+    // do fallback <title>, filtrado por isJunkCandidate (rejeita nome da cidade).
+    if ($) {
+      for (const sel of ['meta[property="og:title"]', 'meta[name="twitter:title"]', 'meta[name="title"]']) {
+        const c = ($(sel).attr('content') || '').trim();
+        if (c && !isJunkCandidate(c)) return c;
+      }
+    }
+
     // Last resort: <title> tag
     const titleTag = $('title').first().text().trim();
     if (titleTag) {
