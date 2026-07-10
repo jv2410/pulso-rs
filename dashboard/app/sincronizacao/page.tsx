@@ -11,7 +11,7 @@ interface SyncStatus {
   latestDate: string;
   today: number;
   daily: { date: string; articles: number; municipalities: number }[];
-  municipios7d: number;
+  municipios30d: number;
   totalMunicipios: number;
   schedule: string[];
 }
@@ -99,14 +99,14 @@ export default function SincronizacaoPage() {
       {/* Municípios com notícia nos últimos 7 dias */}
       <div className="mb-8 p-6" style={{ border: "1px solid var(--fio)" }}>
         <p className="text-xs uppercase tracking-[0.15em] mb-2" style={{ color: "var(--ink-secondary)" }}>
-          Municípios com notícia (últimos 7 dias)
+          Municípios com notícia (últimos 30 dias)
         </p>
         <p className="font-editorial text-4xl font-black" style={{ color: "var(--ink)" }}>
-          {s.municipios7d}
+          {s.municipios30d}
           <span className="text-2xl font-normal" style={{ color: "var(--ink-tertiary)" }}> / {s.totalMunicipios}</span>
         </p>
         <p className="text-sm mt-1" style={{ color: "var(--ink-secondary)" }}>
-          {Math.round((s.municipios7d / s.totalMunicipios) * 100)}% dos municípios monitorados publicaram algo na última semana (distintos, sem repetir)
+          {Math.round((s.municipios30d / s.totalMunicipios) * 100)}% dos municípios monitorados publicaram algo no último mês (distintos, sem repetir)
         </p>
       </div>
 

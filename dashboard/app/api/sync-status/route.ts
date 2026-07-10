@@ -38,10 +38,13 @@ export async function GET() {
       .order("published_at", { ascending: false }).limit(1).single();
     const latestDate = latestPub?.published_at?.slice(0, 10) || hojeReal;
 
-    const start = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 6 * DAY));
+    // Janela de 30 dias: municípios distintos que publicaram no último mês (métrica
+    // de cobertura real — 30d é mais justo que 7d com prefeituras de baixa cadência).
+    const start = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 29 * DAY));
+    const start7 = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 6 * DAY));
     const byDate: Record<string, number> = {};
     const munisByDate: Record<string, Set<number>> = {};
-    const munis7d = new Set<number>();
+    const munis30d = new Set<number>();
     for (let page = 0; ; page++) {
       const { data } = await admin.from("articles").select("published_at, municipality_id")
         .gte("published_at", start + "T00:00:00").lte("published_at", latestDate + "T23:59:59")
@@ -51,7 +54,7 @@ export async function GET() {
         const d = a.published_at.slice(0, 10);
         byDate[d] = (byDate[d] || 0) + 1;
         (munisByDate[d] = munisByDate[d] || new Set()).add(a.municipality_id);
-        munis7d.add(a.municipality_id);
+        munis30d.add(a.municipality_id);
       }
       if (data.length < 1000) break;
     }
@@ -69,7 +72,7 @@ export async function GET() {
       latestDate,
       today: byDate[latestDate] || 0,
       daily,
-      municipios7d: munis7d.size,
+      municipios30d: munis30d.size,
       totalMunicipios: totalMuni || 497,
       schedule: ["07:00", "18:30"],
     });
