@@ -40,19 +40,27 @@ export async function GET() {
 
     const start = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 6 * DAY));
     const byDate: Record<string, number> = {};
+    const munisByDate: Record<string, Set<number>> = {};
+    const munis7d = new Set<number>();
     for (let page = 0; ; page++) {
-      const { data } = await admin.from("articles").select("published_at")
+      const { data } = await admin.from("articles").select("published_at, municipality_id")
         .gte("published_at", start + "T00:00:00").lte("published_at", latestDate + "T23:59:59")
         .range(page * 1000, page * 1000 + 999);
       if (!data || !data.length) break;
-      for (const a of data) { const d = a.published_at.slice(0, 10); byDate[d] = (byDate[d] || 0) + 1; }
+      for (const a of data) {
+        const d = a.published_at.slice(0, 10);
+        byDate[d] = (byDate[d] || 0) + 1;
+        (munisByDate[d] = munisByDate[d] || new Set()).add(a.municipality_id);
+        munis7d.add(a.municipality_id);
+      }
       if (data.length < 1000) break;
     }
     const daily = [];
     for (let i = 6; i >= 0; i--) {
       const d = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - i * DAY));
-      daily.push({ date: d, articles: byDate[d] || 0 });
+      daily.push({ date: d, articles: byDate[d] || 0, municipalities: munisByDate[d]?.size || 0 });
     }
+    const { count: totalMuni } = await admin.from("municipalities").select("id", { count: "exact", head: true });
 
     return NextResponse.json({
       lastInsertAt,
@@ -61,6 +69,8 @@ export async function GET() {
       latestDate,
       today: byDate[latestDate] || 0,
       daily,
+      municipios7d: munis7d.size,
+      totalMunicipios: totalMuni || 497,
       schedule: ["07:00", "18:30"],
     });
   } catch (err: any) {

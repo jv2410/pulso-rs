@@ -10,7 +10,9 @@ interface SyncStatus {
   serverNow: string;
   latestDate: string;
   today: number;
-  daily: { date: string; articles: number }[];
+  daily: { date: string; articles: number; municipalities: number }[];
+  municipios7d: number;
+  totalMunicipios: number;
   schedule: string[];
 }
 
@@ -94,6 +96,20 @@ export default function SincronizacaoPage() {
         </p>
       </div>
 
+      {/* Municípios com notícia nos últimos 7 dias */}
+      <div className="mb-8 p-6" style={{ border: "1px solid var(--fio)" }}>
+        <p className="text-xs uppercase tracking-[0.15em] mb-2" style={{ color: "var(--ink-secondary)" }}>
+          Municípios com notícia (últimos 7 dias)
+        </p>
+        <p className="font-editorial text-4xl font-black" style={{ color: "var(--ink)" }}>
+          {s.municipios7d}
+          <span className="text-2xl font-normal" style={{ color: "var(--ink-tertiary)" }}> / {s.totalMunicipios}</span>
+        </p>
+        <p className="text-sm mt-1" style={{ color: "var(--ink-secondary)" }}>
+          {Math.round((s.municipios7d / s.totalMunicipios) * 100)}% dos municípios monitorados publicaram algo na última semana (distintos, sem repetir)
+        </p>
+      </div>
+
       {/* Volume últimos 7 dias */}
       <h3 className="font-editorial text-lg font-semibold mb-4" style={{ color: "var(--ink)" }}>
         Volume dos últimos 7 dias
@@ -110,6 +126,9 @@ export default function SincronizacaoPage() {
                 <span className="text-xs font-semibold" style={{ color: "white" }}>{d.articles}</span>
               </div>
             </div>
+            <span className="text-xs w-24 shrink-0 text-right" style={{ color: "var(--ink-tertiary)" }}>
+              {d.municipalities} municípios
+            </span>
           </div>
         ))}
       </div>
