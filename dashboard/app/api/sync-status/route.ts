@@ -38,29 +38,33 @@ export async function GET() {
       .order("published_at", { ascending: false }).limit(1).single();
     const latestDate = latestPub?.published_at?.slice(0, 10) || hojeReal;
 
-    // Janela de 30 dias: municípios distintos que publicaram no último mês (métrica
-    // de cobertura real — 30d é mais justo que 7d com prefeituras de baixa cadência).
-    const start = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 29 * DAY));
-    const start7 = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - 6 * DAY));
+    // Cobertura em 3 janelas (30/60/90 dias): municípios DISTINTOS que publicaram.
+    // Janelas maiores capturam prefeituras de baixa cadência — cobertura real.
+    const anchor = Date.parse(latestDate + "T12:00:00Z");
+    const start90 = ymd(new Date(anchor - 89 * DAY));
+    const s30 = ymd(new Date(anchor - 29 * DAY));
+    const s60 = ymd(new Date(anchor - 59 * DAY));
     const byDate: Record<string, number> = {};
     const munisByDate: Record<string, Set<number>> = {};
-    const munis30d = new Set<number>();
+    const m30 = new Set<number>(), m60 = new Set<number>(), m90 = new Set<number>();
     for (let page = 0; ; page++) {
       const { data } = await admin.from("articles").select("published_at, municipality_id")
-        .gte("published_at", start + "T00:00:00").lte("published_at", latestDate + "T23:59:59")
+        .gte("published_at", start90 + "T00:00:00").lte("published_at", latestDate + "T23:59:59")
         .range(page * 1000, page * 1000 + 999);
       if (!data || !data.length) break;
       for (const a of data) {
         const d = a.published_at.slice(0, 10);
         byDate[d] = (byDate[d] || 0) + 1;
         (munisByDate[d] = munisByDate[d] || new Set()).add(a.municipality_id);
-        munis30d.add(a.municipality_id);
+        m90.add(a.municipality_id);
+        if (d >= s60) m60.add(a.municipality_id);
+        if (d >= s30) m30.add(a.municipality_id);
       }
       if (data.length < 1000) break;
     }
     const daily = [];
     for (let i = 6; i >= 0; i--) {
-      const d = ymd(new Date(Date.parse(latestDate + "T12:00:00Z") - i * DAY));
+      const d = ymd(new Date(anchor - i * DAY));
       daily.push({ date: d, articles: byDate[d] || 0, municipalities: munisByDate[d]?.size || 0 });
     }
     const { count: totalMuni } = await admin.from("municipalities").select("id", { count: "exact", head: true });
@@ -72,7 +76,11 @@ export async function GET() {
       latestDate,
       today: byDate[latestDate] || 0,
       daily,
-      municipios30d: munis30d.size,
+      cobertura: [
+        { dias: 30, municipios: m30.size },
+        { dias: 60, municipios: m60.size },
+        { dias: 90, municipios: m90.size },
+      ],
       totalMunicipios: totalMuni || 497,
       schedule: ["07:00", "18:30"],
     });

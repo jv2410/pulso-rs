@@ -11,7 +11,7 @@ interface SyncStatus {
   latestDate: string;
   today: number;
   daily: { date: string; articles: number; municipalities: number }[];
-  municipios30d: number;
+  cobertura: { dias: number; municipios: number }[];
   totalMunicipios: number;
   schedule: string[];
 }
@@ -96,18 +96,26 @@ export default function SincronizacaoPage() {
         </p>
       </div>
 
-      {/* Municípios com notícia nos últimos 7 dias */}
-      <div className="mb-8 p-6" style={{ border: "1px solid var(--fio)" }}>
-        <p className="text-xs uppercase tracking-[0.15em] mb-2" style={{ color: "var(--ink-secondary)" }}>
-          Municípios com notícia (últimos 30 dias)
-        </p>
-        <p className="font-editorial text-4xl font-black" style={{ color: "var(--ink)" }}>
-          {s.municipios30d}
-          <span className="text-2xl font-normal" style={{ color: "var(--ink-tertiary)" }}> / {s.totalMunicipios}</span>
-        </p>
-        <p className="text-sm mt-1" style={{ color: "var(--ink-secondary)" }}>
-          {Math.round((s.municipios30d / s.totalMunicipios) * 100)}% dos municípios monitorados publicaram algo no último mês (distintos, sem repetir)
-        </p>
+      {/* Municípios distintos com notícia — 30 / 60 / 90 dias */}
+      <p className="text-xs uppercase tracking-[0.15em] mb-3" style={{ color: "var(--ink-secondary)" }}>
+        Municípios com notícia (distintos, sem repetir)
+      </p>
+      <div className="mb-8 grid grid-cols-3" style={{ border: "1px solid var(--fio)" }}>
+        {s.cobertura.map((c, i) => (
+          <div key={c.dias} className="py-6 px-4 text-center"
+            style={{ borderRight: i < s.cobertura.length - 1 ? "1px solid var(--fio)" : "none" }}>
+            <p className="font-editorial text-4xl font-black" style={{ color: "var(--ink)" }}>
+              {c.municipios}
+              <span className="text-xl font-normal" style={{ color: "var(--ink-tertiary)" }}> / {s.totalMunicipios}</span>
+            </p>
+            <p className="text-sm font-semibold mt-1" style={{ color: "var(--editorial-red)" }}>
+              {Math.round((c.municipios / s.totalMunicipios) * 100)}%
+            </p>
+            <p className="text-xs uppercase tracking-[0.1em] mt-1" style={{ color: "var(--ink-secondary)" }}>
+              últimos {c.dias} dias
+            </p>
+          </div>
+        ))}
       </div>
 
       {/* Volume últimos 7 dias */}
