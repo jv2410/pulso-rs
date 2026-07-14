@@ -170,19 +170,25 @@ export default function NoticiasPage() {
       id: article.id, relevance_score: 0,
     };
     if (reason === "antiga") body.category = "Notícia Antiga";
+    // Retry automático (até 3 tentativas com pequena espera): cobre soluços
+    // transitórios do Vercel (cold start / deploy em andamento) que faziam a
+    // marcação falhar esporadicamente. Só mostra o erro se as 3 falharem.
     let ok = false;
-    try {
-      const res = await fetch("/api/invalidate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
-      ok = res.ok && (await res.json())?.success === true;
-    } catch {
-      ok = false;
+    for (let attempt = 0; attempt < 3 && !ok; attempt++) {
+      if (attempt > 0) await new Promise((r) => setTimeout(r, 600 * attempt));
+      try {
+        const res = await fetch("/api/invalidate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        ok = res.ok && (await res.json())?.success === true;
+      } catch {
+        ok = false;
+      }
     }
     if (!ok) {
-      // falhou no banco — desfaz a remoção e avisa
+      // falhou no banco após 3 tentativas — desfaz a remoção e avisa
       setArticles((prev) => [article, ...prev]);
       setLastHidden(null);
       alert("Não foi possível marcar como inválida. Tente novamente.");
