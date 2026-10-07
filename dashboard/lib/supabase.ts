@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 
 export const supabase = createClient(
-  "https://kkuxgyjecjlfgahhoipv.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdXhneWplY2psZmdhaGhvaXB2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDExNTA1NTgsImV4cCI6MjA1NjcyNjU1OH0.B1hRoL3rh10Ea2u0KbIgcgaE-EAucnBYGh7I7eP9WSE"
+  // Banco migrado p/ Postgres self-hosted (efficia.shop/clipdb) após o Supabase cloud travar no 402.
+  "https://efficia.shop/clipdb",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIiwiaWF0IjoxNzkxMzgyMzExLCJleHAiOjIxMDY3NDIzMTF9.WkWW8T_GVz3lH-7uOmWAg1riEOQMyy53_otOcL_Hx7w"
 );
